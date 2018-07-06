@@ -24,6 +24,7 @@
     <string name="spinner_dim11">Dimension 11 : Services</string>
 
     <!-- scores strings -->
+    <string name="spinner_score">spinner_score%1$d</string>
     <string name="spinner_scores">Scores</string>
 
     <!-- Slider strings -->
@@ -51,6 +52,7 @@
     <string name="location">Location</string>
     <string name="days">Days</string>
     <string name="request">Request</string>
+
 
 
     <!-- leadership strings -->
@@ -164,7 +166,7 @@
     <string name="Rdim2.10.1">The facility assess and monitor staff attitude, motivation, job satisfaction and professional improvement (MOV- Staff satisfaction report)</string>
 
 
-    <!-- Guidlines strings -->
+    <!-- Guidelines strings -->
 
     <string name="Dim3">Policies, Standards and Guidelines</string>
 
@@ -491,110 +493,649 @@
 
     <string name="Dim11.1">Outpatient Services</string>
 
-    <string name="Std11.1.1"></string>
-    <string name="Rdim11.1.1.1"></string>
-    <string name="Rdim11.1.1.2"></string>
-    <string name="Rdim11.1.1.3"></string>
-    <string name="Rdim11.1.1.4"></string>
+    <string name="Std11.1.1">11.1.1.1 All patients cared for by the health facilities have their health care needs identified through an assessment process that has been defined by the hospital</string>
+    <string name="Rdim11.1.1.1">The minimum requirements of history taking and physical examination of patients is defined for each clinical discipline(MOV- SOPs)</string>
+    <string name="Rdim11.1.1.2">Availability of vital signs observation tools, at minimum, thermometer and blood pressure machines</string>
+    <string name="Rdim11.1.1.3">Availability of patient examination tools, at minimum, stethoscope and diagnostic kits</string>
+    <string name="Rdim11.1.1.4">Facility takes vital signs for all patients (MOV-Sample 5 patient case files)</string>
 
-    <string name="Std11.1.2"></string>
-    <string name="Rdim11.1.2.1"></string>
-    <string name="Rdim11.1.2.2"></string>
+    <string name="Std11.1.2">11.1.1.2 The facility provides health education that supports patient and family participation in their care decisions and care processes.</string>
+    <string name="Rdim11.1.2.1">The hospital plans education consistent with its mission, services, and patient population. (MOV-Schedule with topics)</string>
+    <string name="Rdim11.1.2.2">There is an established structure for health education throughout the hospital. (MOV-Schedule with topics)</string>
 
-    <string name="Std11.1.3"></string>
-    <string name="Rdim11.1.3.1"></string>
-    <string name="Rdim11.1.3.2"></string>
-    <string name="Rdim11.1.3.3"></string>
-    <string name="Rdim11.1.3.4"></string>
-    <string name="Rdim11.1.3.5"></string>
-    <string name="Rdim11.1.3.6"></string>
+    <string name="Std11.1.3">11.1.1.3 The facility shall establish nutrition plans and procedures to ensure the provision of comprehensive nutrition services.</string>
+    <string name="Rdim11.1.3.1">Nutrition assessment carried out for all patients (MOV-Sample 5 patient files)</string>
+    <string name="Rdim11.1.3.2">Nutrition assessment tools available, at a minimum, MUAC tapes, BMI calculator, weight/height board (MOV-Observation)</string>
+    <string name="Rdim11.1.3.3">Nutrition counselling services offered to all patients (MOV-Sample 5 patient files)</string>
+    <string name="Rdim11.1.3.4">Availability of supplementary and therapeutic feeds e.g. FM 75, 100 andPlumpy Nut (MOV- Observation)</string>
+    <string name="Rdim11.1.3.5">Micronutrient supplements provided as per patient categorization e.g. iron, folate, Vitamin A, Zinc (MOV-Sample 5 patient case files)</string>
+    <string name="Rdim11.1.3.6">Nutrition services provided by qualified staff (MOV- HR records)</string>
 
-    <string name="Std11.1.4"></string>
-    <string name="Rdim11.1.4.1"></string>
-    <string name="Rdim11.1.4.2"></string>
-    <string name="Rdim11.1.4.3"></string>
+    <string name="Std11.1.4">11.1.1.4 The facility shall establish procedures to ensure the provision of primary immunization services.</string>
+    <string name="Rdim11.1.4.1">Availability of all KEPI vaccines (MOV- Observation of inventory; stock-outs of any antigens in the preceding 90 days)</string>
+    <string name="Rdim11.1.4.2">Cold chain facilities are available (MOV- Observe monitoring charts and vaccine vial monitor)</string>
+    <string name="Rdim11.1.4.3">Immunization services provided on a daily basis from Monday to Friday (MOV-Check immunization register)</string>
 
-    <string name="Std11.1.5"></string>
-    <string name="Rdim11.1.5.1"></string>
-    <string name="Rdim11.1.5.2"></string>
-    <string name="Rdim11.1.5.3"></string>
-    <string name="Rdim11.1.5.4"></string>
-    <string name="Rdim11.1.5.5"></string>
+    <string name="Std11.1.5">11.1.1.5 The facility shall establish procedures to ensure the provision of comprehensive emergency services.</string>
+    <string name="Rdim11.1.5.1">Availability of emergency tray with essential resuscitation drugs (MOV- observation)</string>
+    <string name="Rdim11.1.5.2">Availability of resuscitation equipment, at a minimum, ambubag, suture pack (MOV- observation)</string>
+    <string name="Rdim11.1.5.3">Availability of staff trained on basic life support (MOV-HR Records)</string>
+    <string name="Rdim11.1.5.4">Response time for all emergency cases is defined and adhered to (MOV- emergency response protocol; sample 5patient files)</string>
+    <string name="Rdim11.1.5.5">Resuscitation drills carried out for all clinical staff, at least once every quarter (MOV-Drills plan and report)</string>
 
-    <string name="Std11.1.6"></string>
-    <string name="Rdim11.1.6.1"></string>
-    <string name="Rdim11.1.6.2"></string>
-    <string name="Rdim11.1.6.3"></string>
-    <string name="Rdim11.1.6.4"></string>
+    <string name="Std11.1.6">11.1.1.6 The facility shall provide comprehensive management of locally endemic conditions</string>
+    <string name="Rdim11.1.6.1">Facility operates daily at designated times in accordance with level of care (MOV-patient service charter)</string>
+    <string name="Rdim11.1.6.2">Facility follows protocols and guidelines for diagnosis of endemic conditions (MOV- SOP; Sample 5 patient case files)</string>
+    <string name="Rdim11.1.6.3">Facility follows protocols and guidelines for treatment of endemic conditions (MOV- SOP; Sample 5 patient case files considering disease profile of the area where facility is located)</string>
+    <string name="Rdim11.1.6.4">Referral protocols available (MOV- Observation)</string>
 
-    <string name="Std11.1.7"></string>
-    <string name="Rdim11.1.7.1"></string>
-    <string name="Rdim11.1.7.2"></string>
-    <string name="Rdim11.1.7.3"></string>
-    <string name="Rdim11.1.7.4"></string>
-    <string name="Rdim11.1.7.5"></string>
-    <string name="Rdim11.1.7.6"></string>
+    <string name="Std11.1.7">11.1.1.7 The facility shall provide high quality maternal health and family planning services.</string>
+    <string name="Rdim11.1.7.1">Complete physical examination is carried out for all pregnant women seeking ANC services. (MOV-ANC register)</string>
+    <string name="Rdim11.1.7.2">ANC profile for all antenatal mothers performed and reviewed. (MOV- Sample 5 patient records)</string>
+    <string name="Rdim11.1.7.3">The facility provides individualized care to all antenatal mothers based on physical, laboratory and other diagnostic examinations. (MOV- Sample 5 patient records)</string>
+    <string name="Rdim11.1.7.4">Availability of both short and long acting methods of family planning (MOV-FP register; inventory)</string>
+    <string name="Rdim11.1.7.5">Postnatal care provided to all mothers and newborns for atleast 24 hours before discharge (MOV-Postnatal service register)</string>
+    <string name="Rdim11.1.7.6">Availability of cervical cancer screening services (MOV-Cervical cancer screening register)</string>
 
-    <string name="Std11.1.8"></string>
-    <string name="Rdim11.1.8.1"></string>
-    <string name="Rdim11.1.8.2"></string>
+    <string name="Std11.1.8">11.1.2 The facility has a mechanism in place to involve the community in service provision</string>
+    <string name="Rdim11.1.8.1">Facility includes community participants in relevant committees (MOV-Minutes, management files for committee constitution)</string>
+    <string name="Rdim11.1.8.2">There is a feedback mechanism to address complaints and suggestions from the community (MOV-reports)</string>
 
-    <string name="Std11.1.9"></string>
-    <string name="Rdim11.1.9.1"></string>
-    <string name="Rdim11.1.9.2"></string>
-    <string name="Rdim11.1.9.3"></string>
+    <string name="Std11.1.9">11.1.3 The facility has a system for prevention, control and surveillance of locally endemic conditions</string>
+    <string name="Rdim11.1.9.1">The facility conducts surveillance of diseases of public health importance according to MOH recommendations (MOV- monthly surveillance reports)</string>
+    <string name="Rdim11.1.9.2">Protocols for management of disease outbreaks are available and in use (MOV-Protocols)</string>
+    <string name="Rdim11.1.9.3">Water samples are collected from community water sources periodically for bacteriological and chemical analysis, analysed and reports given to authorities and the community. (MOV- Reports)</string>
 
     <!--  Patient Centred Care strings -->
 
     <string name="Dim11.2"> Patient Centred Care</string>
 
-    <string name="Std11.2.1"></string>
-    <string name="Rdim11.2.1.1"></string>
-    <string name="Rdim11.2.1.2"></string>
-    <string name="Rdim11.2.1.3"></string>
-    <string name="Rdim11.2.1.4"></string>
+    <string name="Std11.2.1">11.2.1.The facility shall have a mechanism to protect the patient’s rights</string>
+    <string name="Rdim11.2.1.1">Patient rights charter displayed conspicuously in waiting areas. (MOV-Observation)</string>
+    <string name="Rdim11.2.1.2">Regular sensitization of patients on their rights (MOV- schedule/record)</string>
+    <string name="Rdim11.2.1.3">Patients sign consent forms for medical procedures where required (MOV- Sample 5 patient files)</string>
+    <string name="Rdim11.2.1.4">Facility assures that patients get full range of services regardless of their religious, economic or social status (MOV- protocol in place)</string>
 
-    <string name="Std11.2.2"></string>
-    <string name="Rdim11.2.2.1"></string>
-    <string name="Rdim11.2.2.2"></string>
-    <string name="Rdim11.2.2.3"></string>
-    <string name="Rdim11.2.2.4"></string>
-    <string name="Rdim11.2.2.5"></string>
-    <string name="Rdim11.2.2.6"></string>
+    <string name="Std11.2.2">11.2.2 Health care providers in the facility shall empower and enable patients/clients to actively participate in their care processes.</string>
+    <string name="Rdim11.2.2.1">All service providers wear tags with name and designation visible to patients at all times (MOV- observation name and designation tags)</string>
+    <string name="Rdim11.2.2.2">Cost of services and any insurance rebates that apply to the patient are displayed or available to the patient. (MOV-observation)</string>
+    <string name="Rdim11.2.2.3">Patients are fully informed on risks and benefits of care given and a written consent obtained from the patient (MOV- Consent forms)</string>
+    <string name="Rdim11.2.2.4">The patient and next of kin are supported to cope with debilitating effects of illness/disability (MOV-Counselling facilities, prayer rooms, referral options to appropriate facilities)</string>
+    <string name="Rdim11.2.2.5">Dignity and privacy in relation to patients’ care and support is provided (MOV- patient screens, lockable doors)</string>
+    <string name="Rdim11.2.2.6">There is linkage to social and community networks for patient support and care (MOV- List/inventory of support groups/networks)</string>
 
-    <string name="Std11.2.3"></string>
-    <string name="Rdim11.2.3.1"></string>
-    <string name="Rdim11.2.3.2"></string>
+    <string name="Std11.2.3">11.2.3 The views of patients/clients and their level of satisfaction shall be assessed</string>
+    <string name="Rdim11.2.3.1">The facility assesses clients’ views and level of satisfaction at least once every four months (MOV- client satisfaction report)</string>
+    <string name="Rdim11.2.3.2">Recommendations are acted upon in improvement plans. (MOV- progress report)</string>
 
-    <string name="Std11.2.4"></string>
-    <string name="Rdim11.2.4.1"></string>
-    <string name="Rdim11.2.4.2"></string>
-    <string name="Rdim11.2.4.3"></string>
+    <string name="Std11.2.4">11.2.4 The facility shall provide a mechanism for client/patient feedback</string>
+    <string name="Rdim11.2.4.1">The facility provides a complaint and compliments box/ book (MOV-evidence of analysis of feedback results)</string>
+    <string name="Rdim11.2.4.2">A telephone number for patients to provide feedback through is displayed. (MOV-Observation)</string>
+    <string name="Rdim11.2.4.3">Client feedback analysed and acted upon (MOV- progress/status report)</string>
 
-    <string name="Std11.2.5"></string>
-    <string name="Rdim11.2.5.1"></string>
-    <string name="Rdim11.2.5.2"></string>
+    <string name="Std11.2.5">11.2.5 The facility shall provide amenities for patients and visitors with disabilities</string>
+    <string name="Rdim11.2.5.1">The facility has protocols to follow when dealing with patients with visual and hearing impairments (MOV-Documented protocols, availability of trained personnel, signage)</string>
+    <string name="Rdim11.2.5.2">The facility has provision for ease of movement for the physically handicapped</string>
 
-    <string name="Std11.2.6"></string>
-    <string name="Rdim11.2.6.1"></string>
-    <string name="Rdim11.2.6.2"></string>
-    <string name="Rdim11.2.6.3"></string>
-    <string name="Rdim11.2.6.4"></string>
-    <string name="Rdim11.2.6.5"></string>
-    <string name="Rdim11.2.6.6"></string>
+    <string name="Std11.2.6">11.2.6 The facility implements a mechanism to improve accuracy of patient identification.</string>
+    <string name="Rdim11.2.6.1">Patients are identified using at least two identifiers (MOV-Protocol in place; sample 5 patient files)</string>
+    <string name="Rdim11.2.6.2">Each patient is provided a hospital bracelet with unique identifier (MOV- Observe for armband with unique identifier)</string>
+    <string name="Rdim11.2.6.3">The same identification is consistently used throughout the care process (MOV-Sample 5 patient files)</string>
+    <string name="Rdim11.2.6.4">Patients are identified before providing treatments and procedures (MOV-Protocol in place; sample 5 patient files)</string>
+    <string name="Rdim11.2.6.5">Patients are identified before undergoing any diagnostic procedures (MOV-Protocol in place)</string>
+    <string name="Rdim11.2.6.6">The facility is implementing a system of reporting, investigation and change management to respond to any patient care mismatching events (MOV- Documentation of this system, relevant reports)</string>
 
-    <string name="Std11.2.7"></string>
-    <string name="Rdim11.2.7.1"></string>
-    <string name="Rdim11.2.7.2"></string>
+    <string name="Std11.2.7">11.2.7 There shall be a pain management protocol as per level of patient care</string>
+    <string name="Rdim11.2.7.1">Pain management protocols are available (MOV- Observation)</string>
+    <string name="Rdim11.2.7.2">The facility implements processes for addressing the patients needs for appropriate assessment and management of pain. (MOV- sample clinical notes)</string>
 
-    <string name="Std11.2.8"></string>
-    <string name="Rdim11.2.8.1"></string>
+    <string name="Std11.2.8">11.2.8 The facility shall have a procedure for the care of terminally ill patients</string>
+    <string name="Rdim11.2.8.1">Facility provides individualized plan for palliative care of the terminally ill patient(MOV- Availability of palliative care plan)</string>
 
-    <string name="Std11.2.9"></string>
-    <string name="Rdim11.2.9.1"></string>
-    <string name="Rdim11.2.9.2"></string>
-    <string name="Rdim11.2.9.3"></string>
+    <string name="Std11.2.9">11.2.9 The facility shall provide for respectful care of the deceased</string>
+    <string name="Rdim11.2.9.1">There is use of written procedures for handling cases of bereavement, performing culturally appropriate last offices, handling of the body and handover to funeral services or last rites as appropriate (MOV-SOP)</string>
+    <string name="Rdim11.2.9.2">There is debriefing and support supervision for care providers to cope with stressful encounters/situations (MOV- SOP, interview with health providers)</string>
+    <string name="Rdim11.2.9.3">Facility provides for standardized, documented procedures on embalming, autopsies, issuance of burial permit as appropriate (MOV- documented procedure)</string>
 
-    <string name="spinner_score">spinner_score%1$d</string>
+    <!--  Policies, Standards and Guidelines Strings -->
+
+    <string name="Dim11.3">  Policies, Standards and Guidelines </string>
+
+    <string name="Std11.3.1"></string>
+    <string name="Rdim11.3.1.1"></string>
+
+    <string name="Std11.3.2"></string>
+    <string name="Rdim11.3.2.1"></string>
+    <string name="Rdim11.3.2.2"></string>
+    <string name="Rdim11.3.2.3"></string>
+    <string name="Rdim11.3.2.4"></string>
+    <string name="Rdim11.3.2.5"></string>
+    <string name="Rdim11.3.2.6"></string>
+    <string name="Rdim11.3.2.7"></string>
+    <string name="Rdim11.3.2.8"></string>
+    <string name="Rdim11.3.2.9"></string>
+    <string name="Rdim11.3.2.10"></string>
+    <string name="Rdim11.3.2.11"></string>
+
+    <string name="Std11.3.3"></string>
+    <string name="Rdim11.3.3.1"></string>
+
+    <string name="Std11.3.4"></string>
+    <string name="Rdim11.3.4.1"></string>
+
+    <string name="Std11.3.5"></string>
+    <string name="Rdim11.3.4.2"></string>
+
+
+    <!--   Inpatient Care Strings -->
+
+    <string name="Dim11.4">  Inpatient Care </string>
+
+    <string name="Std11.4.1"></string>
+    <string name="Rdim11.4.1.1"></string>
+    <string name="Rdim11.4.1.2"></string>
+    <string name="Rdim11.4.1.3"></string>
+    <string name="Rdim11.4.1.4"></string>
+    <string name="Rdim11.4.1.5"></string>
+    <string name="Rdim11.4.1.6"></string>
+
+    <string name="Std11.4.2"></string>
+    <string name="Rdim11.4.2.1"></string>
+
+    <string name="Std11.4.3"></string>
+    <string name="Rdim11.4.3.1"></string>
+    <string name="Rdim11.4.3.2"></string>
+
+    <string name="Std11.4.4"></string>
+    <string name="Rdim11.4.4.1"></string>
+
+    <string name="Std11.4.5"></string>
+    <string name="Rdim11.4.5.1"></string>
+    <string name="Rdim11.4.5.2"></string>
+
+    <string name="Std11.4.6"></string>
+    <string name="Rdim11.4.6.1"></string>
+
+    <string name="Std11.4.7"></string>
+    <string name="Rdim11.4.7.1"></string>
+    <string name="Rdim11.4.7.2"></string>
+
+    <string name="Std11.4.8"></string>
+    <string name="Rdim11.4.8.1"></string>
+    <string name="Rdim11.4.8.2"></string>
+    <string name="Rdim11.4.8.3"></string>
+    <string name="Rdim11.4.8.4"></string>
+    <string name="Rdim11.4.8.5"></string>
+
+    <string name="Std11.4.9"></string>
+    <string name="Rdim11.4.9.1"></string>
+    <string name="Rdim11.4.9.2"></string>
+    <string name="Rdim11.4.9.3"></string>
+    <string name="Rdim11.4.9.4"></string>
+    <string name="Rdim11.4.9.5"></string>
+    <string name="Rdim11.4.9.6"></string>
+
+    <string name="Std11.4.10"></string>
+    <string name="Rdim11.4.10.1"></string>
+    <string name="Rdim11.4.10.2"></string>
+
+    <!--   Accidents and Emergency Strings -->
+
+    <string name="Dim11.5"> Accidents and Emergency </string>
+
+    <string name="Std11.5.1"></string>
+    <string name="Rdim11.5.1.1"></string>
+    <string name="Rdim11.5.1.2"></string>
+    <string name="Rdim11.5.1.3"></string>
+    <string name="Rdim11.5.1.4"></string>
+
+    <string name="Std11.5.2"></string>
+    <string name="Rdim11.5.2.1"></string>
+    <string name="Rdim11.5.2.2"></string>
+    <string name="Rdim11.5.2.3"></string>
+
+    <string name="Std11.5.3"></string>
+    <string name="Rdim11.5.3.1"></string>
+
+    <string name="Std11.5.4"></string>
+    <string name="Rdim11.5.4.1"></string>
+    <string name="Rdim11.5.4.2"></string>
+    <string name="Rdim11.5.4.3"></string>
+    <string name="Rdim11.5.4.4"></string>
+    <string name="Rdim11.5.4.5"></string>
+    <string name="Rdim11.5.4.6"></string>
+    <string name="Rdim11.5.4.7"></string>
+    <string name="Rdim11.5.4.8"></string>
+
+    <string name="Std11.5.5"></string>
+    <string name="Rdim11.5.5.1"></string>
+    <string name="Rdim11.5.5.2"></string>
+
+    <string name="Std11.5.6"></string>
+    <string name="Rdim11.5.6.1"></string>
+
+    <string name="Std11.5.7"></string>
+    <string name="Rdim11.5.7.1"></string>
+    <string name="Rdim11.5.7.2"></string>
+
+
+    <!--   Surgical Emergencies Strings -->
+
+    <string name="Dim11.6">Surgical Emergencies</string>
+
+    <string name="Std11.6.1"></string>
+    <string name="Rdim11.6.1.1"></string>
+    <string name="Rdim11.6.1.2"></string>
+    <string name="Rdim11.6.1.3"></string>
+    <string name="Rdim11.6.1.4"></string>
+    <string name="Rdim11.6.1.5"></string>
+    <string name="Rdim11.6.1.6"></string>
+    <string name="Rdim11.6.1.7"></string>
+    <string name="Rdim11.6.1.8"></string>
+
+    <string name="Std11.6.2"></string>
+    <string name="Rdim11.6.2.1"></string>
+    <string name="Rdim11.6.2.2"></string>
+    <string name="Rdim11.6.2.3"></string>
+    <string name="Rdim11.6.2.4"></string>
+
+    <string name="Std11.6.3"></string>
+    <string name="Rdim11.6.3.1"></string>
+
+    <string name="Std11.6.4"></string>
+    <string name="Rdim11.6.4.1"></string>
+
+    <string name="Std11.6.5"></string>
+    <string name="Rdim11.6.5.1"></string>
+    <string name="Rdim11.6.5.2"></string>
+    <string name="Rdim11.6.5.3"></string>
+    <string name="Rdim11.6.5.4"></string>
+
+    <string name="Std11.6.6"></string>
+    <string name="Rdim11.6.6.1"></string>
+
+
+    <!--  Anaesthesia Strings -->
+
+    <string name="Dim11.7">Anaesthesia</string>
+
+    <string name="Std11.7.1"></string>
+    <string name="Rdim11.7.1.1"></string>
+    <string name="Rdim11.7.1.2"></string>
+    <string name="Rdim11.7.1.3"></string>
+    <string name="Rdim11.7.1.4"></string>
+    <string name="Rdim11.7.1.5"></string>
+    <string name="Rdim11.7.1.6"></string>
+    <string name="Rdim11.7.1.7"></string>
+
+    <string name="Std11.7.2"></string>
+    <string name="Rdim11.7.2.1"></string>
+    <string name="Rdim11.7.2.2"></string>
+
+    <string name="Std11.7.3"></string>
+    <string name="Rdim11.7.3.1"></string>
+    <string name="Rdim11.7.3.2"></string>
+    <string name="Rdim11.7.3.3"></string>
+
+    <string name="Std11.7.4"></string>
+    <string name="Rdim11.7.4.1"></string>
+    <string name="Rdim11.7.4.2"></string>
+
+    <string name="Std11.7.5"></string>
+    <string name="Rdim11.7.5.1"></string>
+    <string name="Rdim11.7.5.2"></string>
+
+    <string name="Std11.7.6"></string>
+    <string name="Rdim11.7.6.1"></string>
+    <string name="Rdim11.7.6.2"></string>
+    <string name="Rdim11.7.6.3"></string>
+    <string name="Rdim11.7.6.4"></string>
+
+    <string name="Std11.7.7"></string>
+    <string name="Rdim11.7.7.1"></string>
+    <string name="Rdim11.7.7.2"></string>
+    <string name="Rdim11.7.7.3"></string>
+    <string name="Rdim11.7.7.4"></string>
+    <string name="Rdim11.7.7.5"></string>
+
+    <!--  Safe Delivery Strings -->
+
+    <string name="Dim11.8">Safe Delivery</string>
+
+    <string name="Std11.8.1"></string>
+    <string name="Rdim11.8.1.1"></string>
+    <string name="Rdim11.8.1.2"></string>
+    <string name="Rdim11.8.1.3"></string>
+
+    <string name="Std11.8.2"></string>
+    <string name="Rdim11.8.2.1"></string>
+    <string name="Rdim11.8.2.2"></string>
+    <string name="Rdim11.8.2.3"></string>
+    <string name="Rdim11.8.2.4"></string>
+
+    <string name="Std11.8.3"></string>
+    <string name="Rdim11.8.3.1"></string>
+    <string name="Rdim11.8.3.2"></string>
+    <string name="Rdim11.8.3.3"></string>
+    <string name="Rdim11.8.3.4"></string>
+    <string name="Rdim11.8.3.5"></string>
+
+    <string name="Std11.8.4"></string>
+    <string name="Rdim11.8.4.1"></string>
+
+    <string name="Std11.8.5"></string>
+    <string name="Rdim11.8.5.1"></string>
+    <string name="Rdim11.8.5.2"></string>
+    <string name="Rdim11.8.5.3"></string>
+    <string name="Rdim11.8.5.4"></string>
+    <string name="Rdim11.8.5.5"></string>
+    <string name="Rdim11.8.5.6"></string>
+
+    <string name="Std11.8.6"></string>
+    <string name="Rdim11.8.6.1"></string>
+    <string name="Rdim11.8.6.2"></string>
+    <string name="Rdim11.8.6.3"></string>
+
+    <string name="Std11.8.7"></string>
+    <string name="Rdim11.8.7.1"></string>
+    <string name="Rdim11.8.7.2"></string>
+    <string name="Rdim11.8.7.3"></string>
+    <string name="Rdim11.8.7.4"></string>
+    <string name="Rdim11.8.7.5"></string>
+
+    <string name="Std11.8.8"></string>
+    <string name="Rdim11.8.8.1"></string>
+    <string name="Rdim11.8.8.2"></string>
+
+    <string name="Std11.8.9"></string>
+    <string name="Rdim11.8.9.1"></string>
+
+    <string name="Std11.8.10"></string>
+    <string name="Rdim11.8.10.1"></string>
+
+    <!--  Neonatal Care Strings -->
+
+    <string name="Dim11.9">Neonatal Care</string>
+
+    <string name="Std11.9.1"></string>
+    <string name="Rdim11.9.1.1"></string>
+    <string name="Rdim11.9.1.2"></string>
+    <string name="Rdim11.9.1.3"></string>
+    <string name="Rdim11.9.1.4"></string>
+    <string name="Rdim11.9.1.5"></string>
+    <string name="Rdim11.9.1.6"></string>
+
+    <string name="Std11.9.2"></string>
+    <string name="Rdim11.9.2.1"></string>
+    <string name="Rdim11.9.2.2"></string>
+    <string name="Rdim11.9.2.3"></string>
+    <string name="Rdim11.9.2.4"></string>
+    <string name="Rdim11.9.2.5"></string>
+    <string name="Rdim11.9.2.6"></string>
+
+    <string name="Std11.9.3"></string>
+    <string name="Rdim11.9.3.1"></string>
+    <string name="Rdim11.9.3.2"></string>
+    <string name="Rdim11.9.3.3"></string>
+
+    <string name="Std11.9.4"></string>
+    <string name="Rdim11.9.4.1"></string>
+    <string name="Rdim11.9.4.2"></string>
+    <string name="Rdim11.9.4.3"></string>
+
+    <string name="Std11.9.5"></string>
+    <string name="Rdim11.9.5.1"></string>
+
+    <string name="Std11.9.6"></string>
+    <string name="Rdim11.9.6.1"></string>
+
+    <string name="Std11.9.7"></string>
+    <string name="Rdim11.9.7.1"></string>
+    <string name="Rdim11.9.7.2"></string>
+    <string name="Rdim11.9.7.3"></string>
+    <string name="Rdim11.9.7.4"></string>
+
+    <string name="Std11.9.8"></string>
+    <string name="Rdim11.9.8.1"></string>
+    <string name="Rdim11.9.8.2"></string>
+    <string name="Rdim11.9.8.3"></string>
+    <string name="Rdim11.9.8.4"></string>
+
+    <string name="Std11.9.9"></string>
+    <string name="Rdim11.9.9.1"></string>
+
+
+    <!--   Haemodialysis Services Strings -->
+
+    <string name="Dim11.10"> Haemodialysis Services</string>
+
+    <string name="Std11.10.1"></string>
+    <string name="Rdim11.10.1.1"></string>
+    <string name="Rdim11.10.1.2"></string>
+    <string name="Rdim11.10.1.3"></string>
+
+    <string name="Std11.10.2"></string>
+
+    <string name="Std11.10.2.1"></string>
+    <string name="Rdim11.10.2.1.1"></string>
+    <string name="Rdim11.10.2.1.2"></string>
+    <string name="Rdim11.10.2.1.3"></string>
+    <string name="Rdim11.10.2.1.4"></string>
+
+    <string name="Std11.10.2.2"></string>
+    <string name="Rdim11.10.2.2.1"></string>
+    <string name="Rdim11.10.2.2.2"></string>
+    <string name="Rdim11.10.2.2.3"></string>
+    <string name="Rdim11.10.2.2.4"></string>
+    <string name="Rdim11.10.2.2.5"></string>
+    <string name="Rdim11.10.2.2.6"></string>
+    <string name="Rdim11.10.2.2.7"></string>
+    <string name="Rdim11.10.2.2.8"></string>
+    <string name="Rdim11.10.2.2.9"></string>
+
+    <string name="Std11.10.2.3"></string>
+    <string name="Rdim11.10.2.3.1"></string>
+    <string name="Rdim11.10.2.3.2"></string>
+    <string name="Rdim11.10.2.3.3"></string>
+    <string name="Rdim11.10.2.3.4"></string>
+    <string name="Rdim11.10.2.3.5"></string>
+    <string name="Rdim11.10.2.3.6"></string>
+    <string name="Rdim11.10.2.3.7"></string>
+    <string name="Rdim11.10.2.3.8"></string>
+    <string name="Rdim11.10.2.3.9"></string>
+    <string name="Rdim11.10.2.3.10"></string>
+
+    <string name="Std11.10.2.4"></string>
+    <string name="Rdim11.10.2.4.1"></string>
+    <string name="Rdim11.10.2.4.2"></string>
+    <string name="Rdim11.10.2.4.3"></string>
+    <string name="Rdim11.10.2.4.4"></string>
+    <string name="Rdim11.10.2.4.5"></string>
+    <string name="Rdim11.10.2.4.6"></string>
+    <string name="Rdim11.10.2.4.7"></string>
+
+    <string name="Std11.10.2.5"></string>
+    <string name="Rdim11.10.2.5.1"></string>
+    <string name="Rdim11.10.2.5.2"></string>
+    <string name="Rdim11.10.2.5.3"></string>
+    <string name="Rdim11.10.2.5.4"></string>
+    <string name="Rdim11.10.2.5.5"></string>
+    <string name="Rdim11.10.2.5.6"></string>
+    <string name="Rdim11.10.2.5.7"></string>
+    <string name="Rdim11.10.2.5.8"></string>
+    <string name="Rdim11.10.2.5.9"></string>
+    <string name="Rdim11.10.2.5.10"></string>
+    <string name="Rdim11.10.2.5.11"></string>
+    <string name="Rdim11.10.2.5.12"></string>
+    <string name="Rdim11.10.2.5.13"></string>
+    <string name="Rdim11.10.2.5.14"></string>
+    <string name="Rdim11.10.2.5.15"></string>
+    <string name="Rdim11.10.2.5.16"></string>
+    <string name="Rdim11.10.2.5.17"></string>
+    <string name="Rdim11.10.2.5.18"></string>
+    <string name="Rdim11.10.2.5.19"></string>
+    <string name="Rdim11.10.2.5.20"></string>
+    <string name="Rdim11.10.2.5.21"></string>
+
+    <string name="Std11.10.2.6"></string>
+    <string name="Rdim11.10.2.6.1"></string>
+    <string name="Rdim11.10.2.6.2"></string>
+    <string name="Rdim11.10.2.6.3"></string>
+    <string name="Rdim11.10.2.6.4"></string>
+    <string name="Rdim11.10.2.6.5"></string>
+    <string name="Rdim11.10.2.6.6"></string>
+    <string name="Rdim11.10.2.6.7"></string>
+
+    <string name="Std11.10.2.7"></string>
+    <string name="Rdim11.10.2.7.1"></string>
+    <string name="Rdim11.10.2.7.2"></string>
+    <string name="Rdim11.10.2.7.3"></string>
+
+    <string name="Std11.10.2.8"></string>
+    <string name="Rdim11.10.2.8.1"></string>
+    <string name="Rdim11.10.2.8.2"></string>
+    <string name="Rdim11.10.2.8.3"></string>
+    <string name="Rdim11.10.2.8.4"></string>
+    <string name="Rdim11.10.2.8.5"></string>
+
+
+    <string name="Std11.10.3"></string>
+
+    <string name="Std11.10.3.1"></string>
+    <string name="Rdim11.10.3.1.1"></string>
+    <string name="Rdim11.10.3.1.2"></string>
+    <string name="Rdim11.10.3.1.3"></string>
+    <string name="Rdim11.10.3.1.4"></string>
+
+    <string name="Std11.10.3.2"></string>
+    <string name="Rdim11.10.3.2.1"></string>
+    <string name="Rdim11.10.3.2.2"></string>
+
+    <string name="Std11.10.3.3"></string>
+    <string name="Rdim11.10.3.3.1"></string>
+    <string name="Rdim11.10.3.3.2"></string>
+    <string name="Rdim11.10.3.3.3"></string>
+    <string name="Rdim11.10.3.3.4"></string>
+    <string name="Rdim11.10.3.3.5"></string>
+
+    <string name="Std11.10.3.4"></string>
+    <string name="Rdim11.10.3.4.1"></string>
+
+    <string name="Std11.10.3.5"></string>
+    <string name="Rdim11.10.3.5.1"></string>
+    <string name="Rdim11.10.3.5.2"></string>
+    <string name="Rdim11.10.3.5.3"></string>
+    <string name="Rdim11.10.3.5.4"></string>
+    <string name="Rdim11.10.3.5.5"></string>
+    <string name="Rdim11.10.3.5.6"></string>
+    <string name="Rdim11.10.3.5.7"></string>
+    <string name="Rdim11.10.3.5.8"></string>
+    <string name="Rdim11.10.3.5.9"></string>
+    <string name="Rdim11.10.3.5.10"></string>
+    <string name="Rdim11.10.3.5.11"></string>
+    <string name="Rdim11.10.3.5.12"></string>
+    <string name="Rdim11.10.3.5.13"></string>
+    <string name="Rdim11.10.3.5.14"></string>
+
+
+    <!--    Laboratory Strings -->
+
+    <string name="Dim11.11"> Laboratory</string>
+
+
+    <string name="Std11.11.1"></string>
+    <string name="Rdim11.11.1.1"></string>
+    <string name="Rdim11.11.1.2"></string>
+    <string name="Rdim11.11.1.3"></string>
+    <string name="Rdim11.11.1.4"></string>
+    <string name="Rdim11.11.1.5"></string>
+    <string name="Rdim11.11.1.6"></string>
+    <string name="Rdim11.11.1.7"></string>
+    <string name="Rdim11.11.1.8"></string>
+
+    <string name="Std11.11.2"></string>
+    <string name="Rdim11.11.2.1"></string>
+    <string name="Rdim11.11.2.2"></string>
+    <string name="Rdim11.11.2.3"></string>
+
+    <string name="Std11.11.3"></string>
+    <string name="Rdim11.11.3.1"></string>
+    <string name="Rdim11.11.3.2"></string>
+    <string name="Rdim11.11.3.3"></string>
+    <string name="Rdim11.11.3.4"></string>
+    <string name="Rdim11.11.3.5"></string>
+
+    <string name="Std11.11.4"></string>
+    <string name="Rdim11.11.4.1"></string>
+    <string name="Rdim11.11.4.2"></string>
+
+    <string name="Std11.11.5"></string>
+    <string name="Rdim11.11.5.1"></string>
+
+    <string name="Std11.11.6"></string>
+    <string name="Rdim11.11.6.1"></string>
+
+    <string name="Std11.11.7"></string>
+    <string name="Rdim11.11.7.1"></string>
+    <string name="Rdim11.11.7.2"></string>
+
+    <string name="Std11.11.8"></string>
+    <string name="Rdim11.11.8.1"></string>
+
+    <string name="Std11.11.9"></string>
+    <string name="Rdim11.11.9.1"></string>
+
+    <string name="Std11.11.10"></string>
+    <string name="Rdim11.11.10.1"></string>
+
+    <string name="Std11.11.11"></string>
+    <string name="Rdim11.11.11.1"></string>
+    <string name="Rdim11.11.11.2"></string>
+    <string name="Rdim11.11.11.3"></string>
+
+    <string name="Std11.11.12"></string>
+    <string name="Rdim11.11.12.1"></string>
+    <string name="Rdim11.11.12.2"></string>
+
+    <string name="Std11.11.13"></string>
+    <string name="Rdim11.11.13.1"></string>
+
+    <string name="Std11.11.14"></string>
+    <string name="Rdim11.11.14.1"></string>
+
+    <string name="Std11.11.15"></string>
+    <string name="Rdim11.11.15.1"></string>
+
+    <string name="Std11.11.16"></string>
+    <string name="Rdim11.11.16.1"></string>
+
+    <string name="Std11.11.17"></string>
+    <string name="Rdim11.11.17.1"></string>
+
+    <string name="Std11.11.18"></string>
+    <string name="Rdim11.11.18.1"></string>
+
+    <string name="Std11.11.19"></string>
+    <string name="Rdim11.11.19.1"></string>
+
+    <string name="Std11.11.20"></string>
+    <string name="Rdim11.11.20.1"></string>
+
+    <string name="Std11.11.21"></string>
+    <string name="Rdim11.11.21.1"></string>
+
+    <string name="Std11.11.22"></string>
+    <string name="Rdim11.11.22.1"></string>
+
+    <string name="Std11.11.23"></string>
+    <string name="Rdim11.11.23.1"></string>
+
+    <string name="Std11.11.24"></string>
+    <string name="Rdim11.11.24.1"></string>
+    <string name="Rdim11.11.24.2"></string>
+    <string name="Rdim11.11.24.3"></string>
+    <string name="Rdim11.11.24.4"></string>
+    <string name="Rdim11.11.24.5"></string>
+
 </resources>
 
