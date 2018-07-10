@@ -601,441 +601,475 @@
 
     <string name="Dim11.3">  Policies, Standards and Guidelines </string>
 
-    <string name="Std11.3.1"></string>
-    <string name="Rdim11.3.1.1"></string>
+    <string name="Std11.3.1">11.3.1 The health facility shall have in place an infection prevention and control governance structure as per the national policy and guidelines</string>
+    <string name="Rdim11.3.1.1">A multidisciplinary IPC committee/ unit in place, with terms of reference (MOV- Minutes of monthly meetings, clinical reports, appointment letters for committee members)</string>
 
-    <string name="Std11.3.2"></string>
-    <string name="Rdim11.3.2.1"></string>
-    <string name="Rdim11.3.2.2"></string>
-    <string name="Rdim11.3.2.3"></string>
-    <string name="Rdim11.3.2.4"></string>
-    <string name="Rdim11.3.2.5"></string>
-    <string name="Rdim11.3.2.6"></string>
-    <string name="Rdim11.3.2.7"></string>
-    <string name="Rdim11.3.2.8"></string>
-    <string name="Rdim11.3.2.9"></string>
-    <string name="Rdim11.3.2.10"></string>
-    <string name="Rdim11.3.2.11"></string>
+    <string name="Std11.3.2">11.3.2 The health facility shall ensure infection prevention and control practice is in accordance with the approved guidelines and policies</string>
+    <string name="Rdim11.3.2.1">A plan in place to continuously update staff knowledge on infection prevention and control practices(MOV- Work plans, training schedules, clinical audit schedule)</string>
+    <string name="Rdim11.3.2.2">Hand hygiene</string>
+    <string name="Rdim11.3.2.3">Waste management</string>
+    <string name="Rdim11.3.2.4">Respiratory hygiene</string>
+    <string name="Rdim11.3.2.5">Occupational exposure management</string>
+    <string name="Rdim11.3.2.6">Personal protective equipment</string>
+    <string name="Rdim11.3.2.7">Care of linen</string>
+    <string name="Rdim11.3.2.8">Isolation</string>
+    <string name="Rdim11.3.2.9">Food handling</string>
+    <string name="Rdim11.3.2.10">Management of care equipment</string>
+    <string name="Rdim11.3.2.11">Control of environment</string>
 
-    <string name="Std11.3.3"></string>
-    <string name="Rdim11.3.3.1"></string>
+    <string name="Std11.3.3">11.3.3 The health facility shall periodically conduct healthcare associated infections surveillance in accordance with the National IPC guidelines.</string>
+    <string name="Rdim11.3.3.1">There facility carries out quarterly healthcare associated infections surveillance. (MOV-Surveillance reports)</string>
 
-    <string name="Std11.3.4"></string>
-    <string name="Rdim11.3.4.1"></string>
+    <string name="Std11.3.4">11.3.4 The health facility shall have a plan for management of hazardous occupational exposure of health staff </string>
+    <string name="Rdim11.3.4.1">There is a plan for occupational exposure management of staff health. (MOV- staff immunization schedules, pre and post-exposure prophylaxis guidelines, needle stick injuries record book)</string>
 
-    <string name="Std11.3.5"></string>
-    <string name="Rdim11.3.4.2"></string>
+    <string name="Std11.3.5">11.3.5 The health facility shall ensure adequate IPC supplies at all times </string>
+    <string name="Rdim11.3.5.1">There is mechanism to ensure adequate IPC supplies at all times (MOV- inventory of IPC supplies lasting at least 6 months)</string>
 
 
     <!--   Inpatient Care Strings -->
 
-    <string name="Dim11.4">  Inpatient Care </string>
+    <string name="Dim11.4"> Inpatient Care </string>
 
-    <string name="Std11.4.1"></string>
-    <string name="Rdim11.4.1.1"></string>
-    <string name="Rdim11.4.1.2"></string>
-    <string name="Rdim11.4.1.3"></string>
-    <string name="Rdim11.4.1.4"></string>
-    <string name="Rdim11.4.1.5"></string>
-    <string name="Rdim11.4.1.6"></string>
+    <string name="Std11.4.1">11.4.1 The management shall ensure that the facility has adequate resources and skills to provide quality inpatient care</string>
+    <string name="Rdim11.4.1.1">Adequate beds are available and Functional. There are no patients sharing beds. (MOV-Observation)</string>
+    <string name="Rdim11.4.1.2">Each patient has access to a nurse call system at all times. (MOV-Observation)</string>
+    <string name="Rdim11.4.1.3">There are ward screens (MOV-Observation)</string>
+    <string name="Rdim11.4.1.4">Mattresses, bed linen, towels and gowns for patients are available and in good condition. (MOV-Observation)</string>
+    <string name="Rdim11.4.1.5">Equipment for facilitating patients mobility are available and in good condition. (MOV-Observation)</string>
+    <string name="Rdim11.4.1.6">Equipment and materials for monitoring patients vital signs are provided. (MOV-Observation)</string>
 
-    <string name="Std11.4.2"></string>
-    <string name="Rdim11.4.2.1"></string>
+    <string name="Std11.4.2">11.4.2 The facility shall ensure triaging of patients is conducted based on the patient’s/clients condition</string>
+    <string name="Rdim11.4.2.1">Facility develops and uses protocols for triaging of patients (MOV- Triage protocol AND Tagging of Patients or patent files)</string>
 
-    <string name="Std11.4.3"></string>
-    <string name="Rdim11.4.3.1"></string>
-    <string name="Rdim11.4.3.2"></string>
+    <string name="Std11.4.3">11.4.3 The health facility shall ensure that comprehensive patient assessment is conducted</string>
+    <string name="Rdim11.4.3.1">The facility carries out comprehensive assessment of the patient, which includes patients’ biodata, history of present illness, past medical history, family history and social history (MOV- outpatient form, patient’s cardex, admissions register)</string>
+    <string name="Rdim11.4.3.2">The facility documents baseline vital signs (MOV- observations chart, fluid charts, nursing care plan, cardex)</string>
 
-    <string name="Std11.4.4"></string>
-    <string name="Rdim11.4.4.1"></string>
+    <string name="Std11.4.4">11.4.4 The health facility shall categorize patients into the prescribed level of care</string>
+    <string name="Rdim11.4.4.1">The health facility has a displayed protocol for categorization of patients for prescribed levels of care: Category “A” critical , Category “B” unstable Category “C” stable (MOV- Arrangement of patients according to their categorized level of care, documented protocol of care offered to the patient)</string>
 
-    <string name="Std11.4.5"></string>
-    <string name="Rdim11.4.5.1"></string>
-    <string name="Rdim11.4.5.2"></string>
+    <string name="Std11.4.5">11.4.5 The health facility shall continuously carry out episodic patient assessment</string>
+    <string name="Rdim11.4.5.1">The facility carries out episodic patient assessment and records vitals in the appropriate charts of care (MOV- Observations chart, fluid charts, nursing care plan, Cardex)</string>
 
-    <string name="Std11.4.6"></string>
-    <string name="Rdim11.4.6.1"></string>
+    <string name="Std11.4.6">11.4.6 The facility shall have in place standardized diagnostics and treatment processes</string>
+    <string name="Rdim11.4.6.1">Facility follows protocols and guidelines for diagnostics and treatment (MOV- SOP; Sample 5 patient case files)</string>
+    <string name="Rdim11.4.6.2">Facility follows standardized procedure for handover of patients between units(MOV-SOP, clinical notes)</string>
 
-    <string name="Std11.4.7"></string>
-    <string name="Rdim11.4.7.1"></string>
-    <string name="Rdim11.4.7.2"></string>
+    <string name="Std11.4.7">11.4.7 The health facility shall administer and document prescribed medication using the 5R principle</string>
+    <string name="Rdim11.4.7.1">The facility administers prescribed medication using the 5R principle - right patient, right drug, right dosage, right route, right time - and documentation done in the treatment sheet and patient’s cardex (MOV- protocol of drug administration, cardex, 5 treatment sheets)</string>
 
-    <string name="Std11.4.8"></string>
-    <string name="Rdim11.4.8.1"></string>
-    <string name="Rdim11.4.8.2"></string>
-    <string name="Rdim11.4.8.3"></string>
-    <string name="Rdim11.4.8.4"></string>
-    <string name="Rdim11.4.8.5"></string>
+    <string name="Std11.4.8">11.4.8 The health facility shall ensure full documentation of all procedures is correctly done</string>
+    <string name="Rdim11.4.8.1">Documentation of all procedures is done in the relevant charts/ sheets (MOV- cardex, fluid/feeding charts, treatment sheet, turningsheet, observation charts, nursing care plan)</string>
 
-    <string name="Std11.4.9"></string>
-    <string name="Rdim11.4.9.1"></string>
-    <string name="Rdim11.4.9.2"></string>
-    <string name="Rdim11.4.9.3"></string>
-    <string name="Rdim11.4.9.4"></string>
-    <string name="Rdim11.4.9.5"></string>
-    <string name="Rdim11.4.9.6"></string>
+    <string name="Std11.4.9">11.4.9 The facility shall have a documented standardized process for conducting ward rounds</string>
+    <string name="Rdim11.4.9.1">Facility provides for daily scheduled ward rounds and other clinical reviews of patients(MOV- Schedules for ward rounds)</string>
+    <string name="Rdim11.4.9.2">Facility staff follow guidelines and procedures for inter-professional consultation meetings and case conferences(MOV-Schedules)</string>
 
-    <string name="Std11.4.10"></string>
-    <string name="Rdim11.4.10.1"></string>
-    <string name="Rdim11.4.10.2"></string>
+    <string name="Std11.4.10">11.4.10 The facility shall categorize nutrition status of all inpatients and provide culturally sensitive food and drinks for inpatient care</string>
+    <string name="Rdim11.4.10.1">Assessment of nutritional status of all patients is done on admission and continuously monitored (MOV-Sample 5 patient files)</string>
+    <string name="Rdim11.4.10.2">Dietary counselling and feeding support is provided by nutritionists or other competent staff (MOV- Schedules for nutritionists)</string>
+    <string name="Rdim11.4.10.3">A suitably qualified and/or experienced person advises on meal development (MOV-HR Records)</string>
+    <string name="Rdim11.4.10.4">There is a planned weekly menu that is adhered to (MOV- Updated facility patient menu )</string>
+    <string name="Rdim11.4.10.5">Facility provides inpatients with culturally sensitive food (MOV-Interview 5 inpatients)</string>
+
+    <string name="Std11.4.11">11.4.11 The facility shall put in place measures for prevention of falls and patient mobilization to prevent bed sores, stress ulcers, thrombosis</string>
+    <string name="Rdim11.4.11.1">shall put in place measures for prevention of falls and patient mobilization to prevent bed sores, stress ulcers, thrombosis	Facility provides protocols for prevention of falls (MOV- availability of protocols)</string>
+    <string name="Rdim11.4.11.2">Facility provides protocols for patient mobilization to prevent bed sores, stress ulcers, thrombosis (MOV- availability of protocols)</string>
+    <string name="Rdim11.4.11.3">Measures are in place to prevent immobility and prevent the complications of immobility. (MOV-SOPs)</string>
+    <string name="Rdim11.4.11.4">There is evidence that the patient, when confined to bed or immobile, receives assistance with lifting, moving, positioning, turning in bed and transferring from and back to bed. (MOV-Observation; interview 5 patients)</string>
+    <string name="Rdim11.4.11.5">There is evidence that pressure relieving techniques (care of skin, turning in bed on schedule, observing and preventing potential bedsores) are implemented and documented. (MOV-SOPs: Sample 5 patient files)</string>
+    <string name="Rdim11.4.11.6">Patients receive professional physiotherapy care and assistance with rehabilitation if required. (MOV-SOPs)</string>
+
+    <string name="Std11.4.12">11.4.12 The facility shall have a documented patient discharge mechanism</string>
+    <string name="Rdim11.4.12.1">Facility has a documented discharge protocol (MOV- availability of protocol)</string>
+    <string name="Rdim11.4.12.2">There is documentation of discharge of patient against medical advice (MOV-Discharge Against medical advice forms)</string>
 
     <!--   Accidents and Emergency Strings -->
 
     <string name="Dim11.5"> Accidents and Emergency </string>
 
-    <string name="Std11.5.1"></string>
-    <string name="Rdim11.5.1.1"></string>
-    <string name="Rdim11.5.1.2"></string>
-    <string name="Rdim11.5.1.3"></string>
-    <string name="Rdim11.5.1.4"></string>
+    <string name="Std11.5.1">11.5.1 The health facility shall ensure that the accident and emergency department has adequate resources and skills to provide quality emergency care</string>
+    <string name="Rdim11.5.1.1">Facility has adequate number of licensed skilled staff (MOV- HR records)</string>
+    <string name="Rdim11.5.1.2">Healthcare workers involved in adult emergency care have additional training on Basic Life Support and Advanced Life Support (MOV-HR records)</string>
+    <string name="Rdim11.5.1.3">Healthcare workers involved in paediatric emergency care have additional training on Basic Life Support and Pediatric Advanced Life Support (MOV-HR records)</string>
+    <string name="Rdim11.5.1.4">Facility has adequate emergency equipment and Supplies, fully stocked resuscitation trolley (MOV-inventory of emergency equipment and supplies)</string>
 
-    <string name="Std11.5.2"></string>
-    <string name="Rdim11.5.2.1"></string>
-    <string name="Rdim11.5.2.2"></string>
-    <string name="Rdim11.5.2.3"></string>
+    <string name="Std11.5.2">11.5.2 The facility shall ensure that triaging is conducted according to current guidelines</string>
+    <string name="Rdim11.5.2.1">Triage guidelines in place</string>
+    <string name="Rdim11.5.2.2">Triage turn-around time is defined (MOV- quarterly report on assessment of turn-around-time)</string>
+    <string name="Rdim11.5.2.3">A record of patient volumes based on the different triage categories is maintained (MOV- triaging register)</string>
 
-    <string name="Std11.5.3"></string>
-    <string name="Rdim11.5.3.1"></string>
+    <string name="Std11.5.3">11.5.3 The health facility shall ensure that evidence-based emergency care guidelines are available and effectively applied within the Emergency Department</string>
+    <string name="Rdim11.5.3.1">Algorithms for trauma and medical emergencies are available (MOV- availability of algorithms)</string>
 
-    <string name="Std11.5.4"></string>
-    <string name="Rdim11.5.4.1"></string>
-    <string name="Rdim11.5.4.2"></string>
-    <string name="Rdim11.5.4.3"></string>
-    <string name="Rdim11.5.4.4"></string>
-    <string name="Rdim11.5.4.5"></string>
-    <string name="Rdim11.5.4.6"></string>
-    <string name="Rdim11.5.4.7"></string>
-    <string name="Rdim11.5.4.8"></string>
+    <string name="Std11.5.4">11.5.4 The facility shall ensure that turn-around times for emergencies is monitored and reviewed.</string>
+    <string name="Rdim11.5.4.1">The following turn-around time is monitored:</string>
+    <string name="Rdim11.5.4.2">Door to Triage</string>
+    <string name="Rdim11.5.4.3">Door to Doctor/clinicians</string>
+    <string name="Rdim11.5.4.4">Laboratory Services</string>
+    <string name="Rdim11.5.4.5">Radiological Services (level 4 upwards)</string>
+    <string name="Rdim11.5.4.6">Decision to Senior Review Decision to referral (level 2 and 3)</string>
+    <string name="Rdim11.5.4.7">Door to Disposition/Length of Stay in AandE(MOV-Discharge, Admission, Referral)</string>
+    <string name="Rdim11.5.4.8">Evidence that patients are seen within the time limits set by the triage guidelines (MOV- quarterly report on assessment of turn-around time)</string>
 
-    <string name="Std11.5.5"></string>
-    <string name="Rdim11.5.5.1"></string>
-    <string name="Rdim11.5.5.2"></string>
+    <string name="Std11.5.5">11.5.5 The facility shall evaluate morbidity and mortality data within the AandE department.</string>
+    <string name="Rdim11.5.5.1">Facility maintains records of patients who return to the Emergency Department within 24 hours after being seen.(MOV- AandE register)</string>
+    <string name="Rdim11.5.5.2">Review of all mortalities conducted within 24 hours of admission. (MOV- mortality audit report)</string>
 
-    <string name="Std11.5.6"></string>
-    <string name="Rdim11.5.6.1"></string>
+    <string name="Std11.5.6">11.5.6 The facility shall provide emergency care, regardless of the ability to pay for service.</string>
+    <string name="Rdim11.5.6.1">Availability and use of protocols for service fee waiver and exemption.(MOV-protocols; waiver and exemptions register )</string>
 
-    <string name="Std11.5.7"></string>
-    <string name="Rdim11.5.7.1"></string>
-    <string name="Rdim11.5.7.2"></string>
+    <string name="Std11.5.7">11.5.7 The facility shall be prepared to handle mass casualties at all times</string>
+    <string name="Rdim11.5.7.1">All staff are assessed quarterly on their knowledge of mass casualty management skills and the institutional procedures (MOV-assessment report)</string>
+    <string name="Rdim11.5.7.2">Facility conducts demo drills twice a year to test the facility’s preparedness to manage mass casualties (MOV-drills report)</string>
 
 
     <!--   Surgical Emergencies Strings -->
 
     <string name="Dim11.6">Surgical Emergencies</string>
 
-    <string name="Std11.6.1"></string>
-    <string name="Rdim11.6.1.1"></string>
-    <string name="Rdim11.6.1.2"></string>
-    <string name="Rdim11.6.1.3"></string>
-    <string name="Rdim11.6.1.4"></string>
-    <string name="Rdim11.6.1.5"></string>
-    <string name="Rdim11.6.1.6"></string>
-    <string name="Rdim11.6.1.7"></string>
-    <string name="Rdim11.6.1.8"></string>
+    <string name="Std11.6.1">11.6.1 The surgical departments shall have adequate resources to provide quality emergency surgical care</string>
+    <string name="Rdim11.6.1.1">Availability of surgical emergency response guidelines/protocols. (MOV-accessible guidelines/ protocols)</string>
+    <string name="Rdim11.6.1.2">Adequate number of formally licenced clinical staff as per HRH norms and standards. (MOV- Norms and standards and HR records)</string>
+    <string name="Rdim11.6.1.3">All surgical staff should have certification in trauma care and life support. (MOV- HR records)</string>
+    <string name="Rdim11.6.1.4">Availability of adequate theatre equipment and supplies (MOV- Observation and equipment inventory)</string>
+    <string name="Rdim11.6.1.5">Availability of adequate resuscitation equipment in all surgical clinical areas (MOV- Observation and equipment inventory)</string>
+    <string name="Rdim11.6.1.6">Access to adequate blood supply (MOV-interview clinical and laboratory staff)</string>
+    <string name="Rdim11.6.1.7">Two operating rooms available for elective and emergency surgery (MOV-Observation)</string>
+    <string name="Rdim11.6.1.8">Access to functioning support facilities (ICU, laboratory and rehabilitation services).(MOV-interview clinical staff and observation)</string>
 
-    <string name="Std11.6.2"></string>
-    <string name="Rdim11.6.2.1"></string>
-    <string name="Rdim11.6.2.2"></string>
-    <string name="Rdim11.6.2.3"></string>
-    <string name="Rdim11.6.2.4"></string>
+    <string name="Std11.6.2">11.6.2 The facility shall make provision for priority care of critically ill surgical patients</string>
+    <string name="Rdim11.6.2.1">Categorization of patients based on their illness status. (MOV-Protocol)</string>
+    <string name="Rdim11.6.2.2">The time from decision to operate to actual time of surgery is recorded in the patient notes.(MOV-Sample 5 patient files)</string>
+    <string name="Rdim11.6.2.3">Application of escalation protocols to deal with deteriorating patients. (MOV-Interview clinical staff)</string>
+    <string name="Rdim11.6.2.4">Daily scheduled ward rounds attended by a surgeon.(MOV-Procedure manual, duty rota)</string>
 
-    <string name="Std11.6.3"></string>
-    <string name="Rdim11.6.3.1"></string>
+    <string name="Std11.6.3">11.6.3 The health facility shall assure the safety of surgical patients.</string>
+    <string name="Rdim11.6.3.1">All surgical patients’ files have a filled-in safe surgical checklist (based on WHO prototype) and is signed by both the nurse and the surgeon.(MOV- confirm with 5 patient files. See Appendix 8 for WHO prototype)</string>
 
-    <string name="Std11.6.4"></string>
-    <string name="Rdim11.6.4.1"></string>
+    <string name="Std11.6.4">11.6.4 Non-operative patients shall be reviewed within no more than 24 hours after admission.</string>
+    <string name="Rdim11.6.4.1">All emergency patients are discussed with the consultant surgeon. (MOV- Confirm with patient notes for documentation of the decision)</string>
 
-    <string name="Std11.6.5"></string>
-    <string name="Rdim11.6.5.1"></string>
-    <string name="Rdim11.6.5.2"></string>
-    <string name="Rdim11.6.5.3"></string>
-    <string name="Rdim11.6.5.4"></string>
+    <string name="Std11.6.5">11.6.5 There shall be a structured delegation and handing-over process of emergency surgical cases.</string>
+    <string name="Rdim11.6.5.1">Senior surgeon delegates responsibility for emergency surgical cases to appropriate staff (MOV- documented procedure)</string>
+    <string name="Rdim11.6.5.2">All emergency cases undergo peer discussion(MOV-Protocol)</string>
+    <string name="Rdim11.6.5.3">Documented handing over procedure available(MOV-handing over procedure)</string>
+    <string name="Rdim11.6.5.4">The surgical unit carries out scheduled handover rounds with names of participants clearly documented. (MOV- ward-round register)</string>
 
-    <string name="Std11.6.6"></string>
-    <string name="Rdim11.6.6.1"></string>
+    <string name="Std11.6.6">11.6.6 The facility shall give each patient clear information on discharge and explain how to make contact with a healthcare professional if the need arises.</string>
+    <string name="Rdim11.6.6.1">The surgical unit has a structured discharge summary with information on presenting complaints, clinical findings, investigation findings and treatment and discharge instructions. (MOV-Sample 5 discharge notes)</string>
 
 
     <!--  Anaesthesia Strings -->
 
     <string name="Dim11.7">Anaesthesia</string>
 
-    <string name="Std11.7.1"></string>
-    <string name="Rdim11.7.1.1"></string>
-    <string name="Rdim11.7.1.2"></string>
-    <string name="Rdim11.7.1.3"></string>
-    <string name="Rdim11.7.1.4"></string>
-    <string name="Rdim11.7.1.5"></string>
-    <string name="Rdim11.7.1.6"></string>
-    <string name="Rdim11.7.1.7"></string>
+    <string name="Std11.7.1">11.7.1 The management shall ensure that the facility has adequate resources and skills to provide quality anesthesia care</string>
+    <string name="Rdim11.7.1.1">Each theatre in the hospital has one anaesthesia care provider attending to one patient per unit time. (MOV- observation)</string>
+    <string name="Rdim11.7.1.2">Each theatre has at least one theatre technician adequately trained in assisting both the surgical and anaesthesia teams. (MOV-HR records)</string>
+    <string name="Rdim11.7.1.3">Responsibilities for monitoring and reviewing anaesthesia services are defined and carried out (MOV-SOP)</string>
+    <string name="Rdim11.7.1.4">All staff in clinical contact with patients under anaesthesia are appropriately trained in resuscitation skills. (MOV-HR records)</string>
+    <string name="Rdim11.7.1.5">Presence of theatre users committee to facilitate implementation of work plans. This committee has, at bare minimum, the theatre nurse in charge, the resident anaesthesia care provider, the resident surgeon/gynaecologist and a member of the hospital administrative team. (MOV- Documentation)</string>
+    <string name="Rdim11.7.1.6">The theatre committee meets at least quarterly and chart out theatre work plans as well as serve to review any critical incidents/outcomes in perioperative care. (MOV-Minutes of meetings)</string>
+    <string name="Rdim11.7.1.7">Availability of adequate anaesthesia equipment and supplies as outlined in the appendix (MOV- Observation and equipment inventory)</string>
 
-    <string name="Std11.7.2"></string>
-    <string name="Rdim11.7.2.1"></string>
-    <string name="Rdim11.7.2.2"></string>
+    <string name="Std11.7.2">11.7.2 The facility management shall ensure that there is adequate space and recording material for peri-operative care</string>
+    <string name="Rdim11.7.2.1">There is standard anaesthetic chart enabling contemporaneous documentation on perioperative care (MOV-observation)</string>
+    <string name="Rdim11.7.2.2">The facility has adequate perioperative monitoring devices (MOV- Observation and equipment inventory)</string>
 
-    <string name="Std11.7.3"></string>
-    <string name="Rdim11.7.3.1"></string>
-    <string name="Rdim11.7.3.2"></string>
-    <string name="Rdim11.7.3.3"></string>
+    <string name="Std11.7.3">11.7.3 The facility shall have in place a mechanism to ensure that pre-anaesthesia assessment is carried out for all patients scheduled to undergo surgery.</string>
+    <string name="Rdim11.7.3.1">Pre-anaesthesia assessment is performed for patients scheduled to undergo surgery. (MOV- clinical notes from patient records)</string>
+    <string name="Rdim11.7.3.2">Separate pre-induction assessment is performed to re-evaluate patients immediately before the induction of anaesthesia (MOV- SOP, patient clinical notes)</string>
+    <string name="Rdim11.7.3.3">The patient, family, and/or decision makers are educated on the risks, benefits, and alternatives of anaesthesia. (MOV-SOP)</string>
 
-    <string name="Std11.7.4"></string>
-    <string name="Rdim11.7.4.1"></string>
-    <string name="Rdim11.7.4.2"></string>
+    <string name="Std11.7.4">11.7.4 The facility shall ensure that each patient’s anaesthesia care is planned and documented</string>
+    <string name="Rdim11.7.4.1">The anaesthesia care of each patient is planned and documented in the patient’s record. (MOV-SOP; Patient clinical records)</string>
+    <string name="Rdim11.7.4.2">The anaesthesia agent, dose and anaesthetic technique are documented in the patient’s record. (MOV-SOP; patient clinical records)</string>
 
-    <string name="Std11.7.5"></string>
-    <string name="Rdim11.7.5.1"></string>
-    <string name="Rdim11.7.5.2"></string>
+    <string name="Std11.7.5">11.7.5 The facility shall have procedures to ensure each patient is monitored during anaesthesia</string>
+    <string name="Rdim11.7.5.1">All patients undergoing anaesthesia are monitored for circulation, ventilation and oxygenation on the minimum (MOV- patient clinical records, SOP)</string>
+    <string name="Rdim11.7.5.2">A medical practitioner whose sole responsibility is the provision of anaesthetic care for patients is constantly present from induction of anaesthesia until safe transfer to Recovery Room staff or Intensive Care Unit. (MOV-SOP)</string>
 
-    <string name="Std11.7.6"></string>
-    <string name="Rdim11.7.6.1"></string>
-    <string name="Rdim11.7.6.2"></string>
-    <string name="Rdim11.7.6.3"></string>
-    <string name="Rdim11.7.6.4"></string>
+    <string name="Std11.7.6">11.7.6 The facility shall have adequate post-anaesthesia care unit facilities</string>
+    <string name="Rdim11.7.6.1">Presence of a dedicated Post Anaesthesia Care Unit (MOV-observation)</string>
+    <string name="Rdim11.7.6.2">Presence of adequate staffing (MOV-HR records)</string>
+    <string name="Rdim11.7.6.3">Presence of adequate monitoring and emergency care equipment and drugs. (MOV-observation; equipment inventory)</string>
+    <string name="Rdim11.7.6.4">Availability of post anaesthesia to theatre bed ratio of at least 1:1.5 (MOV-HR records)</string>
 
-    <string name="Std11.7.7"></string>
-    <string name="Rdim11.7.7.1"></string>
-    <string name="Rdim11.7.7.2"></string>
-    <string name="Rdim11.7.7.3"></string>
-    <string name="Rdim11.7.7.4"></string>
-    <string name="Rdim11.7.7.5"></string>
+    <string name="Std11.7.7">11.7.7 Each patient’s post-anaesthesia status shall be monitored and documented</string>
+    <string name="Rdim11.7.7.1">All patients are monitored during the post-anaesthesia recovery period. Particular attention is given to monitoring oxygenation, ventilation, circulation and temperature. (MOV-SOP; patient clinical notes)</string>
+    <string name="Rdim11.7.7.2">Observations are documented in the patient’s clinical record. This should include at least, state of consciousness, colour, respiratory rate, oxygen saturation, pulse and blood pressure and level of pain. (MOV-SOP; patient clinical notes)</string>
+    <string name="Rdim11.7.7.3">Patients are discharged from the post-anaesthesia care unit in accordance with national guidelines (MOV-SOP; patient clinical notes)</string>
+    <string name="Rdim11.7.7.4">Staff record, for each patient, time recovery is started and time recovery phase is complete (MOV-Patient’s records; SOP)</string>
+    <string name="Rdim11.7.7.5">All post anaesthesia patients are accompanied to the recovery room and adequately handed over to the nursing staff by the anaesthesia care provider.</string>
 
     <!--  Safe Delivery Strings -->
 
     <string name="Dim11.8">Safe Delivery</string>
 
-    <string name="Std11.8.1"></string>
-    <string name="Rdim11.8.1.1"></string>
-    <string name="Rdim11.8.1.2"></string>
-    <string name="Rdim11.8.1.3"></string>
+    <string name="Std11.8.1">11.8.1 The health facility management shall avail skilled personnel, infrastructure and equipment to offer life-saving emergency and quality maternal care</string>
+    <string name="Rdim11.8.1.1">The staff establishment for maternity services is as per the human resources norms and standards (MOV- HR records)</string>
+    <string name="Rdim11.8.1.2">Maternity department has adequate equipment (See appendix for list of equipment) (MOV- functional equipment)</string>
+    <string name="Rdim11.8.1.3">Labour ward is clean, has adequate lighting and is optimally aerated (MOV- Observation)</string>
 
-    <string name="Std11.8.2"></string>
-    <string name="Rdim11.8.2.1"></string>
-    <string name="Rdim11.8.2.2"></string>
-    <string name="Rdim11.8.2.3"></string>
-    <string name="Rdim11.8.2.4"></string>
+    <string name="Std11.8.2">11.8.2 The health facility shall ensure that all delivery unit staff provide respectful maternity care</string>
+    <string name="Rdim11.8.2.1">Client rights protocol strategically placed (MOV-observation)</string>
+    <string name="Rdim11.8.2.2">Client experience questionnaire administered at discharge (MOV-monthly reports) Questionnaire attached as annex</string>
+    <string name="Rdim11.8.2.3">Mechanism of responding to client complaints in place (MOV- Complaint and compliments box/ book, evidence of analysis of feedback results)</string>
+    <string name="Rdim11.8.2.4">There is provision for privacy for patients (MOV- Observation for screens)</string>
 
-    <string name="Std11.8.3"></string>
-    <string name="Rdim11.8.3.1"></string>
-    <string name="Rdim11.8.3.2"></string>
-    <string name="Rdim11.8.3.3"></string>
-    <string name="Rdim11.8.3.4"></string>
-    <string name="Rdim11.8.3.5"></string>
+    <string name="Std11.8.3">11.8.3 The health facility shall ensure that risk assessment is conducted and that intrapartum care is provided appropriately</string>
+    <string name="Rdim11.8.3.1">Assessment of the patients done within 15 minutes of admission by a skilled health provider (MOV-Sample 5 patient files)</string>
+    <string name="Rdim11.8.3.2">WHO checklist on risk assessment of mother and baby filled for all deliveries (MOV- sample 5 patient files for completeness)</string>
+    <string name="Rdim11.8.3.3">MEOW (Modified Early Obstetric Warning Score) filled for every patient (MOV- sample 5 patient files for completeness)</string>
+    <string name="Rdim11.8.3.4">Partograph available on site, and there is evidence of its proper use (MOV- sample 5 patient files for completeness)</string>
+    <string name="Rdim11.8.3.5">Foetal surveillance conducted for every mother in labour, in line with national guidelines (MOV-Relevant charts)</string>
 
-    <string name="Std11.8.4"></string>
-    <string name="Rdim11.8.4.1"></string>
+    <string name="Std11.8.4">11.8.4 The health facility shall ensure that emergency maternity care is supported by timely diagnostics and laboratory services</string>
+    <string name="Rdim11.8.4.1">Timely diagnostics and laboratory services provided for emergency maternal care including but not limited to: Malaria, blood sugar, HB, urinalysis, blood typing, rhesus compatibility (MOV- reports on turn-around-time for laboratory services)</string>
 
-    <string name="Std11.8.5"></string>
-    <string name="Rdim11.8.5.1"></string>
-    <string name="Rdim11.8.5.2"></string>
-    <string name="Rdim11.8.5.3"></string>
-    <string name="Rdim11.8.5.4"></string>
-    <string name="Rdim11.8.5.5"></string>
-    <string name="Rdim11.8.5.6"></string>
+    <string name="Std11.8.5">11.8.5 The health facility shall ensure that there is immediate post-delivery reassessment of the mother and the neonate within 15 minutes of delivery</string>
+    <string name="Rdim11.8.5.1">All clients are assessed for the following: (MOV- sample 5 patient files)</string>
+    <string name="Rdim11.8.5.2">Contraction of the uterus</string>
+    <string name="Rdim11.8.5.3">Tears in the birth canal</string>
+    <string name="Rdim11.8.5.4">Breathing of the new born</string>
+    <string name="Rdim11.8.5.5">Newborn Apgar score</string>
+    <string name="Rdim11.8.5.6">Recheck the umbilical cord</string>
 
-    <string name="Std11.8.6"></string>
-    <string name="Rdim11.8.6.1"></string>
-    <string name="Rdim11.8.6.2"></string>
-    <string name="Rdim11.8.6.3"></string>
+    <string name="Std11.8.6">11.8.6 The health facility shall ensure that emergency vaginal delivery is expedited</string>
+    <string name="Rdim11.8.6.1">Protocols for assisted vaginal delivery displayed (MOV-Observation)</string>
+    <string name="Rdim11.8.6.2">Availability of functional instruments for assisted vaginal delivery e.g. forceps, vacuum set (MOV-Observation)</string>
+    <string name="Rdim11.8.6.3">Timely documentation of the procedures for assisted vaginal deliveries (MOV- sample 5 patient files)</string>
 
-    <string name="Std11.8.7"></string>
-    <string name="Rdim11.8.7.1"></string>
-    <string name="Rdim11.8.7.2"></string>
-    <string name="Rdim11.8.7.3"></string>
-    <string name="Rdim11.8.7.4"></string>
-    <string name="Rdim11.8.7.5"></string>
+    <string name="Std11.8.7">11.8.7 The health facility shall ensure that emergency Caesarean Section is performed within 30 minutes of decision-making.</string>
+    <string name="Rdim11.8.7.1">Emergency Caesarean Section carried out within 30 minutes of decision-making. (from level 4 upwards)(MOV-Preoperative checklist, documentation indicating time action taken, sample 5 patient files)</string>
+    <string name="Rdim11.8.7.2">Relevant laboratory investigations done within 30 minutes of decision-making (MOV- Lab requests, clinical notes)</string>
+    <string name="Rdim11.8.7.3">Voluntary informed consent secured for all patients scheduled to undergo surgical obstetrics procedures (MOV- Signed consent form, -documented procedure for obtaining consent)</string>
+    <string name="Rdim11.8.7.4">Pre-operative checklist available in the patient’s file, signed by the nurse and the surgeon (MOV- Sample 5 patient files)</string>
+    <string name="Rdim11.8.7.5">Pre-operative anaesthetic review is made prior to conducting the emergency Caesarean Section (MOV- Sample 5 patient files)</string>
 
-    <string name="Std11.8.8"></string>
-    <string name="Rdim11.8.8.1"></string>
-    <string name="Rdim11.8.8.2"></string>
+    <string name="Std11.8.8">11.8.8 The health service provider shall continually monitor the vital signs of a patient who has post-partum haemorrhage</string>
+    <string name="Rdim11.8.8.1">Continuous monitoring of vital signs and documentation done every 15 minutes for the first two hours then half hourly in the 3rdhour (MOV- Sample 5 patient files)</string>
+    <string name="Rdim11.8.8.2">PPH escalation protocols displayed (MOV- observation)</string>
 
-    <string name="Std11.8.9"></string>
-    <string name="Rdim11.8.9.1"></string>
+    <string name="Std11.8.9">11.8.9 The health facility shall ensure that its staff offer baby friendly practices</string>
+    <string name="Rdim11.8.9.1">Baby-friendly services offered (MOV- observation for rooming in)</string>
 
-    <string name="Std11.8.10"></string>
-    <string name="Rdim11.8.10.1"></string>
+    <string name="Std11.8.10">11.8.10 The health facility shall ensure that the service providers conduct ward hand-over rounds</string>
+    <string name="Rdim11.8.10.1">Ward hand-over rounds conducted (MOV- Sample 5 patient files)</string>
 
     <!--  Neonatal Care Strings -->
 
     <string name="Dim11.9">Neonatal Care</string>
 
-    <string name="Std11.9.1"></string>
-    <string name="Rdim11.9.1.1"></string>
-    <string name="Rdim11.9.1.2"></string>
-    <string name="Rdim11.9.1.3"></string>
-    <string name="Rdim11.9.1.4"></string>
-    <string name="Rdim11.9.1.5"></string>
-    <string name="Rdim11.9.1.6"></string>
+    <string name="Std11.9.1">11.9.1 The health facility shall ensure that skilled personnel, infrastructure and equipment are available to offer life-saving emergency and quality newborn care</string>
+    <string name="Rdim11.9.1.1">Healthcare provider available 24 hours a day, 7 days a week. (MOV-HR records; staff rota)</string>
+    <string name="Rdim11.9.1.2">At least 2 skilled health workers trained in goal-oriented ANC and Essential Newborn Care (MOV-HR records)</string>
+    <string name="Rdim11.9.1.3">Facility has adequate infrastructure and equipment to offer life-saving emergency and quality newborn care (MOV-Observe and review inventory as per level of facility)</string>
+    <string name="Rdim11.9.1.4">Resuscitation space/table available in labour ward, theatre, postnatal ward and paediatric ward. (MOV-Observation)</string>
+    <string name="Rdim11.9.1.5">Nursery space adjacent to labour ward (MOV-Observation)</string>
+    <string name="Rdim11.9.1.6">Beds assigned for Kangaroo Mother Care (KMC) in postnatal wards (MOV-Observation)</string>
 
-    <string name="Std11.9.2"></string>
-    <string name="Rdim11.9.2.1"></string>
-    <string name="Rdim11.9.2.2"></string>
-    <string name="Rdim11.9.2.3"></string>
-    <string name="Rdim11.9.2.4"></string>
-    <string name="Rdim11.9.2.5"></string>
-    <string name="Rdim11.9.2.6"></string>
+    <string name="Std11.9.2">11.9.2 The health facility shall manage all newborns as prescribed in the Essential Newborn Care guidelines</string>
+    <string name="Rdim11.9.2.1">Facility uses baby wraps to keep newborns warm at all times (MOV- observation, interview staff)</string>
+    <string name="Rdim11.9.2.2">Breastfeeding within one hour of delivery for well babies(MOV- SOPs displayed, interview staff and clients)</string>
+    <string name="Rdim11.9.2.3">Administration of Vitamin K after delivery (MOV- check patient files on the last 5 deliveries)</string>
+    <string name="Rdim11.9.2.4">Use of 4% chlorhexidine formulation for cord care (MOV- check patient files for the last 5 deliveries)</string>
+    <string name="Rdim11.9.2.5">Administration of tetracycline eye ointment to baby immediately after birth (MOV- check patient files for the last 5 deliveries)</string>
+    <string name="Rdim11.9.2.6">Immediate skin-to-skin contact between mother/parent and baby is practiced at the facility (Kangaroo Mother Care for babies less than 2,500gms) (MOV- interview staff and clients)</string>
 
-    <string name="Std11.9.3"></string>
-    <string name="Rdim11.9.3.1"></string>
-    <string name="Rdim11.9.3.2"></string>
-    <string name="Rdim11.9.3.3"></string>
+    <string name="Std11.9.3">11.9.3 The facility shall be adequately prepared for resucitation of newborn babies within one minute of birth</string>
+    <string name="Rdim11.9.3.1">The facility has a complete set of resuscitation equipment (suction ball, functional paediatric ambu-bag and mask, resuscitare)(MOV- Observation/ check inventory as per level of facility)</string>
+    <string name="Rdim11.9.3.2">The facility conducts resuscitation drills (MOV-quarterly report)</string>
+    <string name="Rdim11.9.3.3">Babies vital signs observed within two hours of delivery (MOV- sample patient notes for the last 5 deliveries)</string>
 
-    <string name="Std11.9.4"></string>
-    <string name="Rdim11.9.4.1"></string>
-    <string name="Rdim11.9.4.2"></string>
-    <string name="Rdim11.9.4.3"></string>
+    <string name="Std11.9.4">11.9.4 The facility shall have a mechanism for detecting and referral of babies with danger signs or critically ill babies</string>
+    <string name="Rdim11.9.4.1">The facility has SOPs for detection of babies with danger signs displayed (MOV-observation)</string>
+    <string name="Rdim11.9.4.2">The facility has drug formulations for managing neonatal infections (MOV-check drug inventory)</string>
+    <string name="Rdim11.9.4.3">The facility uses referral protocols for the critically ill babies or babies with danger signs(MOV-facility protocol available/ displayed)</string>
 
-    <string name="Std11.9.5"></string>
-    <string name="Rdim11.9.5.1"></string>
+    <string name="Std11.9.5">11.9.5 The facility shall manage neonatal sepsis according to national guidelines</string>
+    <string name="Rdim11.9.5.1">Availability of standard protocol for the management of neonatal sepsis(MOV-Access to guidelines)</string>
 
-    <string name="Std11.9.6"></string>
-    <string name="Rdim11.9.6.1"></string>
+    <string name="Std11.9.6">11.9.6 The facility shall use the current treatment guidelines for the care of HIV-exposed infants</string>
+    <string name="Rdim11.9.6.1">Facility provides appropriate prophylaxis for HIV-exposed newborn within one hour after delivery(MOV- sample files of HEIr)</string>
 
-    <string name="Std11.9.7"></string>
-    <string name="Rdim11.9.7.1"></string>
-    <string name="Rdim11.9.7.2"></string>
-    <string name="Rdim11.9.7.3"></string>
-    <string name="Rdim11.9.7.4"></string>
+    <string name="Std11.9.7">11.9.7 The health facility shall ensure infection prevention measures are put in place in the neonatal unit.</string>
+    <string name="Rdim11.9.7.1">Hand hygiene facilities in or near the examination room, labour ward, theatre, postnatal, nursery and paediatric wards. (MOV- Observation )</string>
+    <string name="Rdim11.9.7.2">Hand washing with soap and water between examining babies, before and after procedures; availability of hand sanitizer on site (MOV-SOP)</string>
+    <string name="Rdim11.9.7.3">The newborn unit has disinfection facilities (MOV- Observe for correct disinfection processes)</string>
+    <string name="Rdim11.9.7.4">Staff safely dispose off sharp objects and waste in well-labelled containers .(MOV- Check availability of safety boxes and colour-coded waste bins )</string>
 
-    <string name="Std11.9.8"></string>
-    <string name="Rdim11.9.8.1"></string>
-    <string name="Rdim11.9.8.2"></string>
-    <string name="Rdim11.9.8.3"></string>
-    <string name="Rdim11.9.8.4"></string>
+    <string name="Std11.9.8">11.9.8 The facility shall discharge the newborn appropriately in not less than 24 hours after birth.</string>
+    <string name="Rdim11.9.8.1">All newborns stay with the mother in the health facility for a minimum of 24 hours (MOV-5 Patient files/exit interviews)</string>
+    <string name="Rdim11.9.8.2">All mothers receives education on clean chain, cord care, warm chain and breastfeeding. (MOV- Patient exit interviews)</string>
+    <string name="Rdim11.9.8.3">All mothers informed on danger signs to watch out for at home (MOV-Patient exit interviews)</string>
+    <string name="Rdim11.9.8.4">All mothers given postnatal appointments (MOV-5 Patient files)</string>
 
-    <string name="Std11.9.9"></string>
-    <string name="Rdim11.9.9.1"></string>
+    <string name="Std11.9.9">11. 9. 9 The facility shall provide comprehensive health education and service information to the clients</string>
+    <string name="Rdim11.9.9.1">Health facility conducts group health education sessions including: (1) HIV, (2) Danger signs, (3) Infant and young child feeding, (4) KMC, (5) Cord care, (6) Extra care for small babies, (7) Personal Hygiene (MOV- Observation of Health education schedule materials and actual health education sessions)</string>
 
 
     <!--   Haemodialysis Services Strings -->
 
     <string name="Dim11.10"> Haemodialysis Services</string>
 
-    <string name="Std11.10.1"></string>
-    <string name="Rdim11.10.1.1"></string>
-    <string name="Rdim11.10.1.2"></string>
-    <string name="Rdim11.10.1.3"></string>
+    <string name="Std11.10.1">11.10.1 All haemodialysis centres shall ensure availability of qualified staff to provide dialysis services to patients.</string>
+    <string name="Rdim11.10.1.1">The person in charge of a haemodialysis centre is a nephrologist, assisted by other personnel of at least the following qualification: A Nephrologist A Physician who has completed recognized training in haemodialysis treatment and maintains an affiliation with Kenya Renal Association (KRA) Any other Registered Medical Practitioner who has completed recognized training in haemodialysis treatment and maintains an affiliation with KRA(MOV-HR records, duty roster)</string>
+    <string name="Rdim11.10.1.2">For every five (5) dialysis patients, there is at least one (1) registered nurse with at least six months training in haemodialysis treatment and care in each shift. (MOV-HR records, duty roster)</string>
+    <string name="Rdim11.10.1.3">All haemodialysis treatment is provided under the order of: (a) A nephrologist (b) A physician with requisite training under the supervision of a nephrologist. (MOV- SOP)</string>
 
-    <string name="Std11.10.2"></string>
+    <string name="Std11.10.2">11.10.2 Haemodialysis</string>
 
-    <string name="Std11.10.2.1"></string>
-    <string name="Rdim11.10.2.1.1"></string>
-    <string name="Rdim11.10.2.1.2"></string>
-    <string name="Rdim11.10.2.1.3"></string>
-    <string name="Rdim11.10.2.1.4"></string>
+    <string name="Std11.10.2.1">11.10.2.1 The dialysis centres shall have mechanisms to ensure stringent monitoring of dialysis patient</string>
+    <string name="Rdim11.10.2.1.1">The dialysis treatment is monitored closely, with particular attention to:
 
-    <string name="Std11.10.2.2"></string>
-    <string name="Rdim11.10.2.2.1"></string>
-    <string name="Rdim11.10.2.2.2"></string>
-    <string name="Rdim11.10.2.2.3"></string>
-    <string name="Rdim11.10.2.2.4"></string>
-    <string name="Rdim11.10.2.2.5"></string>
-    <string name="Rdim11.10.2.2.6"></string>
-    <string name="Rdim11.10.2.2.7"></string>
-    <string name="Rdim11.10.2.2.8"></string>
-    <string name="Rdim11.10.2.2.9"></string>
+-        Any intra-dialytic complications
 
-    <string name="Std11.10.2.3"></string>
-    <string name="Rdim11.10.2.3.1"></string>
-    <string name="Rdim11.10.2.3.2"></string>
-    <string name="Rdim11.10.2.3.3"></string>
-    <string name="Rdim11.10.2.3.4"></string>
-    <string name="Rdim11.10.2.3.5"></string>
-    <string name="Rdim11.10.2.3.6"></string>
-    <string name="Rdim11.10.2.3.7"></string>
-    <string name="Rdim11.10.2.3.8"></string>
-    <string name="Rdim11.10.2.3.9"></string>
-    <string name="Rdim11.10.2.3.10"></string>
+-        Vital signs during dialysis: Blood Pressure, pulse and temperature, blood sugar
 
-    <string name="Std11.10.2.4"></string>
-    <string name="Rdim11.10.2.4.1"></string>
-    <string name="Rdim11.10.2.4.2"></string>
-    <string name="Rdim11.10.2.4.3"></string>
-    <string name="Rdim11.10.2.4.4"></string>
-    <string name="Rdim11.10.2.4.5"></string>
-    <string name="Rdim11.10.2.4.6"></string>
-    <string name="Rdim11.10.2.4.7"></string>
+-        Vascular Access adequacy achieving blood flow >300, signs of infection (MOV-SOP; Sample 5 patient case files)</string>
+    <string name="Rdim11.10.2.1.2">Each dialysis treatment is recorded in the patient files (MOV- Sample 5 patient files)</string>
+    <string name="Rdim11.10.2.1.3">Blood investigations are done at regular predetermined intervals (MOV- SOPs, sample 5 patient files)</string>
+    <string name="Rdim11.10.2.1.4">Dialysis adequacy is monitored at least every three (3) monthly using urea reduction ratio (URR) or Kt/V (MOV- Sample 5 patient files)</string>
 
-    <string name="Std11.10.2.5"></string>
-    <string name="Rdim11.10.2.5.1"></string>
-    <string name="Rdim11.10.2.5.2"></string>
-    <string name="Rdim11.10.2.5.3"></string>
-    <string name="Rdim11.10.2.5.4"></string>
-    <string name="Rdim11.10.2.5.5"></string>
-    <string name="Rdim11.10.2.5.6"></string>
-    <string name="Rdim11.10.2.5.7"></string>
-    <string name="Rdim11.10.2.5.8"></string>
-    <string name="Rdim11.10.2.5.9"></string>
-    <string name="Rdim11.10.2.5.10"></string>
-    <string name="Rdim11.10.2.5.11"></string>
-    <string name="Rdim11.10.2.5.12"></string>
-    <string name="Rdim11.10.2.5.13"></string>
-    <string name="Rdim11.10.2.5.14"></string>
-    <string name="Rdim11.10.2.5.15"></string>
-    <string name="Rdim11.10.2.5.16"></string>
-    <string name="Rdim11.10.2.5.17"></string>
-    <string name="Rdim11.10.2.5.18"></string>
-    <string name="Rdim11.10.2.5.19"></string>
-    <string name="Rdim11.10.2.5.20"></string>
-    <string name="Rdim11.10.2.5.21"></string>
+    <string name="Std11.10.2.2">11.10.2.2 All haemodialysis centres shall ensure implementation of, and adherence to strict infection control procedures designed to prevent cross-infection</string>
+    <string name="Rdim11.10.2.2.1">All staff working in haemodialysis unit must be tested for Hepatitis B and treated accordingly. (MOV- SOPs; HR records)</string>
+    <string name="Rdim11.10.2.2.2">All patients are tested for Hepatitis B and C before initiating the first haemodialysis treatment and after returning from another haemodialysis facility (MOV- SOPs, sample 5 patient files)</string>
+    <string name="Rdim11.10.2.2.3">All Hepatitis B positive persons are considered infectious, and thus dialyzed using separate machines, equipment and instruments. (MOV- SOPs; observation)</string>
+    <string name="Rdim11.10.2.2.4">Serology testing is carried out every 6 months for patients who are Hepatitis B and C negative. (MOV- SOPs, sample 5 patient files)</string>
+    <string name="Rdim11.10.2.2.5">Patients who are Hepatitis B negative are vaccinated (MOV- SOPs, sample 5 patient files)</string>
+    <string name="Rdim11.10.2.2.6">Haemodialysis staff caring for Hepatitis B positive patients do not care for Hepatitis B susceptible patients at the same shift. (MOV- SOPs; duty roster)</string>
+    <string name="Rdim11.10.2.2.7">Combined Hepatitis B and Hepatitis C infected patients are isolated. If the isolation facility for combined Hepatitis B and C is not available, the facility makes a provision to have the patient dialyzed in a Hepatitis B isolation unit. For all patients single use of dialyser is mandatory. (MOV- SOPs; observation)</string>
+    <string name="Rdim11.10.2.2.8">All patients are tested for HIV antibody before initiating first haemodialysis treatment and after returning from another haemodialysis facility. (MOV- SOPs, sample 5 patient files)</string>
+    <string name="Rdim11.10.2.2.9">In HIV negative patients, serologic test is performed every 6 months (MOV- SOPs, sample 5 patient files)</string>
 
-    <string name="Std11.10.2.6"></string>
-    <string name="Rdim11.10.2.6.1"></string>
-    <string name="Rdim11.10.2.6.2"></string>
-    <string name="Rdim11.10.2.6.3"></string>
-    <string name="Rdim11.10.2.6.4"></string>
-    <string name="Rdim11.10.2.6.5"></string>
-    <string name="Rdim11.10.2.6.6"></string>
-    <string name="Rdim11.10.2.6.7"></string>
+    <string name="Std11.10.2.3">11.10.2.3 There shall be adequate space and facilities for all haemodialysis activities to be performed in the haemodialysis centres and for the required volume of work</string>
+    <string name="Rdim11.10.2.3.1">Availability of a storeroom with adequate space for supplies, consumables and equipment (MOV-Observation; inventory)</string>
+    <string name="Rdim11.10.2.3.2">A suitable and secure area for clinical waste (MOV-Observation)</string>
+    <string name="Rdim11.10.2.3.3">Dialysis room/area with adequate space for dialysis machine and bed/couch/dialysis Chair. It should have provision for segregation of patients who are Hepatitis B (MOV-Observation)</string>
+    <string name="Rdim11.10.2.3.4">Treatment/ consultation room with facilities and equipment for the treatment and care of end stage renal failure patients. If facility is providing minor procedures to haemodialysis patients then a treatment room, which is located separate from the dialysis room/area is required. (MOV-Observation)</string>
+    <string name="Rdim11.10.2.3.5">Resuscitation facilities including, but not limited to, cardiac monitoring device with defibrillator, bag-valve-mask, suction apparatus, a functioning laryngoscope, endotracheal tube, drugs commonly used in medical emergency and oxygen supply and all should be easily accessible. (MOV-Observation; equipment inventory)</string>
+    <string name="Rdim11.10.2.3.6">Appropriately sized water treatment room separated from the dialysis room and all other rooms. There should be provision for the treated water to be delivered to individual haemodialysis machines through pipes made of acrylonitrile butadiene styrene (ABS), cross-linked polyethylene (PEX) or equivalent material. (MOV-Observation)</string>
+    <string name="Rdim11.10.2.3.7">Reprocessing room only to be used strictly for dialyser reprocessing, storing of reprocessed dialysers and sterilant. The room should have adequate ventilation to reduce inhalation risk. (MOV-Observation)</string>
+    <string name="Rdim11.10.2.3.8">Conveniently located toilet and washbasins for the staff and patients (MOV-Observation)</string>
+    <string name="Rdim11.10.2.3.9">Adequate ventilation by windows, ducts or mechanical means (MOV-Observation)</string>
+    <string name="Rdim11.10.2.3.10">Waiting area (MOV-Observation)</string>
 
-    <string name="Std11.10.2.7"></string>
-    <string name="Rdim11.10.2.7.1"></string>
-    <string name="Rdim11.10.2.7.2"></string>
-    <string name="Rdim11.10.2.7.3"></string>
+    <string name="Std11.10.2.4">11.10.2.4 The facility shall ensure that there are adequate and functional haemodialysis machines</string>
+    <string name="Rdim11.10.2.4.1">The haemodialysis machines are capable of performing conventional (diffusive) haemodialysis and preferably convective therapy. (MOV-Observation; interview of health providers)</string>
+    <string name="Rdim11.10.2.4.2">The machines meet specifications set by the Ministry of Health. (compare machine properties with MOH specifications)</string>
+    <string name="Rdim11.10.2.4.3">There is a mechanism to ensure uninterrupted power supply to return blood from the extra-corporeal circuit in the event of power failure (MOV-SOP)</string>
+    <string name="Rdim11.10.2.4.4">A minimum of one back-up machine is available for every ten (10) haemodialysis machines. (MOV-Observation)</string>
+    <string name="Rdim11.10.2.4.5">Endotoxin retention filter for the dialysate is used when performing high flux haemodialysis (MOV-SOP)</string>
+    <string name="Rdim11.10.2.4.6">External surfaces of the haemodialysis machines are disinfected after each dialysis session. (MOV-SOP; cleaning logs)</string>
+    <string name="Rdim11.10.2.4.7">All machines have a documented planned preventive maintenance and technical safety check according to manufacturer recommendations. (MOV- documented preventive maintenance plan)</string>
 
-    <string name="Std11.10.2.8"></string>
-    <string name="Rdim11.10.2.8.1"></string>
-    <string name="Rdim11.10.2.8.2"></string>
-    <string name="Rdim11.10.2.8.3"></string>
-    <string name="Rdim11.10.2.8.4"></string>
-    <string name="Rdim11.10.2.8.5"></string>
+    <string name="Std11.10.2.5">11.10.2.5 The facility shall have in place a water treatment system that provides safe water for use in haemodialysis</string>
+    <string name="Rdim11.10.2.5.1">The room that houses the water treatment system is located in an area which minimizes disruption to haemodialysis treatment. (MOV-Observation)</string>
+    <string name="Rdim11.10.2.5.2">The room has adequate ventilation to prevent over-heating (MOV-Observation)</string>
+    <string name="Rdim11.10.2.5.3">Floor traps are available to drain excess water. (MOV-Observation)</string>
+    <string name="Rdim11.10.2.5.4">Flow diagram of the water treatment system is displayed in the water treatment room. (MOV-Observation)</string>
+    <string name="Rdim11.10.2.5.5">All water treatment components and equipment are clearly labelled. (MOV-Observation)</string>
+    <string name="Rdim11.10.2.5.6">All columns in pre-treatment are opaque (MOV-Observation)</string>
+    <string name="Rdim11.10.2.5.7">Pressure gauge is installed before and after each component to monitor fouling of the components. (MOV-Observation)</string>
+    <string name="Rdim11.10.2.5.8">Daily recording of the parameters of water treatment system is performed. (MOV- check water treatment records; SOPs)</string>
+    <string name="Rdim11.10.2.5.9">Daily testing for chlorine/chloramine and hardness is done every morning prior to starting haemodialysis treatment (MOV- check water treatment records; SOPs)</string>
+    <string name="Rdim11.10.2.5.10">The raw water tank is covered; has a low-level alarm sensor; is inspected for defects and cleaned every 6 months; appropriate capacity that is adequate to enable at least one shift of treatment to be completed if water supply is disrupted (MOV- Observation; check water treatment records; SOPs)</string>
+    <string name="Rdim11.10.2.5.11">There are at least two raw water pumps, made of stainless steel (MOV- Observation)</string>
+    <string name="Rdim11.10.2.5.12">Backwash of the multimedia sediment filter is carried out at least 2 times per week (MOV- check water treatment records; SOPs)</string>
+    <string name="Rdim11.10.2.5.13">Empty Bed Contact Time (EBCT) for the carbon columns is ten (10) minutes in total, or five (5) minutes for each filter stage, if two carbon filters are used to optimise the chlorine and chloramines removal. Backwash is carried out at least twice per week. (MOV- check water treatment records; SOPs)</string>
+    <string name="Rdim11.10.2.5.14">Softener Column is regenerated by sodium chloride from brine tank or equivalent (MOV- SOPs)</string>
+    <string name="Rdim11.10.2.5.15">The guard filter is replaced as necessary. (MOV- check water treatment records; SOPs)</string>
+    <string name="Rdim11.10.2.5.16">The recovery rate of reverse osmosis system is at least 50%. (MOV- check water treatment records; SOPs)</string>
+    <string name="Rdim11.10.2.5.17">The water treatment system has the following parameters displayed: Conductivity of permeate Permeate flow rate Reject flow rate Raw water pressure Guard-in and guard-out pressure Reverse osmosis membrane system-in and system-out pressure(MOV- check water treatment records; SOPs)</string>
+    <string name="Rdim11.10.2.5.18">Water sample ports are available for sampling at the following points: Post first carbon column Post second carbon column Post softener column/Pre-RO module Immediate post RO module First point in the distribution loop Last point in the distribution loop Last point of the dialyzer-reprocessing loop(MOV- check water treatment records; SOPs)</string>
+    <string name="Rdim11.10.2.5.19">The treated water storage tank is made of stainless steel or high density polyethylene; covered with a tight fitting lid and fitted with ultraviolet irradiator for destruction of bacteria with an air vent with a bacterial filter. (MOV- observation; SOPs)</string>
+    <string name="Rdim11.10.2.5.20">Water treatment system is distributed to the individual dialysis stations, and dialyser reprocessing stations using distribution materials and designs which minimize or stop microbiological contamination. (MOV- check water treatment records; SOPs)</string>
+    <string name="Rdim11.10.2.5.21">A minimum of six (6) monthly (or as specified by the manufacturers recommendation) chemical disinfection of distribution loop including the connections to dialysis machine is done, using peracetic acid 2 to 3% or chlorine dioxide especially when materials of distribution loop are not heat resistant. Weekly heat disinfection of the tank and distribution loop is carried out for a system which incorporates a heater and uses heat resistant piping (MOV- SOPs)</string>
+
+    <string name="Std11.10.2.6">11.10.2.6 The facility shall have in place measures to ensure that water quality used for haemodialysis is of the right quality.</string>
+    <string name="Rdim11.10.2.6.1">Dialysis water is produced by the process of reverse osmosis (MOV-SOP)</string>
+    <string name="Rdim11.10.2.6.2">Chlorine and chloramines and water hardness testing is performed onsite using commercially available test kits while full analysis for chemical contaminants is performed by an accredited laboratory (MOV-records for water analysis; SOPs)</string>
+    <string name="Rdim11.10.2.6.3">Testing for contaminants is carried out daily using commercially available test kits for chlorine and chloramines and every six months in an accredited laboratory for chemical analysis. (MOV-records for water analysis; SOPs)</string>
+    <string name="Rdim11.10.2.6.4">Daily testing for chlorine and chloramines is done after each carbon column; testing for hardness after softener column; while Six (6)-monthly full laboratories testing for chemicals is done at raw water point, pre and post reverse osmosis. (MOV-records for water analysis; SOPs)</string>
+    <string name="Rdim11.10.2.6.5">The facility takes action if limits are exceeded mainly by evaluating water treatment system and rectifying as necessary (MOV-records for water analysis; SOPs)</string>
+    <string name="Rdim11.10.2.6.6">The facility carries out total viable counts using spread plate or membrane filtration technique using Trypton Glucose Extract Agar (TGEA) or equivalent and determines presence of pyrogen/endotoxin using Limulus Amoebocyte Lysate (LAL) method. (MOV-records for water analysis; SOPs)</string>
+    <string name="Rdim11.10.2.6.7">The facility carries out monthly testing for bacterial count and endotoxin test (MOV-records for water analysis; SOPs)</string>
+
+    <string name="Std11.10.2.7">11.10.2.7 The facility shall have a mechanism for efficient reprocessing of dialyser</string>
+    <string name="Rdim11.10.2.7.1">The reprocessing machine is fully automated integrated unit capable to clean, test and fill the dialyser with disinfectant and is able to perform automatic dilution of sterilant to specified strength. (MOV-Check machine specifications)</string>
+    <string name="Rdim11.10.2.7.2">The dialyser reprocessing procedure includes: Calibration every morning Cleansing of residual blood and blood products and rinsed with reverse osmosis water. Testing for residual membrane performance (Total Cell Volume (TCV) and the presence of leaks. Dialyzers with TCV less than 80% or failed the leak test with TCV not be reused Filled with appropriate concentration of a germicide. The machine is sanitized at the end of every day.Every reused dialyser is tested for residual disinfectant prior to use. (MOV-SOP; Cleaning records)</string>
+    <string name="Rdim11.10.2.7.3">A separate machine is used for HBs Ag positive or anti HCV positive patients. Single use of dialyser ensured for Hepatitis B and C co-infected patients. (MOV-SOP; observation)</string>
+
+    <string name="Std11.10.2.8">11.10.2.8 The facility shall ensure consumables used in haemodialysis are of the right standard</string>
+    <string name="Rdim11.10.2.8.1">Dialysate used is approved by Kenya Pharmacy and Poisons Board. (MOV-SOP; Observation)</string>
+    <string name="Rdim11.10.2.8.2">The dialysate packaging has the following information clearly labelled: Address of manufacturer Contents Concentration of electrolytes Dialysate concentration ratio Date of manufacture and expiry(MOV-SOP; Observation)</string>
+    <string name="Rdim11.10.2.8.3">Dialysers used by the facility are made from biocompatible membrane. (MOV-SOP; Observation)</string>
+    <string name="Rdim11.10.2.8.4">Bloodlines used for haemodialysis treatment meet MOH specifications (MOV-SOP; Observation)</string>
+    <string name="Rdim11.10.2.8.5">Arterio-venous needle used for haemodialysis treatment meets MOH specification (MOV-SOP; Observation)</string>
 
 
-    <string name="Std11.10.3"></string>
+    <string name="Std11.10.3">11.10.3 Peritoneal Dialysis (PD)</string>
 
-    <string name="Std11.10.3.1"></string>
-    <string name="Rdim11.10.3.1.1"></string>
-    <string name="Rdim11.10.3.1.2"></string>
-    <string name="Rdim11.10.3.1.3"></string>
-    <string name="Rdim11.10.3.1.4"></string>
+    <string name="Std11.10.3.1">11.10.3.1 All equipment and supplies used in the delivery and monitoring of PD therapies shall comply with the relevant standards.</string>
+    <string name="Rdim11.10.3.1.1">Peritoneal dialysis insertion sets (including PD Catheters) available (MOV-Observation)</string>
+    <string name="Rdim11.10.3.1.2">PD tubing sets with infection-preventing designs such as the Y-connector and the use of disconnect systems (MOV-Observation)</string>
+    <string name="Rdim11.10.3.1.3">PD cycler for initiation and training in automated PD (MOV-Observation)</string>
+    <string name="Rdim11.10.3.1.4">PD fluids should satisfy current quality medical standards (MOV-Supplies specifications)</string>
 
-    <string name="Std11.10.3.2"></string>
-    <string name="Rdim11.10.3.2.1"></string>
-    <string name="Rdim11.10.3.2.2"></string>
+    <string name="Std11.10.3.2">11.10.3.2 The facility shall have in place provisions for educating of PD patients</string>
+    <string name="Rdim11.10.3.2.1">The PD training is carried out in a well-equipped PD Training Room (MOV-Observation)</string>
+    <string name="Rdim11.10.3.2.2">The PD Training will include the following:
+-        Training schedule (topics, guidelines for trainer, pre and post patient training assessment)
 
-    <string name="Std11.10.3.3"></string>
-    <string name="Rdim11.10.3.3.1"></string>
-    <string name="Rdim11.10.3.3.2"></string>
-    <string name="Rdim11.10.3.3.3"></string>
-    <string name="Rdim11.10.3.3.4"></string>
-    <string name="Rdim11.10.3.3.5"></string>
+-        Teaching aids
 
-    <string name="Std11.10.3.4"></string>
-    <string name="Rdim11.10.3.4.1"></string>
+-        Home environment assessment
 
-    <string name="Std11.10.3.5"></string>
-    <string name="Rdim11.10.3.5.1"></string>
-    <string name="Rdim11.10.3.5.2"></string>
-    <string name="Rdim11.10.3.5.3"></string>
-    <string name="Rdim11.10.3.5.4"></string>
-    <string name="Rdim11.10.3.5.5"></string>
-    <string name="Rdim11.10.3.5.6"></string>
-    <string name="Rdim11.10.3.5.7"></string>
-    <string name="Rdim11.10.3.5.8"></string>
-    <string name="Rdim11.10.3.5.9"></string>
-    <string name="Rdim11.10.3.5.10"></string>
-    <string name="Rdim11.10.3.5.11"></string>
-    <string name="Rdim11.10.3.5.12"></string>
-    <string name="Rdim11.10.3.5.13"></string>
-    <string name="Rdim11.10.3.5.14"></string>
+-        Family support assessment
+(MOV-Training curriculum)</string>
+
+    <string name="Std11.10.3.3">11.10.3.3 The facility shall put in place measures to ensure each PD patient is monitored for compliance with an adequate PD dose</string>
+    <string name="Rdim11.10.3.3.1">All PD patients are monitored using the following parameters:</string>
+    <string name="Rdim11.10.3.3.2">Small–Solute Clearance measured at 4–6 weeks after PD onset and when clinically indicated (MOV-SOPs; sample 5 patient files)</string>
+    <string name="Rdim11.10.3.3.3">Residual Renal Function (RRF) measured every 3–6 months or when clinically indicated (MOV-SOPs; sample 5 patient files)</string>
+    <string name="Rdim11.10.3.3.4">Volume assessment and performance of 2.5% or 4.25% dextrose PET carried out no sooner than 4 weeks after initiation of PD. (MOV-SOPs; sample 5 patient files)</string>
+    <string name="Rdim11.10.3.3.5">Nutrition assessment: using Predictive Indices of Nutrition e.g. body weight, lean body mass, serum albumin and pre-albumin, blood urea, subjective global assessment, protein equivalent of nitrogen appearance (MOV-SOPs; sample 5 patient files)</string>
+
+    <string name="Std11.10.3.4">11.10.3.4 The peritoneal dialysis unit shall have in place standard operating procedures for its services</string>
+    <string name="Rdim11.10.3.4.1">The facility has physical or virtual access to the following SOPs:
+-        Nursing management of patients on PD Guidelines for the PD training program
+
+-        Care of the peritoneal access (including peritoneal catheter and exit site)
+
+-        Treatment of infection (peritonitis and PD catheter exit site)
+
+-        Management of dialysis-related complications
+
+-        Peritoneal equilibration test
+
+-        PD adequacy assessment
+
+-        Patient education on fluid and dietary restrictions
+(MOV- Observation)</string>
+
+    <string name="Std11.10.3.5">11.10.4 The facility carries out, documents and disseminates to all relevant staff annual audit reports of the dialysis unit</string>
+    <string name="Rdim11.10.3.5.1">Audit of dialysis unit carried out (MOV- Audit report)</string>
+    <string name="Rdim11.10.3.5.2">The audit covers at a minimum the following:</string>
+    <string name="Rdim11.10.3.5.3">Patient to dialysis nursing staff ratio (MOV-audit report)</string>
+    <string name="Rdim11.10.3.5.4">Functionality of medical equipment (MOV-audit report)</string>
+    <string name="Rdim11.10.3.5.5">Audit of care pathway for dialysis preparation to include information given (including proportion of patients offered dialysis), when and who delivers it. (MOV-audit report)</string>
+    <string name="Rdim11.10.3.5.6">Audit of information on modality options provided to patients presenting who urgently require renal replacement therapy, and both initial and subsequent modality of renal replacement therapy selected by these patients. (MOV-audit report)</string>
+    <string name="Rdim11.10.3.5.7">Audit of care pathway for catheter insertion (MOV-audit report)</string>
+    <string name="Rdim11.10.3.5.8">Catheter complications and their resolution (MOV-audit report)</string>
+    <string name="Rdim11.10.3.5.9">Frequency of solute clearance estimation (MOV-audit report)</string>
+    <string name="Rdim11.10.3.5.10">Frequency of measurement of membrane function, residual urine and peritoneal ultrafiltration volume (MOV-audit report)</string>
+    <string name="Rdim11.10.3.5.11">Number of patients regularly requiring hypertonic (3.86% glucose) exchanges to maintain fluid balance (MOV-audit report)</string>
+    <string name="Rdim11.10.3.5.12">Identify patients with a total fluid removal less than 750 ml per day. (MOV-audit report)</string>
+    <string name="Rdim11.10.3.5.13">Functionality of infection prevention strategies (MOV-audit report)</string>
+    <string name="Rdim11.10.3.5.14">Infection outcomes (MOV-audit report)</string>
 
 
     <!--    Laboratory Strings -->
@@ -1043,99 +1077,311 @@
     <string name="Dim11.11"> Laboratory</string>
 
 
-    <string name="Std11.11.1"></string>
-    <string name="Rdim11.11.1.1"></string>
-    <string name="Rdim11.11.1.2"></string>
-    <string name="Rdim11.11.1.3"></string>
-    <string name="Rdim11.11.1.4"></string>
-    <string name="Rdim11.11.1.5"></string>
-    <string name="Rdim11.11.1.6"></string>
-    <string name="Rdim11.11.1.7"></string>
-    <string name="Rdim11.11.1.8"></string>
+    <string name="Std11.11.1">11.11.1 The health facility shall ensure there are adequate resources to provide quality laboratory services</string>
+    <string name="Rdim11.11.1.1">Staffing is in line with the HR norms and standards (MOV- HR records)</string>
+    <string name="Rdim11.11.1.2">Facility has adequate laboratory infrastructure and equipment as per tier of care ( See appendix) (MOV- Adequate equipment as per the scope of work and tier of the health facility)</string>
+    <string name="Rdim11.11.1.3">Laboratory room is air conditioned, clean, uncluttered and well ventilated. (MOV- observations)</string>
+    <string name="Rdim11.11.1.4">There is an inventory store with controlled temperatures (MOV- observations)</string>
+    <string name="Rdim11.11.1.5">Benches, well fitted with recommended laboratory chairs (MOV- observations)</string>
+    <string name="Rdim11.11.1.6">Laboratory has proper lighting and access control services (MOV- observations)</string>
+    <string name="Rdim11.11.1.7">Safety cabinets available (MOV- observations)</string>
+    <string name="Rdim11.11.1.8">The laboratory monitors environmental conditions that affect testing (MOV-Monitoring logs)</string>
 
-    <string name="Std11.11.2"></string>
-    <string name="Rdim11.11.2.1"></string>
-    <string name="Rdim11.11.2.2"></string>
-    <string name="Rdim11.11.2.3"></string>
+    <string name="Std11.11.2">11.11.2.1 The health facility shall develop and make available a quality manual that summarizes the laboratory’s quality management system (QMS).</string>
+    <string name="Rdim11.11.2.1">There is an updated laboratory quality manual that has been communicated to all relevant staff (MOV-availability of current laboratory manual)</string>
+    <string name="Rdim11.11.2.2">There is a laboratory master list with all documents. (MOV- availability of master list)</string>
+    <string name="Rdim11.11.2.3">The laboratory has defined its scope of service and provides minimum essential tests as required per its level(MOV- availability of Quality manual in line with ISO 15189, complete document master list)</string>
 
-    <string name="Std11.11.3"></string>
-    <string name="Rdim11.11.3.1"></string>
-    <string name="Rdim11.11.3.2"></string>
-    <string name="Rdim11.11.3.3"></string>
-    <string name="Rdim11.11.3.4"></string>
-    <string name="Rdim11.11.3.5"></string>
+    <string name="Std11.11.3">11.11.2.2 The health facility shall provide specifications for supplies and consumables</string>
+    <string name="Rdim11.11.3.1">The laboratory provides specifications for its supplies and consumables(MOV-list with specification for supplies and consumables)</string>
+    <string name="Rdim11.11.3.2">The laboratory maintains records for each reagent and consumable used in the performance of examinations, with accurate inventory of its stock. (MOV-inventory)</string>
+    <string name="Rdim11.11.3.3">The laboratory has appropriate storage areas, which are routinely monitored (MOV-observation)</string>
+    <string name="Rdim11.11.3.4">The laboratory employs First-Expiration-First-Out (FEFO) practice to all reagents/test kits in use.(MOV-observation/ bin cards)</string>
+    <string name="Rdim11.11.3.5">All expired products labelled and disposed properly.(MOV-SOPs and records/holding grounds/ observed)</string>
 
-    <string name="Std11.11.4"></string>
-    <string name="Rdim11.11.4.1"></string>
-    <string name="Rdim11.11.4.2"></string>
+    <string name="Std11.11.4">11.11.2.3 The health facility shall conduct its internal audits at intervals as defined in the quality manual and address areas important to patient care</string>
+    <string name="Rdim11.11.4.1">Internal audits conducted as described in internal audit procedure. (MOV-audit reports)</string>
+    <string name="Rdim11.11.4.2">Internal audit action plan developed with clear timelines, assigned personnel and documented follow-up. (MOV- evidence of trained internal auditors, SOP on internal audit, non-conformities identified, corrective actions taken)</string>
 
-    <string name="Std11.11.5"></string>
-    <string name="Rdim11.11.5.1"></string>
+    <string name="Std11.11.5">11.11.3.1 The health facility shall use standardized laboratory request forms</string>
+    <string name="Rdim11.11.5.1">The laboratory has standardized a request form, with space for inclusion of, but not limited to the following: patient identification including age, gender, date of birth and location/contacts, name or unique identifier of the requesting clinician, date and time of primary sample collection (MOV- Observe for use of a standardized request form across the facility)</string>
 
-    <string name="Std11.11.6"></string>
-    <string name="Rdim11.11.6.1"></string>
+    <string name="Std11.11.6">11.11.3.2 The laboratory shall have guidelines for specimen collection and transportation</string>
+    <string name="Rdim11.11.6.1">The laboratory has guidelines for specimen collection (including staff and client safety), labelling, and transportation to persons responsible for primary sample collection (MOV- sample collection guidelines at sample collection areas)</string>
 
-    <string name="Std11.11.7"></string>
-    <string name="Rdim11.11.7.1"></string>
-    <string name="Rdim11.11.7.2"></string>
+    <string name="Std11.11.7">11.11.3.3 The laboratory shall document, review and evaluate referrals to laboratories and consultants’ clinics as defined by the laboratory</string>
+    <string name="Rdim11.11.7.1">The laboratory documents, reviews and evaluates referrals to laboratories and consultant clinics (MOV- referral register/ record)</string>
+    <string name="Rdim11.11.7.2">The laboratory maintains a register of referral laboratories and consultants clinics, and all referred specimens are tracked properly using a logbook, tracking form or electronically. (MOV- criteria for selection and evaluation of referral laboratories and consultants clinics, list of referral laboratories, records of referred samples, evidence of the referring laboratory providing results to the requesting entity)</string>
 
-    <string name="Std11.11.8"></string>
-    <string name="Rdim11.11.8.1"></string>
+    <string name="Std11.11.8">11.11.3.4 There shall be a mechanism for referral of samples to appropriate facilities</string>
+    <string name="Rdim11.11.8.1">A procedure for referral of samples is in place (MOV- SOP).</string>
 
-    <string name="Std11.11.9"></string>
-    <string name="Rdim11.11.9.1"></string>
+    <string name="Std11.11.9">11.11.4.1 The laboratory shall develop Standard Operating Procedures (SOP) for all its processes</string>
+    <string name="Rdim11.11.9.1">The laboratory has Standard Operating Procedures (SOP) for all its processes (MOV- SOP developed and available at point of use)</string>
 
-    <string name="Std11.11.10"></string>
-    <string name="Rdim11.11.10.1"></string>
+    <string name="Std11.11.10">11.11.4.2 Only trained, qualified and authorized personnel shall be allowed to collect analyse and release the results of patients.</string>
+    <string name="Rdim11.11.10.1">The laboratory is run and managed by qualified and authorized professionals (MOV- HR Records/Data base – defined qualifications of staff)</string>
 
-    <string name="Std11.11.11"></string>
-    <string name="Rdim11.11.11.1"></string>
-    <string name="Rdim11.11.11.2"></string>
-    <string name="Rdim11.11.11.3"></string>
+    <string name="Std11.11.11">11.11.4.3 All laboratory equipment shall be maintained in a functional condition.</string>
+    <string name="Rdim11.11.11.1">There is evidence of routine calibration of equipment (including pipettes, centrifuges, balances, and thermometers) scheduled, at minimum, following manufacturer recommendations and verified (MOV-Calibration records, schedule of calibration, maintenance of equipment, evidence of calibration certificates,)</string>
+    <string name="Rdim11.11.11.2">Preventive maintenance performed on all equipment and recorded (MOV- Maintenance records)and</string>
+    <string name="Rdim11.11.11.3">Manufacturer’s operator manuals readily available to testing staff in a language understood by the staff. (MOV- SOPs and manufacturers operating manuals)</string>
 
-    <string name="Std11.11.12"></string>
-    <string name="Rdim11.11.12.1"></string>
-    <string name="Rdim11.11.12.2"></string>
+    <string name="Std11.11.12">11.11.4.4 Examination procedures shall be verified/validated for the laboratory before being introduced into routine use</string>
+    <string name="Rdim11.11.12.1">Examination methods and procedures shall be validated and verified before being introduced into routine use (*Note: Standard methods do not need to be validated, but shall be verified)(See ISO 15189 and CLSI guidelines) (MOV- SOP on validation and verification, evidence of validation/ verification of methods. Statement of acceptability of the method)</string>
+    <string name="Rdim11.11.12.2">Each new reagent preparation, new lot number, new shipment of reagents or consumables shall be verified before use and documented (MOV- Evidence of verification of reagents and consumables before use in laboratory e.g. lot to lot verification)</string>
 
-    <string name="Std11.11.13"></string>
-    <string name="Rdim11.11.13.1"></string>
+    <string name="Std11.11.13">11.11.4.5 Internal Quality Control (IQC) shall be performed, documented, and verified for all tests/procedures before releasing patients’ results</string>
+    <string name="Rdim11.11.13.1">IQC results are monitored and reviewed (including biases and Levy-Jennings charts for quantitative tests) and corrective actions taken when quality control results exceed the acceptable range.(MOV- levy charts analysed and corrective actions taken in case of non-conformity)</string>
 
-    <string name="Std11.11.14"></string>
-    <string name="Rdim11.11.14.1"></string>
+    <string name="Std11.11.14">11.11.4.6 The laboratory shall participate in inter-laboratory comparison programs or proficiency testing or alternative assessment systems for all tests</string>
+    <string name="Rdim11.11.14.1">Inter-laboratory comparison programme(s) have clinically relevant challenges that mimic patients’ samples and have the effect of checking the entire examination processes including pre-examination, examination and post examination procedures where possible (MOV- feedback from the Proficiency testing provider on participation on Proficiency testing, corrective actions taken in case of failure of Proficiency testing)</string>
 
-    <string name="Std11.11.15"></string>
-    <string name="Rdim11.11.15.1"></string>
+    <string name="Std11.11.15">11.11.5.1 All test results reports shall be legible, technically verified/validated, and confirmed against patient information</string>
+    <string name="Rdim11.11.15.1">Reports of test results are legible, technically verified/validated, and confirmed against patient information(MOV- Sample 5 lab results)</string>
 
-    <string name="Std11.11.16"></string>
-    <string name="Rdim11.11.16.1"></string>
+    <string name="Std11.11.16">11.11.5.2 Results shall be interpreted and released by authorized personnel.</string>
+    <string name="Rdim11.11.16.1">Results interpreted and released by authorized personnel (MOV- list of authorised personnel to interpret results)</string>
 
-    <string name="Std11.11.17"></string>
-    <string name="Rdim11.11.17.1"></string>
+    <string name="Std11.11.17">11.11.5.3 Reporting mechanism shall be in place for critical and urgent results.</string>
+    <string name="Rdim11.11.17.1">Laboratory has a reporting procedure for critical and urgent results (MOV- SOP on critical reporting, past records on critical reporting)</string>
 
-    <string name="Std11.11.18"></string>
-    <string name="Rdim11.11.18.1"></string>
+    <string name="Std11.11.18">11.11.5.4 The laboratory report shall be comprehensive and clear</string>
+    <string name="Rdim11.11.18.1">Laboratory reports are clear and include: Examination performed, Patient identification, Name or unique identifier of the requesting person , Examination results reported in SI units, or other applicable units, Biological reference intervals, Interpretation of results as appropriate, Identification of person undertaking the examination and person reviewing the results(MOV- evidence of a standardized report )</string>
 
-    <string name="Std11.11.19"></string>
-    <string name="Rdim11.11.19.1"></string>
+    <string name="Std11.11.19">11.11.5.5 All archived results shall be properly labelled and stored in a secure location, easily retrievable and accessible only to authorized personnel</string>
+    <string name="Rdim11.11.19.1">Archived results are properly labelled and stored in a secure location accessible only to authorized personnel (MOV- SOP on archiving, records of archived report)</string>
 
-    <string name="Std11.11.20"></string>
-    <string name="Rdim11.11.20.1"></string>
+    <string name="Std11.11.20">11.11.5.6 The laboratory shall define length of time clinical samples will be retained, which shall be aligned to current regulation.</string>
+    <string name="Rdim11.11.20.1">The laboratory has a defined period for clinical samples retention, which depends on the nature of the sample, the examination and any applicable requirements (regulation) (MOV- retention guidelines and as per applicable regulations , retention records)</string>
 
-    <string name="Std11.11.21"></string>
-    <string name="Rdim11.11.21.1"></string>
+    <string name="Std11.11.21">11.11.5.7 Sample disposal shall be carried out in accordance with waste management regulations.</string>
+    <string name="Rdim11.11.21.1">Sample disposal carried out in accordance with waste management regulations (MOV- Records of waste disposal)</string>
 
-    <string name="Std11.11.22"></string>
-    <string name="Rdim11.11.22.1"></string>
+    <string name="Std11.11.22">11.11.5.8 Where the laboratory uses information management systems, the laboratory shall define levels of access authorization and responsibilities for the management and use of the laboratory information system</string>
+    <string name="Rdim11.11.22.1">The laboratory defines levels of access authorization and responsibilities for the management and use of the laboratory information system (MOV- records showing level and authority for access, use of passwords)</string>
 
-    <string name="Std11.11.23"></string>
-    <string name="Rdim11.11.23.1"></string>
+    <string name="Std11.11.23">11.11.5.9 Allresults that have been transmitted electronically or reproduced externally to the laboratory shall be verified</string>
+    <string name="Rdim11.11.23.1">Results that have been transmitted electronically or reproduced externally to the laboratory (computers, fax machines, email and websites and personal web devices) are verified (MOV- SOP on verification of the software)</string>
 
-    <string name="Std11.11.24"></string>
-    <string name="Rdim11.11.24.1"></string>
-    <string name="Rdim11.11.24.2"></string>
-    <string name="Rdim11.11.24.3"></string>
-    <string name="Rdim11.11.24.4"></string>
-    <string name="Rdim11.11.24.5"></string>
+    <string name="Std11.11.24">11.11.6.1 The health facility management shall be responsible for ensuring that appropriate measures are put in place to provide and monitor point of care testing within the institution</string>
+    <string name="Rdim11.11.24.1">There is a qualified staff member responsible for developing and implementing point of care testing procedures (MOV – HR records)</string>
+    <string name="Rdim11.11.24.2">Training program in place for POCT (MOV- training program)</string>
+    <string name="Rdim11.11.24.3">Facility proactively deal with nonconformities arising from POCT. (MOV-failed quality control and EQA reports)</string>
+    <string name="Rdim11.11.24.4">Facility implements process for comparison of equipment / methods (MOV- report)</string>
+    <string name="Rdim11.11.24.5">Procedures for ordering and collection of samples for point of care test are documented (MOV –observation of documented procedure)</string>
+
+    <!--    Pharmacy Strings -->
+
+    <string name="Dim11.12">Pharmacy</string>
+
+
+    <string name="Std11.12.1">11.12.1 The health facility shall provide adequate resources to support provision of quality pharmaceutical services</string>
+    <string name="Rdim11.12.1.1">The pharmacy is appropriately staffed based on the HRH norms and standards(MOV- HR Records)</string>
+    <string name="Rdim11.12.1.2">All pharmaceutical staff are registered by the Pharmacy and Poisons Board (MOV- HR Records)</string>
+    <string name="Rdim11.12.1.3">The facility has tablet counters, dispensing software, and refrigerator as per the existing infrastructure norms and standards (MOV-Observation)</string>
+    <string name="Rdim11.12.1.4">The facility has temperature controlled, well ventilated commodity storage room with racks (MOV-Observation, temperature charts)</string>
+
+    <string name="Std11.12.2">11.12.2 The health facility shall ensure that pharmaceutical services are provided based on the best pharmaceutical practices</string>
+    <string name="Rdim11.12.2.1">There is a system in place in the pharmacy for detection of prescription errors(MOV-SOP)</string>
+    <string name="Rdim11.12.2.2">There is a procedure in the pharmacy for rectifying detected pharmaceutical errors (MOV-Documented procedure )</string>
+    <string name="Rdim11.12.2.3">There is a provision in the pharmacy for confidential counselling of clients on the use of medicines and other products dispensed by the pharmacy(MOV-Observation)</string>
+    <string name="Rdim11.12.2.4">Pharmacy adheres to the standard operating procedures for extemporaneous preparations and reconstitutions (MOV- availability of clean water and dispensing containers)</string>
+    <string name="Rdim11.12.2.5">There is evidence of storage and use of prescription data for decision making (MOV- Medicines and Therapeutic Committee minutes)</string>
+
+    <string name="Std11.12.3">11.12.3 The facility shall establish mechanisms for ensuring the safety of medicinal products, including vaccines and herbal medications</string>
+    <string name="Rdim11.12.3.1">There is a checklist to determine that the medicines are of good quality and safe to use (MOV-Checklist)</string>
+    <string name="Rdim11.12.3.2">Narcotics and psychotropic medicines are accounted for in accordance to the SOPs and specified registers (MOV- Narcotics register, DDA)</string>
+    <string name="Rdim11.12.3.3">There is a system for pharmaco-vigilance (MOV- pharmacovigilance register/ forms)</string>
+
+    <string name="Std11.12.4">11.12.4 The facility shall establish a mechanism for medication therapy management</string>
+    <string name="Rdim11.12.4.1">There is a pharmaceutical care plan, which is communicated to the prescriber/provider and the client. (MOV-List of available drugs)</string>
+    <string name="Rdim11.12.4.2">There is a tracking chart for medicines (MOV- availability of tracking chart).</string>
+    <string name="Rdim11.12.4.3">There is evidence of documentation of medicines and therapeutic committee meetings. (MOV- Minutes of MTC)</string>
+
+    <string name="Std11.12.5">11.12.5 The health facility shall ensure pharmaceutical staff undergo regular training, update their skills and carry out operational research</string>
+    <string name="Rdim11.12.5.1">There is evidence of a CME schedule, register and minutes by the pharmacy department at least once every month (MOV- CME report)</string>
+    <string name="Rdim11.12.5.2">There is a documented plan of health education for clients/ clinicians (MOV- Schedules)</string>
+    <string name="Rdim11.12.5.3">There is evidence that the facility carries out operational research to inform pharmacy decisions. (MOV-Research report)</string>
+
+    <!--    Radiology Strings -->
+
+    <string name="Dim11.13">Radiology</string>
+
+
+    <string name="Std11.13.1">11.13.1 The facility shall ensure that X-Ray infrastructure is developed according to regulation.</string>
+    <string name="Rdim11.13.1.1">The wall thickness of x-ray rooms, window height, ceiling height, doors and room size meet recommended international radiation protection specifications (MOV- approved building plan)</string>
+    <string name="Rdim11.13.1.2">X-ray room ceiling height allows room for ceiling suspended equipment (MOV- Observation against standards)</string>
+    <string name="Rdim11.13.1.3">X-ray department is located adjacent to casualty department for ease of transfer of emergency cases. (MOV-Observation)</string>
+
+    <string name="Std11.13.2">11.13.2 The facility management will ensure radiation safety for staff, patient and the public.</string>
+    <string name="Rdim11.13.2.1">Facility carries out radiation monitoring of all staff working in radiation area on a monthly basis. This should include submission of adiation doses. (MOV-Radiation monitoring reports)</string>
+    <string name="Rdim11.13.2.2">Radiation protection gear is available for all patients and staff (MOV-Observation)</string>
+    <string name="Rdim11.13.2.3">Facility monitors radiation within the X-ray department (MOV- radiation monitoring report)</string>
+    <string name="Rdim11.13.2.4">Facility has put in place measures to address identified areas of improvement based on results of radiation monitoring (MOV- Improvement plan)</string>
+
+    <string name="Std11.13.3">11.13.3 Facility management shall ensure that examination request forms are standardised.</string>
+    <string name="Rdim11.13.3.1">Facility uses a standard request form that includes at least fields for: Patient details (Name, Age, Sex, IP/OP no) Clinical details Clinical query to be answered Referral details Region and examination details Procedure priority (e.g. urgent, elective) Provisional diagnosis. Gravidity status for females of child bearing age. History of reaction to iodine based contrast media(MOV- observe for the above in the request form)</string>
+
+    <string name="Std11.13.4">11.13.4 Imaging departments will ensure patient dignity and comfort is ensured during imaging examinations.</string>
+    <string name="Rdim11.13.4.1">Facility has a secure changing room (MOV-Observation)</string>
+    <string name="Rdim11.13.4.2">Facility has clean changing gowns (MOV-Observation)</string>
+    <string name="Rdim11.13.4.3">Examination room offers privacy during procedures (MOV-Observation)</string>
+    <string name="Rdim11.13.4.4">Facility displays ‘Examination in Progress’ sign at the entrance to the examination room (MOV-Observation)</string>
+
+    <string name="Std11.13.5">11.13.5 Imaging departments will ensure a mechanism is in place for immediate reporting of urgent and critical examination results.</string>
+    <string name="Rdim11.13.5.1">The department provides 24 hour services, 7 days a week</string>
+
+    <!--     Mortuary Strings -->
+
+    <string name="Dim11.14"> Mortuary</string>
+
+
+    <string name="Std11.14.1">11.14.1 The facility shall have adequate resources to provide quality mortuary services (8)</string>
+    <string name="Rdim11.14.1.1">Staff working in the mortuary have relevant training (MOV-HR records)</string>
+    <string name="Rdim11.14.1.2">The mortuary has functional system for preservation of bodies (e.g. coolers or formalin technology) (MOV-observation of the mortuary)</string>
+    <string name="Rdim11.14.1.3">A body trolley is available (MOV-observation)</string>
+    <string name="Rdim11.14.1.4">A dissecting kit is available (MOV-observation and equipment list)</string>
+
+    <string name="Std11.14.2">11.14.2 The facility shall have in place documented standard operating procedures for body processing</string>
+    <string name="Rdim11.14.2.1">Bodies are received in line with standard operating procedures (MOV- Availability of SOP)</string>
+    <string name="Rdim11.14.2.2">Bodies are identified according to standard operating procedures (MOV- Availability of SOP)</string>
+    <string name="Rdim11.14.2.3">Bodies are stored in line with standard operating procedures (MOV- Availability of SOP)</string>
+    <string name="Rdim11.14.2.4">Bodies are released in line with standard operating procedures (MOV- Availability of SOP)</string>
+
+    <string name="Std11.14.3">11.14.3 The mortuary environment shall have a functional drainage system and be free from smells</string>
+    <string name="Rdim11.14.3.1">Mortuary has a working drainage system (MOV-Observation)</string>
+    <string name="Rdim11.14.3.2">Odour from the mortuary does not reach patient areas and the public (MOV- Observation)</string>
+
+
+    <!--    Results Strings -->
+
+    <string name="Dim12"> Results </string>
+
+    <string name="Indicator1">Patient satisfaction index.
+        (BM greater than 85%)</string>
+    <string name="Indicator2">Staff satisfaction index.
+        (BM greater than 85%)</string>
+    <string name="Indicator3">Average length of hospital stay.
+        (BM less than 4 days)</string>
+    <string name="Indicator4">Episodes of stock out of any of the 22 essential medicines and supplies lasting over 7 days in the last three month(BM = 0 periods)</string>
+    <string name="Indicator5">Down time rates for vaccines fridge: Number of days the vaccine fridge was not functional in the past 90 days.
+        (BM at 0 days)</string>
+    <string name="Indicator6">Proportion of emergency patients referred within 30 minutes of decision making.
+        (BM at 100%)</string>
+    <string name="Indicator6num">Numerator: Number of emergency patients referred by the facility within 30 minutes of decision making</string>
+    <string name="Indicator6den">Denominator: Total number of emergency patients referred by the facility</string>
+    <string name="Indicator7">Percentage of under 1 yr old children immunized against measles.
+        (BM greater than 90%)</string>
+    <string name="Indicator7num">Numerator: No. of children under 1 yr immunized against measles</string>
+    <string name="Indicator7den">Denominator: Facility target population under 1year of age</string>
+    <string name="Indicator8">Proportion of patients developing nosocomial infections.
+        (BM less than 5%)</string>
+    <string name="Indicator8num">Numerator: Number of patients with nosocomial infections</string>
+    <string name="Indicator8den">Denominator: Total number of inpatients</string>
+    <string name="Indicator9">Proportion of patients with bed sores grade 1 and 2.
+        (BM less than 1%)</string>
+    <string name="Indicator9num">Numerator: Number of patients with bed sores grade 1 and 2.</string>
+    <string name="Indicator9den">Denominator: Total number of inpatients</string>
+    <string name="Indicator10">Proportion of women with perineal tears Grade 2–4
+        (BM less than 3%)</string>
+    <string name="Indicator10num">Numerator: Number of women with perineal tears</string>
+    <string name="Indicator10den">Denominator: Total number of vaginal deliveries</string>
+    <string name="Indicator11">	Caesarean Section rate
+        (BM greater than or equal to 15%)</string>
+    <string name="Indicator11num">Numerator: Number of CS</string>
+    <string name="Indicator11den">Denominator: Total number of births</string>
+    <string name="Indicator12">	Facility-based direct obstetric case fatality rate.
+        (BM less than 1%)</string>
+    <string name="Indicator12num">Numerator: Number of maternal deaths at facility</string>
+    <string name="Indicator12den">Denominator: Number of obstetric complications managed at facility</string>
+    <string name="Indicator13">Proportion of maternal deaths audited.
+        (BM at 100%)</string>
+    <string name="Indicator13num">Numerator: Number of maternal deaths audited</string>
+    <string name="Indicator13den">Denominator: Total number of maternal deaths</string>
+    <string name="Indicator14">Proportions of newborns successfully resuscitated.
+        (BM at 100%)</string>
+    <string name="Indicator14num">Numerator: Number of newborns successfully resuscitated</string>
+    <string name="Indicator14den">Denominator: Number of newborns requiring resuscitation</string>
+    <string name="Indicator15">Proportion of babies with confirmed or suspected neonatal infection (including readmissions within seven days of discharge).
+        (BM less than 5%)</string>
+    <string name="Indicator15num">Numerator: Number of babies with confirmed or suspected neonatal infection (including readmissions within seven days of discharge)</string>
+    <string name="Indicator15den">Denominator: Total number of live births in the health facility</string>
+    <string name="Indicator16">Proportion of babies born with low birth weight
+        (BM less than 5%)</string>
+    <string name="Indicator16num">Numerator: Number of babies born with weight less than 2500g</string>
+    <string name="Indicator16den">Denominator: Total number of live births</string>
+    <string name="Indicator17">Survival rate for babies born premature
+        (BM greater than 90%)</string>
+    <string name="Indicator17num">Numerator: Number of premature babies who are discharged alive</string>
+    <string name="Indicator17den">Denominator: Total number of babies born premature</string>
+    <string name="Indicator18">Facility-based perinatal mortality rate
+        (BM less than 1%)</string>
+    <string name="Indicator18num">Numerator: Number of perinatal deaths (all stillbirths and early neonatal deaths including readmissions)</string>
+    <string name="Indicator18den">Denominator: Total number of births</string>
+    <string name="Indicator19">Stillbirth rate.
+        (BM less than 10still births per 1000 live births)</string>
+    <string name="Indicator19num">Numerator: Number of babies with no signs of life at birth (at or after 28 weeks of gestation and weighting ≥1000 grams).</string>
+    <string name="Indicator19den">Denominator: Total # of births in the facility</string>
+    <string name="Indicator20">Facility-based neonatal mortality rate.
+        (BM less than 12 mortalities per 1000 live births)</string>
+    <string name="Indicator20num">Numerator: Number of neonatal deaths</string>
+    <string name="Indicator20den">Denominator: Total number of live births</string>
+    <string name="Indicator21">Facility-based pneumonia case fatality rate for children under 5yrs.
+        (BM less than or equal to 5%)</string>
+    <string name="Indicator21num">Numerator: Number of deaths of children under 5yrs from pneumonia</string>
+    <string name="Indicator21den">Denominator: Total number of pneumonia cases of children under 5 yrs</string>
+    <string name="Indicator22">Facility-based diarrhea case fatality rate in children under 5 years of age.
+        (BM less than 1%)</string>
+    <string name="Indicator22num">Numerator: Number of deaths of children below 5 years of age from diarrhea</string>
+    <string name="Indicator22den">Denominator: Total number of inpatient diarrhea cases in children below 5years of age</string>
+    <string name="Indicator23">Proportion of perinatal deaths audited.
+        (BM at 100%)</string>
+    <string name="Indicator23num">Numerator: Number of perinatal deaths audited</string>
+    <string name="Indicator23den">Denominator: Total number of perinatal deaths</string>
+    <string name="Indicator24">Proportion of repeat surgeries.
+        (BM less than 2%)</string>
+    <string name="Indicator24num">Numerator: Number of repeat surgeries in a year</string>
+    <string name="Indicator24den">Denominator: Total number of surgeries in a year</string>
+    <string name="Indicator25">Surgical rate for cold cases.
+        (BM greater than 0.9)</string>
+    <string name="Indicator25num">Numerator: Number of surgeries conducted for cold cases</string>
+    <string name="Indicator25den">Denominator: Total number of scheduled surgeries</string>
+    <string name="Indicator26">Proportion of post-surgery complications.
+        (BM less than or equal to 10%)</string>
+    <string name="Indicator26num">Numerator: Number of patients with post-surgery complications</string>
+    <string name="Indicator26den">Denominator: Total number of surgeries</string>
+    <string name="Indicator27">TB cure rate.
+        (BM greater than or equal to 90%)</string>
+    <string name="Indicator27num">Numerator: Number of TB cases cured</string>
+    <string name="Indicator27den">Denominator: Total number of TB cases treated</string>
+    <string name="Indicator28">HIV viral load suppression.
+        (BM greater than or equal to 90%)</string>
+    <string name="Indicator28num">Numerator: Number of HIV patients on treatment whose viral loads are suppressed below 1000 copies/μl</string>
+    <string name="Indicator28den">Denominator: Total number of HIV patients on treatment</string>
+    <string name="Indicator29">Malaria inpatient case fatality rate.
+        (BM less than or equal to 5%)</string>
+    <string name="Indicator29num">Numerator: Number of deaths due to malaria</string>
+    <string name="Indicator29den">Denominator: Total number of inpatient malaria cases</string>
+    <string name="Indicator30">Percentage of dialysis patients with   most recent haemoglobin above 12g/dl.
+        (BM at 100%)</string>
+    <string name="Indicator30num">Numerator: Number of dialysis patients whose haemoglobin  level is above 12g/dl. </string>
+    <string name="Indicator30den">Denominator: Total number of patients undergoing treatment for diabetes in the last one year.</string>
+    <string name="Indicator31">Percentage of patients being managed for high blood pressure with most recent blood pressure less than 140/90 mmHg.
+        (BM at 100%)</string>
+    <string name="Indicator31num">Numerator: Number of patients with most recent blood pressure less than 140/90 mmHg who have been managed for hypertension in the last one year</string>
+    <string name="Indicator31den">Denominator: Total number of patients undergoing treatment for hypertension in the last one year. </string>
+    <string name="Indicator32">All women of reproductive age accessing care at the health facility are screened for cervical cancer.
+        (BM greater than or equal to 75%)</string>
+    <string name="Indicator32num">Numerator: Number of women testing positive for cervical cancer who have received treatment at the facility</string>
+    <string name="Indicator32den">Denominator: All women of reproductive age accessing care at the health facility.</string>
+    <string name="Indicator33">Facility based inpatient fatality rate (%).
+        (BM less than or equal to 2%)</string>
+    <string name="Indicator33num">Numerator: Number of deaths</string>
+    <string name="Indicator33den">Denominator: Total number of admissions</string>
+    <string name="Indicator34">Quarterly data quality audits carried out in the past one year.
+        (BM at 4)</string>
+
 
 </resources>
 

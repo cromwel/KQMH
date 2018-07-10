@@ -54,6 +54,12 @@
             android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".Forms.Dimension11_2"
             android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension11_3"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension11_4"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Forms.Dimension11_5"
+            android:windowSoftInputMode="stateHidden"/>
 
     </application>
 
