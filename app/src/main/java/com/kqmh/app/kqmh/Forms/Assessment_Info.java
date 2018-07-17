@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -29,6 +30,7 @@ import com.kqmh.app.kqmh.Utils.AuthBuilder;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
 import com.kqmh.app.kqmh.Models.KeyValue;
+import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.toptoche.searchablespinnerlibrary.SearchableSpinner;
 
 import org.json.JSONArray;
@@ -84,7 +86,17 @@ public class Assessment_Info extends AppCompatActivity {
             }
         });
 
+        List<AssessmentTypeCombo> employees = SQLite.select()
+                .from(AssessmentTypeCombo.class)
+                .queryList();
+        Toast.makeText(getBaseContext(),"Pulled from db " + employees.size(),Toast.LENGTH_LONG).show();
+
         SessionManager sessionManager = new SessionManager(getBaseContext());
+        try {
+            getAssessmentType(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         try {
             for(int i=1;i<350;i++) {
@@ -95,11 +107,7 @@ public class Assessment_Info extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        try {
-            getAssessmentType(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
 
     }
 
@@ -194,6 +202,7 @@ public class Assessment_Info extends AppCompatActivity {
                         AssessmentTypeCombo combo = gson.fromJson(jsonArray.getJSONObject(i).toString(), AssessmentTypeCombo.class);
                         categoryOptions.add(combo);
                     }
+                    saveOptions(categoryOptions);
                     closeProgressbar();
                     spinnerData_AssessmentType(spinner_AssessmentType, "1");
                 } catch (JSONException e) {
@@ -218,6 +227,13 @@ public class Assessment_Info extends AppCompatActivity {
             }
         };
         VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
+    }
+
+    private void saveOptions(List<AssessmentTypeCombo> categoryOptions) {
+        Log.d("Saving options", "saving " + categoryOptions.size());
+        for(AssessmentTypeCombo assessmentTypeCombo : categoryOptions){
+            assessmentTypeCombo.save();
+        }
     }
 
     public void spinnerData_period(Spinner spinner, final String choice) {
