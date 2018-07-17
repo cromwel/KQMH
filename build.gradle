@@ -17,6 +17,7 @@ buildscript {
 
 allprojects {
     repositories {
+        // required to find the project's artifacts
         google()
         jcenter()
         maven { url "https://www.jitpack.io" }

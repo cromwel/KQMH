@@ -1,8 +1,7 @@
 package com.kqmh.app.kqmh.Models;
 
-import com.kqmh.app.kqmh.AppDatabase;
 import com.kqmh.app.kqmh.Forms.Dimension1;
-import com.orm.SugarRecord;
+import com.kqmh.app.kqmh.Utils.MyDatabase;
 import com.raizlabs.android.dbflow.annotation.Column;
 import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
@@ -10,11 +9,8 @@ import com.raizlabs.android.dbflow.structure.BaseModel;
 
 import java.util.List;
 
-@Table(database = AppDatabase.class, name = "scoreOptions")
-    public class ScoreTypeOptions {
-        public ScoreTypeOptions(Dimension1 dimension1, int simple_spinner_dropdown_item, List<ScoreTypeOptions> categoryScores) {
-
-        }
+@Table(database = MyDatabase.class, name = "scoreOptions")
+    public class ScoreTypeOptions extends BaseModel {
 
         @Column
         @PrimaryKey

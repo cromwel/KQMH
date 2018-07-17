@@ -1,17 +1,14 @@
 package com.kqmh.app.kqmh.Models;
 
-import com.kqmh.app.kqmh.AppDatabase;
+import com.kqmh.app.kqmh.Utils.MyDatabase;
 import com.raizlabs.android.dbflow.annotation.Column;
 import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
 
-@Table(database = AppDatabase.class, name = "assessmentOptions")
+@Table(database = MyDatabase.class, name = "assessmentOptions")
 public class AssessmentTypeCombo extends BaseModel {
-    public AssessmentTypeCombo() {
-
-    }
 
     @Column
     @PrimaryKey
@@ -41,3 +38,4 @@ public class AssessmentTypeCombo extends BaseModel {
         return this.displayName;
     }
 }
+

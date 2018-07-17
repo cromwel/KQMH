@@ -1,17 +1,15 @@
 package com.kqmh.app.kqmh.Models;
 
-import com.kqmh.app.kqmh.AppDatabase;
+import com.kqmh.app.kqmh.Utils.MyDatabase;
 import com.raizlabs.android.dbflow.annotation.Column;
 import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
 
-@Table(database = AppDatabase.class, name = "OrganisationUnits")
+@Table(database = MyDatabase.class, name = "OrganisationUnits")
 public class OrganisationUnit extends BaseModel {
-    public OrganisationUnit() {
 
-    }
 
     @Column
     @PrimaryKey

@@ -22,7 +22,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Dimension2 extends AppCompatActivity {
 
     List<Spinner> spinnerList = new ArrayList<>();
@@ -61,8 +60,6 @@ public class Dimension2 extends AppCompatActivity {
             }
         });
 
-
-
         for(int value=1;value<28;value++){
             Resources res  = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score),value);
@@ -79,10 +76,7 @@ public class Dimension2 extends AppCompatActivity {
             e.printStackTrace();
             progressDialog.cancel();
         }
-
     }
-
-
 
     public void prev_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);

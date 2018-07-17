@@ -10,9 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonParser;
-import com.kqmh.app.kqmh.Adapters.OrganisationUnitAdapter;
 import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
@@ -63,8 +60,6 @@ public class Dimension1 extends AppCompatActivity {
             }
         });
 
-
-
         for(int value=1;value<28;value++){
             Resources res  = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score),value);
@@ -81,9 +76,7 @@ public class Dimension1 extends AppCompatActivity {
             e.printStackTrace();
             progressDialog.cancel();
         }
-
     }
-
 
     public void prev_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
