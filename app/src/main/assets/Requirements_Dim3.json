@@ -1,0 +1,210 @@
+{
+  "dataSetElements":
+  [
+    {
+      "dataElement": {
+        "name":"RDIM_3.3_SOPs strategically displayed\n(MOV-SOPs in each service delivery area)",
+        "id":"KIibWoHnmT1",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_3.2_Previous year’s annual performance report(s)",
+        "id":"qgbH52TDHUN",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_3.5_The facility has relevant standard clinical treatment guidelines.\n(MOV- confirm physical or virtual access)",
+        "id":"xAnLbIhctZb",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_3.1_The operation plan for the health facility is aligned to the current Health Act, Kenya Health Policy and KHSSP(MOV-Current annual operational plan and objectives)",
+        "id":"n1ca6sT3eBZ",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_3.2_Infrastructure Norms and Standards",
+        "id":"YjXMemFGay4",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_3.2_Current Kenya Health Sector Strategic and Investment Plan",
+        "id":"HReEG0EA542",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_3.2_Human Resources Norms and Standards",
+        "id":"rFCLEXoW6ls",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_3.2_Current Kenya Health Policy",
+        "id":"JfZaG983Hp0",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_3.5_Use and adherence to guidelines is monitored.\n(MOV-monitoring report)",
+        "id":"eulgk1yTwog",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_3.4_There is a documented plan for updating staff on the current policies, standards and guideline (MOV-documented plan )",
+        "id":"b8RPAap7KjR",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_3.3_Evidence that standard operating procedures and are reviewed at least once a year\n(MOV- SOP with date of update displayed)",
+        "id":"dM2GtmBFXuQ",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

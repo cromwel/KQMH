@@ -9,7 +9,7 @@ public class JSONFileParser {
     public static String loadJSONFromAsset(Context context) {
         String json = null;
         try {
-            InputStream is = context.getAssets().open("trial.json");
+            InputStream is = context.getAssets().open("Requirements_Dim1.json");
 
             int size = is.available();
 
