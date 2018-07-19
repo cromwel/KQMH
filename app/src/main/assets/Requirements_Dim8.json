@@ -1,0 +1,305 @@
+{
+  "dataSetElements":
+  [
+    {
+      "dataElement": {
+        "name":"RDIM_8.3_Contacts details of facilities and specialists to which patients are referred are available\n(MOV- Document with emails addresses, telephone and physical addresses)",
+        "id":"oO2nRd2KAyU",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+      "name":"RDIM_8.4_Involvement of patients and their escorts in handover processes",
+      "id":"iHXbIYPw7CT",
+      "optionSet": {
+        "name":"KQMH_3 Scoring Options(Yes, No, P)",
+        "options":[ {
+          "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+        }
+        ,
+          {
+            "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+          }
+        ,
+          {
+            "code": "0", "name": "No", "id": "owtmpRi3xjk"
+          }
+        ]
+      }
+    }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.3_Referred patients are accompanied with duly filled referral documents containing at a minimum working diagnosis, investigations done, any other care provided (MOV- sample referral documents)",
+        "id":"Cszzjy69gh6",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.2_There is continuity of care/ life support for the patient while in transit\n(MOV- SOPs/ Interview responsible staff)",
+        "id":"T4Ujmhcvv4y",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.3_Facility keeps referral records as per the National Referral Strategy(MOV- referral register)",
+        "id":"OdwWStQ3BOI",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.4_Location for receiving referred patients",
+        "id":"OdKnb7TYnlZ",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.1_Facility referral SOPs available and accessible to staff\n(MOV-SOP available)",
+        "id":"vP7flcEQ9XK",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.2_Facility ensures a competent staff member accompanies patient during referral(MOV-Referral schedule/SOPs clearly displayed at service delivery areas)",
+        "id":"ekaua5zvYOn",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.5_The facility collects, analyses and uses the data to continuously improve patient care and strengthen the referral system\n(MOV- referral audit, and minutes from HMT discussing referral data)",
+        "id":"bmDQ52poNPT",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.3_The facility provides round-the-clock functional and effective hotline service managed by competent personnel conversant with the management of referrals.(MOV-call the hotline to confirm functionality)",
+        "id":"fgAwObIu6V1",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.2_There is evidence that patients are referred to the appropriate health facility/specialist\n(MOV- referral register)",
+        "id":"XBk4uDRflcU",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.4_Patient admission to the relevant unit and attendance by appropriate specialist",
+        "id":"hWr9GlJdBjH",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.2_The facility has access to standard ambulance services at all times(MOV-Observe for availability of ambulances/ service contracts)",
+        "id":"ZToyTcJXnTT",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.3_Feedback is provided to the referring facility(MOV-Quarterly referral reports)",
+        "id":"k0fevXgYoaZ",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.2_Patients referred within the time set in the service charter\n(MOV- Interview responsible staff, files of last 5 referrals)",
+        "id":"jRq6HX8FwBW",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_8.1_National Referral Guidelines are available and accessible to relevant staff\n(MOV- confirm availability/accessibility to the guidelines)",
+        "id":"gsu2pNODANH",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+
+  ]
+}

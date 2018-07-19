@@ -1977,7 +1977,7 @@
                             android:textColor="@color/grey"
                             android:textSize="16sp" />
 
-                    </LinearLayout>
+                        </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
