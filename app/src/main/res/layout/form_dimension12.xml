@@ -1,6 +1,3383 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+        <include layout="@layout/header"/>
+
+            <!-- button section -->
+        <include layout="@layout/nav_buttons" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_border"
+                    app:cardCornerRadius="5dp"
+                    card_view:cardElevation="9dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--indicator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/orange"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/av_i1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".325"
+                                    android:background="@color/white"
+                                    android:hint="@string/actual_value"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"  />
+
+                                <TextView
+                                    android:id="@+id/avscore_i1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".075"
+                                    android:gravity="center"
+                                    android:background="@color/grey"
+                                    android:padding="5dp"
+                                    android:text="@string/D12score"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+                            <!--comment-->
+                            <EditText
+                                android:id="@+id/com_i1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/blue"
+                                android:hint="@string/comment"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--indicator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/orange"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator2"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/av_i2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".325"
+                                    android:background="@color/white"
+                                    android:hint="@string/actual_value"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"  />
+
+                                <TextView
+                                    android:id="@+id/avscore_i2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".075"
+                                    android:gravity="center"
+                                    android:background="@color/grey"
+                                    android:padding="5dp"
+                                    android:text="@string/D12score"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+                            <!--comment-->
+                            <EditText
+                                android:id="@+id/com_i2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/blue"
+                                android:hint="@string/comment"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--indicator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/orange"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator3"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/av_i3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".325"
+                                    android:background="@color/white"
+                                    android:hint="@string/actual_value"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"  />
+
+                                <TextView
+                                    android:id="@+id/avscore_i3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".075"
+                                    android:gravity="center"
+                                    android:background="@color/grey"
+                                    android:padding="5dp"
+                                    android:text="@string/D12score"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+                            <!--comment-->
+                            <EditText
+                                android:id="@+id/com_i3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/blue"
+                                android:hint="@string/comment"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--indicator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/orange"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator4"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/av_i4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".325"
+                                    android:background="@color/white"
+                                    android:hint="@string/actual_value"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"  />
+
+                                <TextView
+                                    android:id="@+id/avscore_i4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".075"
+                                    android:gravity="center"
+                                    android:background="@color/grey"
+                                    android:padding="5dp"
+                                    android:text="@string/D12score"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+                            <!--comment-->
+                            <EditText
+                                android:id="@+id/com_i4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/blue"
+                                android:hint="@string/comment"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--indicator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/orange"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator5"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/av_i5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".325"
+                                    android:background="@color/white"
+                                    android:hint="@string/actual_value"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"  />
+
+                                <TextView
+                                    android:id="@+id/avscore_i5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".075"
+                                    android:gravity="center"
+                                    android:background="@color/grey"
+                                    android:padding="5dp"
+                                    android:text="@string/D12score"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+                            <!--comment-->
+                            <EditText
+                                android:id="@+id/com_i5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/blue"
+                                android:hint="@string/comment"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_border"
+                    app:cardCornerRadius="5dp"
+                    card_view:cardElevation="9dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator6"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i6"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator6num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i6n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator6den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i6d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator7"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i7"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator7num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i7n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator7den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i7d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator8"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i8"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator8num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i8n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator8den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i8d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator9"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i9"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator9num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i9n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator9den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i9d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator10"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i10"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator10num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i10n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator10den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i10d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator11"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i11"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator11num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i11n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator11den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i11d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator12"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i12"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator12num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i12n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator12den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i12d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator13"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i13"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator13num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i13n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator13den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i13d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator14"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i14"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator14num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i14n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator14den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i14d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator15"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i15"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator15num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i15n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator15den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i15d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator16"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i16"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator16num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i16n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator16den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i16d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator17"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i17"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator17num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i17n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator17den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i17d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator18"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i18"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator18num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i18n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator18den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i18d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i18"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator19"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i19"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator19num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i19n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator19den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i19d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i19"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator20"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i20"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator20num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i20n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator20den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i20d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i20"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator21"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i21"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator21num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i21n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator21den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i21d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i21"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator22"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i22"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator22num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i22n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator22den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i22d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i22"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator23"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i23"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator23num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i23n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator23den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i23d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator24"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i24"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator24num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i24n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator24den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i24d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i24"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator25"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i25"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator25num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i25n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator25den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i25d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i25"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator26"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i26"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator26num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i26n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator26den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i26d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i26"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator27"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i27"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator27num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i27n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator27den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i27d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i27"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--indicator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".7"
+                                    android:background="@color/orange"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator28"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/avscore_i28"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".3"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:padding="5dp"
+                                    android:text="@string/D12score"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                            <!--numerator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".7"
+                                    android:background="@color/grey"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator28num"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/av_i28n"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".3"
+                                    android:background="@color/dark_grey"
+                                    android:hint="@string/actual_value"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"  />
+
+                            </LinearLayout>
+                            <!--denominator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".7"
+                                    android:background="@color/dark_grey"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator28den"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/av_i28d"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".3"
+                                    android:background="@color/grey"
+                                    android:hint="@string/actual_value"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"  />
+
+                            </LinearLayout>
+                            <!--comment-->
+                            <EditText
+                                android:id="@+id/com_i28"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/blue"
+                                android:hint="@string/comment"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator29"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i29"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator29num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i29n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator29den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i29d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i29"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--indicator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".7"
+                                    android:background="@color/orange"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator30"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/avscore_i30"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".3"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:padding="5dp"
+                                    android:text="@string/D12score"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                            <!--numerator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".7"
+                                    android:background="@color/grey"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator30num"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/av_i30n"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".3"
+                                    android:background="@color/dark_grey"
+                                    android:hint="@string/actual_value"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"  />
+
+                            </LinearLayout>
+                            <!--denominator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".7"
+                                    android:background="@color/dark_grey"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator30den"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/av_i30d"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".3"
+                                    android:background="@color/grey"
+                                    android:hint="@string/actual_value"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"  />
+
+                            </LinearLayout>
+                            <!--comment-->
+                            <EditText
+                                android:id="@+id/com_i30"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/blue"
+                                android:hint="@string/comment"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--indicator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".7"
+                                    android:background="@color/orange"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator31"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/avscore_i31"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".3"
+                                    android:gravity="center"
+                                    android:background="@color/white"
+                                    android:padding="5dp"
+                                    android:text="@string/D12score"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                            <!--numerator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".7"
+                                    android:background="@color/grey"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator31num"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/av_i31n"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".3"
+                                    android:background="@color/dark_grey"
+                                    android:hint="@string/actual_value"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"  />
+
+                            </LinearLayout>
+                            <!--denominator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".7"
+                                    android:background="@color/dark_grey"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator31den"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/av_i31d"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".3"
+                                    android:background="@color/grey"
+                                    android:hint="@string/actual_value"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"  />
+
+                            </LinearLayout>
+                            <!--comment-->
+                            <EditText
+                                android:id="@+id/com_i31"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/blue"
+                                android:hint="@string/comment"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator32"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i32"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator32num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i32n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator32den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i32d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i32"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--indicator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/orange"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator33"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/avscore_i33"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:gravity="center"
+                                        android:background="@color/white"
+                                        android:padding="5dp"
+                                        android:text="@string/D12score"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                                <!--numerator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator33num"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i33n"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/dark_grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--denominator-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".7"
+                                        android:background="@color/dark_grey"
+                                        android:padding="5dp"
+                                        android:text="@string/Indicator33den"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <EditText
+                                        android:id="@+id/av_i33d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight=".3"
+                                        android:background="@color/grey"
+                                        android:hint="@string/actual_value"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textSize="16sp"  />
+
+                                </LinearLayout>
+                                <!--comment-->
+                                <EditText
+                                    android:id="@+id/com_i33"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/blue"
+                                    android:hint="@string/comment"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_border"
+                    app:cardCornerRadius="5dp"
+                    card_view:cardElevation="9dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--indicator-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/orange"
+                                    android:padding="5dp"
+                                    android:text="@string/Indicator34"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/av_i34"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".325"
+                                    android:background="@color/white"
+                                    android:hint="@string/actual_value"
+                                    android:inputType="number"
+                                    android:padding="5dp"
+                                    android:textSize="16sp"  />
+
+                                <TextView
+                                    android:id="@+id/avscore_i34"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".075"
+                                    android:gravity="center"
+                                    android:background="@color/grey"
+                                    android:padding="5dp"
+                                    android:text="@string/D12score"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+                            <!--comment-->
+                            <EditText
+                                android:id="@+id/com_i34"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/blue"
+                                android:hint="@string/comment"
+                                android:inputType="textMultiLine"
+                                android:padding="5dp"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            <!-- button section -->
+            <include layout="@layout/dims_button"/>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -13,5 +13,6 @@
 
     <color name="grey">#ccc</color>
     <color name="light_grey">#eeeeee</color>
+    <color name="dark_grey">#A9A9A9</color>
     <color name="text_hint_color">#ccc</color>
 </resources>

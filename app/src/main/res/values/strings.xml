@@ -2,6 +2,9 @@
     <string name="app_name">KQMH</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="comment">Comment</string>
+    <string name="D12score">Score</string>
+    <string name="actual_value">Enter value</string>
     <string name="log_in">LOG IN</string>
     <string name="error_email_required">Email is required</string>
     <string name="error_password_required">Password is required.</string>
