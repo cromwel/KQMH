@@ -14,7 +14,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
-import com.android.volley.error.AuthFailureError;
 import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
 
@@ -24,6 +23,8 @@ import com.kqmh.app.kqmh.Adapters.AssessmentTypeAdapter;
 import com.kqmh.app.kqmh.Adapters.OrganisationUnitAdapter;
 import com.kqmh.app.kqmh.Models.AssessmentTypeCombo;
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
+import com.kqmh.app.kqmh.Models.Period;
+import com.kqmh.app.kqmh.Models.FacilityLevel;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
@@ -53,8 +54,11 @@ public class Assessment_Info extends AppCompatActivity {
     private Spinner spinner_period;
     private Spinner spinner_facilityLevel;
     private ProgressDialog progressDialog;
+
     List<AssessmentTypeCombo> categoryOptions = new ArrayList<>();
     List<OrganisationUnit> OrganisationUnit = new ArrayList<>();
+    List<Period> qPeriod = new ArrayList<>();
+    List<FacilityLevel> levels = new ArrayList<>();
     List<String> orgUnitsNames = new ArrayList<>();
 
     @Override
@@ -111,6 +115,7 @@ public class Assessment_Info extends AppCompatActivity {
 
     }
 
+    /*org unit*/
     public void spinnerData_OrganisationUnit(Spinner spinner_OrganisationUnit, final String choice) {
         //fill data in spinner
         OrganisationUnitAdapter adapter = new OrganisationUnitAdapter(this, android.R.layout.simple_spinner_dropdown_item, orgUnitsNames);
@@ -170,6 +175,14 @@ public class Assessment_Info extends AppCompatActivity {
         VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
     }
 
+    private void saveUnits(List<OrganisationUnit> OrganisationUnit) {
+        Log.d("Saving units", "saving " + OrganisationUnit.size());
+        for(OrganisationUnit organisationUnit : OrganisationUnit){
+            organisationUnit.save();
+        }
+    }
+
+    /*assessment type*/
     public void spinnerData_AssessmentType(Spinner spinner_AssessmentType, final String choice) {
         //fill data in spinner
         AssessmentTypeAdapter adapter = new AssessmentTypeAdapter(this,android.R.layout.simple_spinner_dropdown_item,categoryOptions);
@@ -236,6 +249,7 @@ public class Assessment_Info extends AppCompatActivity {
         }
     }
 
+    /*period*/
     public void spinnerData_period(Spinner spinner, final String choice) {
         ArrayList<KeyValue> keyvalue = new ArrayList<>();
 
@@ -270,6 +284,55 @@ public class Assessment_Info extends AppCompatActivity {
         });
     }
 
+    private void getPeriod(final String encoded) {
+       /* Log.d("Auth", encoded);
+        progressDialog.show();
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, UrlConstants.ASSESSMENT_TYPE_URL, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                Log.d("assessment type", response.toString());
+                try {
+                    JSONArray jsonArray = response.getJSONArray("categoryOptionCombos");
+                    Gson gson = new Gson();
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        AssessmentTypeCombo combo = gson.fromJson(jsonArray.getJSONObject(i).toString(), AssessmentTypeCombo.class);
+                        categoryOptions.add(combo);
+                    }
+                    saveOptions(categoryOptions);
+                    closeProgressbar();
+                    spinnerData_AssessmentType(spinner_AssessmentType, "1");
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    closeProgressbar();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                closeProgressbar();
+            }
+        }) {
+            @Override
+            public Map<String, String> getHeaders() {
+                Map<String, String> headers = new HashMap<>();
+                //headers.put("Content-Type","application/json");
+                Log.d("Encoded", encoded);
+                headers.put("Authorization", encoded);
+                return headers;
+            }
+        };
+        VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);*/
+    }
+
+    private void saveTime(List<Period> qPeriod) {
+        Log.d("Saving time", "saving " + qPeriod.size());
+        for(Period period : qPeriod){
+            period.save();
+        }
+    }
+
+    /*facility level*/
     public void spinnerData_facilityLevel(Spinner spinner, final String choice) {
         ArrayList<KeyValue> keyvalue = new ArrayList<>();
 
@@ -308,6 +371,15 @@ public class Assessment_Info extends AppCompatActivity {
         });
     }
 
+    private void saveLevel(List<FacilityLevel> levels) {
+        Log.d("Saving levels", "saving " + levels.size());
+        for(FacilityLevel facilityLevel : levels){
+            facilityLevel.save();
+        }
+    }
+
+
+    /**/
     public void submit() {
         closeProgressbar();
         new SessionManager(getBaseContext()).setLoggedIn(true);
