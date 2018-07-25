@@ -53,7 +53,7 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight=".6"
+                                    android:layout_weight=".5"
                                     android:background="@color/orange"
                                     android:padding="5dp"
                                     android:text="@string/Indicator1"
@@ -64,7 +64,7 @@
                                     android:id="@+id/av_i1"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight=".325"
+                                    android:layout_weight=".2"
                                     android:background="@color/white"
                                     android:hint="@string/actual_value"
                                     android:inputType="number"
@@ -73,9 +73,9 @@
 
                                 <TextView
                                     android:id="@+id/avscore_i1"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight=".075"
+                                    android:layout_weight=".3"
                                     android:gravity="center"
                                     android:background="@color/grey"
                                     android:padding="5dp"
@@ -111,7 +111,7 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight=".6"
+                                    android:layout_weight=".5"
                                     android:background="@color/orange"
                                     android:padding="5dp"
                                     android:text="@string/Indicator2"
@@ -122,7 +122,7 @@
                                     android:id="@+id/av_i2"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight=".325"
+                                    android:layout_weight=".2"
                                     android:background="@color/white"
                                     android:hint="@string/actual_value"
                                     android:inputType="number"
@@ -131,9 +131,9 @@
 
                                 <TextView
                                     android:id="@+id/avscore_i2"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight=".075"
+                                    android:layout_weight=".3"
                                     android:gravity="center"
                                     android:background="@color/grey"
                                     android:padding="5dp"
@@ -169,7 +169,7 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight=".6"
+                                    android:layout_weight=".5"
                                     android:background="@color/orange"
                                     android:padding="5dp"
                                     android:text="@string/Indicator3"
@@ -180,7 +180,7 @@
                                     android:id="@+id/av_i3"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight=".325"
+                                    android:layout_weight=".2"
                                     android:background="@color/white"
                                     android:hint="@string/actual_value"
                                     android:inputType="number"
@@ -189,9 +189,9 @@
 
                                 <TextView
                                     android:id="@+id/avscore_i3"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight=".075"
+                                    android:layout_weight=".3"
                                     android:gravity="center"
                                     android:background="@color/grey"
                                     android:padding="5dp"
@@ -227,7 +227,7 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight=".6"
+                                    android:layout_weight=".5"
                                     android:background="@color/orange"
                                     android:padding="5dp"
                                     android:text="@string/Indicator4"
@@ -238,7 +238,7 @@
                                     android:id="@+id/av_i4"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight=".325"
+                                    android:layout_weight=".2"
                                     android:background="@color/white"
                                     android:hint="@string/actual_value"
                                     android:inputType="number"
@@ -247,9 +247,9 @@
 
                                 <TextView
                                     android:id="@+id/avscore_i4"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight=".075"
+                                    android:layout_weight=".3"
                                     android:gravity="center"
                                     android:background="@color/grey"
                                     android:padding="5dp"
@@ -286,7 +286,7 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight=".6"
+                                    android:layout_weight=".5"
                                     android:background="@color/orange"
                                     android:padding="5dp"
                                     android:text="@string/Indicator5"
@@ -297,7 +297,7 @@
                                     android:id="@+id/av_i5"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight=".325"
+                                    android:layout_weight=".2"
                                     android:background="@color/white"
                                     android:hint="@string/actual_value"
                                     android:inputType="number"
@@ -306,9 +306,9 @@
 
                                 <TextView
                                     android:id="@+id/avscore_i5"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight=".075"
+                                    android:layout_weight=".3"
                                     android:gravity="center"
                                     android:background="@color/grey"
                                     android:padding="5dp"
@@ -3291,10 +3291,6 @@
                             </LinearLayout>
 
 
-
-
-
-
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -3376,7 +3372,7 @@
                 </android.support.v7.widget.CardView>
 
             <!-- button section -->
-            <include layout="@layout/dims_button"/>
+            <include layout="@layout/validate_button"/>
 
         </LinearLayout>
     </ScrollView>

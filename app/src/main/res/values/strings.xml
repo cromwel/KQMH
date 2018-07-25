@@ -8,6 +8,8 @@
     <string name="log_in">LOG IN</string>
     <string name="error_email_required">Email is required</string>
     <string name="error_password_required">Password is required.</string>
+    <string name="validate">validation</string>
+    <string name="progress">progress</string>
 
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

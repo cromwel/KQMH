@@ -60,7 +60,7 @@ public class Dimension2 extends AppCompatActivity {
             }
         });
 
-        for(int value=1;value<27;value++){
+        for(int value=28;value<54;value++){
             Resources res  = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score),value);
 
