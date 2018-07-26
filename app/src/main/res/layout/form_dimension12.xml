@@ -651,7 +651,7 @@
                                 </LinearLayout>
                                 <!--comment-->
                                 <EditText
-                                    android:id="@+id/com_i7"
+                                    android:id="@+id/com_i8"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
