@@ -114,7 +114,7 @@
                                             android:textSize="16sp" />
 
                                     <Spinner
-                                        android:id="@+id/spinner_score54"
+                                        android:id="@+id/spinner_score300"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:background="@color/dark_blue"
@@ -221,7 +221,7 @@
                                             android:textSize="16sp" />
 
                                     <Spinner
-                                        android:id="@+id/spinner_score55"
+                                        android:id="@+id/spinner_score301"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:background="@color/dark_blue"
@@ -286,7 +286,7 @@
                                             android:textSize="16sp" />
 
                                     <Spinner
-                                        android:id="@+id/spinner_score56"
+                                        android:id="@+id/spinner_score302"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:background="@color/dark_blue"
@@ -351,7 +351,7 @@
                                         android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score57"
+                                    android:id="@+id/spinner_score303"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
@@ -416,7 +416,7 @@
                                             android:textSize="16sp" />
 
                                     <Spinner
-                                        android:id="@+id/spinner_score58"
+                                        android:id="@+id/spinner_score304"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:background="@color/dark_blue"
@@ -481,7 +481,7 @@
                                             android:textSize="16sp" />
 
                                     <Spinner
-                                        android:id="@+id/spinner_score59"
+                                        android:id="@+id/spinner_score305"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:background="@color/dark_blue"
@@ -565,13 +565,13 @@
                                             android:textSize="16sp" />
 
                                     <Spinner
-                                        android:id="@+id/spinner_score60"
+                                        android:id="@+id/spinner_score306"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:background="@color/dark_blue"
                                         android:hint="@string/spinner_scores"
                                         android:prompt="@string/spinner_scores"
-                                        android:tag="dyQWqO5zQMG"
+                                        android:tag="KIibWoHnmT1"
                                         android:textSize="12sp" />
 
                                     </LinearLayout>
@@ -630,7 +630,7 @@
                                             android:textSize="16sp" />
 
                                     <Spinner
-                                        android:id="@+id/spinner_score61"
+                                        android:id="@+id/spinner_score307"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:background="@color/dark_blue"
@@ -714,7 +714,7 @@
                                             android:textSize="16sp" />
 
                                     <Spinner
-                                        android:id="@+id/spinner_score62"
+                                        android:id="@+id/spinner_score308"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:background="@color/dark_blue"
@@ -798,7 +798,7 @@
                                             android:textSize="16sp" />
 
                                     <Spinner
-                                        android:id="@+id/spinner_score63"
+                                        android:id="@+id/spinner_score309"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:background="@color/dark_blue"
@@ -863,7 +863,7 @@
                                             android:textSize="16sp" />
 
                                     <Spinner
-                                        android:id="@+id/spinner_score64"
+                                        android:id="@+id/spinner_score310"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:background="@color/dark_blue"

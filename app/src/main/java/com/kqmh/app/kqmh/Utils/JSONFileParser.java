@@ -6,10 +6,10 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class JSONFileParser {
-    public static String loadJSONFromAsset(Context context) {
+    public static String loadJSONFromAsset(Context context, String file_name) {
         String json = null;
         try {
-            InputStream is = context.getAssets().open("Requirements_Dim1.json");
+            InputStream is = context.getAssets().open(file_name);
 
             int size = is.available();
 
