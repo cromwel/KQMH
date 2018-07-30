@@ -1,7 +1,7 @@
 {
   "dataSetElements": [
-  {
-    "dataElement": {
+    {
+      "dataElement": {
       "name":"RDIM_2.9_There are documented guidelines for interns, students and registrars on attachment\n(MOV- HR records)",
       "id":"mDvrn4w7UZE",
       "optionSet": {
@@ -19,9 +19,8 @@
           }
         ]
       }
-    }
-  }
-,
+      }
+    },
     {
       "dataElement": {
         "name":"RDIM_2.2_Current curriculum vitae(MOV-personnel file with listed documents.Sample 5 files)",
@@ -42,8 +41,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.3_Staff appraised at least once in a year(MOV-personnel filewith appraisal documents)",
@@ -64,8 +62,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.5_Team building activity carried out at least once per year\n(MOV-Administration records)",
@@ -82,8 +79,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.4_All staff who provide direct patient care have received training in basic cardiopulmonary resuscitation and the training is repeated at least every two years\n(MOV- HR records)",
@@ -104,8 +100,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.5_Motivation plan communicated to all staff(MOV- HR records)",
@@ -122,8 +117,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.7_Annual training needs assessment conducted and documented\n(MOV-Training needs assessment for the current calendarorfinancial year)",
@@ -140,8 +134,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.3_Recommendations of the appraisals implemented by the HR(MOV-documented actions on recommendations)",
@@ -162,8 +155,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.1_Facility has a documented procedure for task shifting or responsibility sharing between different professional cadres(MOV-documented protocol)",
@@ -180,8 +172,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.6_There is an induction schedule for all the new staff. Induction to include but not limited to the organizational structure, work area, staff facilities, health & safety requirements and occupational hazards\n(MOV-document",
@@ -202,8 +193,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.8_The facility has a documented procedure for sharing of new knowledge which includes schedule of knowledge management activities including feedback from training, conference reports, learning sessions\n(MOV-documented proc",
@@ -224,8 +214,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.9_There is an up to date register for interns and students\n(MOV- HR records)",
@@ -246,8 +235,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.10_The facility assess and monitor job satisfaction\n(MOV- Staff satisfaction report)",
@@ -264,8 +252,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.1_Facility is staffed as per established HRH norms(MOV-HR records)",
@@ -282,8 +269,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.7_Budget allocated for training(MOV-administration records)",
@@ -300,8 +286,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.9_There is evidence of approval of the health facility to act as an internship centre\n(MOV-Documented approval)",
@@ -322,8 +307,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.5_Facility has a system for recognition and/or rewards of high achievers\n(MOV-Administration records)",
@@ -340,8 +324,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.2_Letters of appointment(MOV-personnel file with listed documents. Sample 5 files)",
@@ -362,8 +345,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.7_Costed training schedule in place (MOV-training schedule)",
@@ -380,8 +362,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.9_There is a documented MoU between the health facility and training institution on internship programs\n(MOV-Documented approval)",
@@ -402,8 +383,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.6_Induction report countersigned by new staff and by the designated staff in the various departments within the health facility(MOV-Induction reports filed in the staff files)",
@@ -424,8 +404,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.3_Management staff have signed their annual performance contracts (MOV- HR records for updated performance contracts)",
@@ -446,8 +425,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.2_Relevant academic certificates(MOV-personnel file with listed documents. Sample 5 files)",
@@ -468,8 +446,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.2_Registration with relevant professional bodies.(MOV-personnel file with listed documents. Sample 5 files)",
@@ -490,8 +467,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.2_Signed job description(MOV-personnel file with listed documents. Sample 5 files)",
@@ -512,8 +488,7 @@
           ]
         }
       }
-    }
-  ,
+    },
     {
       "dataElement": {
         "name":"RDIM_2.4_Facility implements a continuous medical education programme(MOV- HR records and schedule and file with minutes on CME sessions)",
@@ -530,7 +505,46 @@
           ]
         }
       }
+    },
+    {
+      "dataElement": {
+        "name":"RDIM_2.2_Registration with relevant professional bodies.(MOV-personnel file with listed documents. Sample 5 files)",
+        "id":"MyRNoPEQ0Be",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataElement": {
+        "name":"RDIM_2.10_The facility assess and monitor job satisfaction\n(MOV- Staff satisfaction report)",
+        "id":"FX2En7x1Pig",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
     }
+
 
   ]
 }

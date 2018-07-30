@@ -60,7 +60,7 @@ public class Dimension2 extends AppCompatActivity {
             }
         });
 
-        for(int value=28;value<54;value++){
+        for(int value=200;value<226;value++){
             Resources res  = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score),value);
 
@@ -104,9 +104,10 @@ public class Dimension2 extends AppCompatActivity {
 
     private void populateSpinners() throws JSONException {
         progressDialog.show();
-        String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext());
+        String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext(),"Requirements_Dim2.json");
         JSONObject fileObject = new JSONObject(fromJsonFile);
         JSONArray dataElements = fileObject.getJSONArray("dataSetElements");
+        Log.d("Dimension2", dataElements.toString());
         for (int i = 0; i < dataElements.length(); i++) {
             JSONObject jsonObject = dataElements.getJSONObject(i);
             JSONObject dataElement = jsonObject.getJSONObject("dataElement");
@@ -120,6 +121,7 @@ public class Dimension2 extends AppCompatActivity {
                     List<String> optionsList = new ArrayList<>();
                     for(int j = 0; j < options.length(); j++){
                         optionsList.add(options.getJSONObject(j).getString("name"));
+                        Log.d("Dimension2", String.valueOf(j) + " " + options.getJSONObject(j).getString("name") + options.getJSONObject(j).toString());
                     }
                     ScoreOptionstAdapter adapter = new ScoreOptionstAdapter(this, android.R.layout.simple_spinner_dropdown_item, optionsList);
                     spinner.setAdapter(adapter);

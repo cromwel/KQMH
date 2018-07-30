@@ -106,7 +106,7 @@ public class Dimension11_9 extends AppCompatActivity {
 
     private void populateSpinners() throws JSONException {
         progressDialog.show();
-        String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext());
+        String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext(), "Requirements_Dim11_9");
         JSONObject fileObject = new JSONObject(fromJsonFile);
         JSONArray dataElements = fileObject.getJSONArray("dataSetElements");
         for (int i = 0; i < dataElements.length(); i++) {
