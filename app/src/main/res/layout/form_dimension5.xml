@@ -130,7 +130,7 @@
                                     android:textSize="16sp" />
 
                             <Spinner
-                                android:id="@+id/spinner_score139"
+                                android:id="@+id/spinner_score500"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:background="@color/dark_blue"
@@ -194,7 +194,7 @@
                                     android:textSize="16sp" />
 
                             <Spinner
-                                android:id="@+id/spinner_score140"
+                                android:id="@+id/spinner_score501"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:background="@color/dark_blue"
@@ -293,7 +293,7 @@
                                     android:textSize="16sp" />
 
                             <Spinner
-                                android:id="@+id/spinner_score141"
+                                android:id="@+id/spinner_score502"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:background="@color/dark_blue"
@@ -357,7 +357,7 @@
                                     android:textSize="16sp" />
 
                             <Spinner
-                                android:id="@+id/spinner_score142"
+                                android:id="@+id/spinner_score503"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:background="@color/dark_blue"
@@ -456,7 +456,7 @@
                                     android:textSize="16sp" />
 
                             <Spinner
-                                android:id="@+id/spinner_score143"
+                                android:id="@+id/spinner_score504"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:background="@color/dark_blue"
@@ -520,7 +520,7 @@
                                     android:textSize="16sp" />
 
                             <Spinner
-                                android:id="@+id/spinner_score144"
+                                android:id="@+id/spinner_score505"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:background="@color/dark_blue"
@@ -584,7 +584,7 @@
                                     android:textSize="16sp" />
 
                             <Spinner
-                                android:id="@+id/spinner_score145"
+                                android:id="@+id/spinner_score506"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:background="@color/dark_blue"
@@ -648,7 +648,7 @@
                                     android:textSize="16sp" />
 
                             <Spinner
-                                android:id="@+id/spinner_score146"
+                                android:id="@+id/spinner_score507"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:background="@color/dark_blue"
@@ -712,7 +712,7 @@
                                     android:textSize="16sp" />
 
                             <Spinner
-                                android:id="@+id/spinner_score147"
+                                android:id="@+id/spinner_score508"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:background="@color/dark_blue"

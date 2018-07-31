@@ -62,7 +62,7 @@ public class Dimension10 extends AppCompatActivity {
 
 
 
-        for(int value=1;value<12;value++){
+        for(int value=1001;value<1012;value++){
             Resources res  = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score),value);
 
@@ -107,7 +107,7 @@ public class Dimension10 extends AppCompatActivity {
 
     private void populateSpinners() throws JSONException {
         progressDialog.show();
-        String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext(), "Requirements_Dim10");
+        String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext(), "Requirements_Dim10.json");
         JSONObject fileObject = new JSONObject(fromJsonFile);
         JSONArray dataElements = fileObject.getJSONArray("dataSetElements");
         for (int i = 0; i < dataElements.length(); i++) {
