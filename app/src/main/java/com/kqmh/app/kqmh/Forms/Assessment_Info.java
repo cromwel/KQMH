@@ -3,6 +3,7 @@ package com.kqmh.app.kqmh.Forms;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -31,7 +32,9 @@ import com.kqmh.app.kqmh.Utils.AuthBuilder;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
 import com.kqmh.app.kqmh.Models.KeyValue;
+import com.raizlabs.android.dbflow.config.FlowManager;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
+import com.raizlabs.android.dbflow.structure.ModelAdapter;
 import com.toptoche.searchablespinnerlibrary.SearchableSpinner;
 
 import org.json.JSONArray;
@@ -120,9 +123,17 @@ public class Assessment_Info extends AppCompatActivity {
         //fill data in spinner
         OrganisationUnitAdapter adapter = new OrganisationUnitAdapter(this, android.R.layout.simple_spinner_dropdown_item, orgUnitsNames);
         spinner_OrganisationUnit.setAdapter(adapter);
+
+        // Read previously selected position from SharedPreferences
+        int selectedPosition = PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getInt("OrganisationUnitPosition", 1);
+        spinner_OrganisationUnit.setSelection(selectedPosition);
+
         spinner_OrganisationUnit.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                // Save selected position to SharedPreferences
+                PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putInt("OrganisationUnitPosition", position).apply();
+
                 if (choice.matches("1")) {
                 }
                 else if (choice.matches("2")) {
@@ -187,9 +198,17 @@ public class Assessment_Info extends AppCompatActivity {
         //fill data in spinner
         AssessmentTypeAdapter adapter = new AssessmentTypeAdapter(this,android.R.layout.simple_spinner_dropdown_item,categoryOptions);
         spinner_AssessmentType.setAdapter(adapter);
+
+        // Read previously selected position from SharedPreferences
+        int selectedPosition = PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getInt("AssessmentTypePosition", 1);
+        spinner_AssessmentType.setSelection(selectedPosition);
+
         spinner_AssessmentType.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                // Save selected position to SharedPreferences
+                PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putInt("AssessmentTypePosition", position).apply();
+
                 if (choice.matches("1")) {
                 }
                 else if (choice.matches("2")) {
@@ -263,11 +282,19 @@ public class Assessment_Info extends AppCompatActivity {
         ArrayAdapter<KeyValue> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, keyvalue);
         spinner.setAdapter(adapter);
         adapter.notifyDataSetChanged();
+
+        // Read previously selected position from SharedPreferences
+        int selectedPosition = PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getInt("DataPeriodPosition", 1);
+        spinner.setSelection(selectedPosition);
+
         //occupationSpinner.setSelection(adapter.getPosition(keyvalue.get(2)));//Optional to set the selected item.
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                // Save selected position to SharedPreferences
+                PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putInt("DataPeriodPosition", position).apply();
+
 
                 KeyValue value = (KeyValue) parent.getSelectedItem();
                 if (choice.matches("1")) {
@@ -350,11 +377,17 @@ public class Assessment_Info extends AppCompatActivity {
         ArrayAdapter<KeyValue> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, keyvalue);
         spinner.setAdapter(adapter);
         adapter.notifyDataSetChanged();
+
+        // Read previously selected position from SharedPreferences
+        int selectedPosition = PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getInt("FacilityLevelPosition", 1);
+        spinner.setSelection(selectedPosition);
+
         //occupationSpinner.setSelection(adapter.getPosition(keyvalue.get(2)));//Optional to set the selected item.
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit().putInt("FacilityLevelPosition", position).apply();
 
                 KeyValue value = (KeyValue) parent.getSelectedItem();
                 if (choice.matches("1")) {
