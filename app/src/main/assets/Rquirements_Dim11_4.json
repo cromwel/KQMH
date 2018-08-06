@@ -1,38 +1,231 @@
 {
   "dataSetElements": [
     {
-  "dataElement": {
-    "name":"RDIM_11.2.9_There is use of written procedures for handling cases of bereavement, performing culturally appropriate last offices, handling of the body and handover to funeral services or last rites as appropriate\n(MOV-SOP)",
-    "id":"uCK6PsfS9Z4",
-    "optionSet": {
-      "name":"KQMH_3 Scoring Options(Yes, No, P)",
-      "options":[ {
-        "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
-      }
-      ,
-        {
-          "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
-        }
-      ,
-        {
-          "code": "0", "name": "No", "id": "owtmpRi3xjk"
-        }
-      ]
-    }
-  }
-}
-,{
       "dataElement": {
-        "name":"RDIM_11.2.4_The facility provides a complaint and compliments box/ book\n(MOV-evidence of analysis of feedback results)",
-        "id":"Gn7HlFvYRgf",
+        "name":"RDIM_11.4.10_There is a planned weekly\nmenu that is adhered to\n(MOV- Updated facility patient menu )",
+        "id":"byKpgDJwhVC",
         "optionSet": {
-          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
           "options":[ {
-            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
           }
           ,
             {
-              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.6_Facility follows standardized procedure for handover of patients between units(MOV-SOP, clinical notes)",
+        "id":"zxnja0ekDrP",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.7_The facility administers prescribed medication using the 5R principle - right patient, right drug, right dosage, right route, right time - and documentation done in the treatment sheet and patient’s cardex\n(MOV- proto",
+        "id":"ygfPtX142kx",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.9_Facility staff follow guidelines and procedures for inter-professional consultation meetings and case conferences(MOV-Schedules)",
+        "id":"PgLU1uLPRn7",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.1_Each patient has access to a nurse call system at all times.\n(MOV-Observation)",
+        "id":"SmjcPQ7EE9E",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.1_Adequate beds are available and\nFunctional. There are no patients sharing beds.\n(MOV-Observation)",
+        "id":"OnAcdqIHjW6",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.9_Facility provides for daily scheduled ward rounds and other clinical reviews of patients(MOV- Schedules for ward rounds)",
+        "id":"JbHHY7udPnE",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.10_Assessment of nutritional status of all patients is done on admission and continuously monitored\n(MOV-Sample 5 patient files)",
+        "id":"XkXNYfzqIKb",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.12_There is documentation of discharge of patient against medical advice\n(MOV-Discharge Against medical advice forms)",
+        "id":"JULFg9gKaEb",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.1_There are ward screens\n(MOV-Observation)",
+        "id":"UTj1qkkxmwb",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.3_The facility documents baseline vital signs (MOV- observations chart, fluid charts, nursing care plan, cardex)",
+        "id":"uIVwIADY4Y4",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
             }
           ]
         }
@@ -40,91 +233,7 @@
     }
   , {
       "dataElement": {
-        "name":"RDIM_11.2.2_Patients are fully informed on risks and benefits of care given and a written consent obtained from the patient\n(MOV- Consent forms)",
-        "id":"rB8AzdRzUqP",
-        "optionSet": {
-          "name":"KQMH_3 Scoring Options(Yes, No, P)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
-          }
-          ,
-            {
-              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
-            }
-          ,
-            {
-              "code": "0", "name": "No", "id": "owtmpRi3xjk"
-            }
-          ]
-        }
-      }
-    }
-  ,{
-      "dataElement": {
-        "name":"RDIM_11.2.5_The facility has provision for ease of movement for the physically handicapped",
-        "id":"bK2combxqw8",
-        "optionSet": {
-          "name":"KQMH_3 Scoring Options(Yes, No, P)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
-          }
-          ,
-            {
-              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
-            }
-          ,
-            {
-              "code": "0", "name": "No", "id": "owtmpRi3xjk"
-            }
-          ]
-        }
-      }
-    }
-  ,{
-      "dataElement": {
-        "name":"RDIM_11.2.2_All service providers wear tags with name and designation visible to patients at all times\n(MOV- observation name and designation tags)",
-        "id":"pAkf1ufWAus",
-        "optionSet": {
-          "name":"KQMH_3 Scoring Options(Yes, No, P)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
-          }
-          ,
-            {
-              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
-            }
-          ,
-            {
-              "code": "0", "name": "No", "id": "owtmpRi3xjk"
-            }
-          ]
-        }
-      }
-    }
-  ,{
-      "dataElement": {
-        "name":"RDIM_11.2.2_There is linkage to social and community networks for patient support and care\n(MOV- List/inventory of support groups/networks)",
-        "id":"Q1UhqEzWaYz",
-        "optionSet": {
-          "name":"KQMH_3 Scoring Options(Yes, No, P)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
-          }
-          ,
-            {
-              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
-            }
-          ,
-            {
-              "code": "0", "name": "No", "id": "owtmpRi3xjk"
-            }
-          ]
-        }
-      }
-    }
-  , {
-      "dataElement": {
-        "name": "RDIM_11.2.6_Patients are identified before providing treatments and procedures (MOV-Protocol in place; sample 5 patient files)", "id":"GkBi96QlQt7", "optionSet": {
+        "name": "RDIM_11.4.11_There is evidence that the patient, when confined to bed or immobile, receives assistance with lifting, moving, positioning, turning in bed and transferring from and back to bed.\n(MOV-Observation; interview 5 patient", "id":"MKTvjBYJAqs", "optionSet": {
           "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
             "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
           }
@@ -142,16 +251,62 @@
     }
   ,{
       "dataElement": {
-        "name":"RDIM_11.2.4_A telephone number for patients to provide feedback through is displayed.\n(MOV-Observation)",
-        "id":"F3bm8fMvnDD",
+        "name":"RDIM_11.4.11_Facility provides protocols for patient mobilization to prevent bed sores, stress ulcers, thrombosis\n(MOV- availability of protocols)",
+        "id":"MGK1bbsKlZL",
         "optionSet": {
-          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
           "options":[ {
-            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
           }
           ,
             {
-              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.10_Facility provides inpatients with culturally sensitive food\n(MOV-Interview 5 inpatients)",
+        "id":"p6Ht5OYN2Cq",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.10_A suitably qualified and/or\nexperienced person advises\non meal development\n(MOV-HR Records)",
+        "id":"EEHJmA02Nud",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
             }
           ]
         }
@@ -159,104 +314,7 @@
     }
   , {
       "dataElement": {
-        "name":"RDIM_11.2.2_The patient and next of kin are supported to cope with debilitating effects of illness/disability\n(MOV-Counselling facilities, prayer rooms, referral options to appropriate facilities)",
-        "id":"yQD1r7lefYP",
-        "optionSet": {
-          "name":"KQMH_3 Scoring Options(Yes, No, P)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
-          }
-          ,
-            {
-              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
-            }
-          ,
-            {
-              "code": "0", "name": "No", "id": "owtmpRi3xjk"
-            }
-          ]
-        }
-      }
-    }
-  ,{
-      "dataElement": {
-        "name":"RDIM_11.2.7_Pain management protocols are available (MOV- Observation)",
-        "id":"uFoYprn4LME",
-        "optionSet": {
-          "name":"KQMH_1 Scoring Options(Yes, No)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
-          }
-          ,
-            {
-              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
-            }
-          ]
-        }
-      }
-    }
-  ,{
-      "dataElement": {
-        "name":"RDIM_11.2.9_Facility provides for standardized, documented procedures on embalming, autopsies, issuance of burial permit as appropriate (MOV- documented procedure)",
-        "id":"JLLVN1JpzRO",
-        "optionSet": {
-          "name":"KQMH_3 Scoring Options(Yes, No, P)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
-          }
-          ,
-            {
-              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
-            }
-          ,
-            {
-              "code": "0", "name": "No", "id": "owtmpRi3xjk"
-            }
-          ]
-        }
-      }
-    }
-  ,{
-      "dataElement": {
-        "name":"RDIM_11.2.2_Cost of services and any insurance rebates that apply to the patient are displayed or available to the patient.\n(MOV-observation)",
-        "id":"mnDuhZ9LEtw",
-        "optionSet": {
-          "name":"KQMH_3 Scoring Options(Yes, No, P)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
-          }
-          ,
-            {
-              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
-            }
-          ,
-            {
-              "code": "0", "name": "No", "id": "owtmpRi3xjk"
-            }
-          ]
-        }
-      }
-    }
-  ,{
-      "dataElement": {
-        "name":"RDIM_11.2.1_Patient rights charter displayed conspicuously in waiting areas.\n(MOV-Observation)",
-        "id":"ZV5Mp9vCUmj",
-        "optionSet": {
-          "name":"KQMH_1 Scoring Options(Yes, No)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
-          }
-          ,
-            {
-              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
-            }
-          ]
-        }
-      }
-    }
-  ,{
-      "dataElement": {
-        "name": "RDIM_11.2.6_Patients are identified using at least two identifiers (MOV-Protocol in place; sample 5 patient files)", "id":"NH1HqMOwboW", "optionSet": {
+        "name": "RDIM_11.4.6_Facility follows protocols and guidelines for diagnostics and treatment\n(MOV- SOP; Sample 5 patient case files)", "id":"fEHuFhTcY4n", "optionSet": {
           "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
             "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
           }
@@ -274,8 +332,8 @@
     }
   ,{
       "dataElement": {
-        "name":"RDIM_11.2.6_The same identification is consistently used throughout the care process (MOV-Sample 5 patient files)",
-        "id":"rIYRlVx4AfH",
+        "name":"RDIM_11.4.11_There is evidence that pressure relieving techniques (care of skin, turning in bed on schedule, observing and preventing potential bedsores) are implemented and documented.\n(MOV-SOPs: Sample 5 patient files)",
+        "id":"og95Uy1GIup",
         "optionSet": {
           "name":"KQMH_3 Scoring Options(Yes, No, P)",
           "options":[ {
@@ -295,8 +353,8 @@
     }
   ,{
       "dataElement": {
-        "name":"RDIM_11.2.7_The facility implements\nprocesses for addressing the\npatient's needs for\nappropriate assessment and\nmanagement of pain.\n(MOV- sample clinical notes)",
-        "id":"mNABwP5SZtJ",
+        "name":"RDIM_11.4.11_Facility provides protocols for prevention of falls (MOV- availability of protocols)",
+        "id":"TvZEntTVhUt",
         "optionSet": {
           "name":"KQMH_3 Scoring Options(Yes, No, P)",
           "options":[ {
@@ -316,8 +374,8 @@
     }
   ,{
       "dataElement": {
-        "name":"RDIM_11.2.8_Facility provides individualized plan for palliative care of the terminally ill patient(MOV- Availability of palliative care plan)",
-        "id":"IckrsyeVWHh",
+        "name":"RDIM_11.4.11_Measures are in place to prevent immobility and prevent the complications of immobility.\n(MOV-SOPs)",
+        "id":"l7vJ5yD37sx",
         "optionSet": {
           "name":"KQMH_3 Scoring Options(Yes, No, P)",
           "options":[ {
@@ -337,92 +395,8 @@
     }
   ,{
       "dataElement": {
-        "name":"RDIM_11.2.6_Each patient is provided a hospital bracelet with unique identifier (MOV- Observe for armband with unique identifier)",
-        "id":"lgyPOS5ZXhS",
-        "optionSet": {
-          "name":"KQMH_3 Scoring Options(Yes, No, P)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
-          }
-          ,
-            {
-              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
-            }
-          ,
-            {
-              "code": "0", "name": "No", "id": "owtmpRi3xjk"
-            }
-          ]
-        }
-      }
-    }
-  ,{
-      "dataElement": {
-        "name":"RDIM_11.2.1_Patients sign consent forms for medical procedures where required\n(MOV- Sample 5 patient files)",
-        "id":"lbDpWodfV12",
-        "optionSet": {
-          "name":"KQMH_3 Scoring Options(Yes, No, P)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
-          }
-          ,
-            {
-              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
-            }
-          ,
-            {
-              "code": "0", "name": "No", "id": "owtmpRi3xjk"
-            }
-          ]
-        }
-      }
-    }
-  ,{
-      "dataElement": {
-        "name":"RDIM_11.2.3_Recommendations are acted upon in improvement plans.\n(MOV- progress report)",
-        "id":"EeDYMskOrLM",
-        "optionSet": {
-          "name":"KQMH_3 Scoring Options(Yes, No, P)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
-          }
-          ,
-            {
-              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
-            }
-          ,
-            {
-              "code": "0", "name": "No", "id": "owtmpRi3xjk"
-            }
-          ]
-        }
-      }
-    }
-  , {
-      "dataElement": {
-        "name":"RDIM_11.2.3_The facility assesses clients’ views and level of satisfaction at least once every four months\n(MOV- client satisfaction report)",
-        "id":"Shwe0fDgQKx",
-        "optionSet": {
-          "name":"KQMH_3 Scoring Options(Yes, No, P)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
-          }
-          ,
-            {
-              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
-            }
-          ,
-            {
-              "code": "0", "name": "No", "id": "owtmpRi3xjk"
-            }
-          ]
-        }
-      }
-    }
-  ,{
-      "dataElement": {
-        "name":"RDIM_11.2.6_The facility is implementing a system of reporting, investigation and change management to respond to any patient care mismatching events (MOV- Documentation of this system, relevant reports)",
-        "id":"qzF1qUHD089",
+        "name":"RDIM_11.4.12_Facility has a documented discharge protocol\n(MOV- availability of protocol)",
+        "id":"TkkhjfvFmEc",
         "optionSet": {
           "name":"KQMH_1 Scoring Options(Yes, No)",
           "options":[ {
@@ -438,8 +412,8 @@
     }
   ,{
       "dataElement": {
-        "name":"RDIM_11.2.5_The facility has protocols to follow when dealing with patients with visual and hearing impairments\n(MOV-Documented protocols, availability of trained personnel, signage)",
-        "id":"WAieMLQsrwo",
+        "name":"RDIM_11.4.3_The facility carries out comprehensive assessment of the patient, which includes patients’ biodata, history of present illness, past medical history, family history and social history\n(MOV- outpatient form, patient’s ",
+        "id":"PuPX2lIVr2D",
         "optionSet": {
           "name":"KQMH_3 Scoring Options(Yes, No, P)",
           "options":[ {
@@ -459,25 +433,8 @@
     }
   ,{
       "dataElement": {
-        "name":"RDIM_11.2.1_Regular sensitization of patients on their rights\n(MOV- schedule/record)",
-        "id":"v9fceDK46zm",
-        "optionSet": {
-          "name":"KQMH_1 Scoring Options(Yes, No)",
-          "options":[ {
-            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
-          }
-          ,
-            {
-              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
-            }
-          ]
-        }
-      }
-    }
-  ,{
-      "dataElement": {
-        "name":"RDIM_11.2.2_Dignity and privacy in relation to patients’ care and support is provided (MOV- patient screens, lockable doors)",
-        "id":"VviPwELKJUf",
+        "name":"RDIM_11.4.11_Patients receive professional physiotherapy care and assistance with rehabilitation if required.\n(MOV-SOPs)",
+        "id":"wUdzJjMX3OI",
         "optionSet": {
           "name":"KQMH_3 Scoring Options(Yes, No, P)",
           "options":[ {
@@ -497,8 +454,8 @@
     }
   ,{
       "dataElement": {
-        "name":"RDIM_11.2.1_Facility assures that patients get full range of services regardless of their religious, economic or social status\n(MOV- protocol in place)",
-        "id":"Fs1sDQkhigW",
+        "name":"RDIM_11.4.2_Facility develops and uses protocols for triaging of patients\n(MOV- Triage protocol AND Tagging of Patients or patent files)",
+        "id":"Y7EO66j7DTl",
         "optionSet": {
           "name":"KQMH_3 Scoring Options(Yes, No, P)",
           "options":[ {
@@ -518,8 +475,8 @@
     }
   ,{
       "dataElement": {
-        "name":"RDIM_11.2.9_There is debriefing and support supervision for care providers to cope with stressful encounters/situations (MOV- SOP, interview with health providers)",
-        "id":"laj2ZMrTB7S",
+        "name":"RDIM_11.4.1_Equipment for\nfacilitating patients' mobility are available and in good condition.\n(MOV-Observation)",
+        "id":"wC0sCYueMJ0",
         "optionSet": {
           "name":"KQMH_3 Scoring Options(Yes, No, P)",
           "options":[ {
@@ -539,8 +496,8 @@
     }
   ,{
       "dataElement": {
-        "name":"RDIM_11.2.6_Patients are identified before undergoing any diagnostic procedures (MOV-Protocol in place)",
-        "id":"V5W9Dc20VpA",
+        "name":"RDIM_11.4.8_Documentation of all procedures is done in the relevant charts/ sheets\n(MOV- cardex, fluid/feeding charts, treatment sheet, turningsheet, observation charts, nursing care plan)",
+        "id":"jmCx0KGHznI",
         "optionSet": {
           "name":"KQMH_3 Scoring Options(Yes, No, P)",
           "options":[ {
@@ -558,23 +515,111 @@
         }
       }
     }
-  , {
+  ,{
       "dataElement": {
-        "name":"RDIM_11.2.4_Client feedback analysed and acted upon\n(MOV- progress/status report)",
-        "id":"qVhC1FOH8D9",
+        "name":"RDIM_11.4.1_Equipment and materials for\nmonitoring patients' vital signs are provided.\n(MOV-Observation)",
+        "id":"HH1AyXoDBzh",
         "optionSet": {
-          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
           "options":[ {
-            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
           }
           ,
             {
-              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.10_Dietary counselling and feeding support is provided by nutritionists or other competent staff\n(MOV- Schedules for nutritionists)",
+        "id":"mhKiEtFnb6z",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.4_The health facility has a displayed protocol for categorization of patients for prescribed levels of care:\nCategory “A” critical ,\nCategory “B” unstable\nCategory “C” stable\n(MOV- Arrangement of patients according to t",
+        "id":"skger46Nf6U",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.4.1_Mattresses, bed linen, towels and gowns for patients are available and in good condition.(MOV-Observation)",
+        "id":"V4OOw652lwo",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    },{
+      "dataElement": {
+        "name":"RDIM_11.4.5_The facility carries out episodic patient assessment and records vitals in the appropriate charts of care\n(MOV- Observations chart, fluid charts, nursing care plan, Cardex)",
+        "id":"S4wklQcJMlt",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
             }
           ]
         }
       }
     }
 
-  ]
+
+    ]
 }
