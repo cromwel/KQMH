@@ -133,6 +133,10 @@ public class Dimension1 extends AppCompatActivity {
                     JSONArray options = optionSet.getJSONArray("options");
                     List<Option> optionList = new ArrayList<>();
                     Gson gson = new Gson();
+
+                    Option selectOption = new Option("","","Select");
+                    optionList.add(selectOption);
+
                     for (int j = 0; j < options.length(); j++) {
                         Option option = gson.fromJson(options.getJSONObject(j).toString(), Option.class);
                         optionList.add(option);

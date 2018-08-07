@@ -199,17 +199,17 @@
                                         android:layout_height="wrap_content"
                                         android:layout_weight=".6"
                                         android:background="@color/grey"
-                                        android:padding="5dp"
+                                        android:paddingBottom="35dp"
                                         android:text="@string/Rdim3.2.1.1"
                                         android:textColor="@color/black"
                                         android:textSize="16sp" />
 
                                     <LinearLayout
                                         android:layout_width="0dp"
+                                        android:layout_height="match_parent"
                                         android:layout_weight=".4"
                                         android:background="@color/dark_blue"
                                         android:gravity="center"
-                                        android:layout_height="match_parent"
                                         android:orientation="vertical">
 
                                         <TextView
@@ -220,15 +220,15 @@
                                             android:textColor="@color/white"
                                             android:textSize="16sp" />
 
-                                    <Spinner
-                                        android:id="@+id/spinner_score301"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="match_parent"
-                                        android:background="@color/dark_blue"
-                                        android:hint="@string/spinner_scores"
-                                        android:prompt="@string/spinner_scores"
-                                        android:tag="JfZaG983Hp0"
-                                        android:textSize="12sp" />
+                                        <Spinner
+                                            android:id="@+id/spinner_score301"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/dark_blue"
+                                            android:hint="@string/spinner_scores"
+                                            android:prompt="@string/spinner_scores"
+                                            android:tag="JfZaG983Hp0"
+                                            android:textSize="12sp" />
 
                                     </LinearLayout>
 

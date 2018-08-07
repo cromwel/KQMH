@@ -1,12 +1,16 @@
 package com.kqmh.app.kqmh.Models;
 
-/**
- * Created by ekirapa on 8/6/18 .
- */
 public class Option {
     private String name;
     private String code;
     private String id;
+
+    public Option(String id,String code, String name){
+        this.id=id;
+        this.code=code;
+        this.name=name;
+
+    }
 
     public String getName() {
         return name;
