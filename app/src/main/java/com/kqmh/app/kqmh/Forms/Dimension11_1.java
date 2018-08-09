@@ -7,12 +7,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.google.gson.Gson;
 import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter;
+import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter2;
+import com.kqmh.app.kqmh.Models.DataElement;
+import com.kqmh.app.kqmh.Models.Option;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
+import com.kqmh.app.kqmh.Utils.AppConstants;
 import com.kqmh.app.kqmh.Utils.JSONFileParser;
 
 import org.json.JSONArray;
@@ -24,6 +30,7 @@ import java.util.List;
 
 public class Dimension11_1 extends AppCompatActivity {
     List<Spinner> spinnerList = new ArrayList<>();
+    List<DataElement> dataElementsList = new ArrayList<>();
     private ProgressDialog progressDialog;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,19 +120,53 @@ public class Dimension11_1 extends AppCompatActivity {
             JSONObject jsonObject = dataElements.getJSONObject(i);
             JSONObject dataElement = jsonObject.getJSONObject("dataElement");
             String id = dataElement.getString("id");
-            Log.d("data element", " " + i + " " + id);
-            for (Spinner spinner : spinnerList) {
+
+            for (final Spinner spinner : spinnerList) {
                 if (spinner.getTag().toString().equals(id)) {
+                    //Build data element
+                    DataElement element = new DataElement();
+                    element.setEntity(AppConstants.DIMENSION_11_1);
+                    element.setDataElementId(id);
+                    dataElementsList.add(element);
+
                     //Tag matches json id
                     JSONObject optionSet = dataElement.getJSONObject("optionSet");
                     JSONArray options = optionSet.getJSONArray("options");
-                    List<String> optionsList = new ArrayList<>();
-                    for(int j = 0; j < options.length(); j++){
-                        optionsList.add(options.getJSONObject(j).getString("name"));
+                    List<Option> optionList = new ArrayList<>();
+                    Gson gson = new Gson();
+
+                    Option selectOption = new Option("","","Select");
+                    optionList.add(selectOption);
+
+                    for (int j = 0; j < options.length(); j++) {
+                        Option option = gson.fromJson(options.getJSONObject(j).toString(), Option.class);
+                        optionList.add(option);
                     }
-                    ScoreOptionstAdapter adapter = new ScoreOptionstAdapter(this, android.R.layout.simple_spinner_dropdown_item, optionsList);
+                    ScoreOptionstAdapter2 adapter = new ScoreOptionstAdapter2(this, android.R.layout.simple_spinner_dropdown_item, optionList);
                     spinner.setAdapter(adapter);
-                    Log.d("Options size", " " + optionsList.size());
+                    spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                        @Override
+                        public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                            Option option = (Option) adapterView.getSelectedItem();
+                            Log.d("selected option ", option.getName() + " code " + option.getCode());
+                            Log.d("id", "" + spinner.getTag());
+                            int position = spinnerList.indexOf(spinner);
+                            try {
+                                DataElement selectedElement = dataElementsList.get(position);
+                                selectedElement.setCategory(option.getId());
+                                selectedElement.setValue(option.getCode());
+                                selectedElement.save();
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+
+                        }
+
+                        @Override
+                        public void onNothingSelected(AdapterView<?> adapterView) {
+
+                        }
+                    });
 
                 }
             }

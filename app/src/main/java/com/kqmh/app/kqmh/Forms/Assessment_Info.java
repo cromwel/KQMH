@@ -31,6 +31,7 @@ import com.kqmh.app.kqmh.Utils.AuthBuilder;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
 import com.kqmh.app.kqmh.Models.KeyValue;
+import com.kqmh.app.kqmh.Widgets.Facility_Box;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.toptoche.searchablespinnerlibrary.SearchableSpinner;
 
@@ -72,6 +73,7 @@ public class Assessment_Info extends AppCompatActivity {
         spinner_OrganisationUnit = findViewById(R.id.spinner_OrganisationUnit);
         spinner_OrganisationUnit.setTitle("Organizational Units");
         spinner_OrganisationUnit.setPositiveButton("Cancel");
+
         spinner_AssessmentType = findViewById(R.id.spinner_AssessmentType);
         spinner_period = findViewById(R.id.spinner_period);
         spinner_facilityLevel = findViewById(R.id.spinner_facilityLevel);
@@ -110,8 +112,6 @@ public class Assessment_Info extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
 
     }
 
@@ -377,8 +377,6 @@ public class Assessment_Info extends AppCompatActivity {
         }
     }
 
-
-    /**/
     public void submit() {
         closeProgressbar();
         new SessionManager(getBaseContext()).setLoggedIn(true);

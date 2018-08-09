@@ -12,4 +12,7 @@ public class AppConstants {
     public static final String DIMENSION_8 = "Dim8";
     public static final String DIMENSION_9 = "Dim9";
     public static final String DIMENSION_10 = "Dim10";
+    public static final String DIMENSION_11_1 = "Dim11_1";
+    public static final String DIMENSION_11_2 = "Dim11_2";
+    public static final String DIMENSION_11_3 = "Dim11_3";
 }
