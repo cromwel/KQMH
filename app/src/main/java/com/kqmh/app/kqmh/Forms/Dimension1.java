@@ -169,6 +169,7 @@ public class Dimension1 extends AppCompatActivity {
                                         .from(DataElement.class)
                                         .where(DataElement_Table.dataElementId.eq( spinner.getTag().toString()))
                                         .querySingle();
+                                //Check if null
                                 selectedElement.setCategory(option.getId());
                                 selectedElement.setValue(option.getCode());
                                 if (selectedElement.exists()) {
