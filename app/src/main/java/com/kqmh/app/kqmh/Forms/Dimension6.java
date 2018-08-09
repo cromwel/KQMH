@@ -137,7 +137,7 @@ public class Dimension6 extends AppCompatActivity {
                     List<Option> optionList = new ArrayList<>();
                     Gson gson = new Gson();
 
-                    Option selectOption = new Option("","","Select");
+                    Option selectOption = new Option(id,"","","Select");
                     optionList.add(selectOption);
 
                     for (int j = 0; j < options.length(); j++) {

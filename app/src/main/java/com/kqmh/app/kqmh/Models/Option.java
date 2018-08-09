@@ -1,15 +1,31 @@
 package com.kqmh.app.kqmh.Models;
 
 public class Option {
+    private String parentId;
     private String name;
     private String code;
     private String id;
 
+    public Option(String parentId, String id,String code, String name){
+        this.parentId = parentId;
+        this.id=id;
+        this.code=code;
+        this.name=name;
+
+    }
     public Option(String id,String code, String name){
         this.id=id;
         this.code=code;
         this.name=name;
 
+    }
+
+    public String getParentId() {
+        return parentId;
+    }
+
+    public void setParentId(String parentId) {
+        this.parentId = parentId;
     }
 
     public String getName() {

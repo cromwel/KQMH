@@ -1,15 +1,30 @@
 package com.kqmh.app.kqmh.Models;
 
+import com.kqmh.app.kqmh.Utils.MyDatabase;
+import com.raizlabs.android.dbflow.annotation.Column;
+import com.raizlabs.android.dbflow.annotation.PrimaryKey;
+import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
 /**
  * Created by ekirapa on 8/6/18 .
  */
+@Table(database = MyDatabase.class, name = "dataElement")
 public class DataElement extends BaseModel {
+    @Column
+    @PrimaryKey
     private String dataElementId="";
+
+    @Column
     private String category="";
+
+    @Column
     private String value="";
+
+    @Column
     private String comment="";
+
+    @Column
     private String entity = "";
 
     public String getDataElementId() {
