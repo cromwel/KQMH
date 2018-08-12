@@ -114,7 +114,7 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score1500"
+                                    android:id="@+id/spinner_score1501"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
@@ -178,7 +178,7 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score1501"
+                                    android:id="@+id/spinner_score1502"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
@@ -242,7 +242,7 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score1502"
+                                    android:id="@+id/spinner_score1503"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
@@ -306,7 +306,7 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score1503"
+                                    android:id="@+id/spinner_score1504"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
@@ -368,7 +368,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
-                                android:padding="5dp"
+                                android:paddingBottom="35dp"
                                 android:text="@string/Rdim11.5.2.1"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -390,7 +390,7 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score1504"
+                                    android:id="@+id/spinner_score1505"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
@@ -454,7 +454,7 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score1505"
+                                    android:id="@+id/spinner_score1506"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
@@ -497,7 +497,7 @@
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
+                                android:text="@string/Rdim11.5.2.3"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -518,7 +518,7 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score1506"
+                                    android:id="@+id/spinner_score1507"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
@@ -581,7 +581,7 @@
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
+                                android:text="@string/Rdim11.5.3.1"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -602,13 +602,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score343"
+                                    android:id="@+id/spinner_score1508"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="vn1LxcVJdiQ"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -647,7 +647,29 @@
 
                     </LinearLayout>
 
-                    <!-- Requirements -->
+                <!-- sub standard & requirements-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/grey"
+                            android:padding="5dp"
+                            android:text="@string/Rdim11.5.4.1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -664,8 +686,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
-                                android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
+                                android:paddingBottom="35dp"
+                                android:text="@string/Rdim11.5.4.2"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -686,13 +708,141 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score344"
+                                    android:id="@+id/spinner_score1509"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="BWfjcFEDb4C"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".6"
+                                android:background="@color/grey"
+                                android:paddingBottom="35dp"
+                                android:text="@string/Rdim11.5.4.3"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight=".4"
+                                android:background="@color/dark_blue"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="scores"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+                                <Spinner
+                                    android:id="@+id/spinner_score1510"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/dark_blue"
+                                    android:hint="@string/spinner_scores"
+                                    android:prompt="@string/spinner_scores"
+                                    android:tag="HeQNBy9ru9j"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="comment"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:paddingBottom="155dp"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".6"
+                                android:background="@color/grey"
+                                android:paddingBottom="35dp"
+                                android:text="@string/Rdim11.5.4.4"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight=".4"
+                                android:background="@color/dark_blue"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="scores"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+                                <Spinner
+                                    android:id="@+id/spinner_score1511"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/dark_blue"
+                                    android:hint="@string/spinner_scores"
+                                    android:prompt="@string/spinner_scores"
+                                    android:tag="YQqWdp6I5Uk"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -729,7 +879,7 @@
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
+                                android:text="@string/Rdim11.5.4.5"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -750,13 +900,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score345"
+                                    android:id="@+id/spinner_score1512"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="VsVrMZYyKoF"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -793,7 +943,7 @@
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
+                                android:text="@string/Rdim11.5.4.6"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -814,13 +964,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score346"
+                                    android:id="@+id/spinner_score1513"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="dXL0s2rRPma"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -857,7 +1007,7 @@
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
+                                android:text="@string/Rdim11.5.4.7"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -878,13 +1028,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score347"
+                                    android:id="@+id/spinner_score1514"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="Qt2MqO1AgBu"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -921,7 +1071,7 @@
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
+                                android:text="@string/Rdim11.5.4.8"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -942,205 +1092,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score348"
+                                    android:id="@+id/spinner_score1515"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
-                                    android:textSize="12sp" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:background="@color/white"
-                            android:gravity="center_vertical"
-                            android:hint="comment"
-                            android:inputType="text"
-                            android:padding="5dp"
-                            android:paddingBottom="155dp"
-                            android:textColor="@color/grey"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:weightSum="1"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight=".6"
-                                android:background="@color/grey"
-                                android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
-                                android:textColor="@color/black"
-                                android:textSize="16sp" />
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_weight=".4"
-                                android:background="@color/dark_blue"
-                                android:gravity="center"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:text="scores"
-                                    android:textColor="@color/white"
-                                    android:textSize="16sp" />
-
-                                <Spinner
-                                    android:id="@+id/spinner_score349"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
-                                    android:textSize="12sp" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:background="@color/white"
-                            android:gravity="center_vertical"
-                            android:hint="comment"
-                            android:inputType="text"
-                            android:padding="5dp"
-                            android:paddingBottom="155dp"
-                            android:textColor="@color/grey"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:weightSum="1"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight=".6"
-                                android:background="@color/grey"
-                                android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
-                                android:textColor="@color/black"
-                                android:textSize="16sp" />
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_weight=".4"
-                                android:background="@color/dark_blue"
-                                android:gravity="center"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:text="scores"
-                                    android:textColor="@color/white"
-                                    android:textSize="16sp" />
-
-                                <Spinner
-                                    android:id="@+id/spinner_score350"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
-                                    android:textSize="12sp" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:background="@color/white"
-                            android:gravity="center_vertical"
-                            android:hint="comment"
-                            android:inputType="text"
-                            android:padding="5dp"
-                            android:paddingBottom="155dp"
-                            android:textColor="@color/grey"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:weightSum="1"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight=".6"
-                                android:background="@color/grey"
-                                android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
-                                android:textColor="@color/black"
-                                android:textSize="16sp" />
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_weight=".4"
-                                android:background="@color/dark_blue"
-                                android:gravity="center"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:text="scores"
-                                    android:textColor="@color/white"
-                                    android:textSize="16sp" />
-
-                                <Spinner
-                                    android:id="@+id/spinner_score351"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="Sxk1imD3a9d"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1197,7 +1155,7 @@
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
+                                android:text="@string/Rdim11.5.5.1"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -1218,13 +1176,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score352"
+                                    android:id="@+id/spinner_score1516"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="TgrMv6HQF1e"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1261,7 +1219,7 @@
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
+                                android:text="@string/Rdim11.5.5.2"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -1282,13 +1240,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score353"
+                                    android:id="@+id/spinner_score1517"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="KF2i0tEh9GN"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1345,7 +1303,7 @@
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
+                                android:text="@string/Rdim11.5.6.1"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -1366,13 +1324,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score354"
+                                    android:id="@+id/spinner_score1518"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="j7Q8YASDJCS"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1429,7 +1387,7 @@
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
+                                android:text="@string/Rdim11.5.7.1"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -1450,13 +1408,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score355"
+                                    android:id="@+id/spinner_score1519"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="hk3BXgGtE3C"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1493,7 +1451,7 @@
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
                                 android:padding="5dp"
-                                android:text="@string/Rdim11.4.1.1"
+                                android:text="@string/Rdim11.5.7.2"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
 
@@ -1514,13 +1472,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score356"
+                                    android:id="@+id/spinner_score1520"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="AYFXysdYoRl"
                                     android:textSize="12sp" />
                             </LinearLayout>
 

@@ -240,7 +240,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
-                                android:padding="5dp"
+                                android:paddingBottom="35dp"
                                 android:text="@string/Rdim11.3.2.2"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -304,7 +304,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
-                                android:padding="5dp"
+                                android:paddingBottom="35dp"
                                 android:text="@string/Rdim11.3.2.3"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -368,7 +368,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
-                                android:padding="5dp"
+                                android:paddingBottom="35dp"
                                 android:text="@string/Rdim11.3.2.4"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -432,7 +432,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
-                                android:padding="5dp"
+                                android:paddingBottom="35dp"
                                 android:text="@string/Rdim11.3.2.5"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -496,7 +496,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
-                                android:padding="5dp"
+                                android:paddingBottom="35dp"
                                 android:text="@string/Rdim11.3.2.6"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -560,7 +560,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
-                                android:padding="5dp"
+                                android:paddingBottom="35dp"
                                 android:text="@string/Rdim11.3.2.7"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -624,7 +624,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
-                                android:padding="5dp"
+                                android:paddingBottom="35dp"
                                 android:text="@string/Rdim11.3.2.8"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -688,7 +688,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
-                                android:padding="5dp"
+                                android:paddingBottom="35dp"
                                 android:text="@string/Rdim11.3.2.9"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -752,7 +752,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
-                                android:padding="5dp"
+                                android:paddingBottom="35dp"
                                 android:text="@string/Rdim11.3.2.10"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -816,7 +816,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight=".6"
                                 android:background="@color/grey"
-                                android:padding="5dp"
+                                android:paddingBottom="35dp"
                                 android:text="@string/Rdim11.3.2.11"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
