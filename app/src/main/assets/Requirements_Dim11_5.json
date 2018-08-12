@@ -1,0 +1,369 @@
+{
+  "dataSetElements": [
+    {
+      "dataElement": {
+        "name":"RDIM_11.5.5_Facility maintains records of patients who return to the Emergency Department within 24 hours after being seen.(MOV- A&E register)",
+        "id":"TgrMv6HQF1e",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.5.6_Availability and use of protocols for service fee waiver and exemption.(MOV-protocols; waiver and exemptions register )", "id":"j7Q8YASDJCS", "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.5.1_Healthcare workers involved in paediatric emergency care have additional training on Basic Life Support and Pediatric Advanced Life Support\n(MOV-HR records)",
+        "id":"cgE48VjUwdn",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.5.4_Evidence that patients are seen within the time limits set by the triage guidelines\n(MOV- quarterly report on assessment of turn-around time)",
+        "id":"Sxk1imD3a9d",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.5.4_Door to Disposition/Length of Stay in A&E(MOV-Discharge, Admission, Referral)",
+        "id":"Qt2MqO1AgBu",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.5.7_Facility conducts demo drills twice a year to test the facility’s preparedness to manage mass casualties\n(MOV-drills report)",
+        "id":"AYFXysdYoRl",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.5.4_Laboratory Services",
+        "id":"YQqWdp6I5Uk",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.5.4_Door to Doctor/clinicians",
+        "id":"HeQNBy9ru9j",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.5.1_Facility has adequate emergency equipment and Supplies, fully stocked resuscitation trolley\n(MOV-inventory of emergency equipment and supplies)",
+        "id":"Y3RmPDX3n3v",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.5.5_Review of all mortalities conducted within 24 hours of admission.\n(MOV- mortality audit report)",
+        "id":"KF2i0tEh9GN",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.5.4_Radiological Services (level 4 upwards)",
+        "id":"VsVrMZYyKoF",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.5.7_All staff are assessed quarterly on their knowledge of mass casualty management skills and the institutional procedures\n(MOV-assessment report)",
+        "id":"hk3BXgGtE3C",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.5.1_Healthcare workers involved in adult emergency care have additional training on Basic Life Support and Advanced Life Support\n(MOV-HR records)",
+        "id":"wfNuSp06YuR",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.5.4_Door to Triage",
+        "id":"BWfjcFEDb4C",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.5.2_A record of patient volumes based on the different triage categories is maintained\n(MOV- triaging register)",
+        "id":"qA5v1SKyDBI",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.5.2_Triage guidelines in place",
+        "id":"Tilmu40JPoP",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.5.1_Facility has adequate number of licensed skilled staff\n(MOV- HR records)",
+        "id":"t1TPKwQc3ty",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.5.4_Decision to Senior Review Decision to referral (level 2&3)",
+        "id":"dXL0s2rRPma",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.5.2_Triage turn-around time is defined (MOV- quarterly report on assessment of turn-around-time)",
+        "id":"Xr2nos0q1V2",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.5.3_Algorithms for trauma and medical emergencies are available\n(MOV- availability of algorithms)",
+        "id":"vn1LxcVJdiQ",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
