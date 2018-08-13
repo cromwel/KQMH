@@ -68,7 +68,7 @@ public class Dimension11_3 extends AppCompatActivity {
 
 
 
-        for(int value=1300;value<1315;value++){
+        for(int value=11300;value<11315;value++){
             Resources res  = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score),value);
 

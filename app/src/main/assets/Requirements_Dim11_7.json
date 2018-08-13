@@ -1,0 +1,488 @@
+{
+  "dataSetElements": [
+    {
+      "dataElement": {
+        "name":"RDIM_11.7.7_All post anaesthesia patients are accompanied to the recovery room and adequately handed over to the nursing staff by the anaesthesia care provider.",
+        "id":"MJbP1UGlKdp",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.7.7_All patients are monitored during the post-anaesthesia recovery period. Particular attention is given to monitoring oxygenation, ventilation, circulation and temperature.\n(MOV-SOP; patient clinical notes)", "id":"zEFJ2hUCH8y", "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.7.1_All staff in clinical contact with patients under anaesthesia are appropriately trained in resuscitation skills.\n(MOV-HR records)",
+        "id":"WnVnqZrW82C",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.7.1_Responsibilities for monitoring and reviewing anaesthesia services are defined and carried out\n(MOV-SOP)",
+        "id":"YDIatkXHoCb",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.7.6_Presence of adequate monitoring and emergency care equipment and drugs.\n(MOV-observation; equipment inventory)", "id":"JOfzsZ7Z8iI", "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.7.1_The theatre committee meets at least quarterly and chart out theatre work plans as well as serve to review any critical incidents/outcomes in perioperative care.\n(MOV-Minutes of meetings)",
+        "id":"B6pwrrSTvTo",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.7.2_There is standard anaesthetic chart enabling contemporaneous documentation on perioperative care\n(MOV-observation)",
+        "id":"CykFvL3CaE0",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.7.5_All patients undergoing anaesthesia are monitored for circulation, ventilation and oxygenation on the minimum\n(MOV- patient clinical records, SOP)",
+        "id":"ITYznzYpNBK",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.7.6_Presence of adequate staffing\n(MOV-HR records)",
+        "id":"wyIsSaeK2pQ",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.7.5_A medical practitioner whose sole responsibility is the provision of anaesthetic care for patients is constantly present from induction of anaesthesia until safe transfer to Recovery Room staff or Intensive Care Unit.",
+        "id":"rjKeHzn7g5H",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.7.6_Availability of post anaesthesia to theatre bed ratio of at least 1:1.5\n(MOV-HR records)",
+        "id":"gTwfEgeL3GA",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.7.6_Presence of a dedicated Post Anaesthesia Care Unit\n(MOV-observation)",
+        "id":"cub8nrBF1m3",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.7.1_Presence of theatre users committee to facilitate implementation of work plans. This committee has, at bare minimum, the theatre nurse in charge, the resident anaesthesia care provider, the resident surgeon/gynaecolog",
+        "id":"E8729O0L12u",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.7.7_Observations are documented in the patient’s clinical record. This should include at least, state of consciousness, colour, respiratory rate, oxygen saturation, pulse and blood pressure and level of pain.\n(MOV-SOP; pa", "id":"m667Xxwusne", "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.7.3_The patient, family, and/or decision makers are educated on the risks, benefits, and alternatives of anaesthesia.\n(MOV-SOP)",
+        "id":"z5tElCQ3vIj",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.7.3_Separate pre-induction assessment is performed to re-evaluate patients immediately before the induction of anaesthesia\n(MOV- SOP, patient clinical notes)",
+        "id":"gp4Z0DFtT4z",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.7.3_Pre-anaesthesia assessment is performed for patients scheduled to undergo surgery.\n(MOV- clinical notes from patient records)",
+        "id":"pCXpfzyuVBY",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.7.1_Each theatre in the hospital has one anaesthesia care provider attending to one patient per unit time.\n(MOV- observation)",
+        "id":"fzvuVN6E9n5",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.7.1_Each theatre has at least one theatre technician adequately trained in assisting both the surgical and anaesthesia teams.\n(MOV-HR records)",
+        "id":"jAaxWNQ5NeG",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.7.4_The anaesthesia care of each patient is planned and documented in the patient’s record.\n(MOV-SOP; Patient clinical records)", "id":"Kjfdi9OkWcZ", "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.7.1_Availability of adequate anaesthesia equipment and supplies as outlined in the appendix\n(MOV- Observation and equipment inventory)",
+        "id":"ksoBhjtlnZE",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.7.2_The facility has adequate perioperative monitoring devices\n(MOV- Observation and equipment inventory)",
+        "id":"owv4ess7fq8",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.7.4_The anaesthesia agent, dose and anaesthetic technique are documented in the patient’s record.\n(MOV-SOP; patient clinical records)", "id":"vRvfQ2S7q4W", "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.7.7_Patients are discharged from the post-anaesthesia care unit in accordance with national guidelines\n(MOV-SOP; patient clinical notes)", "id":"popxMG2SsrZ", "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.7.7_Staff record, for each patient, time recovery is started and time recovery phase is complete\n(MOV-Patient’s records; SOP)", "id":"WSa5wj0buCy", "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

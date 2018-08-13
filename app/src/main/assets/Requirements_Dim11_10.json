@@ -1,0 +1,1579 @@
+{
+  "dataSetElements": [
+    {
+      "dataElement": {
+        "name":"RDIM_11.10.4_Frequency of solute clearance estimation (MOV-audit report)",
+        "id":"OBwhyHhpwkA",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.10.2.2_All staff working in haemodialysis unit must be tested for Hepatitis B and treated accordingly.(MOV- SOPs; HR records)", "id":"dL3j699Y0q5", "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_Flow diagram of the water treatment system is displayed in the water treatment room.(MOV-Observation)",
+        "id":"uRP1cNWpWRr",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name": "RDIM_11.10.2.8_Dialysate used is approved by Kenya Pharmacy and Poisons Board.(MOV-SOP; Observation)", "id":"Cx6wqC6IHOj", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.10.2.5_Backwash of the multimedia sediment filter is carried out at least 2 times per week(MOV- check water treatment records; SOPs)", "id":"bZyiNv0GfYT", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.3.1_Peritoneal dialysis insertion sets (including PD Catheters) available (MOV-Observation)",
+        "id":"hM2oa9XGpFs",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.4_Patient to dialysis nursing staff ratio (MOV-audit report)",
+        "id":"ZGCoLZfIVGF",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_11.10.4_Functionality of medical equipment (MOV-audit report)",
+        "id":"dT9RxiYzmeg",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.3_Dialysis room/area with adequate space for dialysis machine and bed/couch/dialysisChair. It should have provision for segregation of patients who are Hepatitis B(MOV-Observation)",
+        "id":"Kad5xZlknRw",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.10.2.7_A separate machine is used for HBs Ag positive or anti HCV positive patients. Single use of dialyser ensured for Hepatitis B & C co-infected patients.(MOV-SOP; observation)", "id":"jeCKqqNCZnl", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.10.3.3_Small-Solute Clearance measured at 4-6 weeks after PD onset and when clinically indicated (MOV-SOPs; sample 5 patient files)", "id":"H4zKvHbYa68", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.4_Endotoxin retention filter for the dialysate is used when performing high flux haemodialysis(MOV-SOP)",
+        "id":"SE5R3L12ZTi",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.10.2.5_The recovery rate of reverse osmosis system is at least 50%.(MOV- check water treatment records; SOPs)", "id":"qhmRz3d5Cia", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.3.2_The PD Training will include the following: Training schedule (topics, guidelines for trainer, pre and post patient training assessment) Teaching aids Home environment assessment Family support",
+        "id":"sl60BfzFmen",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.2_Patients who are Hepatitis B negative are vaccinated(MOV- SOPs, sample 5 patient files)",
+        "id":"XsYlkJQJshK",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.2_In HIV negative patients, serologic test is performed every 6 months(MOV- SOPs, sample 5 patient files)",
+        "id":"NzPeCWF6kmG",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.6_The facility carries out total viable counts using spread plate or membrane filtration technique using Trypton Glucose Extract Agar (TGEA) or equivalent and determines presence of pyrogen/endotoxin using Limulus Amo",
+        "id":"umPkD18KFpC",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.4_Frequency of measurement of membrane function, residual urine and peritoneal ultrafiltration volume (MOV-audit report)",
+        "id":"OBfguNpK1zn",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_A minimum of six (6) monthly (or as specified by the manufacturer’s recommendation) chemical disinfection of distribution loop including the connections to dialysis machine is done, using peracetic acid 2-3% or chlo",
+        "id":"Ih2H6Cl7EBl",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_The water treatment system has the following parameters displayed:Conductivity of permeate Permeate flow rate Reject flow rate Raw water pressure Guard-in & guard-out pressure Reverse osmosis membrane system-in & sy",
+        "id":"rKYa6uW8hyT",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.10.2.5_Daily recording of the parameters of water treatment system is performed.(MOV- check water treatment records; SOPs)", "id":"LsWtrBRZ0Pl", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.1_All haemodialysis treatment is provided under the order of:\n(a) A nephrologist\n(b) A physician with requisite training under the supervision of a nephrologist.\n(MOV- SOP)",
+        "id":"FbhJ1jk4LL9",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_There are at least two raw water pumps, made of stainless steel(MOV- Observation)",
+        "id":"GT7HwB3u6pN",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.4_Audit of care pathway for catheter insertion (MOV-audit report)",
+        "id":"tZ6DYlfnWwe",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.4_Identify patients with a total fluid removal <750 ml per day. (MOV-audit report)",
+        "id":"AoGbiDzvIRx",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_The room that houses the water treatment system is located in an area which minimizes disruption to haemodialysis treatment.(MOV-Observation)",
+        "id":"ZNIhwPflzM0",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.4_A minimum of one back-up machine is available for every ten (10) haemodialysis machines.(MOV-Observation)",
+        "id":"D68Hb6aCBHf",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_Empty Bed Contact Time (EBCT) for the carbon columns is ten (10) minutes in total, or five (5) minutes for each filter stage, if two carbon filters are used to optimise the chlorine and chloramines removal. Backwash",
+        "id":"ldb4KGpW3Wt",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.7_The reprocessing machine is fully automated integrated unit capable to clean, test and fill the dialyser with disinfectant and is able to perform automatic dilution of sterilant to specified strength.(MOV-Check mach",
+        "id":"YeBUTSHdDnB",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.10.2.5_The guard filter is replaced as necessary.(MOV- check water treatment records; SOPs)", "id":"SJ5MGBukYpy", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.4_Number of patients regularly requiring hypertonic (3.86% glucose) exchanges to maintain fluid balance (MOV-audit report)",
+        "id":"p5GY808x2BQ",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.10.3.3_Residual Renal Function (RRF) measured every 3-6 months or when clinically indicated (MOV-SOPs; sample 5 patient files)", "id":"potx8Uswp8Z", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.10.2.8_Dialysers used by the facility are made from biocompatible membrane.(MOV-SOP; Observation)", "id":"PSOF3ViRm0Z", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.10.2.2_Haemodialysis staff caring for Hepatitis B positive patients do not care for Hepatitis B susceptible patients at the same shift.(MOV- SOPs; duty roster)", "id":"iHAB0DnjBSJ", "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_11.10.2.6_Chlorine and chloramines and water hardness testing is performed onsite using commercially available test kits while full analysis for chemical contaminants is performed by an accredited laboratory(MOV-records for w",
+        "id":"UeGr2O2OJNH",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.3.1_PD fluids should satisfy current quality medical standards (MOV-Supplies specifications)",
+        "id":"CsOKvsUqIc7",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.3_A suitable and secure area for clinical waste(MOV-Observation)",
+        "id":"teOq55WHyK0",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.2_Serology testing is carried out every 6 months for patients who are Hepatitis B and C negative.(MOV- SOPs, sample 5 patient files)",
+        "id":"Q2wAK1HT3MA",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.3.4_The facility has physical or virtual access to the following SOPs: Nursing management of patients on PD Guidelines for the PD training program Care of the peritoneal access (including peritoneal catheter and ",
+        "id":"wN13LhZnBG0",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.10.2.5_The raw water tank is covered; has a low-level alarm sensor; is inspected for defects and cleaned every 6 months; appropriate capacity that is adequate to enable at least one shift of treatment to be completed if wa", "id":"hDLySkbC4CF", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_Softener Column is regenerated by sodium chloride from brine tank or equivalent(MOV- SOPs)",
+        "id":"DHiSR8ylo23",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.4_All machines have a documented planned preventive maintenance and technical safety check according to manufacturer recommendations.(MOV- documented preventive maintenance plan)",
+        "id":"cJOHf1ihoib",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.10.2.4_The haemodialysis machines are capable of performing conventional (diffusive) haemodialysis and preferably convective therapy.(MOV-Observation; interview of health providers)", "id":"McIjkvfbAMp", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_Pressure gauge is installed before and after each component to monitor fouling of the components.(MOV-Observation)",
+        "id":"aKHx1BCaJJS",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_Floor traps are available to drain excess water.(MOV-Observation)",
+        "id":"IQEYsTztxvI",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.2_Combined Hepatitis B and Hepatitis C infected patients are isolated. If the isolation facility for combined Hepatitis B and C is not available, the facility makes a provision to have the patient dialyzed in a Hep",
+        "id":"TVPSw7xUtE9",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.10.2.5_The treated water storage tank is made of stainless steel or high density polyethylene; covered with a tight fitting lid and fitted with ultraviolet irradiator for destruction of bacteria with an air vent with a bac", "id":"fIFIv9CY0O9", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.3.1_PD tubing sets with infection-preventing designs such as the Y-connector and the use of disconnect systems (MOV-Observation)",
+        "id":"j6KJ0sKON7O",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.1_The person in charge of a haemodialysis centre is a nephrologist, assisted by other personnel of at least the following qualification:\nA Nephrologist A Physician who has completed recognized training in haemodialysis",
+        "id":"U1w0u3vtxS8",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.10.2.6_The facility carries out monthly testing for bacterial count and endotoxin test(MOV-records for water analysis; SOPs)", "id":"oDxzlgRGnAj", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.4_The machines meet specifications set by the Ministry of Health.(compare machine properties with MOH specifications)",
+        "id":"YMkmrwHwGlS",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.10.2.8_The dialysate packaging has the following information clearly labelled:Address of manufacturer Contents Concentration of electrolytes Dialysate concentration ratio Date of manufacture and expiry(MOV-SOP; Observation", "id":"u0JoPilXWpI", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.4_Audit of care pathway for dialysis preparation to include information given (including proportion of patients offered dialysis), when and who delivers it. (MOV-audit report)",
+        "id":"vJP29Zs5rSs",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.7_The dialyser reprocessing procedure includes: Calibration every morning Cleansing of residual blood and blood products and rinsed with reverse osmosis water. Testing for residual membrane performance (Total Cell Vo",
+        "id":"UOQvcT0lSoE",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.3_Conveniently located toilet and washbasins for the staff and patients(MOV-Observation)",
+        "id":"Y2PREslW2zs",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.1_The dialysis treatment is monitored closely, with particular attention to:Any intra-dialytic complications Vital signs during dialysis: Blood Pressure, pulse & temperature, blood sugar Vascular Access adequacy achie",
+        "id":"SC9GyvXpcSB",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.10.2.5_Daily testing for chlorine/chloramine and hardness is done every morning prior to starting haemodialysis treatment(MOV- check water treatment records; SOPs)", "id":"RyXVXS6ukeB", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.4_Audit of information on modality options provided to patients presenting who urgently require renal replacement therapy, and both initial and subsequent modality of ",
+        "id":"NDQcnvBZ9Fk",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.4_Audit of dialysis unit carried out (MOV- Audit report)",
+        "id":"PaRpi34Dz3Z",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.4_Functionality of infection prevention strategies (MOV-audit report)",
+        "id":"q6TFNvX5KC4",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.1_Dialysis adequacy is monitored at least every three (3) monthly using urea reduction ratio (URR) or Kt/V(MOV- Sample 5 patient files)",
+        "id":"cEUXaGjqjk1",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.3_Adequate ventilation by windows, ducts or mechanical means(MOV-Observation)",
+        "id":"q4P87PGfYtw",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.3.2_The PD training is carried out in a well-equipped PD Training Room (MOV-Observation)",
+        "id":"RmVEKXrsCAu",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.10.2.6_Daily testing for chlorine and chloramines is done after each carbon column; testing for hardness after softener column; while Six (6)-monthly full laboratories testing for chemicals is done at raw water point, pre ", "id":"cPFahc2ZGny", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.10.2.8_Bloodlines used for haemodialysis treatment meet MOH specifications(MOV-SOP; Observation)", "id":"bKgCPgtALRt", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.2_All patients are tested for HIV antibody before initiating first haemodialysis treatment and after returning from another haemodialysis facility.(MOV- SOPs, sample 5 patient files)",
+        "id":"zxBrshcleNW",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.4_Catheter complications and their resolution (MOV-audit report)",
+        "id":"wfs2e1bgy0L",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.4_Infection outcomes (MOV-audit report)",
+        "id":"ZjiiPQlcLjJ",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.1_Blood investigations are done at regular predetermined intervals(MOV- SOPs, sample 5 patient files)",
+        "id":"s9ay3ZBPjSY",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.4_There is a mechanism to ensure uninterrupted power supply to return blood from the extra-corporeal circuit in the event of power failure (MOV-SOP)",
+        "id":"n5G7ESaHVEU",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.6_Testing for contaminants is carried out daily using commercially available test kits for chlorine and chloramines and every six months in an accredited laboratory for chemical analysis.(MOV-records for water analysi",
+        "id":"PnEH6gAjpt6",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.2_All patients are tested for Hepatitis B and C before initiating the first haemodialysis treatment and after returning from another haemodialysis facility(MOV- SOPs, sample 5 patient files)",
+        "id":"iPnecIWWgem",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.3.3_Nutrition assessment: using Predictive Indices of Nutrition e.g. body weight, lean body mass, serum albumin and pre-albumin, blood urea, subjective global assessment, protein equivalent",
+        "id":"HrjrG8tKp1h",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.10.2.8_Arterio-venous needle used for haemodialysis treatment meets MOH specification(MOV-SOP; Observation)", "id":"uRemEv0zUR0", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_Water treatment system is distributed to the individual dialysis stations, and dialyser reprocessing stations using distribution materials and designs which minimize or stop microbiological contamination.(MOV- check",
+        "id":"RXkPNvxbe2R",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.3.1_PD cycler for initiation and training in automated PD (MOV-Observation)",
+        "id":"MuCHT2qowdZ",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.3_Resuscitation facilities including, but not limited to, cardiac monitoring device with defibrillator, bag-valve-mask, suction apparatus, a functioning laryngoscope, endotracheal tube, drugs commonly used in medical",
+        "id":"V4seGVsayPI",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_Water sample ports are available for sampling at the following points:Post first carbon column Post second carbon column Post softener column/Pre-RO module Immediate post RO module First point in the distribution lo",
+        "id":"zbrYpq3sf94",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDIM_11.10.2.2_All Hepatitis B positive persons are considered infectious, and thus dialyzed using separate machines, equipment and instruments.(MOV- SOPs; observation)", "id":"yVX0KeUd04i", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_11.10.2.6_Dialysis water is produced by the process of reverse osmosis(MOV-SOP)",
+        "id":"AM02udxho6y",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.3_Appropriately sized water treatment room separated from the dialysis room and all other rooms. There should be provision for the treated water to be delivered to individual haemodialysis machines through pipes made",
+        "id":"RsDZAuM5xbi",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_All columns in pre-treatment are opaque(MOV-Observation)",
+        "id":"mbHshaY9OTn",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.10.3.3_Volume assessment and performance of 2.5% or 4.25% dextrose PET carried out no sooner than 4 weeks after initiation of PD. (MOV-SOPs; sample 5 patient files)", "id":"Yw1Z12cxnc6", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_The room has adequate ventilation to prevent over-heating(MOV-Observation)",
+        "id":"f5zIL9F0UMN",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.5_All water treatment components and equipment are clearly labelled.(MOV-Observation)",
+        "id":"H6XCaJ9eW66",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.10.2.4_External surfaces of the haemodialysis machines are disinfected after each dialysis session.(MOV-SOP; cleaning logs)", "id":"hKCN73CvEsz", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,   {
+      "dataElement": {
+        "name": "RDIM_11.10.2.6_The facility takes action if limits are exceeded mainly by evaluating water treatment system and rectifying as necessary(MOV-records for water analysis; SOPs)", "id":"XLmQwc7jW7o", "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)", "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.3_Treatment/ consultation room with facilities and equipment for the treatment and care of end stage renal failure patients. If facility is providing minor procedures to haemodialysis patients then a treatment room",
+        "id":"CMl3zD6aEK7",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.1_For every five (5) dialysis patients, there is at least one (1) registered nurse with at least six months training in haemodialysis treatment and care in each shift.\n(MOV-HR records, duty roster)",
+        "id":"kGP5USbHuBV",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDIM_11.10.2.3_Availability of a storeroom with adequate space for supplies, consumables and equipment(MOV-Observation; inventory)", "id":"lkTHK0KQ66F", "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)", "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.3_Reprocessing room only to be used strictly for dialyser reprocessing, storing of reprocessed dialysers and sterilant. The room should have adequate ventilation to reduce inhalation risk. (MOV-Observation)",
+        "id":"ORMyZg2tNQ2",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.1_Each dialysis treatment is recorded in the patient files(MOV- Sample 5 patient files)",
+        "id":"R06sFRdv0iO",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.10.2.3_Waiting area(MOV-Observation)",
+        "id":"aZ676kv7zI9",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+
+  ]
+}
