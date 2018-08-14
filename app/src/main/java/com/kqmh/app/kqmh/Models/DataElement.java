@@ -6,9 +6,7 @@ import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
-/**
- * Created by ekirapa on 8/6/18 .
- */
+
 @Table(database = MyDatabase.class, name = "dataElement")
 public class DataElement extends BaseModel {
     @Column

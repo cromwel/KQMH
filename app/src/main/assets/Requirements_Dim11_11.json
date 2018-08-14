@@ -1,0 +1,903 @@
+{
+  "dataSetElements": [
+    {
+      "dataElement": {
+        "name":"RDIM_11.11.3.3_The laboratory documents, reviews and evaluates referrals to laboratories and consultant clinics\n(MOV- referral register/ record)",
+        "id":"uKspnJwclxA",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.4.6_Inter-laboratory comparison programme(s) have clinically relevant challenges that mimic patients’ samples and have the effect of checking the entire examination processes including pre-examination, examination and ",
+        "id":"il7bQp3wDVv",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.6.1_Facility proactively deal with nonconformities arising from POCT.\n(MOV-failed quality control and EQA reports)",
+        "id":"mKQgFxc0LG7",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.6.1_Procedures for ordering and collection of samples for point of care test are documented\n(MOV –observation of documented procedure)",
+        "id":"Xg9D7kpJYG8",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.4.3_There is evidence of routine calibration of equipment (including pipettes, centrifuges, balances, and thermometers) scheduled, at minimum, following manufacturer recommendations and verified\n(MOV-Calibration record",
+        "id":"YRx4mNCfhpu",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.1_Safety cabinets available\n(MOV- observations)",
+        "id":"Lqkj6lYJwvW",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.4.4_Each new reagent preparation, new lot number, new shipment of reagents or consumables shall be verified before use and documented(MOV- Evidence of verification of reagents and consumables before use in laboratory",
+        "id":"eJI7iNRV3EM",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.1_There is an inventory store with controlled temperatures\n(MOV- observations)",
+        "id":"xwGUYnBO4XE",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.3.2_The laboratory has guidelines for specimen collection (including staff and client safety), labelling, and transportation to persons responsible for primary sample collection\n(MOV- sample collection guidelines at sa",
+        "id":"xZAh5l2PfLU",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.1_The laboratory monitors environmental conditions that affect testing\n(MOV-Monitoring logs)",
+        "id":"p2s1VKS6LPJ",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.6.1_Training program in place for POCT\n(MOV- training program)",
+        "id":"gPJOkb1rgQc",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.6.1_Facility implements process for comparison of equipment / methods\n(MOV- report)",
+        "id":"CQa1tnzC9OD",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.1_Laboratory room is air conditioned, clean, uncluttered and well ventilated.\n(MOV- observations)",
+        "id":"LaLfYiW2F7Z",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.5.2_Results interpreted and released by authorized personnel\n(MOV- list of authorised personnel to interpret results)",
+        "id":"QuwGqp5hQgJ",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.4.4_Examination methods and procedures shall be validated and verified before being introduced into routine use\n(*Note: Standard methods do not need to be validated, but shall be verified)(See ISO 15189 and CLSI guidel",
+        "id":"Bbz4TJi8oBt",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.5.9_Results that have been transmitted electronically or reproduced externally to the laboratory (computers, fax machines, email and websites and personal web devices) are verified\n(MOV- SOP on verification of the soft",
+        "id":"F58r1OQ2xZZ",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.5.5_Archived results are properly labelled and stored in a secure location accessible only to authorized personnel\n(MOV- SOP on archiving, records of archived report)",
+        "id":"TI96CPtHr9q",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.5.3_Laboratory has a reporting procedure for critical and urgent results (MOV- SOP on critical reporting, past records on critical reporting)",
+        "id":"I6VPpxhtXHW",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.2.1_The laboratory has defined its scope of service and provides minimum essential tests as required per its level(MOV- availability of Quality manual in line with ISO 15189, complete document master list)",
+        "id":"GrKPs01aoCH",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.4.1_The laboratory has Standard Operating Procedures (SOP) for all its processes\n(MOV- SOP developed and available at point of use)",
+        "id":"YyUlX6MZVyk",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.5.6_The laboratory has a defined period for clinical samples retention, which depends on the nature of the sample, the examination and any applicable requirements (regulation)\n(MOV- retention guidelines and as per appl",
+        "id":"cLcwrF1ncPN",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.4.3_Manufacturer’s operator manuals readily available to testing staff in a language understood by the staff.\n(MOV- SOPs and manufacturers operating manuals)",
+        "id":"CLSRW4YbQl1",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.4.5_IQC results are monitored and reviewed (including biases and Levy-Jennings charts for quantitative tests) and corrective actions taken when quality control results exceed the acceptable range.(MOV- levy charts anal",
+        "id":"MHDZc864PJE",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.5.8_The laboratory defines levels of access authorization and responsibilities for the management and use of the laboratory information system\n(MOV- records showing level and authority for access, use of passwords)",
+        "id":"JZiIqQSUyK9",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.2.2_The laboratory provides specifications for its supplies and consumables(MOV-list with specification for supplies and consumables)",
+        "id":"Iw44f4veIRT",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.3.1_The laboratory has standardized a request form, with space for inclusion of, but not limited to the following: patient identification including age, gender, date of birth and location/contacts, name or unique ident",
+        "id":"M8AtAtErwxZ",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.1_Laboratory has proper lighting and access control services\n(MOV- observations)",
+        "id":"EXXo557zgJY",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.5.1_Reports of test results are legible, technically verified/validated, and confirmed against patient information(MOV- Sample 5 lab results)",
+        "id":"h9wPRUDbqiu",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.1_Facility has adequate laboratory infrastructure and equipment as per tier of care ( See appendix)\n(MOV- Adequate equipment as per the scope of work and tier of the health facility)",
+        "id":"X12kxfXVRKB",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.4.3_Preventive maintenance performed on all equipment and recorded\n(MOV- Maintenance records)and",
+        "id":"KcPGoC859bu",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.3.4_A procedure for referral of samples is in place\n(MOV- SOP).",
+        "id":"reDQFkbTASV",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.2.1_There is an updated laboratory quality manual that has been communicated to all relevant staff\n(MOV-availability of current laboratory manual)",
+        "id":"u4P9PWNpAud",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.1_Staffing is in line with the HR norms and standards\n(MOV- HR records)",
+        "id":"WJgaq2SjgFU",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.2.2_The laboratory employs First-Expiration-First-Out (FEFO) practice to all reagents/test kits in use.(MOV-observation/ bin cards)",
+        "id":"eJeKwOmNUK4",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.2.3_Internal audit action plan developed with clear timelines, assigned personnel and documented follow-up.\n(MOV- evidence of trained internal auditors, SOP on internal audit, non-conformities identified, corrective ac",
+        "id":"evvmwoDMlFW",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.3.3_The laboratory maintains a register of referral laboratories and consultants clinics, and all referred specimens are tracked properly using a logbook, tracking form or electronically.\n(MOV- criteria for selection a",
+        "id":"WhzIQK8eXnE",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.1_Benches, well fitted with recommended laboratory chairs\n(MOV- observations)",
+        "id":"f19bmR0YMD4",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.5.4_Laboratory reports are clear and include:\nExamination performed, Patient identification, Name or unique identifier of the requesting person , Examination results reported in SI units, or other applicable units, Bio",
+        "id":"GgwxsT912pH",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    { "dataElement": {
+      "name":"RDIM_11.11.6.1_There is a qualified staff member responsible for developing and implementing point of care testing procedures\n(MOV – HR records)",
+      "id":"y7wLlT1jPY8",
+      "optionSet": {
+        "name":"KQMH_1 Scoring Options(Yes, No)",
+        "options":[ {
+          "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+        }
+        ,
+          {
+            "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+          }
+        ]
+      }
+    }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.5.7_Sample disposal carried out in accordance with waste management regulations\n(MOV- Records of waste disposal)",
+        "id":"LQDZDLBiQSd",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.2.1_There is a laboratory master list with all documents.\n(MOV- availability of master list)",
+        "id":"enPk6hTIFGI",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.2.2_All expired products labelled and disposed properly.(MOV-SOPs and records/holding grounds/ observed)",
+        "id":"Dfl6rarSbmZ",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.4.2_The laboratory is run and managed by qualified and authorized professionals\n(MOV- HR Records/Data base – defined qualifications of staff)",
+        "id":"syGM9zZHBKq",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.2.2_The laboratory maintains records for each reagent and consumable used in the performance of examinations, with accurate inventory of its stock.\n(MOV-inventory)",
+        "id":"zdXz7lrfEvA",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.11.2.3_Internal audits conducted as described in internal audit procedure.\n(MOV-audit reports)",
+        "id":"Uas474jlM59",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.11.2.2_The laboratory has appropriate storage areas, which are routinely monitored\n(MOV-observation)",
+        "id":"PT4t79OSD1s",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+
+  ]
+}

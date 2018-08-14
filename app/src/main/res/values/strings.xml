@@ -443,7 +443,7 @@
     <string name="Rdim9.2.2">The facility uploads service delivery reports defined in the national DHIS manual (MOV- confirm data upload onto DHIS)</string>
 
     <string name="Std9.3">9.3 Patient management and interventions shall be documented and signed by relevant personnel.</string>
-    <string name="Rdim9.3.1">The health facility has a a defined minimum criteria of patient history and examination (MOV-documented criteria)</string>
+    <string name="Rdim9.3.1">The health facility has a defined minimum criteria of patient history and examination (MOV-documented criteria)</string>
     <string name="Rdim9.3.2">All treatments are documented and signed by relevant personnel (MOV- sample 5 patient files)</string>
     <string name="Rdim9.3.3">Patients records contain information on diagnosis, treatment, and follow-up steps (MOV-sample 5 patient files)</string>
 

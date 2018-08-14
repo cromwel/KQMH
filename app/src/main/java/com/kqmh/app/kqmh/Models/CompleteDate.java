@@ -6,15 +6,15 @@ import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
-@Table(database = MyDatabase.class, name = "period")
-public class Period extends BaseModel {
+@Table(database = MyDatabase.class, name = "completeDate")
+public class CompleteDate extends BaseModel {
 
     @Column
     @PrimaryKey
     private String id;
 
     @Column
-    private String period;
+    private String completeDate;
 
 
     public String getId() {
@@ -25,17 +25,15 @@ public class Period extends BaseModel {
         this.id = id;
     }
 
-    public String getPeriod() {
-        return period;
+    public String getCompleteDate() {
+        return completeDate;
     }
 
-    public void setDisplayName(String period) {
-        this.period = period;
+    public void setCompleteDate(String completeDate) {
+        this.completeDate = completeDate;
     }
 
     public String getName() {
-        return this.period;
+        return this.completeDate;
     }
 }
-
-

@@ -69,7 +69,7 @@ public class Dimension9 extends AppCompatActivity {
 
 
 
-        for(int value=1;value<27;value++){
+        for(int value=901;value<927;value++){
             Resources res  = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score),value);
 

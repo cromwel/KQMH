@@ -1,0 +1,323 @@
+{
+  "dataSetElements": [
+    {
+      "dataElement": {
+        "name":"RDIM_11.12.2_There is a provision in the pharmacy for confidential counselling of clients on the use of medicines and other products dispensed by the pharmacy(MOV-Observation)",
+        "id":"quhzql1Uuj4",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.12.4_There is a pharmaceutical care plan, which is communicated to the prescriber/provider and the client. (MOV-List of available drugs)",
+        "id":"ch8zVdkq9Uu",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.12.5_There is evidence that the facility carries out operational research to inform pharmacy decisions.\n(MOV-Research report)",
+        "id":"SVikYxWyJKT",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.12.5_There is a documented plan of health education for clients/ clinicians\n(MOV- Schedules)",
+        "id":"VLUPpHn5qBJ",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.12.2_There is a procedure in the pharmacy for rectifying detected pharmaceutical errors\n(MOV-Documented procedure )",
+        "id":"jC7DUsCaKp4",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,  {
+      "dataElement": {
+        "name":"RDIM_11.12.1_The pharmacy is appropriately staffed based on the HRH norms and standards(MOV- HR Records)",
+        "id":"kR4K19G2iva",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.12.1_The facility has temperature controlled, well ventilated commodity storage room with racks (MOV-Observation, temperature charts)",
+        "id":"qxA1wSoFGnx",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.12.1_All pharmaceutical staff are registered by the Pharmacy and Poisons Board (MOV- HR Records)",
+        "id":"o8T3kwos8ol",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.12.3_Narcotics and psychotropic medicines are accounted for in accordance to the SOPs and specified registers\n(MOV- Narcotics register, DDA)",
+        "id":"PXFSb1r64SD",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.12.3_There is a checklist to determine that the medicines are of good quality and safe to use\n(MOV-Checklist)",
+        "id":"UN0VwWDpd7v",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.12.3_There is a system for pharmaco-vigilance\n(MOV- pharmacovigilance register/ forms)",
+        "id":"mvjc6Qycy9s",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.12.5_There is evidence of a CME schedule, register and minutes by the pharmacy department at least once every month\n(MOV- CME report)",
+        "id":"hJS4g9KY8jD",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.12.2_There is a system in place in the pharmacy for detection of prescription errors(MOV-SOP)",
+        "id":"gzOHCU4tkAt",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_11.12.4_There is a tracking chart for medicines\n(MOV- availability of tracking chart).",
+        "id":"A2C062hC4Fs",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.12.2_Pharmacy adheres to the standard operating procedures for extemporaneous preparations and reconstitutions\n(MOV- availability of clean water and dispensing containers)",
+        "id":"H8JfRo2go2A",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.12.1_The facility has tablet counters, dispensing software, and refrigerator as per the existing infrastructure norms and standards (MOV-Observation)",
+        "id":"wtpc6jwNtC9",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.12.4_There is evidence of documentation of medicines and therapeutic committee meetings.\n(MOV- Minutes of MTC)",
+        "id":"z8wgraFzhoa",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.12.2_There is evidence of storage and use of prescription data for decision making\n(MOV- Medicines and Therapeutic Committee minutes)",
+        "id":"DT5m1s9nhgE",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

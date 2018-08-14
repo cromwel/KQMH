@@ -80,6 +80,8 @@
             android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".Forms.Dimension12"
             android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Activities.ProgressActivity"
+            android:windowSoftInputMode="stateHidden"/>
 
     </application>
 

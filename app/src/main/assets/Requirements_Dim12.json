@@ -1,0 +1,316 @@
+{
+  "dataSetElements": [
+    {
+      "dataElement": {
+        "name": "RDim_12.18 Numerator: Number of perinatal deaths (all stillbirths and early neonatal deaths including readmissions)", "id": "PlkgMLFOAOO"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.17 Denominator: Total number of babies born premature", "id": "lXQvWSaZPsK"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.29 Numerator: Number of deaths due to malaria", "id": "qvgWYluuu6l"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.16 Denominator: Total number of live births", "id": "reEFc3i2MMY"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.9 Denominator: Total number of inpatients", "id": "IbH7UzVYQT1"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.6 Denominator: Total number of emergency patients referred by the facility", "id": "P39R0xG1ICR"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.31 Denominator:Total number of patients undergoing treatment for hypertension in the last one year.", "id": "YmXeIrH3Ijt"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.19 Denominator: Total # of births in the facility", "id": "MhBYOLJ0bGi"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.25 Numerator: Number of surgeries conducted for cold cases", "id": "ETqcI5K8FyO"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.17 Numerator: Number of premature babies who are discharged alive", "id": "Vd74cCY7n5g"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.34 Quarterly data quality audits carried out in the past one year", "id": "mq2IHi5foum"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.28 Denominator: Total number of HIV patients on treatment", "id": "EEX770Pp2oJ"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.2 Staff satisfaction index", "id": "G38WU9GVADL"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.3 Average length of hospital stay", "id": "ItdMHACySQf"
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name": "RDim_12.8 Denominator: Total number of inpatients", "id": "xLeYrL2OQE6"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.24 Denominator: Total number of surgeries in a year", "id": "pfu7Dv6dDh5"
+      }
+    }
+  ,
+    {  "dataElement": {
+      "name": "RDim_12.23 Denominator: Total number of perinatal deaths", "id": "QvZ1Wd2EH1M"
+    }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.29 Denominator: Total number of inpatient malaria cases", "id": "OAcX46RcrQA"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.15 Denominator: Total number of live births in the health facility", "id": "XaMy1BQULuI"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.13 Numerator: Number of maternal deaths audited", "id": "My2xG39CAW8"
+      }
+    }
+  ,  {
+      "dataElement": {
+        "name": "RDim_12.30 Numerator:Number of dialysis patients whose haemoglobin level is above 12g/dl", "id": "ksj0w0VaLri"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.24 Numerator: Number of repeat surgeries in a year", "id": "gl68L61DDPl"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.20 Numerator: Number of neonatal deaths", "id": "erfZhULRldt"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.19 Numerator: Number of babies with no signs of life at birth (at or after 28 weeks of gestation and weighting ≥1000 grams)", "id": "WzSPiqQfKNg"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.33 Denominator: Total number of admissions", "id": "CKd5TlirQAD"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.26 Denominator: Total number of surgeries", "id": "Uueh7WGUu6e"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.13 Denominator: Total number of maternal deaths", "id": "MTpur91kulT"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.10 Denominator: Total number of vaginal deliveries", "id": "BwaqOhQLifr"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.6 Numerator: Number of emergency patients referred by the facility within 30 minutes of decision making", "id": "f7tvRN2fwV1"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.27 Denominator: Total number of TB cases treated", "id": "A7sXh1a30U0"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.11 Numerator: Number of CS", "id": "OG3UYzi3dzH"
+      }
+    }
+  ,
+    {  "dataElement": {
+      "name": "RDim_12.10 Numerator: Number of women with perineal tears", "id": "ZLrOYBAqFs2"
+    }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.14 Numerator: Number of newborns successfully resuscitated", "id": "qXJALOOXyzd"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.32 Denominator: All women of reproductive age accessing care at the health facility", "id": "PJK3w4jBmTB"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.27 Numerator: Number of TB cases cured", "id": "QvDdDVozspO"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.30 Denominator:Total number of patients undergoing dialysis in the last one year.", "id": "WKQoERqPdz3"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.28 Numerator: Number of HIV patients on treatment whose viral loads are suppressed below 1000 copies/μl", "id": "pdN0G0O8q5q"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.5 Down time rates for vaccines fridge: Number of days the vaccine fridge was not functional in the past 90 days", "id": "gGrLiR12IDe"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.26 Numerator: Number of patients with post-surgery complications", "id": "TutmPBx8rDn"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.25 Denominator: Total number of scheduled surgeries", "id": "TlhBNiRAp9L"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.12 Denominator: Number of obstetric complications managed at facility", "id": "SW6Ye4T0wBG"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.7 Denominator: Facility target population under 1year of age", "id": "DLQk0rGWRBB"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.7 Numerator: No. of children under 1 yr immunized against measles", "id": "PNNAnkfmFlB"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.20 Denominator: Total number of livebirths", "id": "VW6vQVlZ4KF"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.1 Patient satisfaction index", "id": "aZo0ND0s3Nk"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.12 Numerator: Number of maternal deaths at facility", "id": "x0TkeResHI2"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.22 Numerator: Number of deaths of children below 5 years of age from diarrhea", "id": "hPboZxq9UQp"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.23 Numerator: Number of perinatal deaths audited", "id": "aFM2zexg9eQ"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.14 Denominator: Number of newborns requiring resuscitation", "id": "mnXW5UgTKwy"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.16 Numerator: Number of babies born with weight ˂2500g", "id": "Qq3rGUUSvRx"
+      }
+    }
+  ,  {
+      "dataElement": {
+        "name": "RDim_12.8 Numerator: Number of patients with nosocomial infections", "id": "bfuiIOXQWup"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.21 Numerator: Number of deaths of children under 5yrs from pneumonia", "id": "K3SssGU65wI"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.15 Numerator: Number of babies with confirmed or suspected neonatal infection (including readmissions within seven days of discharge)", "id": "wPd9yYy17sS"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.18 Denominator: Total number of births", "id": "IZgl4HsB24x"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.32 Numerator: Number of women screened for cervical cancer", "id": "Bv0ZJ8Te5lp"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.11 Denominator: Total number of births", "id": "AA3LPfLBpqY"
+      }
+    }
+  ,{
+      "dataElement": {
+        "name": "RDim_12.9 Numerator: Number of patients with bed sores grade 1 & 2", "id": "C8ne9cIiJs3"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.31 Numerator:Number of patients with most recent blood pressure <140/90 mmHg who have been managed for hypertension in the last one year", "id": "II23rVXbtym"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.21 Denominator: Total number of pneumonia cases of children under 5 yrs", "id": "glgLk9A9b9k"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.22 Denominator: Total number of inpatient diarrhea cases in children below 5years of age", "id": "qzCLZ5b5HrR"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.33 Numerator: Number of deaths", "id": "mcmjEBys23T"
+      }
+    }
+  , {
+      "dataElement": {
+        "name": "RDim_12.4 Episodes of stock out of any of the 22 essential medicines and supplies lasting over 7 days in the last three month", "id": "CL4W2grxRTK"
+      }
+    }
+
+  ]
+}

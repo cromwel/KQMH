@@ -1,0 +1,475 @@
+{
+  "dataSetElements": [
+    {
+      "dataElement": {
+        "name":"RDIM_9.7_There is an up to date death register\n(MOV-register, notification book/ burial permit)",
+        "id":"icbtSfadj9c",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.1_The health facility has periodic data analysis reports(MOV-Filed reports)",
+        "id":"fOpQSordt24",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.4_Next of kin",
+        "id":"ocpfNU350B4",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.4_Patients ID number (where applicable)",
+        "id":"L36AnZ58Aku",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.4_Date of birth/ age",
+        "id":"KtsBVJPAskX",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.6_There are guidelines/SOPs for operating the registry to ensure there is no loss, destruction, tampering and unauthorized access to records and information\n(MOV- SOP, file movement register)",
+        "id":"u4PPGWKJay6",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_9.6_Facility has a secure registry\n(MOV-lockable doors, grills, fireproof cabinets, passwords for electronic systems)",
+        "id":"DBoYITOzYZY",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_9.1_The health facility has data collection tools\n(MOV-Observe at the records unit and one service delivery area)",
+        "id":"wmYuuluyWRK",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_9.5_All medical records are complete and legible\n(MOV-Sample 5 patient records from outpatient and inpatient)",
+        "id":"tnzS2j0rygF",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,  {
+      "dataElement": {
+        "name":"RDIM_9.3_Patients’ records contain information on diagnosis, treatment, and follow-up steps\n(MOV-sample 5 patient files)",
+        "id":"kr7gyzuezp5",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.4_Residence",
+        "id":"Dwh4cx1iFPy",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.1_Facility has adequate data storage equipment (Cloud, computers, hardcopy files) (MOV- observation and discussion with responsible staff)",
+        "id":"jW807KjG01b",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.4_Contacts",
+        "id":"Z1PB5Ula91S",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.5_Medical records are retrievable within the timeframe stipulated in the service charter(MOV-Feedback from HR department/ observation)",
+        "id":"bcqdVtBEe8g",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.2_The facility has more than one staff member with access rights to upload data onto DHIS\n(MOV-user names and passwords of HMT members)",
+        "id":"ohyvdzkHnAO",
+        "optionSet": {
+          "name":"KQMH_4 Scoring Options(Yes, No, P, NA)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "K9yYBM4Ejcl"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "q2T6R7yspyi"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "GlDh3ZSBAvz"
+            }
+          ,
+            {
+              "code": "0", "name": "NA", "id": "O7gWdPEL61c"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_9.1_Results of analysis are disseminated to facility staff for decision-making(MOV-Filed reports)",
+        "id":"y1uQanjZkD2",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    { "dataElement": {
+      "name":"RDIM_9.3_The health facility has a defined minimum criteria of patient history and examination(MOV-documented criteria)",
+      "id":"rGCZjY8A20t",
+      "optionSet": {
+        "name":"KQMH_1 Scoring Options(Yes, No)",
+        "options":[ {
+          "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+        }
+        ,
+          {
+            "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+          }
+        ]
+      }
+    }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.1_The health facility has defined access rights for electronic data management systems (administrative passwords)(MOV-Documented protocols)",
+        "id":"wo2Q2WwRbru",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_9.6_Patient records are handled in a confidential manner\n(MOV- all staff have filled confidentiality forms)",
+        "id":"TN4rXimb79I",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.7_There is an up to date birth register/\n(MOV-register/ notification book)",
+        "id":"dFSkrAOaFAr",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.1_The health facility has a system for off-site backup and security\n(MOV- Feedback from records department)",
+        "id":"XT8MHzZUtB4",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {  "dataElement": {
+      "name":"RDIM_9.4_Unique patient identification",
+      "id":"IlhWougimd8",
+      "optionSet": {
+        "name":"KQMH_1 Scoring Options(Yes, No)",
+        "options":[ {
+          "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+        }
+        ,
+          {
+            "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+          }
+        ]
+      }
+    }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.4_Name",
+        "id":"mYUf12o4MPB",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_9.4_Sex",
+        "id":"gqXUjqIduSO",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.3_All treatments are documented and signed by relevant personnel\n(MOV- sample 5 patient files)",
+        "id":"SBclqpNDlxA",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_9.2_The facility uploads service delivery reports defined in the national DHIS manual\n(MOV- confirm data upload onto DHIS)",
+        "id":"rlTCzftVg80",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "dataSetElements": [
+    {
+      "dataElement": {
+        "name":"RDIM_11.13.2_Radiation protection gear is available for all patients and staff\n(MOV-Observation)",
+        "id":"v2gxkAa9fpw",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.13.5_The department provides 24 hour services, 7 days a week",
+        "id":"SOnaH3UEACV",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.13.4_Facility has clean changing gowns\n(MOV-Observation)",
+        "id":"v3X6SAO0bCh",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.13.1_The wall thickness of x-ray rooms, window height, ceiling height, doors and room size meet recommended international radiation protection specifications\n(MOV- approved building plan)",
+        "id":"GBnLwgwWN5T",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.13.1_X-ray room ceiling height allows room for ceiling suspended equipment\n(MOV- Observation against standards)",
+        "id":"cVGiafL83cT",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.13.4_Facility displays ‘Examination in Progress’ sign at the entrance to the examination room\n(MOV-Observation)",
+        "id":"M9ecNTUsHVc",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  ,{
+      "dataElement": {
+        "name":"RDIM_11.13.2_Facility carries out radiation monitoring of all staff working in radiation area on a monthly basis. This should include submission of radiation doses.\n(MOV-Radiation monitoring reports)",
+        "id":"fMj078beZi6",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.13.1_X-ray department is located adjacent to casualty department for ease of transfer of emergency cases.\n(MOV-Observation)",
+        "id":"OHZ9L6sh7Xn",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.13.2_Facility has put in place measures to address identified areas of improvement based on results of radiation monitoring\n(MOV- Improvement plan)",
+        "id":"W3IwYVlVCZ6",
+        "optionSet": {
+          "name":"KQMH_4 Scoring Options(Yes, No, P, NA)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "K9yYBM4Ejcl"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "q2T6R7yspyi"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "GlDh3ZSBAvz"
+            }
+          ,
+            {
+              "code": "0", "name": "NA", "id": "O7gWdPEL61c"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.13.4_Facility has a secure changing room\n(MOV-Observation)",
+        "id":"EWvoUsCZDFU",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.13.4_Examination room offers privacy during procedures\n(MOV-Observation)",
+        "id":"sTGoL1PCQRi",
+        "optionSet": {
+          "name":"KQMH_1 Scoring Options(Yes, No)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "nPYuVhUac6d"
+          }
+          ,
+            {
+              "code": "0", "name": "No", "id": "ZiXq4b0DCeq"
+            }
+          ]
+        }
+      }
+    }
+  , {
+      "dataElement": {
+        "name":"RDIM_11.13.2_Facility monitors radiation within the X-ray department\n(MOV- radiation monitoring report)",
+        "id":"Zd3aABSGRLA",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+  ,
+    {
+      "dataElement": {
+        "name":"RDIM_11.13.3_Facility uses a standard request form that includes at least fields for:\nPatient details (Name, Age, Sex, IP/OP no) Clinical details Clinical query to be answered Referral details Region and examination details Proce",
+        "id":"KwizfKiT8Sd",
+        "optionSet": {
+          "name":"KQMH_3 Scoring Options(Yes, No, P)",
+          "options":[ {
+            "code": "3", "name": "Yes", "id": "t6ItoVnIYTv"
+          }
+          ,
+            {
+              "code": "1", "name": "Partial", "id": "QBoQanfiVfd"
+            }
+          ,
+            {
+              "code": "0", "name": "No", "id": "owtmpRi3xjk"
+            }
+          ]
+        }
+      }
+    }
+
+  ]
+}

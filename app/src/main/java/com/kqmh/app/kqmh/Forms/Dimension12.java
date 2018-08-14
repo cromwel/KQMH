@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.kqmh.app.kqmh.Activities.ProgressActivity;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 
@@ -46,6 +47,14 @@ public class Dimension12 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 prev_submit();
+            }
+        });
+
+        Button progress = findViewById(R.id.btn_progress);
+        progress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                progress_submit();
             }
         });
 
@@ -151,6 +160,14 @@ public class Dimension12 extends AppCompatActivity {
     public void prev_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Dimension11_List.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+                | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
+    public void progress_submit() {
+        new SessionManager(getBaseContext()).setLoggedIn(true);
+        Intent intent = new Intent(getBaseContext(), ProgressActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
                 | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
