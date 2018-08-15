@@ -29,7 +29,7 @@ public class Period extends BaseModel {
         return period;
     }
 
-    public void setDisplayName(String period) {
+    public void setPeriod(String period) {
         this.period = period;
     }
 

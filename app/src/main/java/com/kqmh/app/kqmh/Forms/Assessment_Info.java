@@ -28,6 +28,7 @@ import com.kqmh.app.kqmh.Models.FacilityLevel;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
+import com.kqmh.app.kqmh.Utils.ExportToJSON;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
 import com.kqmh.app.kqmh.Models.KeyValue;
@@ -50,17 +51,16 @@ import static com.kqmh.app.kqmh.Utils.UrlConstants.ORGANISATION_UNIT_URL;
 
 public class Assessment_Info extends AppCompatActivity {
 
-    private SearchableSpinner spinner_OrganisationUnit;
-    private Spinner spinner_AssessmentType;
-    private Spinner spinner_period;
-    private Spinner spinner_facilityLevel;
-    private ProgressDialog progressDialog;
-
     List<AssessmentTypeCombo> categoryOptions = new ArrayList<>();
     List<OrganisationUnit> OrganisationUnit = new ArrayList<>();
     List<Period> qPeriod = new ArrayList<>();
     List<FacilityLevel> levels = new ArrayList<>();
     List<String> orgUnitsNames = new ArrayList<>();
+    private SearchableSpinner spinner_OrganisationUnit;
+    private Spinner spinner_AssessmentType;
+    private Spinner spinner_period;
+    private Spinner spinner_facilityLevel;
+    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,7 +112,6 @@ public class Assessment_Info extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     /*org unit*/

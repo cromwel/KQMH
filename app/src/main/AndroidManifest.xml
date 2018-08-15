@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kqmh.app.kqmh">
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
 
@@ -81,6 +83,8 @@
         <activity android:name=".Forms.Dimension12"
             android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".Activities.ProgressActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Activities.AsyncTask"
             android:windowSoftInputMode="stateHidden"/>
 
     </application>

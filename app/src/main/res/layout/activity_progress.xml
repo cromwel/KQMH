@@ -1,6 +1,668 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:orientation="vertical">
+
+            <include layout="@layout/header" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_border"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="9dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <!--entry status title-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/status"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:background="@color/grey"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".6"
+                        android:padding="15dp"
+                        android:text="@string/Dim1"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".2"
+                        android:padding="15dp"
+                        android:text="@string/status_dim1"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_dim1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".2"
+                        android:background="@color/green"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:onClick="Submit"
+                        android:text="@string/edit"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim2"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim2"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim3"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim3"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim4"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim4"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim5"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim5"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim6"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim6"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim7"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim7"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim8"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim8"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim9"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim9"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim9"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim10"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim10"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim10"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim11.1"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim11.1"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim11.1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim11.2"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim11.2"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim11.2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim11.3"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim11.3"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim11.3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim11.4"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim11.4"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim11.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:background="@color/grey"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".6"
+                            android:padding="15dp"
+                            android:text="@string/Dim12"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:padding="15dp"
+                            android:text="@string/status_dim12"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btn_dim12"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".2"
+                            android:background="@color/green"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:onClick="Submit"
+                            android:text="@string/edit"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_complete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@color/green"
+                    android:onClick="Submit"
+                    android:text="@string/complete" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

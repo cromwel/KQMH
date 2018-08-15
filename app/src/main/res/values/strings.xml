@@ -1387,5 +1387,38 @@
         (BM at 4)</string>
 
 
+    <string name="complete">Mark Complete</string>
+    <string name="completedfiles">COMPLETED</string>
+    <string name="status">ENTRY STATUS</string>
+    <string name="status_dim1">%</string>
+    <string name="status_dim2">%</string>
+    <string name="status_dim3">%</string>
+    <string name="status_dim4">%</string>
+    <string name="status_dim5">%</string>
+    <string name="status_dim6">%</string>
+    <string name="status_dim7">%</string>
+    <string name="status_dim8">%</string>
+    <string name="status_dim9">%</string>
+    <string name="status_dim10">%</string>
+    <string name="status_dim11.1">%</string>
+    <string name="status_dim11.2">%</string>
+    <string name="status_dim11.3">%</string>
+    <string name="status_dim11.4">%</string>
+    <string name="status_dim11.5">%</string>
+    <string name="status_dim11.6">%</string>
+    <string name="status_dim11.7">%</string>
+    <string name="status_dim11.8">%</string>
+    <string name="status_dim11.9">%</string>
+    <string name="status_dim11.10">%</string>
+    <string name="status_dim11.11">%</string>
+    <string name="status_dim11.12">%</string>
+    <string name="status_dim11.13">%</string>
+    <string name="status_dim11.14">%</string>
+    <string name="status_dim12">%</string>
+
+
+    <string name="edit">Edit</string>
+
+
 </resources>
 
