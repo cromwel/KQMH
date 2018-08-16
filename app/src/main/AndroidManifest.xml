@@ -84,7 +84,7 @@
             android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".Activities.ProgressActivity"
             android:windowSoftInputMode="stateHidden"/>
-        <activity android:name=".Activities.AsyncTask"
+        <activity android:name=".Activities.ViewFilesActivity"
             android:windowSoftInputMode="stateHidden"/>
 
     </application>

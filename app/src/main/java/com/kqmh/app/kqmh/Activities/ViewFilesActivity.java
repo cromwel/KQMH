@@ -5,9 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.kqmh.app.kqmh.R;
-import com.kqmh.app.kqmh.Utils.SendDeviceDetails;
 
-public class AsyncTask extends AppCompatActivity {
+public class ViewFilesActivity extends AppCompatActivity {
     private ProgressDialog progressDialog;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +14,9 @@ public class AsyncTask extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viewfiles);
 
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setTitle("Fetching Scores");
+        progressDialog.setCancelable(false);
 
-        new SendDeviceDetails.execute("http://52.88.194.67:8080/IOTProjectServer/registerDevice", postData.toString());
     }
 }

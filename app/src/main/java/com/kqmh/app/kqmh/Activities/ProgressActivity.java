@@ -1,6 +1,7 @@
 package com.kqmh.app.kqmh.Activities;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,8 @@ import android.widget.Button;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.ExportToJSON;
+
+import org.json.JSONObject;
 
 public class ProgressActivity extends AppCompatActivity {
     private ProgressDialog progressDialog;
@@ -39,7 +42,7 @@ public class ProgressActivity extends AppCompatActivity {
     public void submit() {
             try{
 
-                ExportToJSON export = new ExportToJSON();
+               // ExportToJSON.ExportToFile(JSONObject jsonDatavalueset, Context context);
 
 
             }
@@ -48,7 +51,7 @@ public class ProgressActivity extends AppCompatActivity {
             }
 
         new SessionManager(getBaseContext()).setLoggedIn(true);
-        Intent intent = new Intent(getBaseContext(), AsyncTask.class);
+        Intent intent = new Intent(getBaseContext(), ViewFilesActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
                 | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);

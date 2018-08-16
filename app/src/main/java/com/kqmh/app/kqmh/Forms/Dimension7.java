@@ -15,11 +15,13 @@ import com.google.gson.Gson;
 import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter;
 import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter2;
 import com.kqmh.app.kqmh.Models.DataElement;
+import com.kqmh.app.kqmh.Models.DataElement_Table;
 import com.kqmh.app.kqmh.Models.Option;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AppConstants;
 import com.kqmh.app.kqmh.Utils.JSONFileParser;
+import com.raizlabs.android.dbflow.sql.language.SQLite;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -110,6 +112,7 @@ public class Dimension7 extends AppCompatActivity {
         startActivity(intent);
     }
 
+
     private void populateSpinners() throws JSONException {
         progressDialog.show();
         String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext(), "Requirements_Dim7.json");
@@ -123,6 +126,7 @@ public class Dimension7 extends AppCompatActivity {
             for (final Spinner spinner : spinnerList) {
                 if (spinner.getTag().toString().equals(id)) {
                     //Build data element
+                    Log.d("IDDDS", "Dataelement" + id + " tag " + spinner.getTag().toString());
                     DataElement element = new DataElement();
                     element.setEntity(AppConstants.DIMENSION_7);
                     element.setDataElementId(id);
@@ -134,7 +138,7 @@ public class Dimension7 extends AppCompatActivity {
                     List<Option> optionList = new ArrayList<>();
                     Gson gson = new Gson();
 
-                    Option selectOption = new Option("","","Select");
+                    Option selectOption = new Option("", "", "Select");
                     optionList.add(selectOption);
 
                     for (int j = 0; j < options.length(); j++) {
@@ -143,18 +147,39 @@ public class Dimension7 extends AppCompatActivity {
                     }
                     ScoreOptionstAdapter2 adapter = new ScoreOptionstAdapter2(this, android.R.layout.simple_spinner_dropdown_item, optionList);
                     spinner.setAdapter(adapter);
+                    for (int counter = 0; counter < optionList.size(); counter++) {
+                        Option selectedOption = optionList.get(counter);
+                        DataElement element1 = SQLite.select()
+                                .from(DataElement.class)
+                                .where(DataElement_Table.dataElementId.eq(id))
+                                .querySingle();
+                        if (element1 != null && selectedOption.getId().equals(element1.getCategory())) {
+                            Log.d("counter", String.valueOf(counter));
+                            Log.d("not null", "" + element1.toString() + " id " + element1.getDataElementId() + "value " + element1.getValue());
+                            spinner.setSelection(optionList.indexOf(selectedOption));
+                        }
+                    }
+
                     spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         @Override
                         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                             Option option = (Option) adapterView.getSelectedItem();
-                            Log.d("selected option ", option.getName() + " code " + option.getCode());
-                            Log.d("id", "" + spinner.getTag());
                             int position = spinnerList.indexOf(spinner);
                             try {
-                                DataElement selectedElement = dataElementsList.get(position);
+                                DataElement selectedElement = SQLite.select()
+                                        .from(DataElement.class)
+                                        .where(DataElement_Table.dataElementId.eq( spinner.getTag().toString()))
+                                        .querySingle();
+                                //Check if null
                                 selectedElement.setCategory(option.getId());
                                 selectedElement.setValue(option.getCode());
-                                selectedElement.save();
+                                if (selectedElement.exists()) {
+                                    selectedElement.update();
+
+                                } else {
+                                    selectedElement.save();
+
+                                }
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -166,11 +191,13 @@ public class Dimension7 extends AppCompatActivity {
 
                         }
                     });
-
+                    break;
                 }
+
             }
         }
 
         progressDialog.cancel();
     }
+
 }

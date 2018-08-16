@@ -50,11 +50,11 @@ public class Dimension12 extends AppCompatActivity {
             }
         });
 
-        Button progress = findViewById(R.id.btn_progress);
-        progress.setOnClickListener(new View.OnClickListener() {
+        Button nextDim = findViewById(R.id.btn_next);
+        nextDim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                progress_submit();
+                next_submit();
             }
         });
 
@@ -165,7 +165,7 @@ public class Dimension12 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void progress_submit() {
+    public void next_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), ProgressActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
