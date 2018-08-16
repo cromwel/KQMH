@@ -20,7 +20,7 @@ import java.util.List;
 
 public class ExportToJSON {
 
-    public static JSONObject toJSon(String orgUnit) {
+    public static JSONObject buildJSON(String orgUnit) {
         JSONObject jsonDatavalueset = new JSONObject();
         try {
             jsonDatavalueset.put("dataSet", "TA4FU3zu93l");

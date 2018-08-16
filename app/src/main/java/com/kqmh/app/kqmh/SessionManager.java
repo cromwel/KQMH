@@ -19,6 +19,7 @@ public class SessionManager {
     private static final String KEY_REFRESH_TOKEN = "refreshToken";
     private static final String USER_NAME = "userName";
     private static final String KEY_PASSWORD = "Password";
+    private static final String KEY_USER_ID = "user_id";
 
 
     public SessionManager(Context context) {
@@ -71,6 +72,7 @@ public class SessionManager {
 
         return pref.getString(USER_NAME, null);
     }
+
     public void setKeyPassword(String token) {
 
         pref.edit().putString(KEY_PASSWORD, token).apply();
@@ -79,5 +81,14 @@ public class SessionManager {
     public String getPassword() {
 
         return pref.getString(KEY_PASSWORD, null);
+    }
+
+    public static String getKeyUserId() {
+        return KEY_USER_ID;
+    }
+
+    public void setKeyUserId(String id) {
+
+        pref.edit().putString(KEY_USER_ID, id).apply();
     }
 }

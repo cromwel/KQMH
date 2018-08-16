@@ -21,6 +21,7 @@ import com.google.gson.Gson;
 
 import com.kqmh.app.kqmh.Adapters.AssessmentTypeAdapter;
 import com.kqmh.app.kqmh.Adapters.OrganisationUnitAdapter;
+import com.kqmh.app.kqmh.Models.AbstractOrgUnit;
 import com.kqmh.app.kqmh.Models.AssessmentTypeCombo;
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
 import com.kqmh.app.kqmh.Models.Period;
@@ -52,11 +53,10 @@ import static com.kqmh.app.kqmh.Utils.UrlConstants.ORGANISATION_UNIT_URL;
 public class Assessment_Info extends AppCompatActivity {
 
     List<AssessmentTypeCombo> categoryOptions = new ArrayList<>();
-    List<OrganisationUnit> OrganisationUnit = new ArrayList<>();
     List<Period> qPeriod = new ArrayList<>();
     List<FacilityLevel> levels = new ArrayList<>();
     List<String> orgUnitsNames = new ArrayList<>();
-    private SearchableSpinner spinner_OrganisationUnit;
+    private Spinner spinner_OrganisationUnit;
     private Spinner spinner_AssessmentType;
     private Spinner spinner_period;
     private Spinner spinner_facilityLevel;
@@ -71,8 +71,6 @@ public class Assessment_Info extends AppCompatActivity {
         CookieHandler.setDefault(cookieManager);
 
         spinner_OrganisationUnit = findViewById(R.id.spinner_OrganisationUnit);
-        spinner_OrganisationUnit.setTitle("Organizational Units");
-        spinner_OrganisationUnit.setPositiveButton("Cancel");
 
         spinner_AssessmentType = findViewById(R.id.spinner_AssessmentType);
         spinner_period = findViewById(R.id.spinner_period);
@@ -95,7 +93,7 @@ public class Assessment_Info extends AppCompatActivity {
         List<AssessmentTypeCombo> employees = SQLite.select()
                 .from(AssessmentTypeCombo.class)
                 .queryList();
-        Toast.makeText(getBaseContext(),"Pulled from db " + employees.size(),Toast.LENGTH_LONG).show();
+        Toast.makeText(getBaseContext(), "Pulled from db " + employees.size(), Toast.LENGTH_LONG).show();
 
         SessionManager sessionManager = new SessionManager(getBaseContext());
         try {
@@ -105,8 +103,11 @@ public class Assessment_Info extends AppCompatActivity {
         }
 
         try {
-            for(int i=1;i<350;i++) {
-                String url = ORGANISATION_UNIT_URL.replace("[number]", String.valueOf(i));
+            AbstractOrgUnit orgUnit = SQLite.select()
+                    .from(AbstractOrgUnit.class)
+                    .querySingle();
+            if (orgUnit != null) {
+                String url = UrlConstants.ORGANISATION_UNIT_URL + orgUnit.getId();
                 getOrganisationUnit(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()), url);
             }
         } catch (Exception e) {
@@ -117,40 +118,36 @@ public class Assessment_Info extends AppCompatActivity {
     /*org unit*/
     public void spinnerData_OrganisationUnit(Spinner spinner_OrganisationUnit, final String choice) {
         //fill data in spinner
-        OrganisationUnitAdapter adapter = new OrganisationUnitAdapter(this, android.R.layout.simple_spinner_dropdown_item, orgUnitsNames);
+        OrganisationUnitAdapter adapter = new OrganisationUnitAdapter(this, android.R.layout.simple_spinner_dropdown_item);
         spinner_OrganisationUnit.setAdapter(adapter);
         spinner_OrganisationUnit.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (choice.matches("1")) {
-                }
-                else if (choice.matches("2")) {
+                } else if (choice.matches("2")) {
                 }
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
     }
 
-    private void getOrganisationUnit(final String encoded,final String url) {
-        Log.d("Auth", encoded);
+    private void getOrganisationUnit(final String encoded, final String url) {
         progressDialog.show();
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 Log.d("organisation unit", response.toString());
                 try {
-                    JSONArray jsonArray = response.getJSONArray("organisationUnits");
                     Gson gson = new Gson();
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        OrganisationUnit org = gson.fromJson(jsonArray.getJSONObject(i).toString(), OrganisationUnit.class);
-                        OrganisationUnit.add(org);
-                        orgUnitsNames.add(org.getDisplayName());
-                    }
-                    closeProgressbar();
+                    OrganisationUnit org = gson.fromJson(response.toString(), OrganisationUnit.class);
+                    org.save();
+                    orgUnitsNames.add(org.getDisplayName());
                     spinnerData_OrganisationUnit(spinner_OrganisationUnit, "1");
-                } catch (JSONException e) {
+                    closeProgressbar();
+                } catch (Exception e) {
                     e.printStackTrace();
                     closeProgressbar();
                 }
@@ -176,7 +173,7 @@ public class Assessment_Info extends AppCompatActivity {
 
     private void saveUnits(List<OrganisationUnit> OrganisationUnit) {
         Log.d("Saving units", "saving " + OrganisationUnit.size());
-        for(OrganisationUnit organisationUnit : OrganisationUnit){
+        for (OrganisationUnit organisationUnit : OrganisationUnit) {
             organisationUnit.save();
         }
     }
@@ -184,16 +181,16 @@ public class Assessment_Info extends AppCompatActivity {
     /*assessment type*/
     public void spinnerData_AssessmentType(Spinner spinner_AssessmentType, final String choice) {
         //fill data in spinner
-        AssessmentTypeAdapter adapter = new AssessmentTypeAdapter(this,android.R.layout.simple_spinner_dropdown_item,categoryOptions);
+        AssessmentTypeAdapter adapter = new AssessmentTypeAdapter(this, android.R.layout.simple_spinner_dropdown_item, categoryOptions);
         spinner_AssessmentType.setAdapter(adapter);
         spinner_AssessmentType.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (choice.matches("1")) {
-                }
-                else if (choice.matches("2")) {
+                } else if (choice.matches("2")) {
                 }
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }
@@ -243,7 +240,7 @@ public class Assessment_Info extends AppCompatActivity {
 
     private void saveOptions(List<AssessmentTypeCombo> categoryOptions) {
         Log.d("Saving options", "saving " + categoryOptions.size());
-        for(AssessmentTypeCombo assessmentTypeCombo : categoryOptions){
+        for (AssessmentTypeCombo assessmentTypeCombo : categoryOptions) {
             assessmentTypeCombo.save();
         }
     }
@@ -325,7 +322,7 @@ public class Assessment_Info extends AppCompatActivity {
 
     private void saveTime(List<Period> qPeriod) {
         Log.d("Saving time", "saving " + qPeriod.size());
-        for(Period period : qPeriod){
+        for (Period period : qPeriod) {
             period.save();
         }
     }
@@ -371,7 +368,7 @@ public class Assessment_Info extends AppCompatActivity {
 
     private void saveLevel(List<FacilityLevel> levels) {
         Log.d("Saving levels", "saving " + levels.size());
-        for(FacilityLevel facilityLevel : levels){
+        for (FacilityLevel facilityLevel : levels) {
             facilityLevel.save();
         }
     }
@@ -380,8 +377,6 @@ public class Assessment_Info extends AppCompatActivity {
         closeProgressbar();
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Dimensions_List.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 

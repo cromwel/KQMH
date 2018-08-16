@@ -18,6 +18,9 @@ public class OrganisationUnit extends BaseModel {
     @Column
     private String displayName;
 
+    @Column
+    private String level;
+
 
     public String getId() {
         return id;
@@ -37,5 +40,13 @@ public class OrganisationUnit extends BaseModel {
 
     public String getName() {
         return this.displayName;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
     }
 }

@@ -61,7 +61,7 @@
                             android:text="Organisation Unit:"
                             android:textColor="@color/black" />
 
-                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        <Spinner
                             android:id="@+id/spinner_OrganisationUnit"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

@@ -13,34 +13,42 @@ import android.widget.TextView;
 
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
 import com.kqmh.app.kqmh.R;
+import com.raizlabs.android.dbflow.sql.language.SQLite;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class OrganisationUnitAdapter extends ArrayAdapter<String> {
+public class OrganisationUnitAdapter extends ArrayAdapter<OrganisationUnit> {
     private Context context;
-    private List<String> organisationUnits = new ArrayList<>();
+    private List<OrganisationUnit> organisationUnits = new ArrayList<>();
 
 
     public OrganisationUnitAdapter(@NonNull Context context, int resource) {
         super(context, resource);
+        this.context = context;
+        this.organisationUnits = SQLite.select()
+                .from(OrganisationUnit.class)
+                .queryList();
     }
 
     public OrganisationUnitAdapter(@NonNull Context context, int resource, List<String> organisationUnits) {
         super(context, resource);
         this.context = context;
-        this.organisationUnits = organisationUnits;
+        this.organisationUnits = SQLite.select()
+                .from(OrganisationUnit.class)
+                .queryList();
     }
 
     @Override
     public int getCount() {
+        Log.d("Size", String.valueOf(organisationUnits.size()));
         return organisationUnits.size();
     }
 
     @Override
-    public String getItem(int position) {
+    public OrganisationUnit getItem(int position) {
         return organisationUnits.get(position);
     }
 
@@ -55,7 +63,8 @@ public class OrganisationUnitAdapter extends ArrayAdapter<String> {
         // I created a dynamic TextView here, but you can reference your own  custom layout for each spinner item
         CheckedTextView label = (CheckedTextView) super.getView(position, convertView, parent);
         label.setTextColor(Color.BLACK);
-        label.setText(organisationUnits.get(position));
+        Log.d("Display name", organisationUnits.get(position).getDisplayName());
+        label.setText(organisationUnits.get(position).getDisplayName());
 
         return label;
     }
@@ -64,7 +73,7 @@ public class OrganisationUnitAdapter extends ArrayAdapter<String> {
     public View getDropDownView(int position, View convertView, @NonNull ViewGroup parent) {
         TextView label = (TextView) super.getDropDownView(position, convertView, parent);
         label.setTextColor(Color.BLACK);
-        label.setText(organisationUnits.get(position));
+        label.setText(organisationUnits.get(position).getDisplayName());
 
         return label;
     }

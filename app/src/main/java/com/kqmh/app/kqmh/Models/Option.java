@@ -1,11 +1,32 @@
 package com.kqmh.app.kqmh.Models;
 
-public class Option {
+import com.kqmh.app.kqmh.Utils.MyDatabase;
+import com.raizlabs.android.dbflow.annotation.Column;
+import com.raizlabs.android.dbflow.annotation.PrimaryKey;
+import com.raizlabs.android.dbflow.annotation.Table;
+import com.raizlabs.android.dbflow.structure.BaseModel;
+
+@Table(database = MyDatabase.class, name = "option")
+public class Option extends BaseModel {
+    @Column
     private String parentId;
+
+    @Column
     private String name;
+
+    @Column
     private String code;
+
+    @Column
+    private boolean isSelected = false;
+
+    @Column
+    @PrimaryKey
     private String id;
 
+    public Option(){
+
+    }
     public Option(String parentId, String id,String code, String name){
         this.parentId = parentId;
         this.id=id;
@@ -50,5 +71,13 @@ public class Option {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public boolean isSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
     }
 }

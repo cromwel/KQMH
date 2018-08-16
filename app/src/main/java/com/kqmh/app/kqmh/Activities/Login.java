@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,12 +17,15 @@ import com.android.volley.error.AuthFailureError;
 import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
 import com.kqmh.app.kqmh.Forms.Assessment_Info;
+import com.kqmh.app.kqmh.Models.AbstractOrgUnit;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.CookieHandler;
@@ -75,12 +79,21 @@ public class Login extends AppCompatActivity {
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, UrlConstants.LOGIN_URL, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                sessionManager.setKeyBearerToken(encoded);
-                sessionManager.setLoggedIn(true);
-                sessionManager.setUserName(email.getText().toString());
-                sessionManager.setKeyPassword(password.getText().toString());
-                finishLogin();
-                Toast.makeText(Login.this, "Successfull", Toast.LENGTH_SHORT).show();
+                try {
+                    String id = response.getString("id");
+                    sessionManager.setKeyBearerToken(encoded);
+                    sessionManager.setLoggedIn(true);
+                    sessionManager.setUserName(email.getText().toString());
+                    sessionManager.setKeyPassword(password.getText().toString());
+                    sessionManager.setKeyUserId(id);
+                    getUserDetails(id, encoded);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    closeProgressbar();
+                    Toast.makeText(Login.this, "Can not connect to server now. Contact the admin", Toast.LENGTH_SHORT).show();
+
+                }
+
 
             }
         }, new Response.ErrorListener() {
@@ -106,13 +119,57 @@ public class Login extends AppCompatActivity {
         VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
     }
 
+    public void getUserDetails(String id, final String encoded) {
+        Log.d("Entered", "true");
+        String USER_DETAILS_URL = String.format("https://kqmh.uonbi.ac.ke/api/users/%s", id);
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, USER_DETAILS_URL, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                Log.d("User details", response.toString());
+                try {
+                    JSONArray jsonArray = response.getJSONArray("organisationUnits");
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        JSONObject jsonObject = jsonArray.getJSONObject(i);
+                        String id = jsonObject.getString("id");
+                        AbstractOrgUnit orgUnit = new AbstractOrgUnit();
+                        orgUnit.setId(id);
+                        orgUnit.save();
+                        Toast.makeText(Login.this, "Successfull", Toast.LENGTH_SHORT).show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                finishLogin();
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                closeProgressbar();
+                if (error instanceof AuthFailureError) {
+                    Toast.makeText(Login.this, "Wrong email and password combination", Toast.LENGTH_SHORT).show();
+                }
+                closeProgressbar();
+                Toast.makeText(Login.this, "Cannot Log in at this time", Toast.LENGTH_SHORT).show();
+
+            }
+        }) {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                Map<String, String> headers = new HashMap<>();
+                headers.put("Authorization", encoded);
+                return headers;
+            }
+        };
+        VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
+    }
 
     public void submit() {
         if (check()) {
-            try{
+            try {
                 login(AuthBuilder.encode(email.getText().toString(), password.getText().toString()));
-            }
-            catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
