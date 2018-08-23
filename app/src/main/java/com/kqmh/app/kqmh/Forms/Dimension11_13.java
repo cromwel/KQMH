@@ -94,24 +94,18 @@ public class Dimension11_13 extends AppCompatActivity {
     public void prev_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Dimension11_12.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 
     public void dims_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Dimension11_List.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 
     public void next_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Dimension11_14.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 

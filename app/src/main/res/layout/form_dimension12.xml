@@ -1731,6 +1731,7 @@
                                         android:layout_weight=".7"
                                         android:background="@color/orange"
                                         android:padding="5dp"
+                                        android:paddingBottom="15dp"
                                         android:text="@string/Indicator19"
                                         android:textColor="@color/black"
                                         android:textSize="16sp" />

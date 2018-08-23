@@ -70,7 +70,7 @@ public class Dimension11_8 extends AppCompatActivity {
 
 
 
-        for(int value=11800;value<11831;value++){
+        for(int value=11801;value<11831;value++){
             Resources res  = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score),value);
 
@@ -92,24 +92,18 @@ public class Dimension11_8 extends AppCompatActivity {
     public void prev_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Dimension11_7.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 
     public void dims_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Dimension11_List.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 
     public void next_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Dimension11_9.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 

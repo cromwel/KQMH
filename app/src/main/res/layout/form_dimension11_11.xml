@@ -114,13 +114,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score559"
+                                    android:id="@+id/spinner_score111100"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="WJgaq2SjgFU"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -178,13 +178,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score560"
+                                    android:id="@+id/spinner_score111101"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="X12kxfXVRKB"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -242,13 +242,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score561"
+                                    android:id="@+id/spinner_score111102"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="LaLfYiW2F7Z"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -306,13 +306,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score562"
+                                    android:id="@+id/spinner_score111103"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="xwGUYnBO4XE"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -370,13 +370,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score563"
+                                    android:id="@+id/spinner_score111104"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="f19bmR0YMD4"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -434,13 +434,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score564"
+                                    android:id="@+id/spinner_score111105"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="EXXo557zgJY"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -498,13 +498,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score565"
+                                    android:id="@+id/spinner_score111106"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="Lqkj6lYJwvW"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -562,13 +562,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score566"
+                                    android:id="@+id/spinner_score111107"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="p2s1VKS6LPJ"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -646,13 +646,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score567"
+                                    android:id="@+id/spinner_score111108"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="u4P9PWNpAud"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -710,13 +710,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score568"
+                                    android:id="@+id/spinner_score111109"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="enPk6hTIFGI"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -774,13 +774,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score569"
+                                    android:id="@+id/spinner_score111110"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="GrKPs01aoCH"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -858,13 +858,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score570"
+                                    android:id="@+id/spinner_score111111"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="Iw44f4veIRT"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -922,13 +922,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score571"
+                                    android:id="@+id/spinner_score111112"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="zdXz7lrfEvA"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -986,13 +986,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score572"
+                                    android:id="@+id/spinner_score111113"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="PT4t79OSD1s"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1050,13 +1050,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score573"
+                                    android:id="@+id/spinner_score111114"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="eJeKwOmNUK4"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1114,13 +1114,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score574"
+                                    android:id="@+id/spinner_score111115"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="Dfl6rarSbmZ"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1198,13 +1198,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score575"
+                                    android:id="@+id/spinner_score111116"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="Uas474jlM59"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1262,13 +1262,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score576"
+                                    android:id="@+id/spinner_score111117"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="evvmwoDMlFW"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1346,13 +1346,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score577"
+                                    android:id="@+id/spinner_score111118"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="M8AtAtErwxZ"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1430,13 +1430,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score578"
+                                    android:id="@+id/spinner_score111119"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="xZAh5l2PfLU"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1514,13 +1514,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score579"
+                                    android:id="@+id/spinner_score111120"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="uKspnJwclxA"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1578,13 +1578,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score580"
+                                    android:id="@+id/spinner_score111121"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="WhzIQK8eXnE"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1662,13 +1662,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score581"
+                                    android:id="@+id/spinner_score111122"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="reDQFkbTASV"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1746,13 +1746,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score582"
+                                    android:id="@+id/spinner_score111123"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="YyUlX6MZVyk"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1830,13 +1830,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score583"
+                                    android:id="@+id/spinner_score111124"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="syGM9zZHBKq"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1914,13 +1914,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score584"
+                                    android:id="@+id/spinner_score111125"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="YRx4mNCfhpu"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -1978,13 +1978,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score585"
+                                    android:id="@+id/spinner_score111126"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="KcPGoC859bu"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -2042,13 +2042,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score586"
+                                    android:id="@+id/spinner_score111127"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="CLSRW4YbQl1"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -2126,13 +2126,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score587"
+                                    android:id="@+id/spinner_score111128"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="Bbz4TJi8oBt"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -2190,13 +2190,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score588"
+                                    android:id="@+id/spinner_score111129"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="eJI7iNRV3EM"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -2274,13 +2274,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score589"
+                                    android:id="@+id/spinner_score111130"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="MHDZc864PJE"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -2358,13 +2358,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score590"
+                                    android:id="@+id/spinner_score111131"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="il7bQp3wDVv"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -2442,13 +2442,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score591"
+                                    android:id="@+id/spinner_score111132"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="h9wPRUDbqiu"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -2526,13 +2526,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score592"
+                                    android:id="@+id/spinner_score111133"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="QuwGqp5hQgJ"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -2610,13 +2610,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score593"
+                                    android:id="@+id/spinner_score111134"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="I6VPpxhtXHW"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -2694,13 +2694,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score594"
+                                    android:id="@+id/spinner_score111135"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="GgwxsT912pH"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -2778,13 +2778,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score595"
+                                    android:id="@+id/spinner_score111136"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="TI96CPtHr9q"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -2862,13 +2862,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score596"
+                                    android:id="@+id/spinner_score111137"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="cLcwrF1ncPN"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -2946,13 +2946,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score597"
+                                    android:id="@+id/spinner_score111138"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="LQDZDLBiQSd"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -3030,13 +3030,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score598"
+                                    android:id="@+id/spinner_score111139"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="JZiIqQSUyK9"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -3114,13 +3114,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score600"
+                                    android:id="@+id/spinner_score111140"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="F58r1OQ2xZZ"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -3198,13 +3198,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score601"
+                                    android:id="@+id/spinner_score111141"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="y7wLlT1jPY8"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -3262,13 +3262,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score602"
+                                    android:id="@+id/spinner_score111142"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="gPJOkb1rgQc"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -3326,13 +3326,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score603"
+                                    android:id="@+id/spinner_score111143"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="mKQgFxc0LG7"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -3390,13 +3390,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score604"
+                                    android:id="@+id/spinner_score111144"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="CQa1tnzC9OD"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
@@ -3454,13 +3454,13 @@
                                     android:textSize="16sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner_score605"
+                                    android:id="@+id/spinner_score111145"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:background="@color/dark_blue"
                                     android:hint="@string/spinner_scores"
                                     android:prompt="@string/spinner_scores"
-                                    android:tag="wAG3HMPEb1C"
+                                    android:tag="Xg9D7kpJYG8"
                                     android:textSize="12sp" />
                             </LinearLayout>
 
