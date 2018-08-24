@@ -46,9 +46,23 @@ public class ViewFilesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viewfiles);
 
+        Button start_assessment = findViewById(R.id.bt_start_assessment);
+        Button logout = findViewById(R.id.bt_logout);
         progressDialog = new ProgressDialog(this);
-        progressDialog.setTitle("Fetching Scores");
+        progressDialog.setTitle("Logging out...");
         progressDialog.setCancelable(false);
+        start_assessment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                submit_start_assessment();
+            }
+        });
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                submit_logout();
+            }
+        });
         
 
         // if extending Activity
@@ -63,6 +77,8 @@ public class ViewFilesActivity extends AppCompatActivity {
         // 3. setListAdapter if extending Activity
         listView.setAdapter(adapter);
        // setListAdapter(adapter);
+
+
     }
 
     private ArrayList<ViewFiles> generateData(){
@@ -157,17 +173,31 @@ public class ViewFilesActivity extends AppCompatActivity {
     }
 
 
-    private void closeProgressbar() {
-        if (progressDialog != null) {
-            progressDialog.dismiss();
-        }
-    }
-
 
     public void submit_start_assessment(){
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Assessment_Info.class);
         startActivity(intent);
 
+    }
+
+    public void submit_logout(){
+            try {
+                new SessionManager(getBaseContext()).setLoggedIn(false);
+                Intent intent = new Intent(getBaseContext(), Login.class);
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+            }
+                catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+
+    private void closeProgressbar() {
+        if (progressDialog != null) {
+            progressDialog.dismiss();
+        }
     }
 }

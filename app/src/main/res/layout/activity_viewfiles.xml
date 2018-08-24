@@ -83,10 +83,28 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:background="@color/green"
-                    android:onClick="Submit"
+                    android:onClick="submit_start_assessment"
                     android:text="@string/start_assessment" />
 
             </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <Button
+                   android:id="@+id/bt_logout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="15dp"
+                   android:background="@color/orange"
+                   android:onClick="submit_logout"
+                   android:text="@string/log_out" />
+
+           </LinearLayout>
 
         </LinearLayout>
 
