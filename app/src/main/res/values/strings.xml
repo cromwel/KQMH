@@ -1418,6 +1418,9 @@
 
 
     <string name="edit">Edit</string>
+    <string name="log_out">Log Out</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
 
 
 </resources>

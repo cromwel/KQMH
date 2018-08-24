@@ -1,14 +1,22 @@
 package com.kqmh.app.kqmh.Forms;
 
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.PopupMenu;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -19,6 +27,8 @@ import com.android.volley.request.JsonObjectRequest;
 
 import com.google.gson.Gson;
 
+import com.kqmh.app.kqmh.Activities.Login;
+import com.kqmh.app.kqmh.Activities.WelcomeActivity;
 import com.kqmh.app.kqmh.Adapters.AssessmentTypeAdapter;
 import com.kqmh.app.kqmh.Adapters.OrganisationUnitAdapter;
 import com.kqmh.app.kqmh.Models.AbstractOrgUnit;
@@ -61,6 +71,8 @@ public class Assessment_Info extends AppCompatActivity {
     private Spinner spinner_period;
     private Spinner spinner_facilityLevel;
     private ProgressDialog progressDialog;
+    private ImageView logout;
+    private CoordinatorLayout coordinatorLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,9 +87,11 @@ public class Assessment_Info extends AppCompatActivity {
         spinner_AssessmentType = findViewById(R.id.spinner_AssessmentType);
         spinner_period = findViewById(R.id.spinner_period);
         spinner_facilityLevel = findViewById(R.id.spinner_facilityLevel);
+        logout = findViewById(R.id.img_logout);
 
         spinnerData_period(spinner_period, "1");
         spinnerData_facilityLevel(spinner_facilityLevel, "1");
+        coordinatorLayout = findViewById(R.id.coordinator);
 
         Button dataEntry = findViewById(R.id.bt_dataEntry);
         progressDialog = new ProgressDialog(this);
@@ -113,8 +127,26 @@ public class Assessment_Info extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
 
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showPopup(logout);
+            }
+        });
+    }
+    public void showPopup(View v) {
+        PopupMenu popup = new PopupMenu(this, v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.home_menu, popup.getMenu());
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            public boolean onMenuItemClick(MenuItem item) {
+                logout();
+                return true;
+            }
+        });
+        popup.show();
+    }
     /*org unit*/
     public void spinnerData_OrganisationUnit(Spinner spinner_OrganisationUnit, final String choice) {
         //fill data in spinner
@@ -384,5 +416,44 @@ public class Assessment_Info extends AppCompatActivity {
         if (progressDialog != null) {
             progressDialog.dismiss();
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.home_menu, menu);
+        return true;
+    }
+
+    private void logout() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Log out?");
+        builder.setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                new SessionManager(getBaseContext()).setLoggedIn(false);
+                Intent intent = new Intent(getBaseContext(), Login.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+
+            }
+        });
+        builder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        builder.show();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.logout:
+                logout();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
