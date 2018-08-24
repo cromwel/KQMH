@@ -71,86 +71,58 @@ public class Dimension11_List extends AppCompatActivity {
                         break;
                     case 1:
                         Intent intentDimension1 = new Intent(getBaseContext(), Dimension11_1.class);
-                        intentDimension1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension1);
                         break;
                     case 2:
                         Intent intentDimension2 = new Intent(getBaseContext(), Dimension11_2.class);
-                        intentDimension2.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension2);
                         break;
                     case 3:
                         Intent intentDimension3 = new Intent(getBaseContext(), Dimension11_3.class);
-                        intentDimension3.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension3);
                         break;
                     case 4:
                         Intent intentDimension4 = new Intent(getBaseContext(), Dimension11_4.class);
-                        intentDimension4.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension4);
                         break;
                     case 5:
                         Intent intentDimension5 = new Intent(getBaseContext(), Dimension11_5.class);
-                        intentDimension5.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension5);
                         break;
                     case 6:
                         Intent intentDimension6 = new Intent(getBaseContext(), Dimension11_6.class);
-                        intentDimension6.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension6);
                         break;
                     case 7:
                         Intent intentDimension7 = new Intent(getBaseContext(), Dimension11_7.class);
-                        intentDimension7.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension7);
                         break;
                     case 8:
                         Intent intentDimension8 = new Intent(getBaseContext(), Dimension11_8.class);
-                        intentDimension8.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension8);
                         break;
                     case 9:
                         Intent intentDimension9 = new Intent(getBaseContext(), Dimension11_9.class);
-                        intentDimension9.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension9);
                         break;
                     case 10:
                         Intent intentDimension10 = new Intent(getBaseContext(), Dimension11_10.class);
-                        intentDimension10.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension10);
                         break;
                     case 11:
                         Intent intentDimension11 = new Intent(getBaseContext(), Dimension11_11.class);
-                        intentDimension11.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension11);
                         break;
                     case 12:
                         Intent intentDimension12 = new Intent(getBaseContext(), Dimension11_12.class);
-                        intentDimension12.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension12);
                         break;
                     case 13:
                         Intent intentDimension13 = new Intent(getBaseContext(), Dimension11_13.class);
-                        intentDimension13.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension13);
                         break;
                     case 14:
                         Intent intentDimension14 = new Intent(getBaseContext(), Dimension11_14.class);
-                        intentDimension14.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intentDimension14);
                         break;
                 }
@@ -166,8 +138,6 @@ public class Dimension11_List extends AppCompatActivity {
     public void dims_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Dimensions_List.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-                | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 

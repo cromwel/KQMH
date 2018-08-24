@@ -7,13 +7,10 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:ignore="HardcodedText">
+    tools:ignore="HardcodedText"
+    tools:context="Activities.ViewFilesActivity" >
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
+       <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/blue"
@@ -35,12 +32,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!--title-->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="1"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:weightSum="1">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -60,14 +56,19 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/round_border"
-                app:cardCornerRadius="5dp"
-                card_view:cardElevation="9dp">
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:background="@drawable/round_border"
+               app:cardCornerRadius="5dp"
+               card_view:cardElevation="9dp">
 
-            </android.support.v7.widget.CardView>
+               <ListView
+                   android:id="@+id/listview"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent" />
+
+       </android.support.v7.widget.CardView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -82,11 +83,29 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:background="@color/green"
-                    android:onClick="Submit"
+                    android:onClick="submit_start_assessment"
                     android:text="@string/start_assessment" />
 
             </LinearLayout>
 
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <Button
+                   android:id="@+id/bt_logout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="15dp"
+                   android:background="@color/orange"
+                   android:onClick="submit_logout"
+                   android:text="@string/log_out" />
+
+           </LinearLayout>
+
         </LinearLayout>
-    </ScrollView>
+
 </android.support.design.widget.CoordinatorLayout>
