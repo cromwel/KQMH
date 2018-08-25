@@ -4,12 +4,16 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter;
@@ -38,14 +42,23 @@ public class Dimension1 extends AppCompatActivity {
     List<DataElement> dataElementsList = new ArrayList<>();
     private ProgressDialog progressDialog;
 
+    private int progressStatus = 0;
+    private Handler handler = new Handler();
+
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_dimension1);
 
+        // Get the widgets reference from XML layout
+        final RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
+        final TextView tv = (TextView) findViewById(R.id.tv);
+        final ProgressBar pb = (ProgressBar) findViewById(R.id.pb);
+
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Fetching Scores");
         progressDialog.setCancelable(false);
+
 
         Button prevDim = findViewById(R.id.btn_prev);
         prevDim.setOnClickListener(new View.OnClickListener() {
@@ -87,6 +100,23 @@ public class Dimension1 extends AppCompatActivity {
             e.printStackTrace();
             progressDialog.cancel();
         }
+
+
+
+       /* Observable.range(1, 200).subscribeOn(Schedulers.computation())
+                .delay(5, TimeUnit.SECONDS)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Consumer<Integer>() {
+                    @Override
+                    public void accept(Integer progress) throws Exception {
+                        progressBar.setProgress(progress);
+                    }
+                }, new Consumer<Throwable>() {
+                    @Override
+                    public void accept(Throwable throwable) throws Exception {
+
+                    }
+                });*/
     }
 
     public void prev_submit() {

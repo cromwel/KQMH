@@ -312,44 +312,7 @@ public class Assessment_Info extends AppCompatActivity {
     }
 
     private void getPeriod(final String encoded) {
-       /* Log.d("Auth", encoded);
-        progressDialog.show();
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, UrlConstants.ASSESSMENT_TYPE_URL, null, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                Log.d("assessment type", response.toString());
-                try {
-                    JSONArray jsonArray = response.getJSONArray("categoryOptionCombos");
-                    Gson gson = new Gson();
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        AssessmentTypeCombo combo = gson.fromJson(jsonArray.getJSONObject(i).toString(), AssessmentTypeCombo.class);
-                        categoryOptions.add(combo);
-                    }
-                    saveOptions(categoryOptions);
-                    closeProgressbar();
-                    spinnerData_AssessmentType(spinner_AssessmentType, "1");
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    closeProgressbar();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                error.printStackTrace();
-                closeProgressbar();
-            }
-        }) {
-            @Override
-            public Map<String, String> getHeaders() {
-                Map<String, String> headers = new HashMap<>();
-                //headers.put("Content-Type","application/json");
-                Log.d("Encoded", encoded);
-                headers.put("Authorization", encoded);
-                return headers;
-            }
-        };
-        VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);*/
+
     }
 
     private void saveTime(List<Period> qPeriod) {

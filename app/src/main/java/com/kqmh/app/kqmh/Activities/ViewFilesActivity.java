@@ -57,12 +57,7 @@ public class ViewFilesActivity extends AppCompatActivity {
                 submit_start_assessment();
             }
         });
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                submit_logout();
-            }
-        });
+
         
 
         // if extending Activity
@@ -181,18 +176,6 @@ public class ViewFilesActivity extends AppCompatActivity {
 
     }
 
-    public void submit_logout(){
-            try {
-                new SessionManager(getBaseContext()).setLoggedIn(false);
-                Intent intent = new Intent(getBaseContext(), Login.class);
-
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
-            }
-                catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
 
 
     private void closeProgressbar() {

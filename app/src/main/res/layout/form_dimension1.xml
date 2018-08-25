@@ -32,10 +32,12 @@
             <!-- button section -->
             <include layout="@layout/nav_buttons" />
 
-            <ProgressBar
+                <include layout="@layout/progress_button" />
+
+           <!-- <ProgressBar
                 android:id="@+id/customProgress"
                 style="@style/CustomProgressBar"
-                android:layout_width="match_parent"/>
+                android:layout_width="match_parent"/>-->
 
             </android.support.v7.widget.CardView>
 

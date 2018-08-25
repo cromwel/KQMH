@@ -16,4 +16,10 @@
         <item name="android:maxHeight">20dip</item>
     </style>
 
+    <style name="AppThemeMyLight" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#0091ea</item>
+    </style>
+
+
+
 </resources>
