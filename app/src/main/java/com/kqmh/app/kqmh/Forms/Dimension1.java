@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -60,10 +62,10 @@ public class Dimension1 extends AppCompatActivity {
         progressDialog.setCancelable(false);
 
 
-        Button prevDim = findViewById(R.id.btn_prev);
-        prevDim.setOnClickListener(new View.OnClickListener() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 prev_submit();
             }
         });
@@ -76,10 +78,12 @@ public class Dimension1 extends AppCompatActivity {
             }
         });
 
-        Button nextDim = findViewById(R.id.btn_next);
-        nextDim.setOnClickListener(new View.OnClickListener() {
+
+
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 next_submit();
             }
         });
