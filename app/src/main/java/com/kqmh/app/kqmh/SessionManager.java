@@ -20,6 +20,7 @@ public class SessionManager {
     private static final String USER_NAME = "userName";
     private static final String KEY_PASSWORD = "Password";
     private static final String KEY_USER_ID = "user_id";
+    private static final String KEY_SAVED_OPTIONS = "isOptionsSaved";
 
 
     public SessionManager(Context context) {
@@ -90,5 +91,13 @@ public class SessionManager {
     public void setKeyUserId(String id) {
 
         pref.edit().putString(KEY_USER_ID, id).apply();
+    }
+
+    public boolean isOptionsSaved() {
+        return pref.getBoolean(KEY_SAVED_OPTIONS, false);
+    }
+
+    public void setKeySavedOptions(boolean isSaved) {
+        pref.edit().putBoolean(KEY_SAVED_OPTIONS,isSaved).apply();
     }
 }

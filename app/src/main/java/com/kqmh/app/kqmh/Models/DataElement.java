@@ -17,7 +17,7 @@ public class DataElement extends BaseModel {
     private String category="";
 
     @Column
-    private String value="";
+    private String value;
 
     @Column
     private String comment="";

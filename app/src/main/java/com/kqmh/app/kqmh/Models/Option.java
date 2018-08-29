@@ -21,8 +21,11 @@ public class Option extends BaseModel {
     private boolean isSelected = false;
 
     @Column
-    @PrimaryKey
     private String id;
+
+
+    @PrimaryKey(autoincrement = true)
+    private long option_id;
 
     public Option(){
 
@@ -39,6 +42,14 @@ public class Option extends BaseModel {
         this.code=code;
         this.name=name;
 
+    }
+
+    public long getOption_id() {
+        return option_id;
+    }
+
+    public void setOption_id(long option_id) {
+        this.option_id = option_id;
     }
 
     public String getParentId() {

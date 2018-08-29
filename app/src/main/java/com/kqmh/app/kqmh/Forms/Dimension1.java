@@ -37,6 +37,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class Dimension1 extends AppCompatActivity {
 
@@ -79,7 +80,6 @@ public class Dimension1 extends AppCompatActivity {
         });
 
 
-
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,7 +93,6 @@ public class Dimension1 extends AppCompatActivity {
             String spinnerParse = String.format(res.getString(R.string.spinner_score), value);
 
             spinnerList.add((Spinner) findViewById(getResources().getIdentifier(spinnerParse, "id", getPackageName())));
-            Log.d("Spinner Tag", spinnerList.toString() + "");
         }
 
         //spinnerList.add((Spinner) findViewById(R.id.spinner_score1));
@@ -167,7 +166,7 @@ public class Dimension1 extends AppCompatActivity {
                     List<Option> optionList = new ArrayList<>();
                     Gson gson = new Gson();
 
-                    Option selectOption = new Option("", "", "Select");
+                    final Option selectOption = new Option("", "", "Select");
                     optionList.add(selectOption);
 
                     for (int j = 0; j < options.length(); j++) {
@@ -242,6 +241,7 @@ public class Dimension1 extends AppCompatActivity {
         String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext(), "Requirements_Dim1.json");
         JSONObject fileObject = new JSONObject(fromJsonFile);
         JSONArray dataElements = fileObject.getJSONArray("dataSetElements");
+        SessionManager sessionManager = new SessionManager(getBaseContext());
         for (int i = 0; i < dataElements.length(); i++) {
             JSONObject jsonObject = dataElements.getJSONObject(i);
             JSONObject dataElement = jsonObject.getJSONObject("dataElement");
@@ -258,35 +258,45 @@ public class Dimension1 extends AppCompatActivity {
                     JSONArray options = optionSet.getJSONArray("options");
                     Gson gson = new Gson();
 
-                    Option selectOption = new Option("DEF01", "8", "Select");
-                    selectOption.setParentId(spinner.getTag().toString());
-                    if (!selectOption.exists()) {
-                        selectOption.save();
+                    Option selectOption = SQLite.select()
+                            .from(Option.class)
+                            .where(Option_Table.parentId.eq(spinner.getTag().toString()))
+                            .querySingle();
+                    if(selectOption == null) {
+                        selectOption = new Option("DEF01", "8", "Select");
+                        selectOption.setParentId(spinner.getTag().toString());
+                        if (!selectOption.exists()) {
+                            selectOption.save();
+                        }
                     }
 
-                    for (int j = 0; j < options.length(); j++) {
-                        Option option = gson.fromJson(options.getJSONObject(j).toString(), Option.class);
-                        option.setParentId(spinner.getTag().toString());
-                        option.save();
+                    if (!sessionManager.isOptionsSaved()) {
+                        for (int j = 0; j < options.length(); j++) {
+                            Option option = gson.fromJson(options.getJSONObject(j).toString(), Option.class);
+                            option.setParentId(spinner.getTag().toString());
+                            option.save();
+                        }
+                    }else{
+                        Log.d("error","save error");
                     }
                     List<Option> optionList = SQLite.select()
                             .from(Option.class)
                             .where(Option_Table.parentId.eq(spinner.getTag().toString()))
                             .queryList();
-                    optionList.add(0, selectOption);
                     ScoreOptionstAdapter2 adapter = new ScoreOptionstAdapter2(this, android.R.layout.simple_spinner_dropdown_item, optionList);
 
-
+                    spinner.setAdapter(adapter);
                     for (Option option : optionList) {
                         if (option.isSelected()) {
                             Log.d("Found selected", "id" + option.getParentId() + " val " + option.getName());
                             spinner.setSelection(optionList.indexOf(option));
                         }
                     }
-                    spinner.setAdapter(adapter);
-                    }
+
+                }
             }
         }
+        sessionManager.setKeySavedOptions(true);
         progressDialog.cancel();
     }
 
@@ -298,7 +308,7 @@ public class Dimension1 extends AppCompatActivity {
                 public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                     Option option = (Option) adapterView.getSelectedItem();
                     option.setSelected(true);
-                    option.update();
+                    option.save();
                     Log.d("selected", spinner.getTag().toString() + " option " + option.getName());
                     DataElement element = SQLite.select()
                             .from(DataElement.class)
@@ -308,6 +318,8 @@ public class Dimension1 extends AppCompatActivity {
                         element.setValue(option.getCode());
                         element.setCategory(option.getId());
                         element.save();
+
+                        Log.d("saved", element.getValue());
 
                     }
 
