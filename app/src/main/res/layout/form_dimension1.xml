@@ -21,6 +21,7 @@
 
             <include layout="@layout/header" />
 
+            <!--progress bar-->
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -29,17 +30,30 @@
                 app:cardCornerRadius="5dp"
                 card_view:cardElevation="9dp">
 
-            <!-- button section -->
-            <include layout="@layout/nav_buttons" />
 
                 <include layout="@layout/progress_button" />
 
-           <!-- <ProgressBar
-                android:id="@+id/customProgress"
-                style="@style/CustomProgressBar"
-                android:layout_width="match_parent"/>-->
+                <!-- <ProgressBar
+                     android:id="@+id/customProgress"
+                     style="@style/CustomProgressBar"
+                     android:layout_width="match_parent"/>-->
 
             </android.support.v7.widget.CardView>
+
+            <!-- button section -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_border"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="9dp">
+
+
+            <include layout="@layout/nav_buttons" />
+
+            </android.support.v7.widget.CardView>
+
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -66,8 +80,11 @@
                             android:layout_marginBottom="5dp"
                             android:background="@color/green"
                             android:gravity="center"
-                            android:paddingBottom="5dp"
-                            android:paddingTop="5dp"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:textAlignment="center"
                             android:text="@string/Dim1"
                             android:textColor="@color/black"
                             android:textSize="18sp" />
@@ -2120,8 +2137,18 @@
 
             </android.support.v7.widget.CardView>
 
-            <!-- button section -->
+            <!-- dims button section -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_border"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="9dp">
+
             <include layout="@layout/dims_button" />
+
+            </android.support.v7.widget.CardView>
 
         </LinearLayout>
 

@@ -24,7 +24,18 @@
         <include layout="@layout/header"/>
 
             <!-- button section -->
-        <include layout="@layout/nav_buttons" />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_border"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="9dp">
+
+
+                <include layout="@layout/nav_buttons" />
+
+            </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
@@ -38,6 +49,29 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
+                        <!-- dimension section -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/green"
+                                android:gravity="center"
+                                android:paddingBottom="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingRight="5dp"
+                                android:paddingLeft="5dp"
+                                android:textAlignment="center"
+                                android:text="@string/Dim12"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -3473,8 +3507,18 @@
 
                 </android.support.v7.widget.CardView>
 
-            <!-- button section -->
-            <include layout="@layout/validate_button"/>
+            <!-- validations button section -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_border"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="9dp">
+
+                <include layout="@layout/validate_button" />
+
+            </android.support.v7.widget.CardView>
 
         </LinearLayout>
     </ScrollView>

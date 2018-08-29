@@ -34,9 +34,9 @@
 
     <!-- Slider strings -->
     <string name="title_activity_welcome">Home Screen</string>
-    <string name="next">NEXT</string>
-    <string name="prev">PREV</string>
-    <string name="dims">Dimensions</string>
+    <string name="next">NEXT Dimension</string>
+    <string name="prev">PREV Dimension</string>
+    <string name="dims">DIMENSIONS</string>
     <string name="skip">SKIP</string>
     <string name="start">GOT IT</string>
 

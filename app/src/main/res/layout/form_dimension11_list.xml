@@ -75,8 +75,18 @@
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
-            <!-- button section -->
-            <include layout="@layout/dims_button"/>
+            <!-- dims button section -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_border"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="9dp">
+
+                <include layout="@layout/dims_button" />
+
+            </android.support.v7.widget.CardView>
 
         </LinearLayout>
     </ScrollView>

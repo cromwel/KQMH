@@ -61,6 +61,14 @@ public class Dimension11_14 extends AppCompatActivity {
             }
         });
 
+        Button nextDim = findViewById(R.id.btn_next);
+        nextDim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                next_submit();
+            }
+        });
+
 
         for(int value=111400;value<111410;value++){
             Resources res  = getResources();
@@ -90,6 +98,12 @@ public class Dimension11_14 extends AppCompatActivity {
     public void dims_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Dimension11_List.class);
+        startActivity(intent);
+    }
+
+    public void next_submit() {
+        new SessionManager(getBaseContext()).setLoggedIn(true);
+        Intent intent = new Intent(getBaseContext(), Dimension12.class);
         startActivity(intent);
     }
 
