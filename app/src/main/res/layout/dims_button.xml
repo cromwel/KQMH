@@ -9,18 +9,19 @@
         android:layout_centerVertical="true"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="@drawable/round_border">
+        android:background="@color/green">
 
         <Button
             android:id="@+id/btn_dims"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@drawable/button"
             android:onClick="Submit"
             android:text="@string/dims"
-            android:textSize="13sp" />
+            android:textSize="16sp"
+            android:textColor="@color/solid_black"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
