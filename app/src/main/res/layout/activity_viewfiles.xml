@@ -83,12 +83,12 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:background="@color/green"
-                    android:onClick="submit_start_assessment"
+                    android:onClick="Submit"
                     android:text="@string/start_assessment" />
 
             </LinearLayout>
 
-           <LinearLayout
+          <!-- <LinearLayout
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_centerVertical="true"
@@ -104,7 +104,7 @@
                    android:onClick="submit_logout"
                    android:text="@string/log_out" />
 
-           </LinearLayout>
+           </LinearLayout>-->
 
         </LinearLayout>
 

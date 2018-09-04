@@ -82,7 +82,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                      <!--  &lt;!&ndash; dimension section &ndash;&gt;
+                      <!-- dimension section -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
-                        </LinearLayout>-->
+                        </LinearLayout>
 
                         <!-- standard -->
                         <LinearLayout
@@ -114,7 +114,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@color/green"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std1.1"
                                 android:textColor="@color/black"
@@ -1295,7 +1295,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@color/green"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std1.2"
                                 android:textColor="@color/black"
@@ -1987,7 +1987,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@color/green"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std1.3"
                                 android:textColor="@color/black"

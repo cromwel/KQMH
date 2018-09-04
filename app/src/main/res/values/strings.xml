@@ -602,9 +602,9 @@
     <string name="Rdim11.2.9.2">There is debriefing and support supervision for care providers to cope with stressful encounters/situations (MOV- SOP, interview with health providers)</string>
     <string name="Rdim11.2.9.3">Facility provides for standardized, documented procedures on embalming, autopsies, issuance of burial permit as appropriate (MOV- documented procedure)</string>
 
-    <!--  Policies, Standards and Guidelines Strings -->
+    <!--  Infection Prevention and Control -->
 
-    <string name="Dim11.3">  Policies, Standards and Guidelines </string>
+    <string name="Dim11.3">  Infection Prevention and Control </string>
 
     <string name="Std11.3.1">11.3.1 The health facility shall have in place an infection prevention and control governance structure as per the national policy and guidelines</string>
     <string name="Rdim11.3.1.1">A multidisciplinary IPC committee/ unit in place, with terms of reference (MOV- Minutes of monthly meetings, clinical reports, appointment letters for committee members)</string>

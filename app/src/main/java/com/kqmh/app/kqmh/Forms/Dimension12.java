@@ -3,7 +3,9 @@ package com.kqmh.app.kqmh.Forms;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -37,22 +39,27 @@ public class Dimension12 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_dimension12);
 
+        // Get the widgets reference from XML layout
+        final RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
+        final TextView tv = (TextView) findViewById(R.id.tv);
+        final ProgressBar pb = (ProgressBar) findViewById(R.id.pb);
+
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Fetching Scores");
         progressDialog.setCancelable(false);
 
-        Button prevDim = findViewById(R.id.btn_prev);
-        prevDim.setOnClickListener(new View.OnClickListener() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 prev_submit();
             }
         });
 
-        Button nextDim = findViewById(R.id.btn_next);
-        nextDim.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 next_submit();
             }
         });

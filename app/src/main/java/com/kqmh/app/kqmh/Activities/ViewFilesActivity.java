@@ -46,11 +46,11 @@ public class ViewFilesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viewfiles);
 
-        Button start_assessment = findViewById(R.id.bt_start_assessment);
-        Button logout = findViewById(R.id.bt_logout);
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Logging out...");
         progressDialog.setCancelable(false);
+
+        Button start_assessment = findViewById(R.id.bt_start_assessment);
         start_assessment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,7 +104,6 @@ public class ViewFilesActivity extends AppCompatActivity {
                 submit_start_assessment();
             }
         });*/
-
 
 
 

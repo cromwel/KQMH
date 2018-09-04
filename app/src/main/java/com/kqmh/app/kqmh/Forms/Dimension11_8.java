@@ -4,12 +4,17 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter;
@@ -40,14 +45,19 @@ public class Dimension11_8 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_dimension11_8);
 
+        // Get the widgets reference from XML layout
+        final RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
+        final TextView tv = (TextView) findViewById(R.id.tv);
+        final ProgressBar pb = (ProgressBar) findViewById(R.id.pb);
+
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Fetching Scores");
         progressDialog.setCancelable(false);
 
-        Button prevDim = findViewById(R.id.btn_prev);
-        prevDim.setOnClickListener(new View.OnClickListener() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 prev_submit();
             }
         });
@@ -60,14 +70,13 @@ public class Dimension11_8 extends AppCompatActivity {
             }
         });
 
-        Button nextDim = findViewById(R.id.btn_next);
-        nextDim.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 next_submit();
             }
         });
-
 
 
         for(int value=11801;value<11831;value++){

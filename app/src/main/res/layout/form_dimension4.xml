@@ -9,6 +9,57 @@
     android:orientation="vertical"
     tools:ignore="HardcodedText">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="vertical">
+
+    <include
+        layout="@layout/header"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/toolbar"
+        app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+        app:title="4: Facilities and Infrastructure"
+        app:titleTextColor="@color/white" />
+
+    <!--progress bar-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_border"
+        app:cardCornerRadius="5dp"
+        card_view:cardElevation="9dp">
+
+
+        <include layout="@layout/progress_button" />
+
+        <!-- <ProgressBar
+             android:id="@+id/customProgress"
+             style="@style/CustomProgressBar"
+             android:layout_width="match_parent"/>-->
+
+    </android.support.v7.widget.CardView>
+
+    <!-- button section -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_border"
+        app:cardCornerRadius="5dp"
+        card_view:cardElevation="9dp">
+
+
+        <include layout="@layout/nav_buttons" android:visibility="gone"/>
+
+    </android.support.v7.widget.CardView>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -16,24 +67,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/blue"
             android:orientation="vertical">
-
-            <include layout="@layout/header" />
-
-            <!-- button section -->
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/round_border"
-                app:cardCornerRadius="5dp"
-                card_view:cardElevation="9dp">
-
-
-                <include layout="@layout/nav_buttons" />
-
-            </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -4450,7 +4484,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="5dp"
                 android:background="@drawable/round_border"
                 app:cardCornerRadius="5dp"
                 card_view:cardElevation="9dp">
@@ -4458,10 +4492,17 @@
                 <include layout="@layout/dims_button" />
 
             </android.support.v7.widget.CardView>
-
         </LinearLayout>
-
     </ScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_navigate_next_white_24dp"
+        android:layout_margin="16dp" />
 
 </android.support.design.widget.CoordinatorLayout>
 
