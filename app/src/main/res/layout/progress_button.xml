@@ -25,8 +25,11 @@
 
     <ProgressBar
         android:id="@+id/pb"
-        android:layout_width="250dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:progress="0"
+        android:max="27"
+        android:progressDrawable="@drawable/progessbar_drawble"
         android:layout_below="@id/tv"
         style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
 

@@ -16,6 +16,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter;
@@ -36,6 +37,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 
@@ -44,6 +46,8 @@ public class Dimension1 extends AppCompatActivity {
     List<Spinner> spinnerList = new ArrayList<>();
     List<DataElement> dataElementsList = new ArrayList<>();
     private ProgressDialog progressDialog;
+    private ProgressBar progressBar;
+    private TextView progressText;
 
     private int progressStatus = 0;
     private Handler handler = new Handler();
@@ -56,7 +60,6 @@ public class Dimension1 extends AppCompatActivity {
         // Get the widgets reference from XML layout
         final RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
         final TextView tv = (TextView) findViewById(R.id.tv);
-        final ProgressBar pb = (ProgressBar) findViewById(R.id.pb);
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Fetching Scores");
@@ -94,6 +97,7 @@ public class Dimension1 extends AppCompatActivity {
 
             spinnerList.add((Spinner) findViewById(getResources().getIdentifier(spinnerParse, "id", getPackageName())));
         }
+        setUpProgress();
 
         //spinnerList.add((Spinner) findViewById(R.id.spinner_score1));
 
@@ -120,6 +124,15 @@ public class Dimension1 extends AppCompatActivity {
 
                     }
                 });*/
+    }
+
+    private void setUpProgress() {
+        View v = findViewById(R.id.progress);
+        progressBar = v.findViewById(R.id.pb);
+        progressText = v.findViewById(R.id.tv);
+        Toast.makeText(getBaseContext(), "Size " + spinnerList.size(), Toast.LENGTH_LONG).show();
+        progressBar.setMax(spinnerList.size());
+        progressText.setText(String.format(Locale.getDefault(), "%d/%d", progressBar.getProgress(), progressBar.getMax()));
     }
 
     public void prev_submit() {
@@ -187,6 +200,7 @@ public class Dimension1 extends AppCompatActivity {
                             Log.d("counter", String.valueOf(counter));
                             Log.d("not null", "" + element1.toString() + " id " + element1.getDataElementId() + "value " + element1.getValue());
                             spinner.setSelection(optionList.indexOf(selectedOption));
+                            //progressBar.setProgress(progressBar.getProgress() + 1);
                         }
                     }
 
@@ -248,10 +262,15 @@ public class Dimension1 extends AppCompatActivity {
             String id = dataElement.getString("id");
             for (final Spinner spinner : spinnerList) {
                 if (spinner.getTag().toString().equals(id)) {
-                    DataElement element = new DataElement();
-                    element.setEntity(AppConstants.DIMENSION_1);
-                    element.setDataElementId(spinner.getTag().toString());
-                    element.save();
+                    DataElement element2 = SQLite.select()
+                            .from(DataElement.class)
+                            .where(DataElement_Table.dataElementId.eq(spinner.getTag().toString())).querySingle();
+                    if (element2 == null) {
+                        DataElement element = new DataElement();
+                        element.setEntity(AppConstants.DIMENSION_1);
+                        element.setDataElementId(spinner.getTag().toString());
+                        element.save();
+                    }
 
                     //Add options
                     JSONObject optionSet = dataElement.getJSONObject("optionSet");
@@ -262,7 +281,7 @@ public class Dimension1 extends AppCompatActivity {
                             .from(Option.class)
                             .where(Option_Table.parentId.eq(spinner.getTag().toString()))
                             .querySingle();
-                    if(selectOption == null) {
+                    if (selectOption == null) {
                         selectOption = new Option("DEF01", "8", "Select");
                         selectOption.setParentId(spinner.getTag().toString());
                         if (!selectOption.exists()) {
@@ -276,8 +295,8 @@ public class Dimension1 extends AppCompatActivity {
                             option.setParentId(spinner.getTag().toString());
                             option.save();
                         }
-                    }else{
-                        Log.d("error","save error");
+                    } else {
+                        Log.d("error", "save error");
                     }
                     List<Option> optionList = SQLite.select()
                             .from(Option.class)
@@ -286,10 +305,17 @@ public class Dimension1 extends AppCompatActivity {
                     ScoreOptionstAdapter2 adapter = new ScoreOptionstAdapter2(this, android.R.layout.simple_spinner_dropdown_item, optionList);
 
                     spinner.setAdapter(adapter);
-                    for (Option option : optionList) {
-                        if (option.isSelected()) {
-                            Log.d("Found selected", "id" + option.getParentId() + " val " + option.getName());
-                            spinner.setSelection(optionList.indexOf(option));
+                    if (element2 != null) {
+                        for (Option option : optionList) {
+                            if (option.isSelected()) {
+                                if ( element2.getValue() != null && element2.getValue().equals(option.getCode()) && !option.getCode().equals("8")) {
+                                    Log.d("Found selected", "id" + option.getParentId() + " val " + option.getName() + " code " + option.getCode() + " element " + element2.getValue());
+                                    spinner.setSelection(optionList.indexOf(option));
+                                    progressBar.setProgress(progressBar.getProgress() + 1);
+                                    progressText.setText(String.format(Locale.getDefault(),"%d/%d",progressBar.getProgress(), progressBar.getMax()));
+                                }
+
+                            }
                         }
                     }
 
@@ -309,12 +335,24 @@ public class Dimension1 extends AppCompatActivity {
                     Option option = (Option) adapterView.getSelectedItem();
                     option.setSelected(true);
                     option.save();
-                    Log.d("selected", spinner.getTag().toString() + " option " + option.getName());
                     DataElement element = SQLite.select()
                             .from(DataElement.class)
                             .where(DataElement_Table.dataElementId.eq(option.getParentId()))
                             .querySingle();
                     if (element != null) {
+                        if(option.getCode().equals("8")){
+                            if(element.getValue() != null && !element.getValue().equals("8")){
+                                //Means its a downgrade
+                                progressBar.setProgress(progressBar.getProgress() - 1);
+                                progressText.setText(String.format(Locale.getDefault(),"%d/%d",progressBar.getProgress(), progressBar.getMax()));
+                            }
+                        }else{
+                            if(!element.getValue().equals(option.getCode()) && element.getValue().equals("8")){
+                                //Means its not the same option selected again and the previous value was 'select' , therefore upgrade.
+                                progressBar.setProgress(progressBar.getProgress() + 1);
+                                progressText.setText(String.format(Locale.getDefault(),"%d/%d",progressBar.getProgress(), progressBar.getMax()));
+                            }
+                        }
                         element.setValue(option.getCode());
                         element.setCategory(option.getId());
                         element.save();
