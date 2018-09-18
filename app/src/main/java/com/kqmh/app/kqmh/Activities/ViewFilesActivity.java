@@ -88,25 +88,6 @@ public class ViewFilesActivity extends AppCompatActivity {
     }
 
 
-
-       /* Button upload_file = findViewById(R.id.bt_upload_file);
-        upload_file.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                submit_file();
-            }
-        });
-
-        Button start_assessment = findViewById(R.id.bt_start_assessment);
-        start_assessment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                submit_start_assessment();
-            }
-        });*/
-
-
-
     String data = "{\n" +
             "  \"dataSet\": \"TA4FU3zu93l\",\n" +
             "  \"completeDate\": \"2018-02-02\",\n" +

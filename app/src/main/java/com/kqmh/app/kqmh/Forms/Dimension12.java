@@ -42,7 +42,6 @@ public class Dimension12 extends AppCompatActivity {
         // Get the widgets reference from XML layout
         final RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
         final TextView tv = (TextView) findViewById(R.id.tv);
-        final ProgressBar pb = (ProgressBar) findViewById(R.id.pb);
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Fetching Scores");

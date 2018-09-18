@@ -12,6 +12,7 @@ import android.widget.CheckedTextView;
 import android.widget.TextView;
 
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
+import com.kqmh.app.kqmh.Models.OrganisationUnit_Table;
 import com.kqmh.app.kqmh.R;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 
@@ -30,7 +31,9 @@ public class OrganisationUnitAdapter extends ArrayAdapter<OrganisationUnit> {
         this.context = context;
         this.organisationUnits = SQLite.select()
                 .from(OrganisationUnit.class)
+                //.where(OrganisationUnit_Table.level.eq("5"))
                 .queryList();
+
     }
 
     public OrganisationUnitAdapter(@NonNull Context context, int resource, List<String> organisationUnits) {
@@ -38,6 +41,7 @@ public class OrganisationUnitAdapter extends ArrayAdapter<OrganisationUnit> {
         this.context = context;
         this.organisationUnits = SQLite.select()
                 .from(OrganisationUnit.class)
+                .where(OrganisationUnit_Table.level.eq("5"))
                 .queryList();
     }
 
@@ -60,7 +64,6 @@ public class OrganisationUnitAdapter extends ArrayAdapter<OrganisationUnit> {
     @NonNull
     @Override
     public View getView(int position, View convertView, @NonNull ViewGroup parent) {
-        // I created a dynamic TextView here, but you can reference your own  custom layout for each spinner item
         CheckedTextView label = (CheckedTextView) super.getView(position, convertView, parent);
         label.setTextColor(Color.BLACK);
         Log.d("Display name", organisationUnits.get(position).getDisplayName());

@@ -37,8 +37,6 @@
         card_view:cardElevation="9dp">
 
 
-        <include layout="@layout/progress_button" />
-
         <!-- <ProgressBar
              android:id="@+id/customProgress"
              style="@style/CustomProgressBar"
