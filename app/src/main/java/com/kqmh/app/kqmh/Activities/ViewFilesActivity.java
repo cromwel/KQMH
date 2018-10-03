@@ -1,10 +1,17 @@
 package com.kqmh.app.kqmh.Activities;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 import android.app.Activity;
 import android.app.ListActivity;
+import android.database.Cursor;
 import android.os.Bundle;
+import android.os.Environment;
 import android.widget.ListView;
 
 import android.app.ProgressDialog;
@@ -22,23 +29,38 @@ import com.android.volley.request.JsonObjectRequest;
 import com.kqmh.app.kqmh.Adapters.ViewFilesAdapter;
 import com.kqmh.app.kqmh.Forms.Assessment_Info;
 import com.kqmh.app.kqmh.Forms.Dimensions_List;
+import com.kqmh.app.kqmh.Models.AbstractOrgUnit;
+import com.kqmh.app.kqmh.Models.AbstractOrgUnit_Table;
+import com.kqmh.app.kqmh.Models.DataElement;
+import com.kqmh.app.kqmh.Models.DataElement_Table;
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
+import com.kqmh.app.kqmh.Models.Period;
 import com.kqmh.app.kqmh.Models.ViewFiles;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
+import com.kqmh.app.kqmh.Utils.MyDatabase;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.raizlabs.android.dbflow.structure.Model;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
+import static com.kqmh.app.kqmh.Models.Period_Table.period;
+
+
 public class ViewFilesActivity extends AppCompatActivity {
+
     private ProgressDialog progressDialog;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +72,14 @@ public class ViewFilesActivity extends AppCompatActivity {
         progressDialog.setTitle("Logging out...");
         progressDialog.setCancelable(false);
 
+        Button markcomplete =findViewById(R.id.bt_complete);
+        markcomplete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                completeAsssessment();
+            }
+        });
+
         Button start_assessment = findViewById(R.id.bt_start_assessment);
         start_assessment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,21 +88,16 @@ public class ViewFilesActivity extends AppCompatActivity {
             }
         });
 
-        
 
-        // if extending Activity
         setContentView(R.layout.activity_viewfiles);
-
-        // 1. pass context and data to the custom adapter
         ViewFilesAdapter adapter = new ViewFilesAdapter(this, generateData());
-
-        // 2. Get ListView from activity_main.xml
         ListView listView = (ListView) findViewById(R.id.listview);
-
-        // 3. setListAdapter if extending Activity
         listView.setAdapter(adapter);
-       // setListAdapter(adapter);
 
+    }
+
+    private void completeAsssessment() {
+        
 
     }
 
@@ -87,17 +112,55 @@ public class ViewFilesActivity extends AppCompatActivity {
         return models;
     }
 
+    public static JSONObject toJSon(){
+        SimpleDateFormat dateFormat = new SimpleDateFormat( "YYYY-mm-DD", Locale.getDefault());
+        Date date = new Date();
+        String now = dateFormat.format(date);
+        try{
+            JSONObject dataset = new JSONObject();
+            List<DataElement> elements = SQLite.select()
+                    .from(DataElement.class)
+                    .queryList();
 
-    String data = "{\n" +
-            "  \"dataSet\": \"TA4FU3zu93l\",\n" +
-            "  \"completeDate\": \"2018-02-02\",\n" +
-            "  \"period\": \"201801\",\n" +
-            "  \"orgUnit\": \"TA4FU3zu93l\",\n" +
-            "  \"attributeOptionCombo\": \"TA4FU3zu93l\",\n" +
-            "  \"dataValues\": [\n" +
-            "    { \"dataElement\": \"0wEDb8DsuJ\", \"categoryOptionCombo\": \"K9yYBM4Ejcl\", \"value\": \"1\", \"comment\": \"comment1\" },\n" +
-            "  ]\n" +
-            "}";
+            AbstractOrgUnit orgUnit = SQLite.select()
+                    .from(AbstractOrgUnit.class).querySingle();
+
+            Period periodT = SQLite.select()
+                    .from(Period.class).querySingle();
+
+            JSONArray datavaluesarray = new JSONArray();
+
+            for(DataElement dataElement : elements){
+                if(dataElement.getValue() != null) {
+                    JSONObject dataElementObj = new JSONObject();
+                    dataElementObj.put("dataElement", dataElement.getDataElementId());
+                    dataElementObj.put("value", dataElement.getValue());
+
+                    datavaluesarray.put(dataElementObj);
+                }
+            }
+
+            dataset.put("dataSet","TA4FU3zu93l");
+            dataset.put("completeDate",now);
+            if(periodT != null){
+                dataset.put("period", periodT.getId());
+            }
+            if(orgUnit != null) {
+                dataset.put("orgUnit", orgUnit.getId());
+            }
+            dataset.put("dataValues", datavaluesarray);
+
+
+            return dataset;
+
+        }catch(JSONException ex) {
+            ex.printStackTrace();
+        }
+
+        return null;
+
+    }
+
 
     public void submit_file() {
         OrganisationUnit orgUnit = SQLite.select()
@@ -105,19 +168,17 @@ public class ViewFilesActivity extends AppCompatActivity {
                 .querySingle();
         if (orgUnit != null) {
             JSONObject jsonObject;
+            jsonObject = toJSon();
+            Log.d("json", jsonObject.toString());
+            SessionManager sessionManager = new SessionManager(getBaseContext());
             try {
-                jsonObject = new JSONObject(data);
-                SessionManager sessionManager = new SessionManager(getBaseContext());
-                try {
-                    send(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()), jsonObject);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            } catch (JSONException e) {
+                send(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()), jsonObject);
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
     }
+
 
     private void send(final String encoded, JSONObject jsonObject) {
         progressDialog.show();
@@ -148,14 +209,12 @@ public class ViewFilesActivity extends AppCompatActivity {
     }
 
 
-
     public void submit_start_assessment(){
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Assessment_Info.class);
         startActivity(intent);
 
     }
-
 
 
     private void closeProgressbar() {

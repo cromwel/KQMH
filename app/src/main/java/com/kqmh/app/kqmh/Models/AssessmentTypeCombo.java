@@ -26,6 +26,7 @@ public class AssessmentTypeCombo extends BaseModel {
         this.id = id;
     }
 
+
     public String getDisplayName() {
         return displayName;
     }

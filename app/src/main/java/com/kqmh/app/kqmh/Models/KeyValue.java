@@ -19,6 +19,7 @@ public class KeyValue {
         this.id = id;
     }
 
+
     public String getName() {
         return name;
     }
@@ -26,6 +27,7 @@ public class KeyValue {
     public void setName(String name) {
         this.name = name;
     }
+
 
     //to display object as a string in spinner
     @Override

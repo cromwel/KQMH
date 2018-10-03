@@ -31,6 +31,7 @@ import com.kqmh.app.kqmh.Activities.Login;
 import com.kqmh.app.kqmh.Activities.WelcomeActivity;
 import com.kqmh.app.kqmh.Adapters.AssessmentTypeAdapter;
 import com.kqmh.app.kqmh.Adapters.OrganisationUnitAdapter;
+import com.kqmh.app.kqmh.Adapters.PeriodAdapter;
 import com.kqmh.app.kqmh.Models.AbstractOrgUnit;
 import com.kqmh.app.kqmh.Models.AssessmentTypeCombo;
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
@@ -53,9 +54,12 @@ import org.json.JSONObject;
 
 import java.net.CookieHandler;
 import java.net.CookieManager;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 import static com.kqmh.app.kqmh.Utils.UrlConstants.ORGANISATION_UNIT_URL;
@@ -66,10 +70,12 @@ public class Assessment_Info extends AppCompatActivity {
     List<Period> qPeriod = new ArrayList<>();
     List<FacilityLevel> levels = new ArrayList<>();
     List<String> orgUnitsNames = new ArrayList<>();
+
     private Spinner spinner_OrganisationUnit;
     private Spinner spinner_AssessmentType;
     private Spinner spinner_period;
     private Spinner spinner_facilityLevel;
+
     private ProgressDialog progressDialog;
     private ImageView logout;
     private CoordinatorLayout coordinatorLayout;
@@ -115,6 +121,11 @@ public class Assessment_Info extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        try {
+            //getPeriod(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         try {
             AbstractOrgUnit orgUnit = SQLite.select()
@@ -135,6 +146,7 @@ public class Assessment_Info extends AppCompatActivity {
             }
         });
     }
+
     public void showPopup(View v) {
         PopupMenu popup = new PopupMenu(this, v);
         MenuInflater inflater = popup.getMenuInflater();
@@ -147,6 +159,8 @@ public class Assessment_Info extends AppCompatActivity {
         });
         popup.show();
     }
+
+
     /*org unit*/
     public void spinnerData_OrganisationUnit(Spinner spinner_OrganisationUnit, final String choice) {
         //fill data in spinner
@@ -279,30 +293,21 @@ public class Assessment_Info extends AppCompatActivity {
 
     /*period*/
     public void spinnerData_period(Spinner spinner, final String choice) {
-        ArrayList<KeyValue> keyvalue = new ArrayList<>();
 
-        // adding each child node to HashMap key => value
-        keyvalue.add(new KeyValue(0, "Select"));
-        keyvalue.add(new KeyValue(1, "April - June 2018"));
-        keyvalue.add(new KeyValue(2, "January - March 2018"));
+        qPeriod.add(new Period(201800, "select"));
+        qPeriod.add(new Period(201804, "October - December 2018"));
+        qPeriod.add(new Period(201803, "July - September 2018"));
+        qPeriod.add(new Period(201802, "April - June 2018"));
+        qPeriod.add(new Period(201801, "January - March 2018"));
 
-
-        //fill data in spinner
-        ArrayAdapter<KeyValue> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, keyvalue);
-        spinner.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
-
+        PeriodAdapter adapter = new PeriodAdapter(this, android.R.layout.simple_spinner_dropdown_item, qPeriod);
+        spinner_period.setAdapter(adapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                KeyValue value = (KeyValue) parent.getSelectedItem();
                 if (choice.matches("1")) {
-                    //occupation = value.getId();
                 } else if (choice.matches("2")) {
-                    //occupation = value.getId();
                 }
-                //updateValues();
             }
 
             @Override
@@ -311,12 +316,50 @@ public class Assessment_Info extends AppCompatActivity {
         });
     }
 
-    private void getPeriod(final String encoded) {
+    /*private void getPeriod(final String encoded) {
+        Log.d("Auth", encoded);
+        progressDialog.show();
+        JsonObjectRequest periodObjectRequest = new JsonObjectRequest(Request.Method.GET, periodObjectRequest, null, new Response.Listener<JSONObject>(){
+            @Override
+            public void onResponse(JSONObject response) {
+                Log.d("period", response.toString());
+                try {
+                    JSONArray periodArray = response.getJSONArray("optionPeriod");
+                    Gson gson = new Gson();
+                    for (int i = 0; i < periodArray.length(); i++) {
+                        Period periodT = gson.fromJson(periodArray.getJSONObject(i).toString(), Period.class);
+                        qPeriod.add(periodT);
+                    }
+                    savePeriod(qPeriod);
+                    closeProgressbar();
+                    spinnerData_AssessmentType(spinner_period, "1");
 
-    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    closeProgressbar();
+                }
+            }
+        }, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            error.printStackTrace();
+                            closeProgressbar();
+                        }
+                    }) {
+                        @Override
+                        public Map<String, String> getHeaders() {
+                            Map<String, String> headers = new HashMap<>();
+                            //headers.put("Content-Type","application/json");
+                            Log.d("Encoded", encoded);
+                            headers.put("Authorization", encoded);
+                            return headers;
+                        }
+                    };
+                    VolleySingleton.getInstance(this).addToRequestQueue(periodObjectRequest);
+                }*/
 
-    private void saveTime(List<Period> qPeriod) {
-        Log.d("Saving time", "saving " + qPeriod.size());
+    private void savePeriod(List<Period> qPeriod) {
+        Log.d("Saving quarter", "saving " + qPeriod.size());
         for (Period period : qPeriod) {
             period.save();
         }

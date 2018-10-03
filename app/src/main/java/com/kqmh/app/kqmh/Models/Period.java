@@ -1,5 +1,7 @@
 package com.kqmh.app.kqmh.Models;
 
+import android.content.Context;
+
 import com.kqmh.app.kqmh.Utils.MyDatabase;
 import com.raizlabs.android.dbflow.annotation.Column;
 import com.raizlabs.android.dbflow.annotation.PrimaryKey;
@@ -11,19 +13,31 @@ public class Period extends BaseModel {
 
     @Column
     @PrimaryKey
-    private String id;
+    private int id;
 
     @Column
     private String period;
 
 
-    public String getId() {
+    public Period(int id, String period){
+
+        setId(id);
+        setPeriod(period);
+    }
+
+    public Period(){
+
+    }
+
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
+
 
     public String getPeriod() {
         return period;
@@ -36,6 +50,19 @@ public class Period extends BaseModel {
     public String getName() {
         return this.period;
     }
+
+    @Override
+    public String toString() {
+        return period;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Period){
+            Period c = (Period )obj;
+            if(c.getName().equals(period) && c.getId()==id ) return true;
+        }
+
+        return false;
+    }
 }
-
-
