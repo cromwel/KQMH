@@ -9,16 +9,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/linear"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="146dp"
         android:gravity="center"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:orientation="vertical">
 
         <ImageView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight=".4"
             android:src="@drawable/logo_front" />
-    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/linear"
@@ -26,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:gravity="center"
+        android:layout_weight=".6"
         android:orientation="vertical">
 
         <EditText
@@ -57,6 +61,12 @@
             android:padding="10dp"
             android:textSize="16sp" />
 
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Password" />
+
         <Button
             android:id="@+id/bt_login"
             android:layout_width="match_parent"
@@ -65,5 +75,6 @@
             android:background="@drawable/button"
             android:onClick="Submit"
             android:text="@string/log_in" />
+    </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

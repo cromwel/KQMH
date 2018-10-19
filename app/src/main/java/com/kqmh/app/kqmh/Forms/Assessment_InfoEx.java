@@ -4,7 +4,6 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
@@ -18,35 +17,29 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
+import com.android.volley.error.AuthFailureError;
 import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
 
 import com.google.gson.Gson;
 
-import com.kqmh.app.kqmh.Activities.Login;
 import com.kqmh.app.kqmh.Activities.Welcome;
-import com.kqmh.app.kqmh.Activities.WelcomeActivity;
 import com.kqmh.app.kqmh.Adapters.AssessmentTypeAdapter;
-import com.kqmh.app.kqmh.Adapters.OrganisationUnitAdapter;
+import com.kqmh.app.kqmh.Adapters.OrganisationUnitAdapterEx;
 import com.kqmh.app.kqmh.Adapters.PeriodAdapter;
-import com.kqmh.app.kqmh.Models.AbstractOrgUnit;
 import com.kqmh.app.kqmh.Models.AssessmentTypeCombo;
+import com.kqmh.app.kqmh.Models.FacilityLevel;
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
 import com.kqmh.app.kqmh.Models.Period;
-import com.kqmh.app.kqmh.Models.FacilityLevel;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
-import com.kqmh.app.kqmh.Utils.ExportToJSON;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
 import com.kqmh.app.kqmh.Models.KeyValue;
-import com.kqmh.app.kqmh.Widgets.Facility_Box;
-import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.toptoche.searchablespinnerlibrary.SearchableSpinner;
 
 import org.json.JSONArray;
@@ -55,50 +48,47 @@ import org.json.JSONObject;
 
 import java.net.CookieHandler;
 import java.net.CookieManager;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 
-import static com.kqmh.app.kqmh.Utils.UrlConstants.ORGANISATION_UNIT_URL;
+import static com.kqmh.app.kqmh.Utils.UrlConstants.ORGANISATION_UNIT_URL_ex;
 
-public class Assessment_Info extends AppCompatActivity {
 
-    List<AssessmentTypeCombo> categoryOptions = new ArrayList<>();
-    List<Period> qPeriod = new ArrayList<>();
-    List<FacilityLevel> levels = new ArrayList<>();
-    List<String> orgUnitsNames = new ArrayList<>();
+public class Assessment_InfoEx extends AppCompatActivity {
 
-    private Spinner spinner_OrganisationUnit;
+    private SearchableSpinner spinner_OrganisationUnit;
     private Spinner spinner_AssessmentType;
     private Spinner spinner_period;
     private Spinner spinner_facilityLevel;
-
-    private ProgressDialog progressDialog;
     private ImageView logout;
-    private CoordinatorLayout coordinatorLayout;
+    private ProgressDialog progressDialog;
+
+    List<AssessmentTypeCombo> categoryOptions = new ArrayList<>();
+    List<OrganisationUnit> OrganisationUnit = new ArrayList<>();
+    List<String> orgUnitsNames = new ArrayList<>();
+    List<Period> qPeriod = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.form_assessment_info);
+        setContentView(R.layout.form_assessment_info_ex);
 
         CookieManager cookieManager = new CookieManager();
         CookieHandler.setDefault(cookieManager);
 
         spinner_OrganisationUnit = findViewById(R.id.spinner_OrganisationUnit);
-
+        spinner_OrganisationUnit.setTitle("Organizational Units");
+        spinner_OrganisationUnit.setPositiveButton("Cancel");
         //spinner_AssessmentType = findViewById(R.id.spinner_AssessmentType);
         spinner_period = findViewById(R.id.spinner_period);
         spinner_facilityLevel = findViewById(R.id.spinner_facilityLevel);
+
         logout = findViewById(R.id.img_logout);
 
         spinnerData_period(spinner_period, "1");
         spinnerData_facilityLevel(spinner_facilityLevel, "1");
-        coordinatorLayout = findViewById(R.id.coordinator);
 
         Button dataEntry = findViewById(R.id.bt_dataEntry);
         progressDialog = new ProgressDialog(this);
@@ -111,29 +101,16 @@ public class Assessment_Info extends AppCompatActivity {
             }
         });
 
-        List<AssessmentTypeCombo> employees = SQLite.select()
-                .from(AssessmentTypeCombo.class)
-                .queryList();
-        Toast.makeText(getBaseContext(), "Pulled from db " + employees.size(), Toast.LENGTH_LONG).show();
-
         SessionManager sessionManager = new SessionManager(getBaseContext());
+
         /*try {
             getAssessmentType(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()));
         } catch (Exception e) {
             e.printStackTrace();
         }*/
         try {
-            //getPeriod(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        try {
-            AbstractOrgUnit orgUnit = SQLite.select()
-                    .from(AbstractOrgUnit.class)
-                    .querySingle();
-            if (orgUnit != null) {
-                String url = UrlConstants.ORGANISATION_UNIT_URL + orgUnit.getId();
+            for(int i=1;i<350;i++) {
+                String url = ORGANISATION_UNIT_URL_ex.replace("[number]", String.valueOf(i));
                 getOrganisationUnit(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()), url);
             }
         } catch (Exception e) {
@@ -146,6 +123,7 @@ public class Assessment_Info extends AppCompatActivity {
                 showPopup(logout);
             }
         });
+
     }
 
     public void showPopup(View v) {
@@ -161,10 +139,9 @@ public class Assessment_Info extends AppCompatActivity {
         popup.show();
     }
 
-    /*org unit*/
     public void spinnerData_OrganisationUnit(Spinner spinner_OrganisationUnit, final String choice) {
         //fill data in spinner
-        OrganisationUnitAdapter adapter = new OrganisationUnitAdapter(this, android.R.layout.simple_spinner_dropdown_item);
+        OrganisationUnitAdapterEx adapter = new OrganisationUnitAdapterEx(this, android.R.layout.simple_spinner_dropdown_item, orgUnitsNames);
         spinner_OrganisationUnit.setAdapter(adapter);
         spinner_OrganisationUnit.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -180,20 +157,24 @@ public class Assessment_Info extends AppCompatActivity {
         });
     }
 
-    private void getOrganisationUnit(final String encoded, final String url) {
+    private void getOrganisationUnit(final String encoded,final String url) {
+        Log.d("Auth", encoded);
         progressDialog.show();
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 Log.d("organisation unit", response.toString());
                 try {
+                    JSONArray jsonArray = response.getJSONArray("organisationUnits");
                     Gson gson = new Gson();
-                    OrganisationUnit org = gson.fromJson(response.toString(), OrganisationUnit.class);
-                    org.save();
-                    orgUnitsNames.add(org.getDisplayName());
-                    spinnerData_OrganisationUnit(spinner_OrganisationUnit, "1");
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        OrganisationUnit org = gson.fromJson(jsonArray.getJSONObject(i).toString(), OrganisationUnit.class);
+                        OrganisationUnit.add(org);
+                        orgUnitsNames.add(org.getDisplayName());
+                    }
                     closeProgressbar();
-                } catch (Exception e) {
+                    spinnerData_OrganisationUnit(spinner_OrganisationUnit, "1");
+                } catch (JSONException e) {
                     e.printStackTrace();
                     closeProgressbar();
                 }
@@ -217,14 +198,7 @@ public class Assessment_Info extends AppCompatActivity {
         VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
     }
 
-    private void saveUnits(List<OrganisationUnit> OrganisationUnit) {
-        Log.d("Saving units", "saving " + OrganisationUnit.size());
-        for (OrganisationUnit organisationUnit : OrganisationUnit) {
-            organisationUnit.save();
-        }
-    }
-
-   /* *//*assessment type*//*
+    /*assessment type*//*
     public void spinnerData_AssessmentType(Spinner spinner_AssessmentType, final String choice) {
         //fill data in spinner
         AssessmentTypeAdapter adapter = new AssessmentTypeAdapter(this, android.R.layout.simple_spinner_dropdown_item, categoryOptions);

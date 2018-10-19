@@ -6,6 +6,10 @@
     <string name="D12score">Score</string>
     <string name="actual_value">Enter value</string>
     <string name="log_in">LOG IN</string>
+    <string name="log_in_ex">External Assessment</string>
+    <string name="log_in_int">Self Assessment</string>
+    <string name="log_in_county">County Assessment</string>
+    <string name="upload">Upload Assessment</string>
     <string name="error_email_required">Email is required</string>
     <string name="error_password_required">Password is required.</string>
     <string name="validate">validation</string>
@@ -23,6 +27,7 @@
     <string name="spinner_period">Quarter Period</string>
     <string name="spinner_AssessmentType">Assessment Type</string>
     <string name="spinner_OrganisationUnit">Organisational Unit</string>
+    <string name="spinner_Facility">Facility</string>
 
     <!-- stds strings -->
     <string name="spinner_dim">KQMH Dimensions</string>

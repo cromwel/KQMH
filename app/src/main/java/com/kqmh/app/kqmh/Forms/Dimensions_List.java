@@ -1,30 +1,61 @@
 package com.kqmh.app.kqmh.Forms;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.PopupMenu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 
+import com.kqmh.app.kqmh.Activities.Login;
+import com.kqmh.app.kqmh.Activities.Welcome;
 import com.kqmh.app.kqmh.Models.KeyValue;
 import com.kqmh.app.kqmh.R;
+import com.kqmh.app.kqmh.SessionManager;
 
 import java.util.ArrayList;
 
 
 public class Dimensions_List extends AppCompatActivity {
     private Spinner spinner_dim;
+    private ImageView logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_dimensions_list);
 
+        logout = findViewById(R.id.img_logout);
         spinner_dim = findViewById(R.id.spinner_dim);
 
         spinnerData_dim(spinner_dim,"0");
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showPopup(logout);
+            }
+        });
+    }
+
+    public void showPopup(View v) {
+        PopupMenu popup = new PopupMenu(this, v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.home_menu, popup.getMenu());
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            public boolean onMenuItemClick(MenuItem item) {
+                logout();
+                return true;
+            }
+        });
+        popup.show();
     }
 
     public void spinnerData_dim(Spinner spinner, final String choice) {
@@ -114,6 +145,38 @@ public class Dimensions_List extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
+    }
+
+    private void logout() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Log out?");
+        builder.setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                new SessionManager(getBaseContext()).setLoggedIn(false);
+                Intent intent = new Intent(getBaseContext(), Welcome.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+
+            }
+        });
+        builder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        builder.show();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.logout:
+                logout();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

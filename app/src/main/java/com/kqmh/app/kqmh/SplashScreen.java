@@ -7,8 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ProgressBar;
 
 import com.kqmh.app.kqmh.Activities.Login;
+import com.kqmh.app.kqmh.Activities.Welcome;
 import com.kqmh.app.kqmh.Forms.Assessment_Info;
-
+import com.kqmh.app.kqmh.Forms.Dimensions_List;
 
 
 public class SplashScreen extends AppCompatActivity {
@@ -23,11 +24,11 @@ public class SplashScreen extends AppCompatActivity {
 
         SessionManager sessionManager = new SessionManager(getBaseContext());
         if(sessionManager.isLoggedIn()){
-            Intent intent = new Intent(getBaseContext(), Assessment_Info.class);
+            Intent intent = new Intent(getBaseContext(), Dimensions_List.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }else{
-            Intent intent = new Intent(getBaseContext(), Login.class);
+            Intent intent = new Intent(getBaseContext(), Welcome.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }

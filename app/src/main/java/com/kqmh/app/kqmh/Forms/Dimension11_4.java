@@ -127,7 +127,7 @@ public class Dimension11_4 extends AppCompatActivity {
         View v = findViewById(R.id.progress);
         progressBar = v.findViewById(R.id.pb);
         progressText = v.findViewById(R.id.tv);
-        Toast.makeText(getBaseContext(), "Size " + spinnerList.size(), Toast.LENGTH_LONG).show();
+        Toast.makeText(getBaseContext(), "Questions " + spinnerList.size(), Toast.LENGTH_LONG).show();
         progressBar.setMax(spinnerList.size());
         progressText.setText(String.format(Locale.getDefault(), "%d/%d", progressBar.getProgress(), progressBar.getMax()));
     }

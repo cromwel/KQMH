@@ -66,7 +66,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginBottom="15dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -77,14 +76,14 @@
                             android:layout_marginTop="5dp"
                             android:padding="10dp"
                             android:text="Organisation Unit:"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"/>
 
-                        <Spinner
-                            android:id="@+id/spinner_OrganisationUnit"
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="5dp"
                             android:layout_marginEnd="15dp"
+                            android:id="@+id/spinner_OrganisationUnit"
                             android:layout_marginStart="15dp"
                             android:background="@color/white"
                             android:gravity="center_vertical"
@@ -93,50 +92,15 @@
                             android:prompt="@string/spinner_OrganisationUnit"
                             android:textSize="12sp" />
 
-                    </LinearLayout>
 
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/round_border"
-                app:cardCornerRadius="5dp"
-                card_view:cardElevation="9dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/grey"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:weightSum="1">
-
-                    </LinearLayout>
-
-                    <!--<LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginBottom="15dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
+                        <!--<TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="5dp"
                             android:layout_marginTop="5dp"
                             android:padding="10dp"
                             android:text="Assessment Type:"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"/>
 
                         <Spinner
                             android:id="@+id/spinner_AssessmentType"
@@ -150,43 +114,7 @@
                             android:hint="@string/spinner_AssessmentType"
                             android:padding="10dp"
                             android:prompt="@string/spinner_AssessmentType"
-                            android:textSize="12sp" />
-
-                    </LinearLayout>-->
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/round_border"
-                app:cardCornerRadius="5dp"
-                card_view:cardElevation="9dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/grey"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:weightSum="1">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginBottom="15dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                            android:textSize="12sp" />-->
 
                         <TextView
                             android:layout_width="match_parent"
@@ -195,7 +123,7 @@
                             android:layout_marginTop="5dp"
                             android:padding="10dp"
                             android:text="Quarter Period:"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"/>
 
                         <Spinner
                             android:id="@+id/spinner_period"
@@ -211,42 +139,6 @@
                             android:prompt="@string/spinner_period"
                             android:textSize="12sp" />
 
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/round_border"
-                app:cardCornerRadius="5dp"
-                card_view:cardElevation="9dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/grey"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:weightSum="1">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginBottom="15dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -254,7 +146,7 @@
                             android:layout_marginTop="5dp"
                             android:padding="10dp"
                             android:text="Facility Level:"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"/>
 
                         <Spinner
                             android:id="@+id/spinner_facilityLevel"
@@ -270,41 +162,6 @@
                             android:prompt="@string/spinner_facilityLevel"
                             android:textSize="12sp" />
 
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/round_border"
-                app:cardCornerRadius="5dp"
-                card_view:cardElevation="9dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/grey"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:weightSum="1">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
                         <Button
                             android:id="@+id/bt_dataEntry"
                             android:layout_width="match_parent"
@@ -316,8 +173,8 @@
 
                     </LinearLayout>
 
-                </LinearLayout>
 
+                </LinearLayout>
             </android.support.v7.widget.CardView>
 
         </LinearLayout>

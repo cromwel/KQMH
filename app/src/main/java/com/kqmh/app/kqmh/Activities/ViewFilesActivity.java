@@ -76,7 +76,7 @@ public class ViewFilesActivity extends AppCompatActivity {
         markcomplete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                completeAsssessment();
+                submit_file();
             }
         });
 
@@ -87,30 +87,10 @@ public class ViewFilesActivity extends AppCompatActivity {
                 submit_start_assessment();
             }
         });
-
-
-        setContentView(R.layout.activity_viewfiles);
-        ViewFilesAdapter adapter = new ViewFilesAdapter(this, generateData());
-        ListView listView = (ListView) findViewById(R.id.listview);
-        listView.setAdapter(adapter);
+             
 
     }
 
-    private void completeAsssessment() {
-        
-
-    }
-
-    private ArrayList<ViewFiles> generateData(){
-        ArrayList<ViewFiles> models = new ArrayList<ViewFiles>();
-        models.add(new ViewFiles("Files for Upload"));
-        models.add(new ViewFiles(R.drawable.cloud,"Data Entry on 1st Q","UPLOAD"));
-        models.add(new ViewFiles(R.drawable.cloud,"Data Entry on 2nd Q","UPLOAD"));
-        models.add(new ViewFiles(R.drawable.cloud,"Data Entry on 3rd Q","UPLOAD"));
-        models.add(new ViewFiles(R.drawable.cloud,"Data Entry on 1st Q","UPLOAD"));
-
-        return models;
-    }
 
     public static JSONObject toJSon(){
         SimpleDateFormat dateFormat = new SimpleDateFormat( "YYYY-mm-DD", Locale.getDefault());

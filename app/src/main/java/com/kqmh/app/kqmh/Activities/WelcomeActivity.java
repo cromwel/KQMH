@@ -101,7 +101,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void launchHomeScreen() {
         new SessionManager(getBaseContext()).setLoggedIn(false);
-        startActivity(new Intent(WelcomeActivity.this, Login.class));
+        startActivity(new Intent(WelcomeActivity.this, Welcome.class));
         finish();
     }
 
