@@ -23,23 +23,31 @@ public class Welcome extends AppCompatActivity {
 
         Button login_int = findViewById(R.id.bt_login_int);
         Button login_ex = findViewById(R.id.bt_login_ex);
+        Button login_chmt = findViewById(R.id.bt_login_chmt);
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Logging in...");
         progressDialog.setCancelable(false);
 
-        login_int.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                submit_int();
-            }
-        });
         login_ex.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 submit_ex();
             }
         });
+        login_chmt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                submit_chmt();
+            }
+        });
+        login_int.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                submit_int();
+            }
+        });
+
     }
 
     private void submit_int() {
@@ -50,6 +58,13 @@ public class Welcome extends AppCompatActivity {
     }
 
     private void submit_ex() {
+        closeProgressbar();
+        new SessionManager(getBaseContext()).setLoggedIn(true);
+        Intent intent = new Intent(getBaseContext(), LoginEx.class);
+        startActivity(intent);
+    }
+
+    private void submit_chmt() {
         closeProgressbar();
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), LoginEx.class);

@@ -8,7 +8,7 @@
     <string name="log_in">LOG IN</string>
     <string name="log_in_ex">External Assessment</string>
     <string name="log_in_int">Self Assessment</string>
-    <string name="log_in_county">County Assessment</string>
+    <string name="log_in_chmt">County Assessment</string>
     <string name="upload">Upload Assessment</string>
     <string name="error_email_required">Email is required</string>
     <string name="error_password_required">Password is required.</string>

@@ -81,13 +81,13 @@
                     android:text="@string/log_in_ex" />
 
                 <Button
-                    android:id="@+id/bt_login_county"
+                    android:id="@+id/bt_login_chmt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:background="@drawable/button"
                     android:onClick="Submit"
-                    android:text="@string/log_in_county" />
+                    android:text="@string/log_in_chmt" />
 
                 <Button
                     android:id="@+id/bt_login_int"
