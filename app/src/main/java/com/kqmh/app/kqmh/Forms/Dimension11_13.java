@@ -21,6 +21,8 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter;
 import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter2;
+import com.kqmh.app.kqmh.Models.AssesmentProgress;
+import com.kqmh.app.kqmh.Models.AssesmentProgress_Table;
 import com.kqmh.app.kqmh.Models.DataElement;
 import com.kqmh.app.kqmh.Models.DataElement_Table;
 import com.kqmh.app.kqmh.Models.Option;
@@ -46,6 +48,7 @@ public class Dimension11_13 extends AppCompatActivity {
     private ProgressDialog progressDialog;
     private ProgressBar progressBar;
     private TextView progressText;
+    AssesmentProgress assesmentProgress;
 
     private int progressStatus = 0;
     private Handler handler = new Handler();
@@ -54,6 +57,8 @@ public class Dimension11_13 extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_dimension11_13);
+        assesmentProgress = SQLite.select().from(AssesmentProgress.class).where(AssesmentProgress_Table.assessment.eq(AppConstants.DIMENSION_11_13)).querySingle();
+
 
         // Get the widgets reference from XML layout
         final RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
@@ -94,6 +99,10 @@ public class Dimension11_13 extends AppCompatActivity {
 
             spinnerList.add((Spinner) findViewById(getResources().getIdentifier(spinnerParse,"id",getPackageName())));
         }
+        if (assesmentProgress != null) {
+            assesmentProgress.setMax(spinnerList.size());
+            assesmentProgress.update();
+        }
         setUpProgress();
 
         //spinnerList.add((Spinner) findViewById(R.id.spinner_score1));
@@ -121,6 +130,14 @@ public class Dimension11_13 extends AppCompatActivity {
 
                     }
                 });*/
+    }
+
+    @Override
+    protected void onDestroy() { if (assesmentProgress != null) {
+        assesmentProgress.setProgress(progressBar.getProgress());
+        assesmentProgress.update();
+    }
+        super.onDestroy();
     }
 
     private void setUpProgress() {
