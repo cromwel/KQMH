@@ -59,7 +59,6 @@ public class Dimension11_9 extends AppCompatActivity {
         setContentView(R.layout.form_dimension11_9);
         assesmentProgress = SQLite.select().from(AssesmentProgress.class).where(AssesmentProgress_Table.assessment.eq(AppConstants.DIMENSION_11_9)).querySingle();
 
-
         // Get the widgets reference from XML layout
         final RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
         final TextView tv = (TextView) findViewById(R.id.tv);
@@ -67,6 +66,7 @@ public class Dimension11_9 extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Fetching Scores");
         progressDialog.setCancelable(false);
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -84,6 +84,7 @@ public class Dimension11_9 extends AppCompatActivity {
             }
         });
 
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,9 +93,8 @@ public class Dimension11_9 extends AppCompatActivity {
             }
         });
 
-
-        for(int value=11900;value<11929;value++){
-            Resources res  = getResources();
+        for (int value=11900; value<11929; value++){
+            Resources res = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score),value);
 
             spinnerList.add((Spinner) findViewById(getResources().getIdentifier(spinnerParse,"id",getPackageName())));
@@ -151,7 +151,7 @@ public class Dimension11_9 extends AppCompatActivity {
 
     public void prev_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
-        Intent intent = new Intent(getBaseContext(), Dimension11_7.class);
+        Intent intent = new Intent(getBaseContext(), Dimension11_8.class);
         startActivity(intent);
     }
 
@@ -163,7 +163,7 @@ public class Dimension11_9 extends AppCompatActivity {
 
     public void next_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
-        Intent intent = new Intent(getBaseContext(), Dimension11_9.class);
+        Intent intent = new Intent(getBaseContext(), Dimension11_10.class);
         startActivity(intent);
     }
 
