@@ -15,9 +15,10 @@ public class AssesmentProgress extends BaseModel {
     public AssesmentProgress() {
     }
 
-    public AssesmentProgress(String assessment, int progress, int max) {
+    public AssesmentProgress(String assessment,String displayName, int progress, int max) {
         this.assessment = assessment;
         this.progress = progress;
+        this.displayName = displayName;
         this.max = max;
     }
 
@@ -27,6 +28,9 @@ public class AssesmentProgress extends BaseModel {
 
     @Column
     private int progress = 0;
+
+    @Column
+    private String displayName;
 
     @Column
     private int max = 0;
@@ -53,5 +57,13 @@ public class AssesmentProgress extends BaseModel {
 
     public void setMax(int max) {
         this.max = max;
+    }
+
+    public String getDisplayName() {
+        return displayName;
+    }
+
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
     }
 }

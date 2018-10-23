@@ -12,6 +12,8 @@ import android.app.ListActivity;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.widget.ListView;
 
 import android.app.ProgressDialog;
@@ -26,11 +28,13 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
+import com.kqmh.app.kqmh.Adapters.ProgressAdapter;
 import com.kqmh.app.kqmh.Adapters.ViewFilesAdapter;
 import com.kqmh.app.kqmh.Forms.Assessment_Info;
 import com.kqmh.app.kqmh.Forms.Dimensions_List;
 import com.kqmh.app.kqmh.Models.AbstractOrgUnit;
 import com.kqmh.app.kqmh.Models.AbstractOrgUnit_Table;
+import com.kqmh.app.kqmh.Models.AssesmentProgress;
 import com.kqmh.app.kqmh.Models.DataElement;
 import com.kqmh.app.kqmh.Models.DataElement_Table;
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
@@ -69,10 +73,10 @@ public class ViewFilesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_viewfiles);
 
         progressDialog = new ProgressDialog(this);
-        progressDialog.setTitle("Logging out...");
+        progressDialog.setTitle("Syncing data...");
         progressDialog.setCancelable(false);
 
-        Button markcomplete =findViewById(R.id.bt_complete);
+        Button markcomplete = findViewById(R.id.bt_complete);
         markcomplete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,16 +91,21 @@ public class ViewFilesActivity extends AppCompatActivity {
                 submit_start_assessment();
             }
         });
-             
+
+        List<AssesmentProgress> progresses = SQLite.select().from(AssesmentProgress.class).queryList();
+        RecyclerView recyclerView = findViewById(R.id.recycler);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext()));
+        recyclerView.setAdapter(new ProgressAdapter(getBaseContext(), progresses));
+
 
     }
 
 
-    public static JSONObject toJSon(){
-        SimpleDateFormat dateFormat = new SimpleDateFormat( "YYYY-mm-DD", Locale.getDefault());
+    public static JSONObject toJSon() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("YYYY-mm-DD", Locale.getDefault());
         Date date = new Date();
         String now = dateFormat.format(date);
-        try{
+        try {
             JSONObject dataset = new JSONObject();
             List<DataElement> elements = SQLite.select()
                     .from(DataElement.class)
@@ -110,8 +119,8 @@ public class ViewFilesActivity extends AppCompatActivity {
 
             JSONArray datavaluesarray = new JSONArray();
 
-            for(DataElement dataElement : elements){
-                if(dataElement.getValue() != null) {
+            for (DataElement dataElement : elements) {
+                if (dataElement.getValue() != null) {
                     JSONObject dataElementObj = new JSONObject();
                     dataElementObj.put("dataElement", dataElement.getDataElementId());
                     dataElementObj.put("value", dataElement.getValue());
@@ -120,12 +129,12 @@ public class ViewFilesActivity extends AppCompatActivity {
                 }
             }
 
-            dataset.put("dataSet","TA4FU3zu93l");
-            dataset.put("completeDate",now);
-            if(periodT != null){
+            dataset.put("dataSet", "TA4FU3zu93l");
+            dataset.put("completeDate", now);
+            if (periodT != null) {
                 dataset.put("period", periodT.getId());
             }
-            if(orgUnit != null) {
+            if (orgUnit != null) {
                 dataset.put("orgUnit", orgUnit.getId());
             }
             dataset.put("dataValues", datavaluesarray);
@@ -133,7 +142,7 @@ public class ViewFilesActivity extends AppCompatActivity {
 
             return dataset;
 
-        }catch(JSONException ex) {
+        } catch (JSONException ex) {
             ex.printStackTrace();
         }
 
@@ -189,7 +198,7 @@ public class ViewFilesActivity extends AppCompatActivity {
     }
 
 
-    public void submit_start_assessment(){
+    public void submit_start_assessment() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), Assessment_Info.class);
         startActivity(intent);

@@ -43,30 +43,30 @@ public class SplashScreen extends AppCompatActivity {
 
     private void saveProgress() {
         List<AssesmentProgress> progresses = new ArrayList<>();
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_1, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_2, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_3, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_4, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_5, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_6, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_7, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_8, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_9, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_10, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_1, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_2, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_3, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_4, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_5, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_6, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_7, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_8, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_9, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_10, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_11, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_12, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_13, 0, 0));
-        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_14, 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_1, "Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_2,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_3,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_4,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_5,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_6,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_7,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_8,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_9,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_10,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_1,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_2,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_3,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_4,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_5,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_6, "Dimension 1",0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_7,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_8,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_9,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_10,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_11,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_12,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_13,"Dimension 1", 0, 0));
+        progresses.add(new AssesmentProgress(AppConstants.DIMENSION_11_14,"Dimension 1", 0, 0));
 
         for (AssesmentProgress progress : progresses) {
             progress.save();
