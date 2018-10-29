@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -73,6 +74,7 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
         public void onClick(View v) {
             if (merlinsBeard.isConnected()) {
                 networkStatusDisplayer.displayPositiveMessage(R.string.current_status_network_connected, viewToAttachDisplayerTo);
+                submit_file();
             } else {
                 networkStatusDisplayer.displayNegativeMessage(R.string.current_status_network_disconnected, viewToAttachDisplayerTo);
             }
@@ -198,6 +200,7 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
                 e.printStackTrace();
             }
         }
+
     }
 
     private void send(final String encoded, JSONObject jsonObject) {
@@ -206,8 +209,9 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
             @Override
             public void onResponse(JSONObject response) {
                 Log.d("response", response.toString());
+                Toast.makeText(DemoActivity.this, "data posted to server", Toast.LENGTH_SHORT).show();
                 closeProgressbar();
-                finish();
+                //finish();
             }
         }, new Response.ErrorListener() {
             @Override
@@ -226,13 +230,6 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
             }
         };
         VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
-    }
-
-    public void submit_start_assessment() {
-        new SessionManager(getBaseContext()).setLoggedIn(true);
-        Intent intent = new Intent(getBaseContext(), Assessment_Info.class);
-        startActivity(intent);
-
     }
 
     private void closeProgressbar() {

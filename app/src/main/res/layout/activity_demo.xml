@@ -1,53 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/displayerAttachableView"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingTop="@dimen/content_padding_top">
+    android:id="@+id/displayerAttachableView"
+    xmlns:card_view="http://schemas.android.com/tools">
 
-       <!-- <ImageView
-            android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="@dimen/content_margin_bottom"
-            android:contentDescription="@string/merlin_logo"
-            android:src="@mipmap/ic_launcher" />-->
+            android:id="@+id/toolbar"
+            app:title="Assessment Complete"
+            android:background="@color/blue"
+            app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="146dp"
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/round_border"
+    app:cardCornerRadius="5dp"
+    card_view:cardElevation="9dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:weightSum="1">
+
 
         <Button
             android:id="@+id/current_status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
             android:text="@string/current_status" />
 
-       <!-- <Button
-            android:id="@+id/wifi_connected"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/is_wifi_connected" />-->
-
-        <!--<Button
-            android:id="@+id/mobile_connected"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/is_mobile_connected" />-->
-
-        <!--<Button
-            android:id="@+id/network_subtype"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/get_network_subtype" />-->
 
         <Button
             android:id="@+id/bt_start_assessment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
             android:text="@string/start_assessment" />
 
 
-</LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

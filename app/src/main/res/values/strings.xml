@@ -37,7 +37,7 @@
     <string name="subtype_not_available">Subtype: Not Available</string>
     <string name="subtype_value">Subtype: %s</string>
 
-    <string name="current_status">Current Status</string>
+    <string name="current_status">Upload Assessment</string>
     <string name="is_wifi_connected">Is connected to Wi-Fi</string>
     <string name="is_mobile_connected">Is connected to mobile network</string>
     <string name="get_network_subtype">Get network subtype</string>
