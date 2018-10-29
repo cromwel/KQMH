@@ -101,6 +101,7 @@ public class Dimension2 extends AppCompatActivity {
 
             spinnerList.add((Spinner) findViewById(getResources().getIdentifier(spinnerParse, "id", getPackageName())));
         }
+
         if (assesmentProgress != null) {
             assesmentProgress.setMax(spinnerList.size());
             assesmentProgress.update();
@@ -116,22 +117,6 @@ public class Dimension2 extends AppCompatActivity {
             progressDialog.cancel();
         }
 
-
-
-       /* Observable.range(1, 200).subscribeOn(Schedulers.computation())
-                .delay(5, TimeUnit.SECONDS)
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<Integer>() {
-                    @Override
-                    public void accept(Integer progress) throws Exception {
-                        progressBar.setProgress(progress);
-                    }
-                }, new Consumer<Throwable>() {
-                    @Override
-                    public void accept(Throwable throwable) throws Exception {
-
-                    }
-                });*/
     }
 
     @Override
@@ -153,7 +138,7 @@ public class Dimension2 extends AppCompatActivity {
 
     public void prev_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
-        Intent intent = new Intent(getBaseContext(), Dimensions_List.class);
+        Intent intent = new Intent(getBaseContext(), Dimension1.class);
         startActivity(intent);
     }
 
@@ -271,9 +256,7 @@ public class Dimension2 extends AppCompatActivity {
         String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext(), "Requirements_Dim2.json");
         JSONObject fileObject = new JSONObject(fromJsonFile);
         JSONArray dataElements = fileObject.getJSONArray("dataSetElements");
-
         SessionManager sessionManager = new SessionManager(getBaseContext());
-
         for (int i = 0; i < dataElements.length(); i++) {
             JSONObject jsonObject = dataElements.getJSONObject(i);
             JSONObject dataElement = jsonObject.getJSONObject("dataElement");

@@ -15,4 +15,9 @@
     <color name="light_grey">#eeeeee</color>
     <color name="dark_grey">#A9A9A9</color>
     <color name="text_hint_color">#ccc</color>
+
+
+    <color name="snackbar_message">#FEFEFE</color>
+    <color name="snackbar_background_positive">#26A3DB</color>
+    <color name="snackbar_background_negative">#FCB033</color>
 </resources>

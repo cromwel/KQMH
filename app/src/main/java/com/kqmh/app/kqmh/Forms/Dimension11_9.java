@@ -167,7 +167,6 @@ public class Dimension11_9 extends AppCompatActivity {
         startActivity(intent);
     }
 
-
     private void populateSpinners() throws JSONException {
         progressDialog.show();
         String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext(), "Requirements_Dim11_9.json");
@@ -215,6 +214,7 @@ public class Dimension11_9 extends AppCompatActivity {
                             Log.d("counter", String.valueOf(counter));
                             Log.d("not null", "" + element1.toString() + " id " + element1.getDataElementId() + "value " + element1.getValue());
                             spinner.setSelection(optionList.indexOf(selectedOption));
+
                         }
                     }
 
@@ -226,7 +226,7 @@ public class Dimension11_9 extends AppCompatActivity {
                             try {
                                 DataElement selectedElement = SQLite.select()
                                         .from(DataElement.class)
-                                        .where(DataElement_Table.dataElementId.eq( spinner.getTag().toString()))
+                                        .where(DataElement_Table.dataElementId.eq(spinner.getTag().toString()))
                                         .querySingle();
                                 //Check if null
                                 if (selectedElement != null) {
@@ -268,7 +268,9 @@ public class Dimension11_9 extends AppCompatActivity {
         String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext(), "Requirements_Dim11_9.json");
         JSONObject fileObject = new JSONObject(fromJsonFile);
         JSONArray dataElements = fileObject.getJSONArray("dataSetElements");
+
         SessionManager sessionManager = new SessionManager(getBaseContext());
+
         for (int i = 0; i < dataElements.length(); i++) {
             JSONObject jsonObject = dataElements.getJSONObject(i);
             JSONObject dataElement = jsonObject.getJSONObject("dataElement");

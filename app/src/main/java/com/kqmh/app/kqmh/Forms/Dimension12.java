@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 
-import com.kqmh.app.kqmh.Activities.ProgressActivity;
 import com.kqmh.app.kqmh.Activities.ViewFilesActivity;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
@@ -56,12 +55,14 @@ public class Dimension12 extends AppCompatActivity {
         });
 
         FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                next_submit();
-            }
-        });
+        fab.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(Dimension12.this, ViewFilesActivity.class));
+                    }
+                }
+        );
 
 
         et_av_i1 = (EditText) findViewById(R.id.av_i1);
@@ -288,11 +289,11 @@ public class Dimension12 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void next_submit() {
+   /* public void next_submit() {
         new SessionManager(getBaseContext()).setLoggedIn(true);
         Intent intent = new Intent(getBaseContext(), ViewFilesActivity.class);
         startActivity(intent);
-    }
+    }*/
 
 
     public void percentile_points() {
