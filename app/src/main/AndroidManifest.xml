@@ -91,6 +91,8 @@
             android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".Activities.ViewFilesActivity"
             android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Network.Merlin.presentation.DemoActivity"
+            android:windowSoftInputMode="stateHidden"/>
 
     </application>
 

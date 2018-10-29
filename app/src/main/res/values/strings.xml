@@ -37,7 +37,7 @@
     <string name="subtype_not_available">Subtype: Not Available</string>
     <string name="subtype_value">Subtype: %s</string>
 
-    <string name="current_status">Get Current Status</string>
+    <string name="current_status">Current Status</string>
     <string name="is_wifi_connected">Is connected to Wi-Fi</string>
     <string name="is_mobile_connected">Is connected to mobile network</string>
     <string name="get_network_subtype">Get network subtype</string>
@@ -1411,8 +1411,7 @@
         (BM greater than or equal to 75%)</string>
     <string name="Indicator32num">Numerator: Number of women testing positive for cervical cancer who have received treatment at the facility</string>
     <string name="Indicator32den">Denominator: All women of reproductive age accessing care at the health facility.</string>
-    <string name="Indicator33">Facility based inpatient fatality rate (%).
-        (BM less than or equal to 2%)</string>
+    <string name="Indicator33">Facility based inpatient fatality rate (%).(BM less than or equal to 2%)</string>
     <string name="Indicator33num">Numerator: Number of deaths</string>
     <string name="Indicator33den">Denominator: Total number of admissions</string>
     <string name="Indicator34">Quarterly data quality audits carried out in the past one year.

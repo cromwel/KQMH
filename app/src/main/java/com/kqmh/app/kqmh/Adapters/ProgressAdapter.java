@@ -14,9 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-/**
- * Created by ekirapa on 10/23/18 .
- */
+
 public class ProgressAdapter extends RecyclerView.Adapter<ProgressAdapter.ProgressHolder> {
     private Context context;
     private List<AssesmentProgress> progresses = new ArrayList<>();
