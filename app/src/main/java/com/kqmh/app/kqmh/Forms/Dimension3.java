@@ -19,7 +19,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter;
 import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter2;
 import com.kqmh.app.kqmh.Models.AssesmentProgress;
 import com.kqmh.app.kqmh.Models.AssesmentProgress_Table;
@@ -40,18 +39,15 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
-import java.util.Objects;
 
 public class Dimension3 extends AppCompatActivity {
 
     List<Spinner> spinnerList = new ArrayList<>();
     List<DataElement> dataElementsList = new ArrayList<>();
+    AssesmentProgress assesmentProgress;
     private ProgressDialog progressDialog;
     private ProgressBar progressBar;
     private TextView progressText;
-    AssesmentProgress assesmentProgress;
-
     private int progressStatus = 0;
     private Handler handler = new Handler();
 
@@ -137,10 +133,11 @@ public class Dimension3 extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() { if (assesmentProgress != null) {
-        assesmentProgress.setProgress(progressBar.getProgress());
-        assesmentProgress.update();
-    }
+    protected void onDestroy() {
+        if (assesmentProgress != null) {
+            assesmentProgress.setProgress(progressBar.getProgress());
+            assesmentProgress.update();
+        }
         super.onDestroy();
     }
 
@@ -326,11 +323,11 @@ public class Dimension3 extends AppCompatActivity {
                     if (element2 != null) {
                         for (Option option : optionList) {
                             if (option.isSelected()) {
-                                if ( element2.getValue() != null && element2.getValue().equals(option.getCode()) && !option.getCode().equals("8")) {
+                                if (element2.getValue() != null && element2.getValue().equals(option.getCode()) && !option.getCode().equals("8")) {
                                     Log.d("Found selected", "id" + option.getParentId() + " val " + option.getName() + " code " + option.getCode() + " element " + element2.getValue());
                                     spinner.setSelection(optionList.indexOf(option));
                                     progressBar.setProgress(progressBar.getProgress() + 1);
-                                    progressText.setText(String.format(Locale.getDefault(),"%d/%d",progressBar.getProgress(), progressBar.getMax()));
+                                    progressText.setText(String.format(Locale.getDefault(), "%d/%d", progressBar.getProgress(), progressBar.getMax()));
                                 }
 
                             }
@@ -358,17 +355,17 @@ public class Dimension3 extends AppCompatActivity {
                             .where(DataElement_Table.dataElementId.eq(option.getParentId()))
                             .querySingle();
                     if (element != null) {
-                        if(option.getCode().equals("8")){
-                            if(element.getValue() != null && !element.getValue().equals("8")){
+                        if (option.getCode().equals("8")) {
+                            if (element.getValue() != null && !element.getValue().equals("8")) {
                                 //Means its a downgrade
                                 progressBar.setProgress(progressBar.getProgress() - 1);
-                                progressText.setText(String.format(Locale.getDefault(),"%d/%d",progressBar.getProgress(), progressBar.getMax()));
+                                progressText.setText(String.format(Locale.getDefault(), "%d/%d", progressBar.getProgress(), progressBar.getMax()));
                             }
-                        }else{
-                            if(!element.getValue().equals(option.getCode()) && element.getValue().equals("8")){
+                        } else {
+                            if (!element.getValue().equals(option.getCode()) && element.getValue().equals("8")) {
                                 //Means its not the same option selected again and the previous value was 'select' , therefore upgrade.
                                 progressBar.setProgress(progressBar.getProgress() + 1);
-                                progressText.setText(String.format(Locale.getDefault(),"%d/%d",progressBar.getProgress(), progressBar.getMax()));
+                                progressText.setText(String.format(Locale.getDefault(), "%d/%d", progressBar.getProgress(), progressBar.getMax()));
                             }
                         }
                         element.setValue(option.getCode());

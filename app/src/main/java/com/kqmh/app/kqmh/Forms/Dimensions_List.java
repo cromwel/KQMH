@@ -1,20 +1,19 @@
 package com.kqmh.app.kqmh.Forms;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.ImageView;
-import android.widget.Spinner;
-import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.Spinner;
 
-import com.kqmh.app.kqmh.Activities.Login;
 import com.kqmh.app.kqmh.Activities.Welcome;
 import com.kqmh.app.kqmh.Models.KeyValue;
 import com.kqmh.app.kqmh.R;
@@ -35,7 +34,7 @@ public class Dimensions_List extends AppCompatActivity {
         logout = findViewById(R.id.img_logout);
         spinner_dim = findViewById(R.id.spinner_dim);
 
-        spinnerData_dim(spinner_dim,"0");
+        spinnerData_dim(spinner_dim, "0");
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,13 +85,13 @@ public class Dimensions_List extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                switch (position){
+                switch (position) {
                     case 0:
                         break;
                     case 1:
                         Intent intentDimension1 = new Intent(getBaseContext(), Dimension1.class);
                         startActivity(intentDimension1);
-                            break;
+                        break;
                     case 2:
                         Intent intentDimension2 = new Intent(getBaseContext(), Dimension2.class);
                         startActivity(intentDimension2);

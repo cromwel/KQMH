@@ -11,9 +11,9 @@ import com.kqmh.app.kqmh.Network.Core.merlin.Disconnectable;
 import com.kqmh.app.kqmh.Network.Core.merlin.Merlin;
 import com.kqmh.app.kqmh.Network.Core.merlin.MerlinsBeard;
 import com.kqmh.app.kqmh.Network.Core.merlin.NetworkStatus;
-import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.Network.Merlin.connectivity.display.NetworkStatusDisplayer;
 import com.kqmh.app.kqmh.Network.Merlin.presentation.base.MerlinActivity;
+import com.kqmh.app.kqmh.R;
 
 
 public class NetworkActivity extends MerlinActivity implements Connectable, Disconnectable, Bindable {

@@ -24,46 +24,31 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
-
 import com.google.gson.Gson;
-
-import com.kqmh.app.kqmh.Activities.Login;
 import com.kqmh.app.kqmh.Activities.Welcome;
-import com.kqmh.app.kqmh.Activities.WelcomeActivity;
-import com.kqmh.app.kqmh.Adapters.AssessmentTypeAdapter;
 import com.kqmh.app.kqmh.Adapters.OrganisationUnitAdapter;
 import com.kqmh.app.kqmh.Adapters.PeriodAdapter;
 import com.kqmh.app.kqmh.Models.AbstractOrgUnit;
 import com.kqmh.app.kqmh.Models.AssessmentTypeCombo;
+import com.kqmh.app.kqmh.Models.FacilityLevel;
+import com.kqmh.app.kqmh.Models.KeyValue;
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
 import com.kqmh.app.kqmh.Models.Period;
-import com.kqmh.app.kqmh.Models.FacilityLevel;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
-import com.kqmh.app.kqmh.Utils.ExportToJSON;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
-import com.kqmh.app.kqmh.Models.KeyValue;
-import com.kqmh.app.kqmh.Widgets.Facility_Box;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
-import com.toptoche.searchablespinnerlibrary.SearchableSpinner;
 
-import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.CookieHandler;
 import java.net.CookieManager;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
-
-import static com.kqmh.app.kqmh.Utils.UrlConstants.ORGANISATION_UNIT_URL;
 
 public class Assessment_Info extends AppCompatActivity {
 
@@ -170,10 +155,10 @@ public class Assessment_Info extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (choice.matches("1")) {
-                }
-                else if (choice.matches("2")) {
+                } else if (choice.matches("2")) {
                 }
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }
@@ -224,7 +209,7 @@ public class Assessment_Info extends AppCompatActivity {
         }
     }
 
-   /* *//*assessment type*//*
+    /* *//*assessment type*//*
     public void spinnerData_AssessmentType(Spinner spinner_AssessmentType, final String choice) {
         //fill data in spinner
         AssessmentTypeAdapter adapter = new AssessmentTypeAdapter(this, android.R.layout.simple_spinner_dropdown_item, categoryOptions);

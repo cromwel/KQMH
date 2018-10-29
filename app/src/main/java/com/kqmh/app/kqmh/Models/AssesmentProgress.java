@@ -12,28 +12,25 @@ import com.raizlabs.android.dbflow.structure.BaseModel;
 @Table(database = MyDatabase.class, name = "progress")
 
 public class AssesmentProgress extends BaseModel {
+    @Column
+    @PrimaryKey
+    private String assessment;
+    @Column
+    private int progress = 0;
+    @Column
+    private String displayName;
+    @Column
+    private int max = 0;
+
     public AssesmentProgress() {
     }
 
-    public AssesmentProgress(String assessment,String displayName, int progress, int max) {
+    public AssesmentProgress(String assessment, String displayName, int progress, int max) {
         this.assessment = assessment;
         this.progress = progress;
         this.displayName = displayName;
         this.max = max;
     }
-
-    @Column
-    @PrimaryKey
-    private String assessment;
-
-    @Column
-    private int progress = 0;
-
-    @Column
-    private String displayName;
-
-    @Column
-    private int max = 0;
 
     public String getAssessment() {
         return assessment;

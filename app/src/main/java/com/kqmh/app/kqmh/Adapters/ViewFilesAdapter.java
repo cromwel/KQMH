@@ -1,11 +1,5 @@
 package com.kqmh.app.kqmh.Adapters;
 
-import java.util.ArrayList;
-
-import com.kqmh.app.kqmh.R;
-import com.kqmh.app.kqmh.Models.ViewFiles;
-import com.raizlabs.android.dbflow.structure.Model;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,18 +8,23 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.kqmh.app.kqmh.Models.ViewFiles;
+import com.kqmh.app.kqmh.R;
+
+import java.util.ArrayList;
+
 public class ViewFilesAdapter extends ArrayAdapter<ViewFiles> {
 
-private final Context context;
-private final ArrayList<ViewFiles> modelsArrayList;
+    private final Context context;
+    private final ArrayList<ViewFiles> modelsArrayList;
 
-public ViewFilesAdapter(Context context, ArrayList<ViewFiles> modelsArrayList) {
+    public ViewFilesAdapter(Context context, ArrayList<ViewFiles> modelsArrayList) {
 
         super(context, R.layout.file_row, modelsArrayList);
 
         this.context = context;
         this.modelsArrayList = modelsArrayList;
-}
+    }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -37,7 +36,7 @@ public ViewFilesAdapter(Context context, ArrayList<ViewFiles> modelsArrayList) {
         // 2. Get rowView from inflater
 
         View rowView = null;
-        if(!modelsArrayList.get(position).isGroupHeader()){
+        if (!modelsArrayList.get(position).isGroupHeader()) {
             rowView = inflater.inflate(R.layout.file_row, parent, false);
 
             // 3. Get icon,title & counter views from the rowView
@@ -49,8 +48,7 @@ public ViewFilesAdapter(Context context, ArrayList<ViewFiles> modelsArrayList) {
             imgView.setImageResource(modelsArrayList.get(position).getIcon());
             titleView.setText(modelsArrayList.get(position).getTitle());
             counterView.setText(modelsArrayList.get(position).getCounter());
-        }
-        else{
+        } else {
             rowView = inflater.inflate(R.layout.file_header, parent, false);
             TextView titleView = (TextView) rowView.findViewById(R.id.header);
             titleView.setText(modelsArrayList.get(position).getTitle());
@@ -60,4 +58,4 @@ public ViewFilesAdapter(Context context, ArrayList<ViewFiles> modelsArrayList) {
         // 5. retrn rowView
         return rowView;
     }
-        }
+}

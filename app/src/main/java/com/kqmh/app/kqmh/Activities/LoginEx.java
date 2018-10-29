@@ -128,10 +128,9 @@ public class LoginEx extends AppCompatActivity {
 
     public void submit() {
         if (check()) {
-            try{
+            try {
                 login(AuthBuilder.encode(email.getText().toString(), password.getText().toString()));
-            }
-            catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }

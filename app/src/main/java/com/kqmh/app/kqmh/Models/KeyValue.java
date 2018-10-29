@@ -37,9 +37,9 @@ public class KeyValue {
 
     @Override
     public boolean equals(Object obj) {
-        if(obj instanceof KeyValue){
-            KeyValue c = (KeyValue )obj;
-            if(c.getName().equals(name) && c.getId()==id ) return true;
+        if (obj instanceof KeyValue) {
+            KeyValue c = (KeyValue) obj;
+            if (c.getName().equals(name) && c.getId() == id) return true;
         }
 
         return false;

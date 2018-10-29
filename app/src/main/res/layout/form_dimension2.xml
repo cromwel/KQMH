@@ -15,59 +15,63 @@
         android:background="@color/blue"
         android:orientation="vertical">
 
-    <include
-        layout="@layout/header"
-        android:visibility="gone" />
+        <include
+            layout="@layout/header"
+            android:visibility="gone" />
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:id="@+id/toolbar"
-        app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
-        app:title="2: Human Resource Management and Development"
-        app:titleTextColor="@color/white" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+            app:title="2: Human Resource Management and Development"
+            app:titleTextColor="@color/white" />
 
-    <!--progress bar-->
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/round_border"
-        app:cardCornerRadius="5dp"
-        card_view:cardElevation="9dp">
-
-
-        <include layout="@layout/progress_button" android:id="@+id/progress"/>
-
-        <!-- <ProgressBar
-             android:id="@+id/customProgress"
-             style="@style/CustomProgressBar"
-             android:layout_width="match_parent"/>-->
-
-    </android.support.v7.widget.CardView>
-
-    <!-- button section -->
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/round_border"
-        app:cardCornerRadius="5dp"
-        card_view:cardElevation="9dp">
-
-
-        <include layout="@layout/nav_buttons" android:visibility="gone"/>
-
-    </android.support.v7.widget.CardView>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
+        <!--progress bar-->
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_margin="10dp"
+            android:background="@drawable/round_border"
+            app:cardCornerRadius="5dp"
+            card_view:cardElevation="9dp">
+
+
+            <include
+                android:id="@+id/progress"
+                layout="@layout/progress_button" />
+
+            <!-- <ProgressBar
+                 android:id="@+id/customProgress"
+                 style="@style/CustomProgressBar"
+                 android:layout_width="match_parent"/>-->
+
+        </android.support.v7.widget.CardView>
+
+        <!-- button section -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_border"
+            app:cardCornerRadius="5dp"
+            card_view:cardElevation="9dp">
+
+
+            <include
+                layout="@layout/nav_buttons"
+                android:visibility="gone" />
+
+        </android.support.v7.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
 
                 <android.support.v7.widget.CardView
@@ -95,12 +99,12 @@
                                 android:layout_marginBottom="5dp"
                                 android:background="@color/green"
                                 android:gravity="center"
-                                android:paddingBottom="20dp"
+                                android:paddingLeft="5dp"
                                 android:paddingTop="20dp"
                                 android:paddingRight="5dp"
-                                android:paddingLeft="5dp"
-                                android:textAlignment="center"
+                                android:paddingBottom="20dp"
                                 android:text="@string/Dim2"
+                                android:textAlignment="center"
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
@@ -115,10 +119,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std2.1"
                                 android:textColor="@color/black"
-                                android:background="@color/orange"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -131,9 +135,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -141,18 +145,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.1.1"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -163,15 +167,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score200"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="dyQWqO5zQMG"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score200"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="dyQWqO5zQMG"
+                                        android:textSize="12sp" />
 
                                 </LinearLayout>
                             </LinearLayout>
@@ -180,16 +184,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -197,9 +202,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -207,18 +212,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.1.2"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -229,15 +234,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score201"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="So0qn4ZqQK7"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score201"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="So0qn4ZqQK7"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -246,12 +251,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
@@ -266,10 +271,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std2.2"
                                 android:textColor="@color/black"
-                                android:background="@color/orange"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -282,9 +287,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -292,18 +297,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.2.1"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -314,15 +319,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score202"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="MyRNoPEQ0Be"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score202"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="MyRNoPEQ0Be"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -331,16 +336,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -348,9 +354,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -358,18 +364,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.2.2"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -380,15 +386,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score203"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="EdeMDgKWqFx"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score203"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="EdeMDgKWqFx"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -397,16 +403,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -414,9 +421,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -424,18 +431,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.2.3"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -446,15 +453,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score204"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="D9QXqDaRZjh"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score204"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="D9QXqDaRZjh"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -463,16 +470,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -480,9 +488,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -490,18 +498,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.2.4"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -512,15 +520,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score205"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="x0UjH8JCdeu"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score205"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="x0UjH8JCdeu"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -529,16 +537,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -546,9 +555,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -556,18 +565,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.2.5"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -578,15 +587,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score206"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="dAR4qhUynvi"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score206"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="dAR4qhUynvi"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -595,12 +604,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
@@ -615,10 +624,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std2.3"
                                 android:textColor="@color/black"
-                                android:background="@color/orange"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -631,9 +640,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -641,18 +650,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.3.1"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -663,15 +672,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score207"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="A7iYD5My37v"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score207"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="A7iYD5My37v"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -680,16 +689,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -697,9 +707,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -707,18 +717,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.3.2"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -729,15 +739,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score208"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="OnokAtP5PIO"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score208"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="OnokAtP5PIO"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -746,16 +756,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -763,9 +774,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -773,18 +784,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.3.3"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -795,15 +806,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score209"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="hBzK12idPhH"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score209"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="hBzK12idPhH"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -812,12 +823,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
@@ -832,10 +843,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std2.4"
                                 android:textColor="@color/black"
-                                android:background="@color/orange"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -848,9 +859,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -858,18 +869,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.4.1"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -880,15 +891,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score210"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="bA3raw0Zhda"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score210"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="bA3raw0Zhda"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -897,16 +908,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -914,9 +926,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -924,18 +936,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.4.2"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -946,15 +958,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score211"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="vHMDJIS3CIJ"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score211"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="vHMDJIS3CIJ"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -963,12 +975,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
@@ -983,10 +995,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std2.5"
                                 android:textColor="@color/black"
-                                android:background="@color/orange"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -999,9 +1011,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1009,18 +1021,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.5.1"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1031,15 +1043,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score212"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="pJZdZk0r6ad"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score212"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="pJZdZk0r6ad"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1048,16 +1060,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1065,9 +1078,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1075,18 +1088,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.5.2"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1097,15 +1110,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score213"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="XbomvNj6N0T"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score213"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="XbomvNj6N0T"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1114,16 +1127,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1131,9 +1145,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1141,18 +1155,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.5.3"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1163,15 +1177,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score214"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="QMv3jwfRCYk"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score214"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="QMv3jwfRCYk"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1180,12 +1194,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
@@ -1200,10 +1214,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std2.6"
                                 android:textColor="@color/black"
-                                android:background="@color/orange"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -1216,9 +1230,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1226,18 +1240,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.6.1"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1248,15 +1262,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score215"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="e4BT16kvSb1"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score215"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="e4BT16kvSb1"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1265,16 +1279,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1282,9 +1297,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1292,18 +1307,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.6.2"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1314,15 +1329,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score216"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="tT1jLK4G7pu"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score216"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="tT1jLK4G7pu"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1331,12 +1346,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
@@ -1351,10 +1366,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std2.7"
                                 android:textColor="@color/black"
-                                android:background="@color/orange"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -1367,9 +1382,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1377,18 +1392,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.7.1"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1399,15 +1414,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score217"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="UcuxvCHEZoX"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score217"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="UcuxvCHEZoX"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1416,16 +1431,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1433,9 +1449,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1443,18 +1459,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.7.2"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1465,15 +1481,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score218"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="yp8JqgofrTx"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score218"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="yp8JqgofrTx"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1482,16 +1498,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1499,9 +1516,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1509,18 +1526,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.7.3"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1531,15 +1548,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score219"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="q65RMG6hEbl"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score219"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="q65RMG6hEbl"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1548,12 +1565,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
@@ -1568,10 +1585,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std2.8"
                                 android:textColor="@color/black"
-                                android:background="@color/orange"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -1584,9 +1601,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1594,18 +1611,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.8.1"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1616,15 +1633,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score220"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="kapgE1ew1i6"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score220"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="kapgE1ew1i6"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1633,12 +1650,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
@@ -1653,10 +1670,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std2.9"
                                 android:textColor="@color/black"
-                                android:background="@color/orange"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -1669,9 +1686,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1679,18 +1696,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.9.1"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1701,15 +1718,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score221"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="F0tgLTATvYT"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score221"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="F0tgLTATvYT"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1718,16 +1735,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1735,9 +1753,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1745,18 +1763,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.9.2"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1767,15 +1785,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score222"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="gwtYvdxEJtt"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score222"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="gwtYvdxEJtt"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1784,16 +1802,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1801,9 +1820,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1811,18 +1830,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.9.3"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1833,15 +1852,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score223"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="mDvrn4w7UZE"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score223"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="mDvrn4w7UZE"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1850,16 +1869,17 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1867,9 +1887,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1877,18 +1897,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.9.4"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1899,15 +1919,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score224"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="Cs5dOsg2Okq"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score224"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="Cs5dOsg2Okq"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -1916,12 +1936,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
@@ -1936,10 +1956,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@color/orange"
                                 android:padding="5dp"
                                 android:text="@string/Std2.10"
                                 android:textColor="@color/black"
-                                android:background="@color/orange"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -1952,9 +1972,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:weightSum="1"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -1962,18 +1982,18 @@
                                     android:layout_weight=".6"
                                     android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:paddingBottom="20dp"
                                     android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim2.10.1"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1984,15 +2004,15 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score225"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="FX2En7x1Pig"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score225"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="FX2En7x1Pig"
+                                        android:textSize="12sp" />
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -2001,12 +2021,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
@@ -2016,20 +2036,20 @@
 
                 </android.support.v7.widget.CardView>
 
-            <!-- dims button section -->
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/round_border"
-                app:cardCornerRadius="5dp"
-                card_view:cardElevation="9dp">
+                <!-- dims button section -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_border"
+                    app:cardCornerRadius="5dp"
+                    card_view:cardElevation="9dp">
 
-                <include layout="@layout/dims_button" />
+                    <include layout="@layout/dims_button" />
 
-            </android.support.v7.widget.CardView>
-        </LinearLayout>
-    </ScrollView>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
@@ -2037,7 +2057,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
-        android:src="@drawable/ic_navigate_next_white_24dp"
-        android:layout_margin="16dp" />
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_navigate_next_white_24dp" />
 
 </android.support.design.widget.CoordinatorLayout>

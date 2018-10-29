@@ -71,7 +71,7 @@ public class Login extends AppCompatActivity {
                     // hide password
                     password.setTransformationMethod(PasswordTransformationMethod.getInstance());
 
-                  } else {
+                } else {
                     // show password
                     password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                 }

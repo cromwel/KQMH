@@ -20,26 +20,21 @@ import android.widget.Spinner;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
-import com.android.volley.error.AuthFailureError;
 import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
-
 import com.google.gson.Gson;
-
 import com.kqmh.app.kqmh.Activities.Welcome;
-import com.kqmh.app.kqmh.Adapters.AssessmentTypeAdapter;
 import com.kqmh.app.kqmh.Adapters.OrganisationUnitAdapterEx;
 import com.kqmh.app.kqmh.Adapters.PeriodAdapter;
 import com.kqmh.app.kqmh.Models.AssessmentTypeCombo;
 import com.kqmh.app.kqmh.Models.FacilityLevel;
+import com.kqmh.app.kqmh.Models.KeyValue;
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
 import com.kqmh.app.kqmh.Models.Period;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
-import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
-import com.kqmh.app.kqmh.Models.KeyValue;
 import com.toptoche.searchablespinnerlibrary.SearchableSpinner;
 
 import org.json.JSONArray;
@@ -58,17 +53,16 @@ import static com.kqmh.app.kqmh.Utils.UrlConstants.ORGANISATION_UNIT_URL_ex;
 
 public class Assessment_InfoEx extends AppCompatActivity {
 
+    List<AssessmentTypeCombo> categoryOptions = new ArrayList<>();
+    List<OrganisationUnit> OrganisationUnit = new ArrayList<>();
+    List<String> orgUnitsNames = new ArrayList<>();
+    List<Period> qPeriod = new ArrayList<>();
     private SearchableSpinner spinner_OrganisationUnit;
     private Spinner spinner_AssessmentType;
     private Spinner spinner_period;
     private Spinner spinner_facilityLevel;
     private ImageView logout;
     private ProgressDialog progressDialog;
-
-    List<AssessmentTypeCombo> categoryOptions = new ArrayList<>();
-    List<OrganisationUnit> OrganisationUnit = new ArrayList<>();
-    List<String> orgUnitsNames = new ArrayList<>();
-    List<Period> qPeriod = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,7 +103,7 @@ public class Assessment_InfoEx extends AppCompatActivity {
             e.printStackTrace();
         }*/
         try {
-            for(int i=1;i<350;i++) {
+            for (int i = 1; i < 350; i++) {
                 String url = ORGANISATION_UNIT_URL_ex.replace("[number]", String.valueOf(i));
                 getOrganisationUnit(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()), url);
             }
@@ -147,17 +141,17 @@ public class Assessment_InfoEx extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (choice.matches("1")) {
-                }
-                else if (choice.matches("2")) {
+                } else if (choice.matches("2")) {
                 }
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
     }
 
-    private void getOrganisationUnit(final String encoded,final String url) {
+    private void getOrganisationUnit(final String encoded, final String url) {
         Log.d("Auth", encoded);
         progressDialog.show();
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {

@@ -27,20 +27,22 @@ public class Option extends BaseModel {
     @PrimaryKey(autoincrement = true)
     private long option_id;
 
-    public Option(){
+    public Option() {
 
     }
-    public Option(String parentId, String id,String code, String name){
+
+    public Option(String parentId, String id, String code, String name) {
         this.parentId = parentId;
-        this.id=id;
-        this.code=code;
-        this.name=name;
+        this.id = id;
+        this.code = code;
+        this.name = name;
 
     }
-    public Option(String id,String code, String name){
-        this.id=id;
-        this.code=code;
-        this.name=name;
+
+    public Option(String id, String code, String name) {
+        this.id = id;
+        this.code = code;
+        this.name = name;
 
     }
 

@@ -25,7 +25,7 @@ public class Dimension11_List extends AppCompatActivity {
 
         spinner_dim11 = findViewById(R.id.spinner_dim11);
 
-        spinnerData_dim(spinner_dim11,"0");
+        spinnerData_dim(spinner_dim11, "0");
 
         Button dims = findViewById(R.id.btn_dims);
         dims.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +66,7 @@ public class Dimension11_List extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                switch (position){
+                switch (position) {
                     case 0:
                         break;
                     case 1:

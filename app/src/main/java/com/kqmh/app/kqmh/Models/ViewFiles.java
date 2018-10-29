@@ -1,10 +1,5 @@
 package com.kqmh.app.kqmh.Models;
 
-import android.widget.Button;
-
-import com.kqmh.app.kqmh.Utils.MyDatabase;
-import com.raizlabs.android.dbflow.annotation.Table;
-
 public class ViewFiles {
 
     private int icon;
@@ -14,9 +9,10 @@ public class ViewFiles {
     private boolean isGroupHeader = false;
 
     public ViewFiles(String title) {
-        this(-1,title,null);
+        this(-1, title, null);
         isGroupHeader = true;
     }
+
     public ViewFiles(int icon, String title, String counter) {
         super();
         this.icon = icon;
@@ -37,7 +33,7 @@ public class ViewFiles {
         return title;
     }
 
-    public String getCounter(){
+    public String getCounter() {
         return counter;
     }
 }

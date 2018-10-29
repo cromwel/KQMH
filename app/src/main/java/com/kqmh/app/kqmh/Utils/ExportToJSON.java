@@ -4,9 +4,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.google.gson.Gson;
-
 import com.kqmh.app.kqmh.Models.DataElement;
-
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 
 import org.json.JSONArray;
@@ -14,7 +12,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-
 import java.io.OutputStreamWriter;
 import java.util.List;
 
@@ -25,7 +22,7 @@ public class ExportToJSON {
         try {
             jsonDatavalueset.put("dataSet", "TA4FU3zu93l");
             jsonDatavalueset.put("completeDate", "2018-02-02");
-            jsonDatavalueset.put("period","201801");
+            jsonDatavalueset.put("period", "201801");
             jsonDatavalueset.put("orgUnit", orgUnit);
 
             Gson gson = new Gson();
@@ -37,30 +34,27 @@ public class ExportToJSON {
             jsonDatavalueset.put("dataValues", datavals);
             Log.d("Json data", jsonDatavalueset.toString());
 
-        }
-        catch (JSONException ex) {
+        } catch (JSONException ex) {
             ex.printStackTrace();
         }
 
         return jsonDatavalueset;
     }
 
-    public static void ExportToFile(JSONObject jsonDatavalueset, Context context){
+    public static void ExportToFile(JSONObject jsonDatavalueset, Context context) {
         Log.d("ExportToJSON", "ExportToFile: " + jsonDatavalueset.toString());
         writeToFile("datavalueset.json", jsonDatavalueset.toString(), context);
     }
 
-    private static void writeToFile(String filename,String data,Context context) {
+    private static void writeToFile(String filename, String data, Context context) {
         try {
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput(filename, Context.MODE_PRIVATE));
             outputStreamWriter.write(data);
             outputStreamWriter.close();
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 
 
 }

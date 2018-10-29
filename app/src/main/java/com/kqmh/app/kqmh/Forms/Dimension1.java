@@ -19,7 +19,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter;
 import com.kqmh.app.kqmh.Adapters.ScoreOptionstAdapter2;
 import com.kqmh.app.kqmh.Models.AssesmentProgress;
 import com.kqmh.app.kqmh.Models.AssesmentProgress_Table;
@@ -40,18 +39,15 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
-import java.util.Objects;
 
 public class Dimension1 extends AppCompatActivity {
 
     List<Spinner> spinnerList = new ArrayList<>();
     List<DataElement> dataElementsList = new ArrayList<>();
+    AssesmentProgress assesmentProgress;
     private ProgressDialog progressDialog;
     private ProgressBar progressBar;
     private TextView progressText;
-    AssesmentProgress assesmentProgress;
-
     private int progressStatus = 0;
     private Handler handler = new Handler();
 
@@ -136,7 +132,8 @@ public class Dimension1 extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() { if (assesmentProgress != null) {
+    protected void onDestroy() {
+        if (assesmentProgress != null) {
             assesmentProgress.setProgress(progressBar.getProgress());
             assesmentProgress.update();
         }

@@ -11,16 +11,16 @@ import com.raizlabs.android.dbflow.structure.BaseModel;
 public class DataElement extends BaseModel {
     @Column
     @PrimaryKey
-    private String dataElementId="";
+    private String dataElementId = "";
 
     @Column
-    private String category="";
+    private String category = "";
 
     @Column
     private String value;
 
     @Column
-    private String comment="";
+    private String comment = "";
 
     @Column
     private String entity = "";

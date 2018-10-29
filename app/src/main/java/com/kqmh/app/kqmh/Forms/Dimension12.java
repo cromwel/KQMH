@@ -9,7 +9,10 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.kqmh.app.kqmh.Activities.ViewFilesActivity;
 import com.kqmh.app.kqmh.R;
@@ -18,8 +21,6 @@ import com.kqmh.app.kqmh.SessionManager;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.widget.*;
-
 public class Dimension12 extends AppCompatActivity {
 
     int int_et_av_i1, int_et_av_i2, int_et_av_i3, int_et_av_i4, int_et_av_i5, int_et_av_i34;
@@ -27,7 +28,6 @@ public class Dimension12 extends AppCompatActivity {
     EditText et_av_i6n, et_av_i7n, et_av_i8n, et_av_i9n, et_av_i10n, et_av_i11n, et_av_i12n, et_av_i13n, et_av_i14n, et_av_i15n, et_av_i16n, et_av_i17n, et_av_i18n, et_av_i19n, et_av_i20n, et_av_i21n, et_av_i22n, et_av_i23n, et_av_i24n, et_av_i25n, et_av_i26n, et_av_i27n, et_av_i28n, et_av_i29n, et_av_i30n, et_av_i31n, et_av_i32n, et_av_i33n;
     EditText et_av_i6d, et_av_i7d, et_av_i8d, et_av_i9d, et_av_i10d, et_av_i11d, et_av_i12d, et_av_i13d, et_av_i14d, et_av_i15d, et_av_i16d, et_av_i17d, et_av_i18d, et_av_i19d, et_av_i20d, et_av_i21d, et_av_i22d, et_av_i23d, et_av_i24d, et_av_i25d, et_av_i26d, et_av_i27d, et_av_i28d, et_av_i29d, et_av_i30d, et_av_i31d, et_av_i32d, et_av_i33d;
     TextView tv_avscore_i1, tv_avscore_i2, tv_avscore_i3, tv_avscore_i4, tv_avscore_i5, tv_avscore_i6, tv_avscore_i7, tv_avscore_i8, tv_avscore_i9, tv_avscore_i10, tv_avscore_i11, tv_avscore_i12, tv_avscore_i13, tv_avscore_i14, tv_avscore_i15, tv_avscore_i16, tv_avscore_i17, tv_avscore_i18, tv_avscore_i19, tv_avscore_i20, tv_avscore_i21, tv_avscore_i22, tv_avscore_i23, tv_avscore_i24, tv_avscore_i25, tv_avscore_i26, tv_avscore_i27, tv_avscore_i28, tv_avscore_i29, tv_avscore_i30, tv_avscore_i31, tv_avscore_i32, tv_avscore_i33, tv_avscore_i34;
-
 
 
     List<Spinner> spinnerList = new ArrayList<>();
@@ -237,40 +237,37 @@ public class Dimension12 extends AppCompatActivity {
                         episodes_points();
                         quarters_points();
 
-                        fraction_percentile_points(tv_avscore_i6, et_av_i6n, et_av_i6d, 100, 75,50,25);
-                        fraction_percentile_points(tv_avscore_i13, et_av_i13n, et_av_i13d, 100, 75,50,25);
-                        fraction_percentile_points(tv_avscore_i14, et_av_i14n, et_av_i14d, 100, 75,50,25);
-                        fraction_percentile_points(tv_avscore_i23, et_av_i23n, et_av_i23d, 100, 75,50,25);
-                        fraction_percentile_points(tv_avscore_i30, et_av_i30n, et_av_i30d, 100, 75,50,25);
-                        fraction_percentile_points(tv_avscore_i31, et_av_i31n, et_av_i31d, 100, 75,50,25);
-                        fraction_percentile_points(tv_avscore_i32, et_av_i32n, et_av_i32d, 75, 57,37,18);
-                        fraction_percentile_points(tv_avscore_i7, et_av_i7n, et_av_i7d, 90, 68,45,22);
-                        fraction_percentile_points(tv_avscore_i28, et_av_i28n, et_av_i28d, 90, 68,45,22);
-                        fraction_percentile_points(tv_avscore_i17, et_av_i17n, et_av_i17d, 90, 68,45,22);
-                        fraction_percentile_points(tv_avscore_i27, et_av_i27n, et_av_i27d, 90, 68,45,22);
-                        fraction_percentile_points(tv_avscore_i11, et_av_i11n, et_av_i11d, 15, 11.4,7.5,3.8);
+                        fraction_percentile_points(tv_avscore_i6, et_av_i6n, et_av_i6d, 100, 75, 50, 25);
+                        fraction_percentile_points(tv_avscore_i13, et_av_i13n, et_av_i13d, 100, 75, 50, 25);
+                        fraction_percentile_points(tv_avscore_i14, et_av_i14n, et_av_i14d, 100, 75, 50, 25);
+                        fraction_percentile_points(tv_avscore_i23, et_av_i23n, et_av_i23d, 100, 75, 50, 25);
+                        fraction_percentile_points(tv_avscore_i30, et_av_i30n, et_av_i30d, 100, 75, 50, 25);
+                        fraction_percentile_points(tv_avscore_i31, et_av_i31n, et_av_i31d, 100, 75, 50, 25);
+                        fraction_percentile_points(tv_avscore_i32, et_av_i32n, et_av_i32d, 75, 57, 37, 18);
+                        fraction_percentile_points(tv_avscore_i7, et_av_i7n, et_av_i7d, 90, 68, 45, 22);
+                        fraction_percentile_points(tv_avscore_i28, et_av_i28n, et_av_i28d, 90, 68, 45, 22);
+                        fraction_percentile_points(tv_avscore_i17, et_av_i17n, et_av_i17d, 90, 68, 45, 22);
+                        fraction_percentile_points(tv_avscore_i27, et_av_i27n, et_av_i27d, 90, 68, 45, 22);
+                        fraction_percentile_points(tv_avscore_i11, et_av_i11n, et_av_i11d, 15, 11.4, 7.5, 3.8);
 
-                        fraction_percent_points(tv_avscore_i8, et_av_i8n, et_av_i8d, 8.9, 7.6,6.4,5);
-                        fraction_percent_points(tv_avscore_i15, et_av_i15n, et_av_i15d, 8.9, 7.6,6.4,5.1);
-                        fraction_percent_points(tv_avscore_i16, et_av_i16n, et_av_i16d, 8.9, 7.6,6.4,5.1);
-                        fraction_percent_points(tv_avscore_i21, et_av_i21n, et_av_i21d, 8.9, 7.6,6.4,5.1);
-                        fraction_percent_points(tv_avscore_i29, et_av_i29n, et_av_i29d, 8.9, 7.6,6.4,5.1);
-                        fraction_percent_points(tv_avscore_i9, et_av_i9n, et_av_i9d, 1.76, 1.6,1.26,1);
-                        fraction_percent_points(tv_avscore_i12, et_av_i12n, et_av_i12d, 1.76, 1.6,1.26,1);
-                        fraction_percent_points(tv_avscore_i18, et_av_i18n, et_av_i18d, 1.76, 1.6,1.26,1);
-                        fraction_percent_points(tv_avscore_i22, et_av_i22n, et_av_i22d, 1.76, 1.6,1.26,1);
-                        fraction_percent_points(tv_avscore_i10, et_av_i10n, et_av_i10d, 5.4, 4.4,3.9,3);
+                        fraction_percent_points(tv_avscore_i8, et_av_i8n, et_av_i8d, 8.9, 7.6, 6.4, 5);
+                        fraction_percent_points(tv_avscore_i15, et_av_i15n, et_av_i15d, 8.9, 7.6, 6.4, 5.1);
+                        fraction_percent_points(tv_avscore_i16, et_av_i16n, et_av_i16d, 8.9, 7.6, 6.4, 5.1);
+                        fraction_percent_points(tv_avscore_i21, et_av_i21n, et_av_i21d, 8.9, 7.6, 6.4, 5.1);
+                        fraction_percent_points(tv_avscore_i29, et_av_i29n, et_av_i29d, 8.9, 7.6, 6.4, 5.1);
+                        fraction_percent_points(tv_avscore_i9, et_av_i9n, et_av_i9d, 1.76, 1.6, 1.26, 1);
+                        fraction_percent_points(tv_avscore_i12, et_av_i12n, et_av_i12d, 1.76, 1.6, 1.26, 1);
+                        fraction_percent_points(tv_avscore_i18, et_av_i18n, et_av_i18d, 1.76, 1.6, 1.26, 1);
+                        fraction_percent_points(tv_avscore_i22, et_av_i22n, et_av_i22d, 1.76, 1.6, 1.26, 1);
+                        fraction_percent_points(tv_avscore_i10, et_av_i10n, et_av_i10d, 5.4, 4.4, 3.9, 3);
                         fraction_percent_points(tv_avscore_i24, et_av_i24n, et_av_i24d, 3.6, 3.1, 2.6, 2);
                         fraction_percent_points(tv_avscore_i33, et_av_i33n, et_av_i33d, 3.6, 3.1, 2.6, 2);
-                        fraction_percent_points(tv_avscore_i26, et_av_i26n, et_av_i26d, 17.6, 15.1,12.6,10.1);
+                        fraction_percent_points(tv_avscore_i26, et_av_i26n, et_av_i26d, 17.6, 15.1, 12.6, 10.1);
 
-                        fraction_thousands_points(tv_avscore_i19, et_av_i19n, et_av_i19d, 17.6, 15.1,12.6,10.1);
-                        fraction_thousands_points(tv_avscore_i20, et_av_i20n, et_av_i20d, 21.1, 18.1,15.1,12);
+                        fraction_thousands_points(tv_avscore_i19, et_av_i19n, et_av_i19d, 17.6, 15.1, 12.6, 10.1);
+                        fraction_thousands_points(tv_avscore_i20, et_av_i20n, et_av_i20d, 21.1, 18.1, 15.1, 12);
 
                         decimal_points(tv_avscore_i25, et_av_i25n, et_av_i25d, 0.91, 0.7, 0.5, 0.2);
-
-
-
 
 
                     }
@@ -433,7 +430,7 @@ public class Dimension12 extends AppCompatActivity {
             } else if (float_et_av < p1) {
                 textView.setText(String.format("%.0f%% \n score = 0p", float_et_av));
             }
-        } catch(NumberFormatException e) {
+        } catch (NumberFormatException e) {
             // Handle parse error.
             Log.e("Dimension12", e.getMessage());
             e.printStackTrace();
@@ -458,7 +455,7 @@ public class Dimension12 extends AppCompatActivity {
             } else if (float_et_av < p1) {
                 textView.setText(String.format("%.0f%% \n score = 4p", float_et_av));
             }
-        } catch(NumberFormatException e) {
+        } catch (NumberFormatException e) {
             // Handle parse error.
             Log.e("Dimension12", e.getMessage());
             e.printStackTrace();
@@ -483,7 +480,7 @@ public class Dimension12 extends AppCompatActivity {
             } else if (float_et_av < p1) {
                 textView.setText(String.format("%.0f per 1000 live births\n score = 4p", float_et_av));
             }
-        } catch(NumberFormatException e) {
+        } catch (NumberFormatException e) {
             // Handle parse error.
             Log.e("Dimension12", e.getMessage());
             e.printStackTrace();
@@ -508,7 +505,7 @@ public class Dimension12 extends AppCompatActivity {
             } else if (float_et_av < p1) {
                 textView.setText(String.format("%.2f points\n score = 0p", float_et_av));
             }
-        } catch(NumberFormatException e) {
+        } catch (NumberFormatException e) {
             // Handle parse error.
             Log.e("Dimension12", e.getMessage());
             e.printStackTrace();

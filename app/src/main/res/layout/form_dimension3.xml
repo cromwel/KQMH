@@ -15,59 +15,63 @@
         android:background="@color/blue"
         android:orientation="vertical">
 
-    <include
-        layout="@layout/header"
-        android:visibility="gone" />
+        <include
+            layout="@layout/header"
+            android:visibility="gone" />
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:id="@+id/toolbar"
-        app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
-        app:title="3: Policies, Standards and Guidelines"
-        app:titleTextColor="@color/white" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+            app:title="3: Policies, Standards and Guidelines"
+            app:titleTextColor="@color/white" />
 
-    <!--progress bar-->
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/round_border"
-        app:cardCornerRadius="5dp"
-        card_view:cardElevation="9dp">
-
-
-        <include layout="@layout/progress_button" android:id="@+id/progress"/>
-
-        <!-- <ProgressBar
-             android:id="@+id/customProgress"
-             style="@style/CustomProgressBar"
-             android:layout_width="match_parent"/>-->
-
-    </android.support.v7.widget.CardView>
-
-    <!-- button section -->
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/round_border"
-        app:cardCornerRadius="5dp"
-        card_view:cardElevation="9dp">
-
-
-        <include layout="@layout/nav_buttons" android:visibility="gone"/>
-
-    </android.support.v7.widget.CardView>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
+        <!--progress bar-->
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_margin="10dp"
+            android:background="@drawable/round_border"
+            app:cardCornerRadius="5dp"
+            card_view:cardElevation="9dp">
+
+
+            <include
+                android:id="@+id/progress"
+                layout="@layout/progress_button" />
+
+            <!-- <ProgressBar
+                 android:id="@+id/customProgress"
+                 style="@style/CustomProgressBar"
+                 android:layout_width="match_parent"/>-->
+
+        </android.support.v7.widget.CardView>
+
+        <!-- button section -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_border"
+            app:cardCornerRadius="5dp"
+            card_view:cardElevation="9dp">
+
+
+            <include
+                layout="@layout/nav_buttons"
+                android:visibility="gone" />
+
+        </android.support.v7.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
@@ -77,90 +81,90 @@
                     app:cardCornerRadius="5dp"
                     card_view:cardElevation="9dp">
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- dimension section -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <!-- dimension section -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/green"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="20dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="20dp"
+                                android:text="@string/Dim3"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <!-- standard -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/orange"
+                                android:padding="5dp"
+                                android:text="@string/Std3.1"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <!-- sub standard & requirements-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
-                                    android:layout_width="match_parent"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginBottom="5dp"
-                                    android:background="@color/green"
-                                    android:gravity="center"
-                                    android:paddingBottom="20dp"
-                                    android:paddingTop="20dp"
-                                    android:paddingRight="5dp"
+                                    android:layout_weight=".6"
+                                    android:background="@color/grey"
                                     android:paddingLeft="5dp"
-                                    android:textAlignment="center"
-                                    android:text="@string/Dim3"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="@string/Rdim3.1.1"
                                     android:textColor="@color/black"
-                                    android:textSize="18sp" />
-
-                            </LinearLayout>
-
-                            <!-- standard -->
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:text="@string/Std3.1"
-                                    android:textColor="@color/black"
-                                    android:background="@color/orange"
                                     android:textSize="16sp" />
 
-                            </LinearLayout>
-
-                            <!-- sub standard & requirements-->
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
                                 <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:weightSum="1"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:background="@color/dark_blue"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
                                     <TextView
-                                        android:layout_width="0dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight=".6"
-                                        android:background="@color/grey"
-                                        android:paddingLeft="5dp"
-                                        android:paddingBottom="20dp"
-                                        android:paddingTop="20dp"
-                                        android:text="@string/Rdim3.1.1"
-                                        android:textColor="@color/black"
+                                        android:padding="5dp"
+                                        android:text="scores"
+                                        android:textColor="@color/white"
                                         android:textSize="16sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:layout_weight=".4"
-                                        android:background="@color/dark_blue"
-                                        android:gravity="center"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:padding="5dp"
-                                            android:text="scores"
-                                            android:textColor="@color/white"
-                                            android:textSize="16sp" />
 
                                     <Spinner
                                         android:id="@+id/spinner_score300"
@@ -172,173 +176,175 @@
                                         android:tag="n1ca6sT3eBZ"
                                         android:textSize="12sp" />
 
-                                    </LinearLayout>
-
                                 </LinearLayout>
-
-                                <EditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"
-                                    android:padding="5dp"
-                                    android:paddingBottom="155dp"
-                                    android:background="@color/white"
-                                    android:gravity="center_vertical"
-                                    android:hint="comment"
-                                    android:inputType="text"
-                                    android:textColor="@color/grey"
-                                    android:textSize="16sp" />
 
                             </LinearLayout>
 
-                            <!-- standard -->
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <!-- standard -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/orange"
+                                android:padding="5dp"
+                                android:text="@string/Std3.2"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <!-- sub standard & requirements-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:orientation="horizontal">
 
                                 <TextView
-                                    android:layout_width="match_parent"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:text="@string/Std3.2"
-                                    android:textColor="@color/black"
-                                    android:background="@color/orange"
-                                    android:textSize="16sp" />
-
-                            </LinearLayout>
-
-                            <!-- sub standard & requirements-->
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:background="@color/grey"
-                                        android:paddingLeft="5dp"
-                                        android:paddingBottom="20dp"
-                                        android:paddingTop="20dp"
-                                        android:text="@string/Rdim3.2.1"
-                                        android:textColor="@color/black"
-                                        android:textSize="16sp" />
-
-                                </LinearLayout>
-
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:weightSum="1"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight=".6"
-                                        android:background="@color/grey"
-                                        android:paddingLeft="5dp"
-                                        android:paddingBottom="20dp"
-                                        android:paddingTop="20dp"
-                                        android:text="@string/Rdim3.2.1.1"
-                                        android:textColor="@color/black"
-                                        android:textSize="16sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight=".4"
-                                        android:background="@color/dark_blue"
-                                        android:gravity="center"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:padding="5dp"
-                                            android:text="scores"
-                                            android:textColor="@color/white"
-                                            android:textSize="16sp" />
-
-                                        <Spinner
-                                            android:id="@+id/spinner_score301"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="match_parent"
-                                            android:background="@color/dark_blue"
-                                            android:hint="@string/spinner_scores"
-                                            android:prompt="@string/spinner_scores"
-                                            android:tag="JfZaG983Hp0"
-                                            android:textSize="12sp" />
-
-                                    </LinearLayout>
-
-                                </LinearLayout>
-
-                                <EditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
                                     android:layout_weight="1"
-                                    android:padding="5dp"
-                                    android:paddingBottom="155dp"
-                                    android:background="@color/white"
-                                    android:gravity="center_vertical"
-                                    android:hint="comment"
-                                    android:inputType="text"
-                                    android:textColor="@color/grey"
+                                    android:background="@color/grey"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="@string/Rdim3.2.1"
+                                    android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                             </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/grey"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="@string/Rdim3.2.1.1"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
 
                                 <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:weightSum="1"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:background="@color/dark_blue"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
                                     <TextView
-                                        android:layout_width="0dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight=".6"
-                                        android:background="@color/grey"
-                                        android:paddingLeft="5dp"
-                                        android:paddingBottom="20dp"
-                                        android:paddingTop="20dp"
-                                        android:text="@string/Rdim3.2.1.2"
-                                        android:textColor="@color/black"
+                                        android:padding="5dp"
+                                        android:text="scores"
+                                        android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:layout_weight=".4"
-                                        android:background="@color/dark_blue"
-                                        android:gravity="center"
+                                    <Spinner
+                                        android:id="@+id/spinner_score301"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
-                                        android:orientation="vertical">
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="JfZaG983Hp0"
+                                        android:textSize="12sp" />
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:padding="5dp"
-                                            android:text="scores"
-                                            android:textColor="@color/white"
-                                            android:textSize="16sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/grey"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="@string/Rdim3.2.1.2"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:background="@color/dark_blue"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="scores"
+                                        android:textColor="@color/white"
+                                        android:textSize="16sp" />
 
                                     <Spinner
                                         android:id="@+id/spinner_score302"
@@ -350,53 +356,54 @@
                                         android:tag="HReEG0EA542"
                                         android:textSize="12sp" />
 
-                                    </LinearLayout>
-
                                 </LinearLayout>
 
-                                <EditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"
-                                    android:padding="5dp"
-                                    android:paddingBottom="155dp"
-                                    android:background="@color/white"
-                                    android:gravity="center_vertical"
-                                    android:hint="comment"
-                                    android:inputType="text"
-                                    android:textColor="@color/grey"
-                                    android:textSize="16sp" />
-
                             </LinearLayout>
-                            <LinearLayout
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:weightSum="1"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight=".6"
-                                        android:background="@color/grey"
-                                        android:paddingLeft="5dp"
-                                        android:paddingBottom="20dp"
-                                        android:paddingTop="20dp"
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/grey"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
                                     android:text="@string/Rdim3.2.1.3"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight=".4"
                                     android:background="@color/dark_blue"
                                     android:gravity="center"
-                                    android:layout_height="match_parent"
                                     android:orientation="vertical">
 
                                     <TextView
@@ -407,17 +414,17 @@
                                         android:textColor="@color/white"
                                         android:textSize="16sp" />
 
-                                <Spinner
-                                    android:id="@+id/spinner_score303"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:background="@color/dark_blue"
-                                    android:hint="@string/spinner_scores"
-                                    android:prompt="@string/spinner_scores"
-                                    android:tag="rFCLEXoW6ls"
-                                    android:textSize="12sp" />
+                                    <Spinner
+                                        android:id="@+id/spinner_score303"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/dark_blue"
+                                        android:hint="@string/spinner_scores"
+                                        android:prompt="@string/spinner_scores"
+                                        android:tag="rFCLEXoW6ls"
+                                        android:textSize="12sp" />
 
-                            </LinearLayout>
+                                </LinearLayout>
 
                             </LinearLayout>
 
@@ -425,54 +432,55 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:paddingBottom="155dp"
                                 android:background="@color/white"
                                 android:gravity="center_vertical"
                                 android:hint="comment"
                                 android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
                                 android:textColor="@color/grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/grey"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="@string/Rdim3.2.1.4"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
 
                                 <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:weightSum="1"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:background="@color/dark_blue"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
                                     <TextView
-                                        android:layout_width="0dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight=".6"
-                                        android:background="@color/grey"
-                                        android:paddingLeft="5dp"
-                                        android:paddingBottom="20dp"
-                                        android:paddingTop="20dp"
-                                        android:text="@string/Rdim3.2.1.4"
-                                        android:textColor="@color/black"
+                                        android:padding="5dp"
+                                        android:text="scores"
+                                        android:textColor="@color/white"
                                         android:textSize="16sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:layout_weight=".4"
-                                        android:background="@color/dark_blue"
-                                        android:gravity="center"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:padding="5dp"
-                                            android:text="scores"
-                                            android:textColor="@color/white"
-                                            android:textSize="16sp" />
 
                                     <Spinner
                                         android:id="@+id/spinner_score304"
@@ -484,62 +492,63 @@
                                         android:tag="YjXMemFGay4"
                                         android:textSize="12sp" />
 
-                                    </LinearLayout>
-
                                 </LinearLayout>
 
-                                <EditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"
-                                    android:padding="5dp"
-                                    android:paddingBottom="155dp"
-                                    android:background="@color/white"
-                                    android:gravity="center_vertical"
-                                    android:hint="comment"
-                                    android:inputType="text"
-                                    android:textColor="@color/grey"
-                                    android:textSize="16sp" />
-
                             </LinearLayout>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/grey"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="@string/Rdim3.2.1.5"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
 
                                 <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:weightSum="1"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:background="@color/dark_blue"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
                                     <TextView
-                                        android:layout_width="0dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight=".6"
-                                        android:background="@color/grey"
-                                        android:paddingLeft="5dp"
-                                        android:paddingBottom="20dp"
-                                        android:paddingTop="20dp"
-                                        android:text="@string/Rdim3.2.1.5"
-                                        android:textColor="@color/black"
+                                        android:padding="5dp"
+                                        android:text="scores"
+                                        android:textColor="@color/white"
                                         android:textSize="16sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:layout_weight=".4"
-                                        android:background="@color/dark_blue"
-                                        android:gravity="center"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:padding="5dp"
-                                            android:text="scores"
-                                            android:textColor="@color/white"
-                                            android:textSize="16sp" />
 
                                     <Spinner
                                         android:id="@+id/spinner_score305"
@@ -553,79 +562,79 @@
 
                                 </LinearLayout>
 
-                                </LinearLayout>
-
-                                <EditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"
-                                    android:padding="5dp"
-                                    android:paddingBottom="155dp"
-                                    android:background="@color/white"
-                                    android:gravity="center_vertical"
-                                    android:hint="comment"
-                                    android:inputType="text"
-                                    android:textColor="@color/grey"
-                                    android:textSize="16sp" />
-
                             </LinearLayout>
 
-                            <!-- standard -->
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <!-- standard -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/orange"
+                                android:padding="5dp"
+                                android:text="@string/Std3.3"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <!-- sub standard & requirements-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
-                                    android:layout_width="match_parent"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:text="@string/Std3.3"
+                                    android:layout_weight=".6"
+                                    android:background="@color/grey"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="@string/Rdim3.3.1"
                                     android:textColor="@color/black"
-                                    android:background="@color/orange"
                                     android:textSize="16sp" />
 
-                            </LinearLayout>
-
-                            <!-- sub standard & requirements-->
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
                                 <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:weightSum="1"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:background="@color/dark_blue"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
                                     <TextView
-                                        android:layout_width="0dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight=".6"
-                                        android:background="@color/grey"
-                                        android:paddingLeft="5dp"
-                                        android:paddingBottom="20dp"
-                                        android:paddingTop="20dp"
-                                        android:text="@string/Rdim3.3.1"
-                                        android:textColor="@color/black"
+                                        android:padding="5dp"
+                                        android:text="scores"
+                                        android:textColor="@color/white"
                                         android:textSize="16sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:layout_weight=".4"
-                                        android:background="@color/dark_blue"
-                                        android:gravity="center"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:padding="5dp"
-                                            android:text="scores"
-                                            android:textColor="@color/white"
-                                            android:textSize="16sp" />
 
                                     <Spinner
                                         android:id="@+id/spinner_score306"
@@ -637,62 +646,63 @@
                                         android:tag="KIibWoHnmT1"
                                         android:textSize="12sp" />
 
-                                    </LinearLayout>
-
                                 </LinearLayout>
 
-                                <EditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"
-                                    android:padding="5dp"
-                                    android:paddingBottom="155dp"
-                                    android:background="@color/white"
-                                    android:gravity="center_vertical"
-                                    android:hint="comment"
-                                    android:inputType="text"
-                                    android:textColor="@color/grey"
-                                    android:textSize="16sp" />
-
                             </LinearLayout>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/grey"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="@string/Rdim3.3.2"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
 
                                 <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:weightSum="1"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:background="@color/dark_blue"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
                                     <TextView
-                                        android:layout_width="0dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight=".6"
-                                        android:background="@color/grey"
-                                        android:paddingLeft="5dp"
-                                        android:paddingBottom="20dp"
-                                        android:paddingTop="20dp"
-                                        android:text="@string/Rdim3.3.2"
-                                        android:textColor="@color/black"
+                                        android:padding="5dp"
+                                        android:text="scores"
+                                        android:textColor="@color/white"
                                         android:textSize="16sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:layout_weight=".4"
-                                        android:background="@color/dark_blue"
-                                        android:gravity="center"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:padding="5dp"
-                                            android:text="scores"
-                                            android:textColor="@color/white"
-                                            android:textSize="16sp" />
 
                                     <Spinner
                                         android:id="@+id/spinner_score307"
@@ -706,79 +716,79 @@
 
                                 </LinearLayout>
 
-                                </LinearLayout>
-
-                                <EditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"
-                                    android:padding="5dp"
-                                    android:paddingBottom="155dp"
-                                    android:background="@color/white"
-                                    android:gravity="center_vertical"
-                                    android:hint="comment"
-                                    android:inputType="text"
-                                    android:textColor="@color/grey"
-                                    android:textSize="16sp" />
-
                             </LinearLayout>
 
-                            <!-- standard -->
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <!-- standard -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/orange"
+                                android:padding="5dp"
+                                android:text="@string/Std3.4"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <!-- sub standard & requirements-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
-                                    android:layout_width="match_parent"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:text="@string/Std3.4"
+                                    android:layout_weight=".6"
+                                    android:background="@color/grey"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="@string/Rdim3.4.1"
                                     android:textColor="@color/black"
-                                    android:background="@color/orange"
                                     android:textSize="16sp" />
 
-                            </LinearLayout>
-
-                            <!-- sub standard & requirements-->
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
                                 <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:weightSum="1"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:background="@color/dark_blue"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
                                     <TextView
-                                        android:layout_width="0dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight=".6"
-                                        android:background="@color/grey"
-                                        android:paddingLeft="5dp"
-                                        android:paddingBottom="20dp"
-                                        android:paddingTop="20dp"
-                                        android:text="@string/Rdim3.4.1"
-                                        android:textColor="@color/black"
+                                        android:padding="5dp"
+                                        android:text="scores"
+                                        android:textColor="@color/white"
                                         android:textSize="16sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:layout_weight=".4"
-                                        android:background="@color/dark_blue"
-                                        android:gravity="center"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:padding="5dp"
-                                            android:text="scores"
-                                            android:textColor="@color/white"
-                                            android:textSize="16sp" />
 
                                     <Spinner
                                         android:id="@+id/spinner_score308"
@@ -790,81 +800,81 @@
                                         android:tag="b8RPAap7KjR"
                                         android:textSize="12sp" />
 
-                                    </LinearLayout>
-
                                 </LinearLayout>
 
-                                <EditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"
-                                    android:padding="5dp"
-                                    android:paddingBottom="155dp"
-                                    android:background="@color/white"
-                                    android:gravity="center_vertical"
-                                    android:hint="comment"
-                                    android:inputType="text"
-                                    android:textColor="@color/grey"
-                                    android:textSize="16sp" />
-
                             </LinearLayout>
 
-                            <!-- standard -->
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <!-- standard -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/orange"
+                                android:padding="5dp"
+                                android:text="@string/Std3.5"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <!-- sub standard & requirements-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
 
                                 <TextView
-                                    android:layout_width="match_parent"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:text="@string/Std3.5"
+                                    android:layout_weight=".6"
+                                    android:background="@color/grey"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="@string/Rdim3.5.1"
                                     android:textColor="@color/black"
-                                    android:background="@color/orange"
                                     android:textSize="16sp" />
 
-                            </LinearLayout>
-
-                            <!-- sub standard & requirements-->
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
                                 <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:weightSum="1"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:background="@color/dark_blue"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
                                     <TextView
-                                        android:layout_width="0dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight=".6"
-                                        android:background="@color/grey"
-                                        android:paddingLeft="5dp"
-                                        android:paddingBottom="20dp"
-                                        android:paddingTop="20dp"
-                                        android:text="@string/Rdim3.5.1"
-                                        android:textColor="@color/black"
+                                        android:padding="5dp"
+                                        android:text="scores"
+                                        android:textColor="@color/white"
                                         android:textSize="16sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:layout_weight=".4"
-                                        android:background="@color/dark_blue"
-                                        android:gravity="center"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:padding="5dp"
-                                            android:text="scores"
-                                            android:textColor="@color/white"
-                                            android:textSize="16sp" />
 
                                     <Spinner
                                         android:id="@+id/spinner_score309"
@@ -878,60 +888,61 @@
 
                                 </LinearLayout>
 
-                                </LinearLayout>
-
-                                <EditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"
-                                    android:padding="5dp"
-                                    android:paddingBottom="155dp"
-                                    android:background="@color/white"
-                                    android:gravity="center_vertical"
-                                    android:hint="comment"
-                                    android:inputType="text"
-                                    android:textColor="@color/grey"
-                                    android:textSize="16sp" />
-
                             </LinearLayout>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:background="@color/grey"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingBottom="20dp"
+                                    android:text="@string/Rdim3.5.2"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
 
                                 <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:weightSum="1"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".4"
+                                    android:background="@color/dark_blue"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
                                     <TextView
-                                        android:layout_width="0dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight=".6"
-                                        android:background="@color/grey"
-                                        android:paddingLeft="5dp"
-                                        android:paddingBottom="20dp"
-                                        android:paddingTop="20dp"
-                                        android:text="@string/Rdim3.5.2"
-                                        android:textColor="@color/black"
+                                        android:padding="5dp"
+                                        android:text="scores"
+                                        android:textColor="@color/white"
                                         android:textSize="16sp" />
-
-                                    <LinearLayout
-                                        android:layout_width="0dp"
-                                        android:layout_weight=".4"
-                                        android:background="@color/dark_blue"
-                                        android:gravity="center"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:padding="5dp"
-                                            android:text="scores"
-                                            android:textColor="@color/white"
-                                            android:textSize="16sp" />
 
                                     <Spinner
                                         android:id="@+id/spinner_score310"
@@ -943,43 +954,43 @@
                                         android:tag="eulgk1yTwog"
                                         android:textSize="12sp" />
 
-                                    </LinearLayout>
-
                                 </LinearLayout>
-
-                                <EditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"
-                                    android:padding="5dp"
-                                    android:paddingBottom="155dp"
-                                    android:background="@color/white"
-                                    android:gravity="center_vertical"
-                                    android:hint="comment"
-                                    android:inputType="text"
-                                    android:textColor="@color/grey"
-                                    android:textSize="16sp" />
 
                             </LinearLayout>
 
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:hint="comment"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:paddingBottom="155dp"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
                         </LinearLayout>
+
+                    </LinearLayout>
 
                 </android.support.v7.widget.CardView>
 
-            <!-- dims button section -->
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/round_border"
-                app:cardCornerRadius="5dp"
-                card_view:cardElevation="9dp">
+                <!-- dims button section -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_border"
+                    app:cardCornerRadius="5dp"
+                    card_view:cardElevation="9dp">
 
-                <include layout="@layout/dims_button" />
+                    <include layout="@layout/dims_button" />
 
-            </android.support.v7.widget.CardView>
-        </LinearLayout>
-    </ScrollView>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
@@ -987,7 +998,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
-        android:src="@drawable/ic_navigate_next_white_24dp"
-        android:layout_margin="16dp" />
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_navigate_next_white_24dp" />
 
 </android.support.design.widget.CoordinatorLayout>

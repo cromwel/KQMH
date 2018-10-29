@@ -10,7 +10,7 @@ import com.raizlabs.android.dbflow.structure.BaseModel;
  * Table to store users org units ids.
  */
 @Table(database = MyDatabase.class, name = "orgUnitIds")
-public class AbstractOrgUnit extends BaseModel{
+public class AbstractOrgUnit extends BaseModel {
     @Column
     @PrimaryKey
     private String id;

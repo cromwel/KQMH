@@ -8,11 +8,11 @@ import java.util.List;
 
 
 public class BottomBarAdapter extends FragmentStatePagerAdapter {
+    private final List<Fragment> fragments = new ArrayList<>();
+
     public BottomBarAdapter(FragmentManager fragmentManager) {
         super(fragmentManager);
     }
-
-    private final List<Fragment> fragments = new ArrayList<>();
 
     // Our custom method that populates this Adapter with Fragments
     public void addFragments(Fragment fragment) {

@@ -1,7 +1,5 @@
 package com.kqmh.app.kqmh.Utils;
 
-import java.util.Date;
-
 public class AppConstants {
     public static final String KQMH_CHECKLIST_ID = "TA4FU3zu93l";
     public static final String DIMENSION_1 = "Dim1";

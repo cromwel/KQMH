@@ -1,7 +1,5 @@
 package com.kqmh.app.kqmh.Models;
 
-import android.content.Context;
-
 import com.kqmh.app.kqmh.Utils.MyDatabase;
 import com.raizlabs.android.dbflow.annotation.Column;
 import com.raizlabs.android.dbflow.annotation.PrimaryKey;
@@ -19,13 +17,13 @@ public class Period extends BaseModel {
     private String period;
 
 
-    public Period(int id, String period){
+    public Period(int id, String period) {
 
         setId(id);
         setPeriod(period);
     }
 
-    public Period(){
+    public Period() {
 
     }
 
@@ -58,9 +56,9 @@ public class Period extends BaseModel {
 
     @Override
     public boolean equals(Object obj) {
-        if(obj instanceof Period){
-            Period c = (Period )obj;
-            if(c.getName().equals(period) && c.getId()==id ) return true;
+        if (obj instanceof Period) {
+            Period c = (Period) obj;
+            if (c.getName().equals(period) && c.getId() == id) return true;
         }
 
         return false;
