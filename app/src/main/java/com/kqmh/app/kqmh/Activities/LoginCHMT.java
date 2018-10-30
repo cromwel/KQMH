@@ -19,6 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.error.AuthFailureError;
 import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
+import com.kqmh.app.kqmh.Forms.Assessment_InfoCHMT;
 import com.kqmh.app.kqmh.Forms.Assessment_InfoEx;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
@@ -139,7 +140,7 @@ public class LoginCHMT extends AppCompatActivity {
     private void finishLogin() {
         closeProgressbar();
         new SessionManager(getBaseContext()).setLoggedIn(true);
-        Intent intent = new Intent(getBaseContext(), Assessment_InfoEx.class);
+        Intent intent = new Intent(getBaseContext(), Assessment_InfoCHMT.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
                 | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);

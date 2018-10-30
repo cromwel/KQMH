@@ -65,7 +65,7 @@ public class Welcome extends AppCompatActivity {
     private void submit_chmt() {
         closeProgressbar();
         new SessionManager(getBaseContext()).setLoggedIn(true);
-        Intent intent = new Intent(getBaseContext(), LoginEx.class);
+        Intent intent = new Intent(getBaseContext(), LoginCHMT.class);
         startActivity(intent);
     }
 
