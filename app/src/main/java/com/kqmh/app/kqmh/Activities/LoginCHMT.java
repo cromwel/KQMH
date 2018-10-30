@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatCheckBox;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -21,12 +22,15 @@ import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
 import com.kqmh.app.kqmh.Forms.Assessment_InfoCHMT;
 import com.kqmh.app.kqmh.Forms.Assessment_InfoEx;
+import com.kqmh.app.kqmh.Models.AbstractOrgUnit;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.CookieHandler;
@@ -95,12 +99,21 @@ public class LoginCHMT extends AppCompatActivity {
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, UrlConstants.LOGIN_URL, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                String id = null;
+                try {
+                    id = response.getString("id");
+                    //Toast.makeText(LoginCHMT.this, "id " + id, Toast.LENGTH_SHORT).show();
+
                 sessionManager.setKeyBearerToken(encoded);
                 sessionManager.setLoggedIn(true);
                 sessionManager.setUserName(email.getText().toString());
                 sessionManager.setKeyPassword(password.getText().toString());
-                finishLogin();
-                Toast.makeText(LoginCHMT.this, "Successfull", Toast.LENGTH_SHORT).show();
+                getUserDetails(id, encoded);
+//                finishLogin();
+                //Toast.makeText(LoginCHMT.this, "Successfull", Toast.LENGTH_SHORT).show();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
 
             }
         }, new Response.ErrorListener() {
@@ -126,6 +139,53 @@ public class LoginCHMT extends AppCompatActivity {
         VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
     }
 
+    public void getUserDetails(String id, final String encoded) {
+        Toast.makeText(this, "User details", Toast.LENGTH_SHORT).show();
+        Log.d("Entered", "true");
+        String USER_DETAILS_URL = String.format("https://kqmh.uonbi.ac.ke/api/users/%s", id);
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, USER_DETAILS_URL, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                Toast.makeText(getBaseContext(), "User details" + response.toString(), Toast.LENGTH_SHORT).show();
+                Log.d("User details", response.toString());
+                try {
+                    JSONArray jsonArray = response.getJSONArray("organisationUnits");
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        JSONObject jsonObject = jsonArray.getJSONObject(i);
+                        String id = jsonObject.getString("id");
+                        AbstractOrgUnit orgUnit = new AbstractOrgUnit();
+                        orgUnit.setId(id);
+                        orgUnit.save();
+                        Toast.makeText(getBaseContext(), "Successfull", Toast.LENGTH_SHORT).show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                finishLogin();
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                closeProgressbar();
+                if (error instanceof AuthFailureError) {
+                    Toast.makeText(getBaseContext(), "Wrong email and password combination", Toast.LENGTH_SHORT).show();
+                }
+                closeProgressbar();
+                Toast.makeText(getBaseContext(), "Cannot Log in at this time", Toast.LENGTH_SHORT).show();
+
+            }
+        }) {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                Map<String, String> headers = new HashMap<>();
+                headers.put("Authorization", encoded);
+                return headers;
+            }
+        };
+        VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
+    }
 
     public void submit() {
         if (check()) {
