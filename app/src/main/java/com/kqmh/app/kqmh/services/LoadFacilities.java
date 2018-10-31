@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
+import com.kqmh.app.kqmh.Models.AbstractFacilityUnit;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -61,6 +63,18 @@ public class LoadFacilities extends IntentService {
                 Log.d("SubCounty", subCountyID+" "+subCounty);
                 Log.d("County", countyID+" "+county);
 
+                //facility,id,ward,id,subcounty,id,county,id where countyID = $var
+
+                AbstractFacilityUnit facilityUnit = new AbstractFacilityUnit();
+                facilityUnit.setFacility(facility);
+                facilityUnit.setFacilityID(facilityID);
+                facilityUnit.setWard(ward);
+                facilityUnit.setWardID(wardID);
+                facilityUnit.setSubCounty(subCounty);
+                facilityUnit.setSubCountyID(subCountyID);
+                facilityUnit.setCounty(county);
+                facilityUnit.setCountyID(countyID);
+                facilityUnit.save();
             }
 
         } catch (Exception e) {

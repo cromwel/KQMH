@@ -28,8 +28,10 @@ import com.kqmh.app.kqmh.Adapters.OrganisationUnitAdapter;
 import com.kqmh.app.kqmh.Adapters.OrganisationUnitAdapterChmt;
 import com.kqmh.app.kqmh.Adapters.OrganisationUnitAdapterEx;
 import com.kqmh.app.kqmh.Adapters.PeriodAdapter;
+import com.kqmh.app.kqmh.Models.AbstractFacilityUnit;
 import com.kqmh.app.kqmh.Models.AbstractOrgUnit;
 import com.kqmh.app.kqmh.Models.AssessmentTypeCombo;
+import com.kqmh.app.kqmh.Models.DataElement;
 import com.kqmh.app.kqmh.Models.FacilityLevel;
 import com.kqmh.app.kqmh.Models.KeyValue;
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
@@ -37,6 +39,7 @@ import com.kqmh.app.kqmh.Models.Period;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
+import com.kqmh.app.kqmh.Utils.JSONFileParser;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
@@ -60,7 +63,9 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
     List<AssessmentTypeCombo> categoryOptions = new ArrayList<>();
     List<OrganisationUnit> OrganisationUnit = new ArrayList<>();
     List<String> orgUnitsNames = new ArrayList<>();
+    List<String> orgUnitsId = new ArrayList<>();
     List<Period> qPeriod = new ArrayList<>();
+    List<AbstractFacilityUnit> facilityUnitList = new ArrayList<>();
 
     private Spinner spinner_county;
     private SearchableSpinner spinner_OrganisationUnit;
@@ -115,7 +120,7 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
         try {
             for (int i = 1; i < 350; i++) {
                 String url = ORGANISATION_UNIT_URL_ex.replace("[number]", String.valueOf(i));
-                getOrganisationUnit(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()), url);
+                //getOrganisationUnit(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()), url);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -187,6 +192,7 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
                     OrganisationUnit org = gson.fromJson(response.toString(), OrganisationUnit.class);
                     org.save();
                     orgUnitsNames.add(org.getDisplayName());
+                    orgUnitsId.add(org.getId());
                     spinnerData_CountyUnit(spinner_county, "1");
                     closeProgressbar();
                 } catch (Exception e) {
@@ -214,7 +220,7 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
     }
 
     private void saveUnits(List<OrganisationUnit> OrganisationUnit) {
-      //  Log.d("Saving units", "saving " + OrganisationUnit.size());
+        //  Log.d("Saving units", "saving " + OrganisationUnit.size());
         for (OrganisationUnit organisationUnit : OrganisationUnit) {
             organisationUnit.save();
         }
@@ -240,7 +246,7 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
         });
     }
 
-    private void getOrganisationUnit(final String encoded, final String url) {
+  /*  private void getOrganisationUnit(final String encoded, final String url) {
         Log.d("Auth", encoded);
         progressDialog.show();
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
@@ -252,6 +258,7 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
                     Gson gson = new Gson();
                     for (int i = 0; i < jsonArray.length(); i++) {
                         OrganisationUnit org = gson.fromJson(jsonArray.getJSONObject(i).toString(), OrganisationUnit.class);
+
                         OrganisationUnit.add(org);
                         orgUnitsNames.add(org.getDisplayName());
                     }
@@ -279,138 +286,160 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
             }
         };
         VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
-    }
+    }*/
+
+   private void getfacility()throws JSONException{
+        progressDialog.show();
+        String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext(), "allOrgUnits.json");
+
+        /*DataElement element2 = SQLite.select()
+                .from(DataElement.class)
+                .where(DataElement_Table.dataElementId.eq(spinner.getTag().toString())).querySingle();
+        if (element2 == null) {
+            DataElement element = new DataElement();
+            element.setEntity(AppConstants.DIMENSION_1);
+            element.setDataElementId(spinner.getTag().toString());
+            element.save();
+            for () {
 
 
-    /*period*/
-    public void spinnerData_period(Spinner spinner, final String choice) {
+                facilityUnitList.add(facilityUnit);
 
-        qPeriod.add(new Period(201800, "select"));
-        qPeriod.add(new Period(201804, "October - December 2018"));
-        qPeriod.add(new Period(201803, "July - September 2018"));
-        qPeriod.add(new Period(201802, "April - June 2018"));
-        qPeriod.add(new Period(201801, "January - March 2018"));
+            }
+        }*/
 
-        PeriodAdapter adapter = new PeriodAdapter(this, android.R.layout.simple_spinner_dropdown_item, qPeriod);
-        spinner_period.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (choice.matches("1")) {
-                } else if (choice.matches("2")) {
+
+        }
+
+        /*period*/
+        public void spinnerData_period(Spinner spinner, final String choice) {
+
+            qPeriod.add(new Period(201800, "select"));
+            qPeriod.add(new Period(201804, "October - December 2018"));
+            qPeriod.add(new Period(201803, "July - September 2018"));
+            qPeriod.add(new Period(201802, "April - June 2018"));
+            qPeriod.add(new Period(201801, "January - March 2018"));
+
+            PeriodAdapter adapter = new PeriodAdapter(this, android.R.layout.simple_spinner_dropdown_item, qPeriod);
+            spinner_period.setAdapter(adapter);
+            spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                    if (choice.matches("1")) {
+                    } else if (choice.matches("2")) {
+                    }
                 }
-            }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-            }
-        });
-    }
-
-    private void savePeriod(List<Period> qPeriod) {
-        Log.d("Saving quarter", "saving " + qPeriod.size());
-        for (Period period : qPeriod) {
-            period.save();
-        }
-    }
-
-
-    /*facility level*/
-    public void spinnerData_facilityLevel(Spinner spinner, final String choice) {
-        ArrayList<KeyValue> keyvalue = new ArrayList<>();
-
-        // adding each child node to HashMap key => value
-        keyvalue.add(new KeyValue(0, "Select"));
-        keyvalue.add(new KeyValue(1, "level 6"));
-        keyvalue.add(new KeyValue(2, "level 5"));
-        keyvalue.add(new KeyValue(3, "level 4 with dialysis"));
-        keyvalue.add(new KeyValue(4, "level 4"));
-        keyvalue.add(new KeyValue(5, "level 3"));
-        keyvalue.add(new KeyValue(6, "level 2"));
-
-
-        //fill data in spinner
-        ArrayAdapter<KeyValue> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, keyvalue);
-        spinner.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
-        //occupationSpinner.setSelection(adapter.getPosition(keyvalue.get(2)));//Optional to set the selected item.
-
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                KeyValue value = (KeyValue) parent.getSelectedItem();
-                if (choice.matches("1")) {
-                    //occupation = value.getId();
-                } else if (choice.matches("2")) {
-                    //occupation = value.getId();
+                @Override
+                public void onNothingSelected(AdapterView<?> parent) {
                 }
-                //updateValues();
-            }
+            });
+        }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
+        private void savePeriod(List<Period> qPeriod) {
+            Log.d("Saving quarter", "saving " + qPeriod.size());
+            for (Period period : qPeriod) {
+                period.save();
             }
-        });
-    }
+        }
 
-    private void saveLevel(List<FacilityLevel> levels) {
-        Log.d("Saving levels", "saving " + levels.size());
-        for (FacilityLevel facilityLevel : levels) {
-            facilityLevel.save();
+
+        /*facility level*/
+        public void spinnerData_facilityLevel(Spinner spinner, final String choice) {
+            ArrayList<KeyValue> keyvalue = new ArrayList<>();
+
+            // adding each child node to HashMap key => value
+            keyvalue.add(new KeyValue(0, "Select"));
+            keyvalue.add(new KeyValue(1, "level 6"));
+            keyvalue.add(new KeyValue(2, "level 5"));
+            keyvalue.add(new KeyValue(3, "level 4 with dialysis"));
+            keyvalue.add(new KeyValue(4, "level 4"));
+            keyvalue.add(new KeyValue(5, "level 3"));
+            keyvalue.add(new KeyValue(6, "level 2"));
+
+
+            //fill data in spinner
+            ArrayAdapter<KeyValue> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, keyvalue);
+            spinner.setAdapter(adapter);
+            adapter.notifyDataSetChanged();
+            //occupationSpinner.setSelection(adapter.getPosition(keyvalue.get(2)));//Optional to set the selected item.
+
+            spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                    KeyValue value = (KeyValue) parent.getSelectedItem();
+                    if (choice.matches("1")) {
+                        //occupation = value.getId();
+                    } else if (choice.matches("2")) {
+                        //occupation = value.getId();
+                    }
+                    //updateValues();
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> parent) {
+                }
+            });
+        }
+
+        private void saveLevel(List<FacilityLevel> levels) {
+            Log.d("Saving levels", "saving " + levels.size());
+            for (FacilityLevel facilityLevel : levels) {
+                facilityLevel.save();
+            }
+        }
+
+
+        public void submit() {
+            closeProgressbar();
+            new SessionManager(getBaseContext()).setLoggedIn(true);
+            Intent intent = new Intent(getBaseContext(), Dimensions_List.class);
+            startActivity(intent);
+        }
+
+        private void closeProgressbar() {
+            if (progressDialog != null) {
+                progressDialog.dismiss();
+            }
+        }
+
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu) {
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.home_menu, menu);
+            return true;
+        }
+
+        private void logout() {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage("Log out?");
+            builder.setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    new SessionManager(getBaseContext()).setLoggedIn(false);
+                    Intent intent = new Intent(getBaseContext(), Welcome.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+
+                }
+            });
+            builder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+
+                }
+            });
+            builder.show();
+        }
+
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.logout:
+                    logout();
+                    break;
+            }
+            return super.onOptionsItemSelected(item);
         }
     }
-
-
-    public void submit() {
-        closeProgressbar();
-        new SessionManager(getBaseContext()).setLoggedIn(true);
-        Intent intent = new Intent(getBaseContext(), Dimensions_List.class);
-        startActivity(intent);
-    }
-
-    private void closeProgressbar() {
-        if (progressDialog != null) {
-            progressDialog.dismiss();
-        }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.home_menu, menu);
-        return true;
-    }
-
-    private void logout() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Log out?");
-        builder.setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                new SessionManager(getBaseContext()).setLoggedIn(false);
-                Intent intent = new Intent(getBaseContext(), Welcome.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-
-            }
-        });
-        builder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-
-            }
-        });
-        builder.show();
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.logout:
-                logout();
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-}
