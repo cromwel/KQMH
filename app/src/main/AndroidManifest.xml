@@ -96,6 +96,11 @@
         <activity android:name=".Network.Merlin.presentation.DemoActivity"
             android:windowSoftInputMode="stateHidden"/>
 
+        <service
+            android:name=".services.LoadFacilities"
+            android:exported="false"
+            android:process=":loadFacilities" />
+
     </application>
 
 </manifest>

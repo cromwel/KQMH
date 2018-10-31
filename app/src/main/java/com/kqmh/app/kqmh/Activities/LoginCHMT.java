@@ -28,6 +28,7 @@ import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
+import com.kqmh.app.kqmh.services.LoadFacilities;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -78,6 +79,9 @@ public class LoginCHMT extends AppCompatActivity {
                 }
             }
         });
+
+        Intent serviceFacility = new Intent(this, LoadFacilities.class);
+        startService(serviceFacility);
     }
 
     private boolean check() {
