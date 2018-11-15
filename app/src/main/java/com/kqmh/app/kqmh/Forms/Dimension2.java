@@ -374,4 +374,11 @@ public class Dimension2 extends AppCompatActivity {
         }
 
     }
+
+    public static void onLevelSelected(final String choice){
+        if(choice == "1"){
+
+        }
+
+    }
 }

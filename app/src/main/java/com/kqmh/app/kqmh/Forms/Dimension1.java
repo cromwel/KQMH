@@ -278,7 +278,8 @@ public class Dimension1 extends AppCompatActivity {
                 if (spinner.getTag().toString().equals(id)) {
                     DataElement element2 = SQLite.select()
                             .from(DataElement.class)
-                            .where(DataElement_Table.dataElementId.eq(spinner.getTag().toString())).querySingle();
+                            .where(DataElement_Table.dataElementId.eq(spinner.getTag().toString()))
+                            .querySingle();
                     if (element2 == null) {
                         DataElement element = new DataElement();
                         element.setEntity(AppConstants.DIMENSION_1);

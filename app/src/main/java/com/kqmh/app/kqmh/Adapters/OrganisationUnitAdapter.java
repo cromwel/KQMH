@@ -20,7 +20,7 @@ import java.util.List;
 
 public class OrganisationUnitAdapter extends ArrayAdapter<OrganisationUnit> {
     private Context context;
-    private List<OrganisationUnit> organisationUnits = new ArrayList<>();
+    private List<OrganisationUnit> organisationUnits ;
 
 
     public OrganisationUnitAdapter(@NonNull Context context, int resource) {

@@ -6,9 +6,8 @@ import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
-@Table(database = MyDatabase.class, name = "FacilityUnits")
+@Table(database = MyDatabase.class, name = "facilityUnits")
 public class AbstractFacilityUnit extends BaseModel {
-
 
     @Column
     @PrimaryKey
@@ -28,6 +27,18 @@ public class AbstractFacilityUnit extends BaseModel {
     @Column
     private String countyID;
 
+
+   /* public AbstractFacilityUnit(String facilityID, String facility, String ward, String wardID, String subCounty, String subCountyID, String county, String countyID){
+        this.facilityID=facilityID;
+        this.facility=facility;
+        this.ward=ward;
+        this.wardID=wardID;
+        this.subCounty=subCounty;
+        this.subCountyID=subCountyID;
+        this.county=county;
+        this.countyID=countyID;
+    }
+*/
 
     public String getFacilityID() {
         return facilityID;
@@ -91,6 +102,31 @@ public class AbstractFacilityUnit extends BaseModel {
 
     public void setCountyID(String countyID) {
         this.countyID = countyID;
+    }
+
+
+    public void setFacility() {
+    }
+
+    public void setFacilityID() {
+    }
+
+    public void setWard() {
+    }
+
+    public void setWardID() {
+    }
+
+    public void setSubCounty() {
+    }
+
+    public void setSubCountyID() {
+    }
+
+    public void setCountyID() {
+    }
+
+    public void setCounty() {
     }
 }
 

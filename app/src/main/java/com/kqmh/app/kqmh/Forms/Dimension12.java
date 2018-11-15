@@ -14,7 +14,7 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.kqmh.app.kqmh.Activities.ViewFilesActivity;
+import com.kqmh.app.kqmh.Activities.ProgressActivity;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 
@@ -59,7 +59,7 @@ public class Dimension12 extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        startActivity(new Intent(Dimension12.this, ViewFilesActivity.class));
+                        startActivity(new Intent(Dimension12.this, ProgressActivity.class));
                     }
                 }
         );
@@ -274,10 +274,16 @@ public class Dimension12 extends AppCompatActivity {
                 });
 
         try {
+           /* for(i=0; i<34; i++) {
+                if () {
+
+                }
+            }*/
         } catch (Exception e) {
             e.printStackTrace();
             progressDialog.cancel();
         }
+
     }
 
     public void prev_submit() {
@@ -285,12 +291,6 @@ public class Dimension12 extends AppCompatActivity {
         Intent intent = new Intent(getBaseContext(), Dimension11_List.class);
         startActivity(intent);
     }
-
-   /* public void next_submit() {
-        new SessionManager(getBaseContext()).setLoggedIn(true);
-        Intent intent = new Intent(getBaseContext(), ViewFilesActivity.class);
-        startActivity(intent);
-    }*/
 
 
     public void percentile_points() {

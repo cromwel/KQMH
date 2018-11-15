@@ -45,6 +45,7 @@ public class SessionManager {
     private static final String KEY_SAVED_OPTIONS11_13 = "isOptionsSaved11_13";
     private static final String KEY_SAVED_OPTIONS11_14 = "isOptionsSaved11_14";
     private static final String KEY_SAVED_OPTIONS12 = "isOptionsSaved12";
+    private static final String KEY_FACILITY = "isFacilitySaved";
 
 
     public SessionManager(Context context) {
@@ -119,6 +120,10 @@ public class SessionManager {
 
     public boolean isOptionsSaved() {
         return pref.getBoolean(KEY_SAVED_OPTIONS, false);
+    }
+
+    public boolean isFacilitySaved() {
+        return pref.getBoolean(KEY_FACILITY, false);
     }
 
     public boolean isOptionsSaved2() {

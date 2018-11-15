@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
+import com.kqmh.app.kqmh.Activities.ProgressActivity;
 import com.kqmh.app.kqmh.Activities.Welcome;
 import com.kqmh.app.kqmh.Models.KeyValue;
 import com.kqmh.app.kqmh.R;
@@ -74,6 +75,7 @@ public class Dimensions_List extends AppCompatActivity {
         keyvalue.add(new KeyValue(10, "Dim10: Financial Management"));
         keyvalue.add(new KeyValue(11, "Dim11: Services"));
         keyvalue.add(new KeyValue(12, "Dim12: Results"));
+        keyvalue.add(new KeyValue(13, "Summary Progress"));
 
 
         //fill data in spinner
@@ -135,6 +137,10 @@ public class Dimensions_List extends AppCompatActivity {
                     case 12:
                         Intent intentDimension12 = new Intent(getBaseContext(), Dimension12.class);
                         startActivity(intentDimension12);
+                        break;
+                    case 13:
+                        Intent intentProgress = new Intent(getBaseContext(), ProgressActivity.class);
+                        startActivity(intentProgress);
                         break;
                 }
 

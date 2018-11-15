@@ -133,6 +133,7 @@ public class Assessment_InfoEx extends AppCompatActivity {
         popup.show();
     }
 
+    /*org units*/
     public void spinnerData_OrganisationUnit(Spinner spinner_OrganisationUnit, final String choice) {
         //fill data in spinner
         OrganisationUnitAdapterEx adapter = new OrganisationUnitAdapterEx(this, android.R.layout.simple_spinner_dropdown_item, orgUnitsNames);
@@ -192,73 +193,6 @@ public class Assessment_InfoEx extends AppCompatActivity {
         VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
     }
 
-    /*assessment type*//*
-    public void spinnerData_AssessmentType(Spinner spinner_AssessmentType, final String choice) {
-        //fill data in spinner
-        AssessmentTypeAdapter adapter = new AssessmentTypeAdapter(this, android.R.layout.simple_spinner_dropdown_item, categoryOptions);
-        spinner_AssessmentType.setAdapter(adapter);
-        spinner_AssessmentType.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (choice.matches("1")) {
-                } else if (choice.matches("2")) {
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-            }
-        });
-    }
-
-    private void getAssessmentType(final String encoded) {
-        Log.d("Auth", encoded);
-        progressDialog.show();
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, UrlConstants.ASSESSMENT_TYPE_URL, null, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                Log.d("assessment type", response.toString());
-                try {
-                    JSONArray jsonArray = response.getJSONArray("categoryOptionCombos");
-                    Gson gson = new Gson();
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        AssessmentTypeCombo combo = gson.fromJson(jsonArray.getJSONObject(i).toString(), AssessmentTypeCombo.class);
-                        categoryOptions.add(combo);
-                    }
-                    saveOptions(categoryOptions);
-                    closeProgressbar();
-                    spinnerData_AssessmentType(spinner_AssessmentType, "1");
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    closeProgressbar();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                error.printStackTrace();
-                closeProgressbar();
-            }
-        }) {
-            @Override
-            public Map<String, String> getHeaders() {
-                Map<String, String> headers = new HashMap<>();
-                //headers.put("Content-Type","application/json");
-                Log.d("Encoded", encoded);
-                headers.put("Authorization", encoded);
-                return headers;
-            }
-        };
-        VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
-    }
-
-    private void saveOptions(List<AssessmentTypeCombo> categoryOptions) {
-        Log.d("Saving options", "saving " + categoryOptions.size());
-        for (AssessmentTypeCombo assessmentTypeCombo : categoryOptions) {
-            assessmentTypeCombo.save();
-        }
-    }*/
-
     /*period*/
     public void spinnerData_period(Spinner spinner, final String choice) {
 
@@ -317,7 +251,7 @@ public class Assessment_InfoEx extends AppCompatActivity {
 
                 KeyValue value = (KeyValue) parent.getSelectedItem();
                 if (choice.matches("1")) {
-                    //occupation = value.getId();
+//                    Dimension2.onLevelSelected(String choice);
                 } else if (choice.matches("2")) {
                     //occupation = value.getId();
                 }
