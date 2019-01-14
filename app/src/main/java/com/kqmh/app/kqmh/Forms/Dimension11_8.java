@@ -112,22 +112,6 @@ public class Dimension11_8 extends AppCompatActivity {
             progressDialog.cancel();
         }
 
-
-
-       /* Observable.range(1, 200).subscribeOn(Schedulers.computation())
-                .delay(5, TimeUnit.SECONDS)
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<Integer>() {
-                    @Override
-                    public void accept(Integer progress) throws Exception {
-                        progressBar.setProgress(progress);
-                    }
-                }, new Consumer<Throwable>() {
-                    @Override
-                    public void accept(Throwable throwable) throws Exception {
-
-                    }
-                });*/
     }
 
     @Override

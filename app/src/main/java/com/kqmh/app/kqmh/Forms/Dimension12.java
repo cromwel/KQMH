@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.kqmh.app.kqmh.Activities.ProgressActivity;
 import com.kqmh.app.kqmh.R;
@@ -20,6 +21,9 @@ import com.kqmh.app.kqmh.SessionManager;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.kqmh.app.kqmh.Utils.AppConstants.DENOMENATORS;
+import static com.kqmh.app.kqmh.Utils.AppConstants.NUMERATORS;
 
 public class Dimension12 extends AppCompatActivity {
 
@@ -168,6 +172,7 @@ public class Dimension12 extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+
                         Log.v("EditText", et_av_i1.getText().toString());
                         Log.v("EditText", et_av_i2.getText().toString());
                         Log.v("EditText", et_av_i3.getText().toString());
@@ -274,11 +279,7 @@ public class Dimension12 extends AppCompatActivity {
                 });
 
         try {
-           /* for(i=0; i<34; i++) {
-                if () {
 
-                }
-            }*/
         } catch (Exception e) {
             e.printStackTrace();
             progressDialog.cancel();
@@ -291,7 +292,6 @@ public class Dimension12 extends AppCompatActivity {
         Intent intent = new Intent(getBaseContext(), Dimension11_List.class);
         startActivity(intent);
     }
-
 
     public void percentile_points() {
 
@@ -326,6 +326,8 @@ public class Dimension12 extends AppCompatActivity {
 
         } catch (NumberFormatException nfe) {
             // Handle parse error.
+            Log.e("Dimension12", nfe.getMessage());
+            nfe.printStackTrace();
         }
     }
 
@@ -384,10 +386,12 @@ public class Dimension12 extends AppCompatActivity {
             }
 
         } catch (NumberFormatException nfe) {
+            System.out.println("You entered bad data." );
             // Handle parse error.
+            Log.e("Dimension12", nfe.getMessage());
+            nfe.printStackTrace();
         }
     }
-
 
     public void quarters_points() {
         try {
@@ -406,6 +410,7 @@ public class Dimension12 extends AppCompatActivity {
             }
 
         } catch (NumberFormatException e) {
+            System.out.println("You entered bad data." );
             // Handle parse error.
             Log.e("Dimension12", e.getMessage());
             e.printStackTrace();
@@ -417,23 +422,33 @@ public class Dimension12 extends AppCompatActivity {
             int int_et_av_n = Integer.parseInt(numerator.getText().toString());
             int int_et_av_d = Integer.parseInt(denominator.getText().toString());
 
-            float float_et_av = (((float) int_et_av_n / (float) int_et_av_d) * 100);
+            if(int_et_av_n < int_et_av_d){
 
-            if (float_et_av >= p4) {
-                textView.setText(String.format("%.0f%% \n score = 4p", float_et_av));
-            } else if (float_et_av < p4 && float_et_av >= p3) {
-                textView.setText(String.format("%.0f%% \n score = 3p", float_et_av));
-            } else if (float_et_av < p3 && float_et_av >= p2) {
-                textView.setText(String.format("%.0f%% \n score = 2p", float_et_av));
-            } else if (float_et_av < p2 && float_et_av >= p1) {
-                textView.setText(String.format("%.0f%% \n score = 1p", float_et_av));
-            } else if (float_et_av < p1) {
-                textView.setText(String.format("%.0f%% \n score = 0p", float_et_av));
-            }
+                float float_et_av = (((float) int_et_av_n / (float) int_et_av_d) * 100);
+
+                if (float_et_av >= p4) {
+                    textView.setText(String.format("%.0f%% \n score = 4p", float_et_av));
+                } else if (float_et_av < p4 && float_et_av >= p3) {
+                    textView.setText(String.format("%.0f%% \n score = 3p", float_et_av));
+                } else if (float_et_av < p3 && float_et_av >= p2) {
+                    textView.setText(String.format("%.0f%% \n score = 2p", float_et_av));
+                } else if (float_et_av < p2 && float_et_av >= p1) {
+                    textView.setText(String.format("%.0f%% \n score = 1p", float_et_av));
+                } else if (float_et_av < p1) {
+                    textView.setText(String.format("%.0f%% \n score = 0p", float_et_av));
+                }
+            } else
+                {
+                    throw new NumberFormatException();
+                }
+
         } catch (NumberFormatException e) {
+            System.out.println("Your Numerator is bigger than denominator: makes no sense!" );
+            Toast.makeText(getBaseContext(), "Your Numerator is bigger than denominator: makes no sense!" , Toast.LENGTH_LONG).show();
+
             // Handle parse error.
-            Log.e("Dimension12", e.getMessage());
-            e.printStackTrace();
+           // Log.e("Dimension12", e.getMessage());
+            //e.printStackTrace();
         }
     }
 
@@ -442,6 +457,10 @@ public class Dimension12 extends AppCompatActivity {
             int int_et_av_n = Integer.parseInt(numerator.getText().toString());
             int int_et_av_d = Integer.parseInt(denominator.getText().toString());
 
+            if(int_et_av_n < int_et_av_d){
+
+
+
             float float_et_av = (((float) int_et_av_n / (float) int_et_av_d) * 100);
 
             if (float_et_av >= p4) {
@@ -455,10 +474,15 @@ public class Dimension12 extends AppCompatActivity {
             } else if (float_et_av < p1) {
                 textView.setText(String.format("%.0f%% \n score = 4p", float_et_av));
             }
+        } else
+        {
+            throw new NumberFormatException();
+        }
         } catch (NumberFormatException e) {
+            System.out.println("Your Numerator is bigger than denominator: makes no sense!" );
+            Toast.makeText(getBaseContext(), "Check up! Your Numerator is bigger than denominator: no score!" , Toast.LENGTH_LONG).show();
+
             // Handle parse error.
-            Log.e("Dimension12", e.getMessage());
-            e.printStackTrace();
         }
     }
 
@@ -466,6 +490,10 @@ public class Dimension12 extends AppCompatActivity {
         try {
             int int_et_av_n = Integer.parseInt(numerator.getText().toString());
             int int_et_av_d = Integer.parseInt(denominator.getText().toString());
+
+            if(int_et_av_n < int_et_av_d){
+
+
 
             float float_et_av = (((float) int_et_av_n / (float) int_et_av_d) * 1000);
 
@@ -480,10 +508,15 @@ public class Dimension12 extends AppCompatActivity {
             } else if (float_et_av < p1) {
                 textView.setText(String.format("%.0f per 1000 live births\n score = 4p", float_et_av));
             }
+            } else
+            {
+                throw new NumberFormatException();
+            }
         } catch (NumberFormatException e) {
+            System.out.println("Your Numerator is bigger than denominator: makes no sense!" );
+            Toast.makeText(getBaseContext(), "Check up! Your Numerator is bigger than denominator: no score!" , Toast.LENGTH_LONG).show();
+
             // Handle parse error.
-            Log.e("Dimension12", e.getMessage());
-            e.printStackTrace();
         }
     }
 
@@ -491,6 +524,10 @@ public class Dimension12 extends AppCompatActivity {
         try {
             int int_et_av_n = Integer.parseInt(numerator.getText().toString());
             int int_et_av_d = Integer.parseInt(denominator.getText().toString());
+
+            if(int_et_av_n < int_et_av_d){
+
+
 
             float float_et_av = ((float) int_et_av_n / (float) int_et_av_d);
 
@@ -505,10 +542,14 @@ public class Dimension12 extends AppCompatActivity {
             } else if (float_et_av < p1) {
                 textView.setText(String.format("%.2f points\n score = 0p", float_et_av));
             }
+        } else
+            {
+                throw new NumberFormatException();
+            }
         } catch (NumberFormatException e) {
+            System.out.println("Your Numerator is bigger than denominator: makes no sense!" );
+            Toast.makeText(getBaseContext(), "Check up! Your Numerator is bigger than denominator: no score!" , Toast.LENGTH_LONG).show();
             // Handle parse error.
-            Log.e("Dimension12", e.getMessage());
-            e.printStackTrace();
         }
     }
 

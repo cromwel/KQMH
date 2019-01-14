@@ -26,4 +26,7 @@ public class AppConstants {
     public static final String DIMENSION_11_12 = "Dim11_12";
     public static final String DIMENSION_11_13 = "Dim11_13";
     public static final String DIMENSION_11_14 = "Dim11_14";
+
+    public static final String NUMERATORS = "et_av_i[number]n";
+    public static final String DENOMENATORS = "et_av_i[number]d";
 }

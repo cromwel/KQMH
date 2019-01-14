@@ -57,6 +57,7 @@ public class Dimension11_9 extends AppCompatActivity {
         setContentView(R.layout.form_dimension11_9);
         assesmentProgress = SQLite.select().from(AssesmentProgress.class).where(AssesmentProgress_Table.assessment.eq(AppConstants.DIMENSION_11_9)).querySingle();
 
+
         // Get the widgets reference from XML layout
         final RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
         final TextView tv = (TextView) findViewById(R.id.tv);
@@ -64,7 +65,6 @@ public class Dimension11_9 extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Fetching Scores");
         progressDialog.setCancelable(false);
-
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -82,7 +82,6 @@ public class Dimension11_9 extends AppCompatActivity {
             }
         });
 
-
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,7 +90,8 @@ public class Dimension11_9 extends AppCompatActivity {
             }
         });
 
-        for (int value = 11900; value < 11929; value++) {
+
+        for (int value = 11900; value < 11930; value++) {
             Resources res = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score), value);
 
@@ -112,22 +112,6 @@ public class Dimension11_9 extends AppCompatActivity {
             progressDialog.cancel();
         }
 
-
-
-       /* Observable.range(1, 200).subscribeOn(Schedulers.computation())
-                .delay(5, TimeUnit.SECONDS)
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<Integer>() {
-                    @Override
-                    public void accept(Integer progress) throws Exception {
-                        progressBar.setProgress(progress);
-                    }
-                }, new Consumer<Throwable>() {
-                    @Override
-                    public void accept(Throwable throwable) throws Exception {
-
-                    }
-                });*/
     }
 
     @Override
@@ -267,9 +251,7 @@ public class Dimension11_9 extends AppCompatActivity {
         String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext(), "Requirements_Dim11_9.json");
         JSONObject fileObject = new JSONObject(fromJsonFile);
         JSONArray dataElements = fileObject.getJSONArray("dataSetElements");
-
         SessionManager sessionManager = new SessionManager(getBaseContext());
-
         for (int i = 0; i < dataElements.length(); i++) {
             JSONObject jsonObject = dataElements.getJSONObject(i);
             JSONObject dataElement = jsonObject.getJSONObject("dataElement");

@@ -10,7 +10,6 @@ public class UrlConstants {
     public static final String ORGANISATION_UNIT_URL_ex = IP + "api/organisationUnits?page=[number]";
     public static final String ORGANISATION_UNIT_URL = IP + "api/organisationUnits/";
     public static final String ASSESSMENT_TYPE_URL = IP + "api/categoryOptionCombos";
-    public static final String NUMERATORS = "et_av_i[number]n";
 
 
 }
