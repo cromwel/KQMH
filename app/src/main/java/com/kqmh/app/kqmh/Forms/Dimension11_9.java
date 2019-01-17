@@ -91,7 +91,7 @@ public class Dimension11_9 extends AppCompatActivity {
         });
 
 
-        for (int value = 11900; value < 11930; value++) {
+        for (int value = 11900; value < 11929; value++) {
             Resources res = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score), value);
 
@@ -253,6 +253,7 @@ public class Dimension11_9 extends AppCompatActivity {
         JSONArray dataElements = fileObject.getJSONArray("dataSetElements");
         SessionManager sessionManager = new SessionManager(getBaseContext());
         for (int i = 0; i < dataElements.length(); i++) {
+            progressDialog.cancel();
             JSONObject jsonObject = dataElements.getJSONObject(i);
             JSONObject dataElement = jsonObject.getJSONObject("dataElement");
             String id = dataElement.getString("id");

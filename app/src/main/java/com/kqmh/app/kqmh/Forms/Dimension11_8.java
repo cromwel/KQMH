@@ -150,7 +150,6 @@ public class Dimension11_8 extends AppCompatActivity {
         startActivity(intent);
     }
 
-
     private void populateSpinners() throws JSONException {
         progressDialog.show();
         String fromJsonFile = JSONFileParser.loadJSONFromAsset(getBaseContext(), "Requirements_Dim11_8.json");

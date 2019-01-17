@@ -112,22 +112,6 @@ public class Dimension11_13 extends AppCompatActivity {
             progressDialog.cancel();
         }
 
-
-
-       /* Observable.range(1, 200).subscribeOn(Schedulers.computation())
-                .delay(5, TimeUnit.SECONDS)
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<Integer>() {
-                    @Override
-                    public void accept(Integer progress) throws Exception {
-                        progressBar.setProgress(progress);
-                    }
-                }, new Consumer<Throwable>() {
-                    @Override
-                    public void accept(Throwable throwable) throws Exception {
-
-                    }
-                });*/
     }
 
     @Override
@@ -166,6 +150,7 @@ public class Dimension11_13 extends AppCompatActivity {
         Intent intent = new Intent(getBaseContext(), Dimension11_14.class);
         startActivity(intent);
     }
+
 
     private void populateSpinners() throws JSONException {
         progressDialog.show();
@@ -334,7 +319,7 @@ public class Dimension11_13 extends AppCompatActivity {
                 }
             }
         }
-        sessionManager.setKeySavedOptions11_12(true);
+        sessionManager.setKeySavedOptions11_13(true);
         progressDialog.cancel();
     }
 

@@ -48,7 +48,7 @@
 
         </android.support.v7.widget.CardView>
 
-        <!-- button section -->
+       <!--  button section
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                 layout="@layout/nav_buttons"
                 android:visibility="gone" />
 
-        </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>-->
 
         <ScrollView
             android:layout_width="match_parent"

@@ -48,7 +48,7 @@
 
         </android.support.v7.widget.CardView>
 
-        <!-- button section -->
+        <!-- button section
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                 layout="@layout/nav_buttons"
                 android:visibility="gone" />
 
-        </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>-->
 
         <ScrollView
             android:layout_width="match_parent"
@@ -148,7 +148,7 @@
                                     android:paddingBottom="20dp"
                                     android:text="@string/Rdim3.1.1"
                                     android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textSize="15sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -260,7 +260,7 @@
                                     android:paddingBottom="20dp"
                                     android:text="@string/Rdim3.2.1.1"
                                     android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textSize="15sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -328,7 +328,7 @@
                                     android:paddingBottom="20dp"
                                     android:text="@string/Rdim3.2.1.2"
                                     android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textSize="15sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -396,7 +396,7 @@
                                     android:paddingBottom="20dp"
                                     android:text="@string/Rdim3.2.1.3"
                                     android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textSize="15sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -464,7 +464,7 @@
                                     android:paddingBottom="20dp"
                                     android:text="@string/Rdim3.2.1.4"
                                     android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textSize="15sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -532,7 +532,7 @@
                                     android:paddingBottom="20dp"
                                     android:text="@string/Rdim3.2.1.5"
                                     android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textSize="15sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -618,7 +618,7 @@
                                     android:paddingBottom="20dp"
                                     android:text="@string/Rdim3.3.1"
                                     android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textSize="15sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -686,7 +686,7 @@
                                     android:paddingBottom="20dp"
                                     android:text="@string/Rdim3.3.2"
                                     android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textSize="15sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -772,7 +772,7 @@
                                     android:paddingBottom="20dp"
                                     android:text="@string/Rdim3.4.1"
                                     android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textSize="15sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -858,7 +858,7 @@
                                     android:paddingBottom="20dp"
                                     android:text="@string/Rdim3.5.1"
                                     android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textSize="15sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
@@ -926,7 +926,7 @@
                                     android:paddingBottom="20dp"
                                     android:text="@string/Rdim3.5.2"
                                     android:textColor="@color/black"
-                                    android:textSize="16sp" />
+                                    android:textSize="15sp" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
