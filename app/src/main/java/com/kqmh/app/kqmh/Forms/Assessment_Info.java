@@ -3,7 +3,9 @@ package com.kqmh.app.kqmh.Forms;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -45,6 +47,8 @@ import org.json.JSONObject;
 
 import java.net.CookieHandler;
 import java.net.CookieManager;
+import java.time.LocalDate;
+import java.time.temporal.IsoFields;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -210,13 +214,15 @@ public class Assessment_Info extends AppCompatActivity {
     }
 
     /*period*/
+
     public void spinnerData_period(Spinner spinner, final String choice) {
 
         qPeriod.add(new Period(201800, "select"));
+        qPeriod.add(new Period(201901, "January - March 2019"));
         qPeriod.add(new Period(201804, "October - December 2018"));
         qPeriod.add(new Period(201803, "July - September 2018"));
         qPeriod.add(new Period(201802, "April - June 2018"));
-        qPeriod.add(new Period(201801, "January - March 2018"));
+      //  qPeriod.add(new Period(201801, "January - March 2018"));
 
         PeriodAdapter adapter = new PeriodAdapter(this, android.R.layout.simple_spinner_dropdown_item, qPeriod);
         spinner_period.setAdapter(adapter);

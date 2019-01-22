@@ -197,10 +197,11 @@ public class Assessment_InfoEx extends AppCompatActivity {
     public void spinnerData_period(Spinner spinner, final String choice) {
 
         qPeriod.add(new Period(201800, "select"));
+        qPeriod.add(new Period(201901, "January - March 2019"));
         qPeriod.add(new Period(201804, "October - December 2018"));
         qPeriod.add(new Period(201803, "July - September 2018"));
         qPeriod.add(new Period(201802, "April - June 2018"));
-        qPeriod.add(new Period(201801, "January - March 2018"));
+        //qPeriod.add(new Period(201801, "January - March 2018"));
 
         PeriodAdapter adapter = new PeriodAdapter(this, android.R.layout.simple_spinner_dropdown_item, qPeriod);
         spinner_period.setAdapter(adapter);
