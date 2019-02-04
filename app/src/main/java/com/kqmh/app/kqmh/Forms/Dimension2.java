@@ -1,5 +1,6 @@
 package com.kqmh.app.kqmh.Forms;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -12,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
@@ -50,11 +52,13 @@ public class Dimension2 extends AppCompatActivity {
     private TextView progressText;
     private int progressStatus = 0;
     private Handler handler = new Handler();
+    private LinearLayout mainlayout;
 
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_dimension2);
+
         assesmentProgress = SQLite.select().from(AssesmentProgress.class).where(AssesmentProgress_Table.assessment.eq(AppConstants.DIMENSION_2)).querySingle();
 
         // Get the widgets reference from XML layout
@@ -65,7 +69,6 @@ public class Dimension2 extends AppCompatActivity {
         progressDialog.setTitle("Fetching Scores");
         progressDialog.setCancelable(false);
 
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +76,6 @@ public class Dimension2 extends AppCompatActivity {
                 prev_submit();
             }
         });
-
         Button dims = findViewById(R.id.btn_dims);
         dims.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,8 +83,6 @@ public class Dimension2 extends AppCompatActivity {
                 dims_submit();
             }
         });
-
-
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,9 +93,13 @@ public class Dimension2 extends AppCompatActivity {
 
         for (int value = 200; value < 226; value++) {
             Resources res = getResources();
-            String spinnerParse = String.format(res.getString(R.string.spinner_score), value);
 
-            spinnerList.add((Spinner) findViewById(getResources().getIdentifier(spinnerParse, "id", getPackageName())));
+            String mainlayoutParse = String.format("mainlayout%1$d");
+            mainlayout=(LinearLayout)this.findViewById(getResources().getIdentifier(mainlayoutParse, "id", getPackageName()));
+
+            String spinnerParse = String.format(res.getString(R.string.spinner_score), value);
+            spinnerList.add((Spinner)findViewById(getResources().getIdentifier(spinnerParse, "id", getPackageName())));
+
         }
 
         if (assesmentProgress != null) {
@@ -112,6 +116,15 @@ public class Dimension2 extends AppCompatActivity {
             e.printStackTrace();
             progressDialog.cancel();
         }
+
+    }
+
+
+    private void hideFieldsOne(){
+        String mainlayoutParse = String.format("mainlayout%1$d");
+        mainlayout=(LinearLayout)this.findViewById(getResources().getIdentifier(mainlayoutParse, "id", getPackageName()));
+        if ( mainlayout.getId()== 200 | mainlayout.getId()== 205)
+        mainlayout.setVisibility(LinearLayout.GONE);
 
     }
 

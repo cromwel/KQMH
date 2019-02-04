@@ -19,6 +19,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -249,11 +250,10 @@ public class Assessment_Info extends AppCompatActivity {
 
     /*facility level*/
     public void spinnerData_facilityLevel(Spinner spinner, final String choice) {
-        ArrayList<KeyValue> keyvalue = new ArrayList<>();
 
-        // adding each child node to HashMap key => value
-        keyvalue.add(new KeyValue(0, "Select"));
-        keyvalue.add(new KeyValue(1, "level 6"));
+        List<KeyValue> keyvalue = new ArrayList<KeyValue>();
+        keyvalue.add(new KeyValue(0,"Select"));
+        keyvalue.add(new KeyValue(1,"level 6"));
         keyvalue.add(new KeyValue(2, "level 5"));
         keyvalue.add(new KeyValue(3, "level 4 with dialysis"));
         keyvalue.add(new KeyValue(4, "level 4"));
@@ -265,19 +265,16 @@ public class Assessment_Info extends AppCompatActivity {
         ArrayAdapter<KeyValue> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, keyvalue);
         spinner.setAdapter(adapter);
         adapter.notifyDataSetChanged();
-        //occupationSpinner.setSelection(adapter.getPosition(keyvalue.get(2)));//Optional to set the selected item.
-
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+                // here we change layout visibility again
+                if(spinner_facilityLevel.getSelectedItem().toString().equals("select")){
 
-                KeyValue value = (KeyValue) parent.getSelectedItem();
-                if (choice.matches("1")) {
-                    //occupation = value.getId();
-                } else if (choice.matches("2")) {
-                    //occupation = value.getId();
                 }
-                //updateValues();
+                else {
+
+                }
             }
 
             @Override
