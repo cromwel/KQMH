@@ -116,17 +116,16 @@ public class Dimension2 extends AppCompatActivity {
             e.printStackTrace();
             progressDialog.cancel();
         }
-
     }
 
 
-    private void hideFieldsOne(){
+   /* private void hideFieldsOne(){
         String mainlayoutParse = String.format("mainlayout%1$d");
         mainlayout=(LinearLayout)this.findViewById(getResources().getIdentifier(mainlayoutParse, "id", getPackageName()));
         if ( mainlayout.getId()== 200 | mainlayout.getId()== 205)
         mainlayout.setVisibility(LinearLayout.GONE);
 
-    }
+    }*/
 
     @Override
     protected void onDestroy() {

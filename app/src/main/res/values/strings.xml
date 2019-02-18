@@ -55,6 +55,8 @@
     <string name="spinner_AssessmentType">Assessment Type</string>
     <string name="spinner_OrganisationUnit">Organisational Unit</string>
     <string name="spinner_Facility">Facility</string>
+    <string name="spinner_County">County</string>
+
 
     <!-- stds strings -->
     <string name="spinner_dim">KQMH Dimensions</string>

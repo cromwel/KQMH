@@ -75,7 +75,7 @@
                             android:layout_marginTop="5dp"
                             android:layout_marginBottom="5dp"
                             android:padding="10dp"
-                            android:text="Countyt:"
+                            android:text="County:"
                             android:textColor="@color/black" />
 
                         <Spinner
@@ -87,9 +87,9 @@
                             android:layout_marginBottom="5dp"
                             android:background="@color/white"
                             android:gravity="center_vertical"
-                            android:hint="@string/spinner_OrganisationUnit"
+                            android:hint="@string/spinner_County"
                             android:padding="10dp"
-                            android:prompt="@string/spinner_OrganisationUnit"
+                            android:prompt="@string/spinner_County"
                             android:textSize="12sp" />
 
                     </LinearLayout>
