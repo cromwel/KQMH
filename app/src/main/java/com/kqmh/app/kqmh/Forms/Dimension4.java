@@ -115,22 +115,6 @@ public class Dimension4 extends AppCompatActivity {
             progressDialog.cancel();
         }
 
-
-
-       /* Observable.range(1, 200).subscribeOn(Schedulers.computation())
-                .delay(5, TimeUnit.SECONDS)
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<Integer>() {
-                    @Override
-                    public void accept(Integer progress) throws Exception {
-                        progressBar.setProgress(progress);
-                    }
-                }, new Consumer<Throwable>() {
-                    @Override
-                    public void accept(Throwable throwable) throws Exception {
-
-                    }
-                });*/
     }
 
     @Override
@@ -279,7 +263,8 @@ public class Dimension4 extends AppCompatActivity {
                 if (spinner.getTag().toString().equals(id)) {
                     DataElement element2 = SQLite.select()
                             .from(DataElement.class)
-                            .where(DataElement_Table.dataElementId.eq(spinner.getTag().toString())).querySingle();
+                            .where(DataElement_Table.dataElementId.eq(spinner.getTag().toString()))
+                            .querySingle();
                     if (element2 == null) {
                         DataElement element = new DataElement();
                         element.setEntity(AppConstants.DIMENSION_4);

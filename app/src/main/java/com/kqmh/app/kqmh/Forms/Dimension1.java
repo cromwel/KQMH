@@ -65,7 +65,6 @@ public class Dimension1 extends AppCompatActivity {
         progressDialog.setTitle("Fetching Scores");
         progressDialog.setCancelable(false);
 
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +72,6 @@ public class Dimension1 extends AppCompatActivity {
                 prev_submit();
             }
         });
-
         Button dims = findViewById(R.id.btn_dims);
         dims.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,8 +79,6 @@ public class Dimension1 extends AppCompatActivity {
                 dims_submit();
             }
         });
-
-
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,7 +90,6 @@ public class Dimension1 extends AppCompatActivity {
         for (int value = 101; value < 128; value++) {
             Resources res = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score), value);
-
             spinnerList.add((Spinner) findViewById(getResources().getIdentifier(spinnerParse, "id", getPackageName())));
         }
 
@@ -103,9 +98,6 @@ public class Dimension1 extends AppCompatActivity {
             assesmentProgress.update();
         }
         setUpProgress();
-
-        //spinnerList.add((Spinner) findViewById(R.id.spinner_score1));
-
         try {
             setSelected();
         } catch (Exception e) {
@@ -113,22 +105,6 @@ public class Dimension1 extends AppCompatActivity {
             progressDialog.cancel();
         }
 
-
-
-       /* Observable.range(1, 200).subscribeOn(Schedulers.computation())
-                .delay(5, TimeUnit.SECONDS)
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<Integer>() {
-                    @Override
-                    public void accept(Integer progress) throws Exception {
-                        progressBar.setProgress(progress);
-                    }
-                }, new Consumer<Throwable>() {
-                    @Override
-                    public void accept(Throwable throwable) throws Exception {
-
-                    }
-                });*/
     }
 
     @Override

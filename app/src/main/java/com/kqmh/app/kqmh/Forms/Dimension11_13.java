@@ -57,7 +57,6 @@ public class Dimension11_13 extends AppCompatActivity {
         setContentView(R.layout.form_dimension11_13);
         assesmentProgress = SQLite.select().from(AssesmentProgress.class).where(AssesmentProgress_Table.assessment.eq(AppConstants.DIMENSION_11_13)).querySingle();
 
-
         // Get the widgets reference from XML layout
         final RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
         final TextView tv = (TextView) findViewById(R.id.tv);
@@ -73,7 +72,6 @@ public class Dimension11_13 extends AppCompatActivity {
                 prev_submit();
             }
         });
-
         Button dims = findViewById(R.id.btn_dims);
         dims.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +79,6 @@ public class Dimension11_13 extends AppCompatActivity {
                 dims_submit();
             }
         });
-
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,11 +87,9 @@ public class Dimension11_13 extends AppCompatActivity {
             }
         });
 
-
-        for (int value = 111300; value < 111313; value++) {
+        for (int value = 111300; value < 111312; value++) {
             Resources res = getResources();
             String spinnerParse = String.format(res.getString(R.string.spinner_score), value);
-
             spinnerList.add((Spinner) findViewById(getResources().getIdentifier(spinnerParse, "id", getPackageName())));
         }
         if (assesmentProgress != null) {
@@ -102,9 +97,6 @@ public class Dimension11_13 extends AppCompatActivity {
             assesmentProgress.update();
         }
         setUpProgress();
-
-        //spinnerList.add((Spinner) findViewById(R.id.spinner_score1));
-
         try {
             setSelected();
         } catch (Exception e) {
@@ -150,7 +142,6 @@ public class Dimension11_13 extends AppCompatActivity {
         Intent intent = new Intent(getBaseContext(), Dimension11_14.class);
         startActivity(intent);
     }
-
 
     private void populateSpinners() throws JSONException {
         progressDialog.show();
@@ -261,7 +252,8 @@ public class Dimension11_13 extends AppCompatActivity {
                 if (spinner.getTag().toString().equals(id)) {
                     DataElement element2 = SQLite.select()
                             .from(DataElement.class)
-                            .where(DataElement_Table.dataElementId.eq(spinner.getTag().toString())).querySingle();
+                            .where(DataElement_Table.dataElementId.eq(spinner.getTag().toString()))
+                            .querySingle();
                     if (element2 == null) {
                         DataElement element = new DataElement();
                         element.setEntity(AppConstants.DIMENSION_11_13);

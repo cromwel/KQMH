@@ -45,9 +45,9 @@ public class ProgressActivity extends AppCompatActivity {
 
 
         List<AssesmentProgress> progresses = SQLite.select().from(AssesmentProgress.class).queryList();
-        RecyclerView recyclerView = findViewById(R.id.recycler);
+       /* RecyclerView recyclerView = findViewById(R.id.recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext()));
-        recyclerView.setAdapter(new ProgressAdapter(getBaseContext(), progresses));
+        recyclerView.setAdapter(new ProgressAdapter(getBaseContext(), progresses));*/
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

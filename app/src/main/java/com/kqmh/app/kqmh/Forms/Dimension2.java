@@ -1,6 +1,5 @@
 package com.kqmh.app.kqmh.Forms;
 
-import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -13,7 +12,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
@@ -52,13 +50,11 @@ public class Dimension2 extends AppCompatActivity {
     private TextView progressText;
     private int progressStatus = 0;
     private Handler handler = new Handler();
-    private LinearLayout mainlayout;
 
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_dimension2);
-
         assesmentProgress = SQLite.select().from(AssesmentProgress.class).where(AssesmentProgress_Table.assessment.eq(AppConstants.DIMENSION_2)).querySingle();
 
         // Get the widgets reference from XML layout
@@ -93,13 +89,8 @@ public class Dimension2 extends AppCompatActivity {
 
         for (int value = 200; value < 226; value++) {
             Resources res = getResources();
-
-            String mainlayoutParse = String.format("mainlayout%1$d");
-            mainlayout=(LinearLayout)this.findViewById(getResources().getIdentifier(mainlayoutParse, "id", getPackageName()));
-
             String spinnerParse = String.format(res.getString(R.string.spinner_score), value);
             spinnerList.add((Spinner)findViewById(getResources().getIdentifier(spinnerParse, "id", getPackageName())));
-
         }
 
         if (assesmentProgress != null) {
@@ -107,25 +98,14 @@ public class Dimension2 extends AppCompatActivity {
             assesmentProgress.update();
         }
         setUpProgress();
-
-        //spinnerList.add((Spinner) findViewById(R.id.spinner_score1));
-
         try {
             setSelected();
         } catch (Exception e) {
             e.printStackTrace();
             progressDialog.cancel();
         }
+
     }
-
-
-   /* private void hideFieldsOne(){
-        String mainlayoutParse = String.format("mainlayout%1$d");
-        mainlayout=(LinearLayout)this.findViewById(getResources().getIdentifier(mainlayoutParse, "id", getPackageName()));
-        if ( mainlayout.getId()== 200 | mainlayout.getId()== 205)
-        mainlayout.setVisibility(LinearLayout.GONE);
-
-    }*/
 
     @Override
     protected void onDestroy() {
@@ -274,7 +254,8 @@ public class Dimension2 extends AppCompatActivity {
                 if (spinner.getTag().toString().equals(id)) {
                     DataElement element2 = SQLite.select()
                             .from(DataElement.class)
-                            .where(DataElement_Table.dataElementId.eq(spinner.getTag().toString())).querySingle();
+                            .where(DataElement_Table.dataElementId.eq(spinner.getTag().toString()))
+                            .querySingle();
                     if (element2 == null) {
                         DataElement element = new DataElement();
                         element.setEntity(AppConstants.DIMENSION_2);
@@ -383,13 +364,6 @@ public class Dimension2 extends AppCompatActivity {
             populate();
         } catch (JSONException e) {
             e.printStackTrace();
-        }
-
-    }
-
-    public static void onLevelSelected(final String choice){
-        if(choice == "1"){
-
         }
 
     }
