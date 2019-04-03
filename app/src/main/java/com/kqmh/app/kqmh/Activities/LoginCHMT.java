@@ -157,7 +157,7 @@ public class LoginCHMT extends AppCompatActivity {
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
                         String id = jsonObject.getString("id");
-                        AbstractOrgUnit orgUnit = new AbstractOrgUnit();
+                       AbstractOrgUnit orgUnit = new AbstractOrgUnit();
                         orgUnit.setId(id);
                         orgUnit.save();
                         Toast.makeText(getBaseContext(), "Successfull", Toast.LENGTH_SHORT).show();
@@ -204,7 +204,7 @@ public class LoginCHMT extends AppCompatActivity {
     private void finishLogin() {
         closeProgressbar();
         new SessionManager(getBaseContext()).setLoggedIn(true);
-        Intent intent = new Intent(getBaseContext(), Assessment_InfoCHMT.class);
+        Intent intent = new Intent(getBaseContext(), Assessment_InfoEx.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
                 | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);

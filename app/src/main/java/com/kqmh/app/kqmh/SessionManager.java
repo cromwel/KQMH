@@ -46,6 +46,7 @@ public class SessionManager {
     private static final String KEY_SAVED_OPTIONS11_14 = "isOptionsSaved11_14";
     private static final String KEY_SAVED_OPTIONS12 = "isOptionsSaved12";
     private static final String KEY_FACILITY = "isFacilitySaved";
+    private static  final String KEY_SAVED_ORG_UNIT_ID = "orgUnitKey";
 
 
     public SessionManager(Context context) {
@@ -316,6 +317,22 @@ public class SessionManager {
 
     public void setKeySavedOptions11_14(boolean isSaved) {
         pref.edit().putBoolean(KEY_SAVED_OPTIONS11_14,isSaved).apply();
+    }
+
+    public void setKeySavedOrgUnitId(String id){
+        pref.edit().putString(KEY_SAVED_ORG_UNIT_ID, id).apply();
+    }
+
+    public String getSaveOrgUnitId(){
+        return pref.getString(KEY_SAVED_ORG_UNIT_ID, null);
+    }
+
+    public void setKeySavedPeriodId(String id){
+        pref.edit().putString(KEY_SAVED_ORG_UNIT_ID, id).apply();
+    }
+
+    public String getSavePeriodId(){
+        return pref.getString(KEY_SAVED_ORG_UNIT_ID, null);
     }
 
 }

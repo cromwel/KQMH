@@ -36,33 +36,12 @@
             app:cardCornerRadius="5dp"
             card_view:cardElevation="9dp">
 
-
             <include
                 android:id="@+id/progress"
                 layout="@layout/progress_button" />
 
-            <!-- <ProgressBar
-                 android:id="@+id/customProgress"
-                 style="@style/CustomProgressBar"
-                 android:layout_width="match_parent"/>-->
 
         </android.support.v7.widget.CardView>
-
-       <!--  button section
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@drawable/round_border"
-            app:cardCornerRadius="5dp"
-            card_view:cardElevation="9dp">
-
-
-            <include
-                layout="@layout/nav_buttons"
-                android:visibility="gone" />
-
-        </android.support.v7.widget.CardView>-->
 
         <ScrollView
             android:layout_width="match_parent"

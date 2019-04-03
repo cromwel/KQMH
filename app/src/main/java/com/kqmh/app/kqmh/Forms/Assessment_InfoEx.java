@@ -30,11 +30,14 @@ import com.kqmh.app.kqmh.Models.AssessmentTypeCombo;
 import com.kqmh.app.kqmh.Models.FacilityLevel;
 import com.kqmh.app.kqmh.Models.KeyValue;
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
+import com.kqmh.app.kqmh.Models.OrganisationUnit_Table;
 import com.kqmh.app.kqmh.Models.Period;
+import com.kqmh.app.kqmh.Models.Period_Table;
 import com.kqmh.app.kqmh.R;
 import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
+import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.toptoche.searchablespinnerlibrary.SearchableSpinner;
 
 import org.json.JSONArray;
@@ -54,7 +57,7 @@ import static com.kqmh.app.kqmh.Utils.UrlConstants.ORGANISATION_UNIT_URL_ex;
 public class Assessment_InfoEx extends AppCompatActivity {
 
     List<AssessmentTypeCombo> categoryOptions = new ArrayList<>();
-    List<OrganisationUnit> OrganisationUnit = new ArrayList<>();
+    List<OrganisationUnit> organisationUnitList = new ArrayList<>();
     List<String> orgUnitsNames = new ArrayList<>();
     List<Period> qPeriod = new ArrayList<>();
     private SearchableSpinner spinner_OrganisationUnit;
@@ -86,7 +89,7 @@ public class Assessment_InfoEx extends AppCompatActivity {
 
         Button dataEntry = findViewById(R.id.bt_dataEntry);
         progressDialog = new ProgressDialog(this);
-        progressDialog.setTitle("loading form...");
+        progressDialog.setTitle("loading form...give me 30seconds");
         progressDialog.setCancelable(false);
         dataEntry.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -141,8 +144,11 @@ public class Assessment_InfoEx extends AppCompatActivity {
         spinner_OrganisationUnit.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (choice.matches("1")) {
-                } else if (choice.matches("2")) {
+                String organisationUnit = (String) parent.getItemAtPosition(position);
+                Log.d("selected", "name " + organisationUnit);
+                OrganisationUnit orgUnit = SQLite.select().from(OrganisationUnit.class).where(OrganisationUnit_Table.displayName.like(organisationUnit)).querySingle();
+                if (orgUnit != null) {
+                    new SessionManager(getBaseContext()).setKeySavedOrgUnitId(orgUnit.getId());
                 }
             }
 
@@ -153,25 +159,31 @@ public class Assessment_InfoEx extends AppCompatActivity {
     }
 
     private void getOrganisationUnit(final String encoded, final String url) {
-        Log.d("Auth", encoded);
+       // Log.d("Auth", encoded);
         progressDialog.show();
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Log.d("organisation unit", response.toString());
+               // Log.d("organisation unit", response.toString());
                 try {
                     JSONArray jsonArray = response.getJSONArray("organisationUnits");
                     Gson gson = new Gson();
                     for (int i = 0; i < jsonArray.length(); i++) {
                         OrganisationUnit org = gson.fromJson(jsonArray.getJSONObject(i).toString(), OrganisationUnit.class);
-                        OrganisationUnit.add(org);
+                        org.save();
+                        organisationUnitList.add(org);
                         orgUnitsNames.add(org.getDisplayName());
+                        /*JSONObject jsonObject = jsonArray.getJSONObject(i);
+                        String id = jsonObject.getString("id");
+                        organisationUnitList orgUnit = new organisationUnitList();
+                        orgUnit.setId(id);
+                        orgUnit.save();*/
                     }
                     closeProgressbar();
                     spinnerData_OrganisationUnit(spinner_OrganisationUnit, "1");
                 } catch (JSONException e) {
                     e.printStackTrace();
-                    closeProgressbar();
+                   // closeProgressbar();
                 }
             }
         }, new Response.ErrorListener() {
@@ -191,25 +203,51 @@ public class Assessment_InfoEx extends AppCompatActivity {
             }
         };
         VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
+        closeProgressbar();
     }
 
     /*period*/
-    public void spinnerData_period(Spinner spinner, final String choice) {
+    public void spinnerData_period(Spinner spinner_period, final String choice) {
 
         qPeriod.add(new Period(201800, "select"));
         qPeriod.add(new Period(201901, "January - March 2019"));
         qPeriod.add(new Period(201804, "October - December 2018"));
         qPeriod.add(new Period(201803, "July - September 2018"));
         qPeriod.add(new Period(201802, "April - June 2018"));
-        //qPeriod.add(new Period(201801, "January - March 2018"));
+        //  qPeriod.add(new Period(201801, "January - March 2018"));
 
         PeriodAdapter adapter = new PeriodAdapter(this, android.R.layout.simple_spinner_dropdown_item, qPeriod);
         spinner_period.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinner_period.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (choice.matches("1")) {
-                } else if (choice.matches("2")) {
+                /*String quarter = (String)parent.getItemAtPosition(position);
+                Period time = SQLite.select().from(Period.class).where(Period_Table.period .like(quarter)).querySingle();
+                if(time !=null){
+                    new SessionManager(getBaseContext()).setKeySavedPeriodId(String.valueOf(time.getId()));
+                }*/
+                if (choice.matches("select")) {
+                } else if (choice.matches("January - March 2019")) {
+                    //String id = getString("id");
+                    Period quarter = new Period();
+                   // quarter.setId(Integer.valueOf(choice));
+                    Log.d("choice quarter 1", choice);
+                    quarter.setPeriod(choice);
+                    quarter.save();
+                }else if (choice.matches("October - December 2018")) {
+                    Period quarter = new Period();
+                    quarter.setPeriod(choice);
+                    Log.d("choice quarter 4", choice);
+                    quarter.save();
+                }else if (choice.matches("July - September 2018")) {
+                    Period quarter = new Period();
+                    quarter.setPeriod(choice);
+                    Log.d("choice quarter 3", choice);
+                    quarter.save();
+                }else if (choice.matches("April - June 2018")) {
+                    Period quarter = new Period();
+                    quarter.setPeriod(choice);
+                    quarter.save();
                 }
             }
 
@@ -217,13 +255,6 @@ public class Assessment_InfoEx extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
-    }
-
-    private void savePeriod(List<Period> qPeriod) {
-        Log.d("Saving quarter", "saving " + qPeriod.size());
-        for (Period period : qPeriod) {
-            period.save();
-        }
     }
 
     /*facility level*/

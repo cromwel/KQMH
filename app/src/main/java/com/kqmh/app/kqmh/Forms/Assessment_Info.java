@@ -71,6 +71,7 @@ public class Assessment_Info extends AppCompatActivity {
     private ImageView logout;
     private CoordinatorLayout coordinatorLayout;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -227,11 +228,27 @@ public class Assessment_Info extends AppCompatActivity {
 
         PeriodAdapter adapter = new PeriodAdapter(this, android.R.layout.simple_spinner_dropdown_item, qPeriod);
         spinner_period.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinner_period.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (choice.matches("1")) {
-                } else if (choice.matches("2")) {
+                if (choice.matches("select")) {
+
+                } else if (choice.matches("January - March 2019")) {
+                    Period quarter = (Period) parent.getSelectedItem();
+                    quarter.setSelected(true);
+                    quarter.save();
+                }else if (choice.matches("October - December 2018")) {
+                    Period quarter = (Period) parent.getSelectedItem();
+                    quarter.setSelected(true);
+                    quarter.save();
+                }else if (choice.matches("July - September 2018")) {
+                    Period quarter = (Period) parent.getSelectedItem();
+                    quarter.setSelected(true);
+                    quarter.save();
+                }else if (choice.matches("April - June 2018")) {
+                    Period quarter = (Period) parent.getSelectedItem();
+                    quarter.setSelected(true);
+                    quarter.save();
                 }
             }
 
@@ -241,12 +258,16 @@ public class Assessment_Info extends AppCompatActivity {
         });
     }
 
+    private void savePeriod(){
+
+    }
+/*
     private void savePeriod(List<Period> qPeriod) {
         Log.d("Saving quarter", "saving " + qPeriod.size());
         for (Period period : qPeriod) {
             period.save();
         }
-    }
+    }*/
 
     /*facility level*/
     public void spinnerData_facilityLevel(Spinner spinner, final String choice) {
@@ -268,12 +289,43 @@ public class Assessment_Info extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+           /*     Dimension2 d2 = new Dimension2();
+                Dimension3 d3 = new Dimension3();
+                Dimension4 d4 = new Dimension4();
+                Dimension5 d5 = new Dimension5();
+                Dimension6 d6 = new Dimension6();
+                Dimension7 d7 = new Dimension7();
+                Dimension8 d8 = new Dimension8();
+                Dimension9 d9 = new Dimension9();
+                Dimension10 d10 = new Dimension10();
+                Dimension11_1 d11_1 = new Dimension11_1();
+                Dimension11_2 d11_2 = new Dimension11_2();
+                Dimension11_3 d11_3 = new Dimension11_3();
+                Dimension11_4 d11_4 = new Dimension11_4();
+                Dimension11_5 d11_5 = new Dimension11_5();
+                Dimension11_6 d11_6 = new Dimension11_6();
+                Dimension11_7 d11_7 = new Dimension11_7();
+                Dimension11_8 d11_8 = new Dimension11_8();
+                Dimension11_9 d11_9 = new Dimension11_9();
+                Dimension11_10 d11_10 = new Dimension11_10();
+                Dimension11_11 d11_11 = new Dimension11_11();
+                Dimension11_12 d11_12 = new Dimension11_12();
+                Dimension11_13 d11_13 = new Dimension11_13();
+                Dimension11_14 d11_14 = new Dimension11_14();*/
+
                 // here we change layout visibility again
                 if(spinner_facilityLevel.getSelectedItem().toString().equals("select")){
 
-                }
-                else {
-
+                }else  if(spinner_facilityLevel.getSelectedItem().toString().equals("level 2")) {
+                  //  d2.hide_unhide_level_2();
+                }else  if(spinner_facilityLevel.getSelectedItem().toString().equals("level 3")) {
+                   // d2.hide_unhide_level_3();
+                }else  if(spinner_facilityLevel.getSelectedItem().toString().equals("level 4")) {
+                   // d2.hide_unhide_level_4();
+                }else  if(spinner_facilityLevel.getSelectedItem().toString().equals("level 5")) {
+                  //  d2.hide_unhide_level_5();
+                }else  if(spinner_facilityLevel.getSelectedItem().toString().equals("level 6")) {
+                   // d2.hide_unhide_level_6();
                 }
             }
 

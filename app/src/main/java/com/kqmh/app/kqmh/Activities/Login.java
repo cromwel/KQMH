@@ -150,9 +150,9 @@ public class Login extends AppCompatActivity {
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
                         String id = jsonObject.getString("id");
-                        AbstractOrgUnit orgUnit = new AbstractOrgUnit();
+                        /*AbstractOrgUnit orgUnit = new AbstractOrgUnit();
                         orgUnit.setId(id);
-                        orgUnit.save();
+                        orgUnit.save();*/
                         Toast.makeText(Login.this, "Successfull", Toast.LENGTH_SHORT).show();
                     }
                 } catch (JSONException e) {

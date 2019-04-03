@@ -16,6 +16,9 @@ public class Period extends BaseModel {
     @Column
     private String period;
 
+    @Column
+    private boolean isSelected = false;
+
 
     public Period(int id, String period) {
 
@@ -27,7 +30,6 @@ public class Period extends BaseModel {
 
     }
 
-
     public Integer getId() {
         return id;
     }
@@ -35,7 +37,6 @@ public class Period extends BaseModel {
     public void setId(Integer id) {
         this.id = id;
     }
-
 
     public String getPeriod() {
         return period;
@@ -48,6 +49,8 @@ public class Period extends BaseModel {
     public String getName() {
         return this.period;
     }
+
+    public void setName(){}
 
     @Override
     public String toString() {
@@ -62,5 +65,13 @@ public class Period extends BaseModel {
         }
 
         return false;
+    }
+
+    public boolean isSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
     }
 }

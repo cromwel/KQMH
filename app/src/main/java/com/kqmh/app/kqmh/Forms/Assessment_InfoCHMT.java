@@ -61,7 +61,7 @@ import static com.kqmh.app.kqmh.Utils.UrlConstants.ORGANISATION_UNIT_URL_ex;
 public class Assessment_InfoCHMT extends AppCompatActivity {
 
 
-    List<FacilityUnit> FacilityUnit = new ArrayList();
+   /* List<FacilityUnit> FacilityUnit = new ArrayList();
     List<String> countyNames = new ArrayList<>();
     List<String> countyID = new ArrayList<>();
     List<String> facilityNames = new ArrayList<>();
@@ -80,7 +80,7 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.form_assessment_info_chmt);
+        setContentView(R.layout.form_assessment_info_ex);
 
         CookieManager cookieManager = new CookieManager();
         CookieHandler.setDefault(cookieManager);
@@ -88,7 +88,7 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
         SessionManager sessionManager = new SessionManager(getBaseContext());
 
         spinner_county = findViewById(R.id.spinner_county);
-        spinner_facilities = findViewById(R.id.spinner_facilities);
+        spinner_facilities = findViewById(R.id.spinner_OrganisationUnit);
         spinner_facilities.setTitle("Organizational Units");
         spinner_facilities.setPositiveButton("Cancel");
         spinner_period = findViewById(R.id.spinner_period);
@@ -119,13 +119,13 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
         }
 
 
-        /*try {
+        *//*try {
             getAssessmentType(AuthBuilder.encode(sessionManager.getUserName(), sessionManager.getPassword()));
         } catch (Exception e) {
             e.printStackTrace();
 
 
-        }*/
+        }*//*
         try {
             for (int i = 1; i < 350; i++) {
                 String url = ORGANISATION_UNIT_URL_ex.replace("[number]", String.valueOf(i));
@@ -170,7 +170,7 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
         popup.show();
     }
 
-    /*county*/
+    *//*county*//*
     public void spinnerData_CountyUnit(Spinner spinner_county, final String choice) {
         //fill data in spinner
         OrganisationUnitAdapter adapter = new OrganisationUnitAdapter(this, android.R.layout.simple_spinner_dropdown_item);
@@ -197,7 +197,7 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
                 //Log.d("organisation unit", response.toString());
                 try {
                     Gson gson = new Gson();
-                    OrganisationUnit org = gson.fromJson(response.toString(), OrganisationUnit.class);
+                    organisationUnitList org = gson.fromJson(response.toString(), organisationUnitList.class);
                     org.save();
                     countyNames.add(org.getDisplayName());
                     countyID.add(org.getId());
@@ -227,7 +227,7 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
         VolleySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
     }
 
-    /*Orgs*/
+    *//*Orgs*//*
     public void spinnerData_FacilityUnit(Spinner spinner_facilities, final String choice, final List<String> countyId) {
 
         spinner_facilities.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -304,7 +304,8 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
     }
 
 
-    /*period*/
+    *//*period*//*
+
     public void spinnerData_period(Spinner spinner, final String choice) {
 
         qPeriod.add(new Period(201800, "select"));
@@ -312,15 +313,34 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
         qPeriod.add(new Period(201804, "October - December 2018"));
         qPeriod.add(new Period(201803, "July - September 2018"));
         qPeriod.add(new Period(201802, "April - June 2018"));
-        //qPeriod.add(new Period(201801, "January - March 2018"));
+        //  qPeriod.add(new Period(201801, "January - March 2018"));
 
-        PeriodAdapter adapter = new PeriodAdapter(this, android.R.layout.simple_spinner_dropdown_item, qPeriod);
+        final PeriodAdapter adapter = new PeriodAdapter(this, android.R.layout.simple_spinner_dropdown_item, qPeriod);
         spinner_period.setAdapter(adapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (choice.matches("1")) {
-                } else if (choice.matches("2")) {
+                if (choice.matches("select")) {
+                    Period quarter = (Period) parent.getSelectedItem();
+                    quarter.setSelected(true);
+                    quarter.save();
+
+                } else if (choice.matches("January - March 2019")) {
+                    Period quarter = (Period) parent.getSelectedItem();
+                    quarter.setSelected(true);
+                    quarter.save();
+                }else if (choice.matches("October - December 2018")) {
+                    Period quarter = (Period) parent.getSelectedItem();
+                    quarter.setSelected(true);
+                    quarter.save();
+                }else if (choice.matches("July - September 2018")) {
+                    Period quarter = (Period) parent.getSelectedItem();
+                    quarter.setSelected(true);
+                    quarter.save();
+                }else if (choice.matches("April - June 2018")) {
+                    Period quarter = (Period) parent.getSelectedItem();
+                    quarter.setSelected(true);
+                    quarter.save();
                 }
             }
 
@@ -330,14 +350,18 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
         });
     }
 
-    private void savePeriod(List<Period> qPeriod) {
-        Log.d("Saving quarter", "saving " + qPeriod.size());
-        for (Period period : qPeriod) {
-            period.save();
-        }
-    }
+    private void savePeriod(){
 
-    /*facility level*/
+    }
+    *//*
+        private void savePeriod(List<Period> qPeriod) {
+            Log.d("Saving quarter", "saving " + qPeriod.size());
+            for (Period period : qPeriod) {
+                period.save();
+            }
+        }*//*
+
+    *//*facility level*//*
     public void spinnerData_facilityLevel(Spinner spinner, final String choice) {
         ArrayList<KeyValue> keyvalue = new ArrayList<>();
 
@@ -434,6 +458,6 @@ public class Assessment_InfoCHMT extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
 

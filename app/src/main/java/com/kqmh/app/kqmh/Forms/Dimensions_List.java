@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -34,6 +35,14 @@ public class Dimensions_List extends AppCompatActivity {
 
         logout = findViewById(R.id.img_logout);
         spinner_dim = findViewById(R.id.spinner_dim);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                prev_submit();
+            }
+        });
 
         spinnerData_dim(spinner_dim, "0");
 
@@ -151,6 +160,13 @@ public class Dimensions_List extends AppCompatActivity {
             }
         });
     }
+
+    public void prev_submit() {
+        new SessionManager(getBaseContext()).setLoggedIn(true);
+        Intent intent = new Intent(getBaseContext(), Assessment_InfoEx.class);
+        startActivity(intent);
+    }
+
 
     private void logout() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

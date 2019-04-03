@@ -1,6 +1,7 @@
 package com.kqmh.app.kqmh.Network.Merlin.presentation;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,6 +17,7 @@ import com.kqmh.app.kqmh.Forms.Assessment_Info;
 import com.kqmh.app.kqmh.Models.AbstractOrgUnit;
 import com.kqmh.app.kqmh.Models.DataElement;
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
+import com.kqmh.app.kqmh.Models.OrganisationUnit_Table;
 import com.kqmh.app.kqmh.Models.Period;
 import com.kqmh.app.kqmh.R;
 
@@ -136,7 +138,7 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
         networkStatusDisplayer = null;
     }
 
-    public static JSONObject toJSon() {
+    public JSONObject toJSon() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
         Date date = new Date();
         String now = dateFormat.format(date);
@@ -146,12 +148,17 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
                     .from(DataElement.class)
                     .queryList();
 
-            AbstractOrgUnit orgUnit = SQLite.select()
-                    .from(AbstractOrgUnit.class).querySingle();
-
+            String orgUnitId = new SessionManager(getBaseContext()).getSaveOrgUnitId();
+            if(orgUnitId != null) {
+                OrganisationUnit orgUnit = SQLite.select()
+                        .from(OrganisationUnit.class).where(OrganisationUnit_Table.id.eq(orgUnitId)).querySingle();
+                if (orgUnit != null) {
+                    Log.d("Assigned id", orgUnit.getId());
+                    dataset.put("orgUnit", orgUnit.getId());
+                }
+            }
             Period periodT = SQLite.select()
                     .from(Period.class).querySingle();
-
             JSONArray datavaluesarray = new JSONArray();
 
             for (DataElement dataElement : elements) {
@@ -159,6 +166,8 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
                     JSONObject dataElementObj = new JSONObject();
                     dataElementObj.put("dataElement", dataElement.getDataElementId());
                     dataElementObj.put("value", dataElement.getValue());
+                    Log.d("score value", dataElement.getValue());
+                    //dataElementObj.put("comment", dataElement.getComment());
 
                     datavaluesarray.put(dataElementObj);
                 }
@@ -166,15 +175,9 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
 
             dataset.put("dataSet", "TA4FU3zu93l");
             dataset.put("completeDate", now);
-            if (periodT != null) {
-                dataset.put("period", periodT.getId());
-            }
-            if (orgUnit != null) {
-                dataset.put("orgUnit", orgUnit.getId());
-            }
+            dataset.put("period", 201804);
             dataset.put("dataValues", datavaluesarray);
-
-
+            Log.d("data", String.valueOf(dataset));
             return dataset;
 
         } catch (JSONException ex) {
@@ -186,9 +189,13 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
     }
 
     public void submit_file() {
+        Log.d("who", String.valueOf(toJSon()));
         OrganisationUnit orgUnit = SQLite.select()
                 .from(OrganisationUnit.class)
                 .querySingle();
+       /* AbstractOrgUnit orgUnit = SQLite.select()
+                .from(AbstractOrgUnit.class)
+                .querySingle();*/
         if (orgUnit != null) {
             JSONObject jsonObject;
             jsonObject = toJSon();
@@ -199,11 +206,13 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        }else{
+            Toast.makeText(DemoActivity.this, "no organisation unit attached", Toast.LENGTH_SHORT).show();
         }
 
     }
 
-    private void send(final String encoded, JSONObject jsonObject) {
+    private void send(final String encoded, final JSONObject jsonObject) {
         progressDialog.show();
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, UrlConstants.SEND_URL, jsonObject, new Response.Listener<JSONObject>() {
             @Override

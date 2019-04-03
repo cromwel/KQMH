@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
@@ -51,6 +52,8 @@ public class Dimension2 extends AppCompatActivity {
     private int progressStatus = 0;
     private Handler handler = new Handler();
 
+    LinearLayout mainLayout201, mainLayout202, mainLayout203, mainLayout204, mainLayout205, mainLayout206, mainLayout207, mainLayout208, mainLayout209, mainLayout210;
+
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -64,6 +67,12 @@ public class Dimension2 extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Fetching Scores");
         progressDialog.setCancelable(false);
+
+        mainLayout201 = findViewById(R.id.mainlayout201);
+        mainLayout202 = findViewById(R.id.mainlayout202);
+        mainLayout203 = findViewById(R.id.mainlayout203);
+        mainLayout204 = findViewById(R.id.mainlayout204);
+        mainLayout205 = findViewById(R.id.mainlayout205);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -104,6 +113,28 @@ public class Dimension2 extends AppCompatActivity {
             e.printStackTrace();
             progressDialog.cancel();
         }
+
+    }
+
+
+    public void hide_unhide_level_2() {
+        mainLayout201.setVisibility(View.GONE);
+
+    }
+    public void hide_unhide_level_3() {
+        mainLayout201.setVisibility(View.GONE);
+
+    }
+    public void hide_unhide_level_4() {
+        mainLayout201.setVisibility(View.GONE);
+
+    }
+    public void hide_unhide_level_5() {
+        mainLayout201.setVisibility(View.GONE);
+
+    }
+    public void hide_unhide_level_6() {
+        mainLayout201.setVisibility(View.GONE);
 
     }
 
