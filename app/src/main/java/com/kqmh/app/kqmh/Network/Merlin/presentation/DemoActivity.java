@@ -16,6 +16,8 @@ import com.android.volley.request.JsonObjectRequest;
 import com.kqmh.app.kqmh.Forms.Assessment_Info;
 import com.kqmh.app.kqmh.Models.AbstractOrgUnit;
 import com.kqmh.app.kqmh.Models.DataElement;
+import com.kqmh.app.kqmh.Models.DataElement_Table;
+import com.kqmh.app.kqmh.Models.Option;
 import com.kqmh.app.kqmh.Models.OrganisationUnit;
 import com.kqmh.app.kqmh.Models.OrganisationUnit_Table;
 import com.kqmh.app.kqmh.Models.Period;
@@ -33,6 +35,7 @@ import com.kqmh.app.kqmh.SessionManager;
 import com.kqmh.app.kqmh.Utils.AuthBuilder;
 import com.kqmh.app.kqmh.Utils.UrlConstants;
 import com.kqmh.app.kqmh.Utils.VolleySingleton;
+import com.raizlabs.android.dbflow.sql.language.Delete;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 
 import org.json.JSONArray;
@@ -146,6 +149,7 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
             JSONObject dataset = new JSONObject();
             List<DataElement> elements = SQLite.select()
                     .from(DataElement.class)
+                    .where(DataElement_Table.value.notEq("8"))
                     .queryList();
 
             String orgUnitId = new SessionManager(getBaseContext()).getSaveOrgUnitId();
@@ -175,7 +179,7 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
 
             dataset.put("dataSet", "TA4FU3zu93l");
             dataset.put("completeDate", now);
-            dataset.put("period", 201804);
+            dataset.put("period", 201901);
             dataset.put("dataValues", datavaluesarray);
             Log.d("data", String.valueOf(dataset));
             return dataset;
@@ -218,7 +222,23 @@ public class DemoActivity extends MerlinActivity implements Connectable, Disconn
             @Override
             public void onResponse(JSONObject response) {
                 Log.d("response", response.toString());
-                Toast.makeText(DemoActivity.this, "data posted to server", Toast.LENGTH_SHORT).show();
+
+                try {
+                    if(response.has("status") && response.getString("status").equals("SUCCESS")){
+                        Delete.table(DataElement.class);
+                        Delete.table(Option.class);
+                        Toast.makeText(DemoActivity.this, "data posted to server successfully", Toast.LENGTH_LONG).show();
+
+                        Intent intent = new Intent(getApplicationContext(), Assessment_Info.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(DemoActivity.this, "Error : data posted to server failed", Toast.LENGTH_SHORT).show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(DemoActivity.this, "Error : data posted to server failed", Toast.LENGTH_SHORT).show();
+                }
                 closeProgressbar();
                 //finish();
             }
